@@ -61,10 +61,13 @@ work).
 - [x] Vocabulary Trainer mode: random order, 3 auto-advancing pages per
       word (Hanzi+Pinyin → English → word in an example sentence), each
       spoken aloud, tap left/right to go back/skip, pause button
-- [x] Landscape-only UI (portrait shows a "rotate your phone" prompt —
-      no real orientation-lock exists for a plain web page on iOS);
-      text sized with `vmin`-based `clamp()` so it's readable at a
-      glance (e.g. car-mounted phone)
+- [x] Works in both portrait and landscape. Text sized with `vmin`-
+      based `clamp()` as an upper bound (readable at a glance, e.g.
+      car-mounted phone in landscape) plus a JS shrink-to-fit pass
+      (`fitContentToContainer` in app.js, driven by a `--fit-scale`
+      CSS variable) that scales a page's text down only as much as
+      needed so long words/sentences never overflow a narrow portrait
+      screen
 - [x] Settings page: per-page duration slider (0.5s–5s), speech-rate
       slider (0.5x–1.5x, controls `SpeechSynthesisUtterance.rate`) +
       vocabulary source picker, all persisted
@@ -191,3 +194,21 @@ work).
   https://nighthawk99.github.io/chinese-trainer/ (title, vocab count,
   and mobile-viewport screenshot all correct). Repo is now public —
   worth remembering if that ever needs to be reconsidered.
+- 2026-08-08: Re-enabled portrait (removed the rotate-prompt gate
+  added earlier). Testing surfaced a real overflow bug this exposed:
+  pure `vmin`/`clamp()` sizing only knows viewport dimensions, not how
+  many characters are in a given word, so a 3-character word (生病好)
+  on a narrow 375px phone rendered each character on its own line at
+  full size and overflowed the screen (confirmed via `scrollHeight` vs
+  `clientHeight`, not just visually). Fixed with a JS shrink-to-fit
+  pass rather than trying to solve it in pure CSS: every render sets
+  `--fit-scale: 1` then steps it down in 0.05 increments while
+  `page-content.scrollHeight > tap-zone.clientHeight`, and every large
+  font-size is `calc(clamp(...) * var(--fit-scale, 1))`. Starts at the
+  full vmin-based size and only shrinks exactly as much as a given
+  page needs, so short words/sentences stay maximally large. Verified
+  against the two real worst cases in the dataset (that 3-character
+  word, and the longest 16-character example sentence in vocab.json)
+  in both a small portrait viewport (375×667) and landscape — both fit
+  with zero leftover overflow. Kept `overflow-y: auto` on the tap zone
+  as a last-resort safety net, though it shouldn't normally trigger.
