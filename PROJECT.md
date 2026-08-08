@@ -79,9 +79,12 @@ work).
 - [ ] HSK 4 — 1,000 new words, not started (empty placeholder file)
 - [ ] Additional training modes beyond Vocabulary Trainer (not yet
       specified by user)
-- [ ] Persistent phone access — user wants to reuse the same
-      Tailscale + always-on Mac Mini pattern as the WSJ dashboard;
-      currently only reachable via a local dev server
+- [x] Persistent phone access — live at
+      **https://nighthawk99.github.io/chinese-trainer/** via GitHub
+      Pages. Reachable from anywhere (WiFi or cellular), no Mac needs
+      to be running. Went this route instead of Tailscale — simpler
+      for a static site with no backend/secrets. Tip: "Add to Home
+      Screen" in Safari for an app-like icon.
 - [ ] Native iOS port — explicitly deferred until the web version is
       validated
 
@@ -170,3 +173,21 @@ work).
   speech-rate change. Worth remembering: don't chase phantom audio
   bugs reported while rapid scripted testing was audibly running in
   the same tab the user is listening to.
+- 2026-08-08: User asked for phone access without Tailscale. Tried
+  GitHub Pages first since it needs no new account (`gh` was already
+  authenticated) — confirmed via a real API call (not assumed) that it
+  doesn't work on a private repo on the free plan (422 "current plan
+  does not support GitHub Pages for this repository"). Presented the
+  real options (make the repo public + GitHub Pages, vs. Netlify/
+  Vercel which need a separate account but keep the repo private).
+  User chose to make the repo public. Flipped visibility with
+  `gh repo edit --visibility public`, enabled Pages via
+  `gh api -X POST .../pages` with `source.branch=main, path=/` (no
+  build step needed — legacy branch-deploy mode, since this is plain
+  static HTML/CSS/JS with no bundler). All asset/data references in
+  the app were already relative paths (no leading `/`), so it worked
+  immediately at the `/chinese-trainer/` project-page subpath with no
+  code changes. Verified live at
+  https://nighthawk99.github.io/chinese-trainer/ (title, vocab count,
+  and mobile-viewport screenshot all correct). Repo is now public —
+  worth remembering if that ever needs to be reconsidered.
