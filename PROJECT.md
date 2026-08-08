@@ -65,8 +65,9 @@ work).
       no real orientation-lock exists for a plain web page on iOS);
       text sized with `vmin`-based `clamp()` so it's readable at a
       glance (e.g. car-mounted phone)
-- [x] Settings page: playback-speed slider (0.5s–5s) + vocabulary
-      source picker, both persisted
+- [x] Settings page: per-page duration slider (0.5s–5s), speech-rate
+      slider (0.5x–1.5x, controls `SpeechSynthesisUtterance.rate`) +
+      vocabulary source picker, all persisted
 - [x] "My own vocabulary list" — 678 words, authored from the user's
       PDF (which turned out to be a garbled CC-CEDICT export, so
       translations/pinyin/examples were written fresh rather than
@@ -151,3 +152,10 @@ work).
   commits existed before this point). Created private repo
   `nighthawk99/chinese-trainer`, matching the WSJ repo's visibility,
   explicitly kept separate from it per user request.
+- 2026-08-08: Added a second settings slider for speech rate
+  (0.5x–1.5x, default 1.0x), independent from the per-page duration
+  slider. Reused the same `.settings-slider` CSS class (generalized
+  from the duration slider's originally ID-scoped rule) so both share
+  styling. Verified the actual `SpeechSynthesisUtterance.rate` picks up
+  the setting by monkey-patching `speechSynthesis.speak` in the
+  Browser-pane console rather than relying on audible confirmation.
