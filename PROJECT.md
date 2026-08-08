@@ -159,3 +159,14 @@ work).
   styling. Verified the actual `SpeechSynthesisUtterance.rate` picks up
   the setting by monkey-patching `speechSynthesis.speak` in the
   Browser-pane console rather than relying on audible confirmation.
+- 2026-08-08: User reported Chinese speech sounding "robotic, choppy,
+  distorted" — false alarm, not a real bug. They were listening to the
+  Browser-pane preview tab live while I was rapidly firing
+  `cancel()`+`speak()` calls in quick succession to verify things
+  during testing (much faster than the real 3s page pacing), which
+  produces exactly that overlapping/garbled sound. Confirmed clean on
+  a normal, uninterrupted play-through in the same tab, and separately
+  confirmed good in the user's own actual browser. Not caused by the
+  speech-rate change. Worth remembering: don't chase phantom audio
+  bugs reported while rapid scripted testing was audibly running in
+  the same tab the user is listening to.
