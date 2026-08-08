@@ -103,11 +103,12 @@ html, body {
   align-items: center;
   justify-content: center;
   min-height: 0;
+  overflow-y: auto;
 }
 
 .page-content {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   padding: 12px 16px;
   display: flex;
   flex-direction: column;
@@ -117,45 +118,49 @@ html, body {
   text-align: center;
 }
 
-/* Sizes use vmin so the Chinese stays large and legible in both
-   portrait and landscape (e.g. glancing at a car-mounted phone). */
+/* Sizes use vmin as an upper bound so the Chinese stays large and
+   legible in both portrait and landscape (e.g. glancing at a
+   car-mounted phone). vmin alone can't account for how many
+   characters are in a given word/sentence though, so app.js also
+   applies a --fit-scale multiplier (1 = full size) per page, shrunk
+   only as much as needed so the whole page always fits on screen. */
 .hanzi-large {
-  font-size: clamp(4rem, 50vmin, 22rem);
+  font-size: calc(clamp(4rem, 50vmin, 22rem) * var(--fit-scale, 1));
   font-weight: 700;
   line-height: 1.05;
   word-break: break-word;
 }
 
 .pinyin-large {
-  font-size: clamp(1.6rem, 12vmin, 5rem);
+  font-size: calc(clamp(1.6rem, 12vmin, 5rem) * var(--fit-scale, 1));
   color: var(--accent);
   font-weight: 500;
 }
 
 .english-large {
-  font-size: clamp(2.2rem, 22vmin, 8rem);
+  font-size: calc(clamp(2.2rem, 22vmin, 8rem) * var(--fit-scale, 1));
   font-weight: 600;
   line-height: 1.2;
 }
 
 .english-alt {
-  font-size: clamp(1rem, 5vmin, 2rem);
+  font-size: calc(clamp(1rem, 5vmin, 2rem) * var(--fit-scale, 1));
   color: var(--text-dim);
 }
 
 .sentence-hanzi {
-  font-size: clamp(2.4rem, 24vmin, 9rem);
+  font-size: calc(clamp(2.4rem, 24vmin, 9rem) * var(--fit-scale, 1));
   font-weight: 700;
   line-height: 1.25;
 }
 
 .sentence-pinyin {
-  font-size: clamp(1.1rem, 7vmin, 2.8rem);
+  font-size: calc(clamp(1.1rem, 7vmin, 2.8rem) * var(--fit-scale, 1));
   color: var(--accent);
 }
 
 .sentence-english {
-  font-size: clamp(0.95rem, 4.5vmin, 1.8rem);
+  font-size: calc(clamp(0.95rem, 4.5vmin, 1.8rem) * var(--fit-scale, 1));
   color: var(--text-dim);
   margin-top: 4px;
 }
@@ -166,42 +171,6 @@ html, body {
   .icon-btn { padding: 4px 12px; font-size: 1.2rem; }
   .progress-label { font-size: 0.75rem; }
   .page-content { padding: 4px 20px; gap: 1.5vmin; }
-}
-
-/* This app is landscape-only: portrait shows a rotate prompt instead of laying out content */
-.rotate-prompt {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: var(--bg);
-  color: var(--text);
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  padding: 24px;
-  text-align: center;
-  z-index: 1000;
-}
-
-.rotate-icon {
-  font-size: 3.5rem;
-  animation: rotate-hint 1.8s ease-in-out infinite;
-}
-
-.rotate-text {
-  font-size: 1.2rem;
-  color: var(--text-dim);
-}
-
-@keyframes rotate-hint {
-  0%, 100% { transform: rotate(0deg); }
-  50% { transform: rotate(-90deg); }
-}
-
-@media (orientation: portrait) {
-  .screen.active { display: none; }
-  .rotate-prompt { display: flex; }
 }
 
 .page-kind-label {

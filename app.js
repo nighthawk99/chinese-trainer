@@ -225,7 +225,23 @@
       speak(word.example.hanzi, 'zh-CN', zhVoice);
     }
 
+    fitContentToContainer();
     scheduleAutoAdvance();
+  }
+
+  // Pure CSS (vmin/clamp) sizes text off viewport dimensions alone, which
+  // can't account for how many characters are in a given word or sentence
+  // — a long word on a narrow phone can overflow. Shrink --fit-scale (a
+  // multiplier on every font-size in page-content) only as much as needed
+  // so the whole page always fits, starting from full size each time.
+  function fitContentToContainer() {
+    pageContent.style.setProperty('--fit-scale', '1');
+    let scale = 1;
+    const maxHeight = tapZone.clientHeight;
+    while (pageContent.scrollHeight > maxHeight && scale > 0.25) {
+      scale = Math.round((scale - 0.05) * 100) / 100;
+      pageContent.style.setProperty('--fit-scale', String(scale));
+    }
   }
 
   function scheduleAutoAdvance() {
