@@ -303,14 +303,47 @@
     }
   }
 
-  tapZone.addEventListener('click', (e) => {
-    const x = e.clientX;
-    const width = window.innerWidth;
-    if (x < width * 0.3) {
-      goBack();
+  // Tap-zone interaction: a quick tap navigates (left 30% = back, rest =
+  // forward). Holding a finger down pauses the page-turn timer for as long
+  // as it's held; releasing quickly resumes automatically (unless the
+  // pause button has explicitly paused things, which scheduleAutoAdvance
+  // already respects). Pointer events (not click) so real touch-hold
+  // duration can be measured.
+  const TAP_MAX_DURATION_MS = 300;
+  const TAP_MAX_MOVEMENT_PX = 10;
+  let holdActive = false;
+  let holdStartTime = 0;
+  let holdStartX = 0;
+
+  tapZone.addEventListener('pointerdown', (e) => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    holdActive = true;
+    holdStartTime = Date.now();
+    holdStartX = e.clientX;
+    clearTimer();
+  });
+
+  function endHold(e) {
+    if (!holdActive) return;
+    holdActive = false;
+    const duration = Date.now() - holdStartTime;
+    const moved = Math.abs((e.clientX || holdStartX) - holdStartX);
+    if (duration < TAP_MAX_DURATION_MS && moved < TAP_MAX_MOVEMENT_PX) {
+      const width = window.innerWidth;
+      if (holdStartX < width * 0.3) {
+        goBack();
+      } else {
+        advance();
+      }
     } else {
-      advance();
+      scheduleAutoAdvance();
     }
+  }
+
+  tapZone.addEventListener('pointerup', endHold);
+  tapZone.addEventListener('pointercancel', () => {
+    holdActive = false;
+    scheduleAutoAdvance();
   });
 
   pauseBtn.addEventListener('click', (e) => {
