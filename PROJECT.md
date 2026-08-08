@@ -7,6 +7,29 @@ flow before ever considering a native Swift/SwiftUI port. First (and so
 far only) training mode: **Vocabulary Trainer**, which drills a word
 list in random order.
 
+## Next steps (as of 2026-08-08, picking up on the Mac Mini)
+The Mac Mini is now fully set up (see "Cross-machine setup" below) —
+these are the two things left to actually *do* there:
+
+1. **Sign in to Claude Code on the Mac Mini** — run `claude auth login`
+   in a terminal there. This needs your own interactive
+   approval, so it was left undone on purpose.
+2. **Start a Remote Control session** — run `claude --remote-control`
+   (add a name, e.g. `--remote-control macmini`, so it's easy to spot
+   in a session picker). This should give a QR code or URL to connect
+   to from the Claude mobile app / claude.ai/code, so you can drive a
+   session that runs *on* the Mac Mini (full filesystem/tool access
+   there) directly from your phone, instead of proxying through a
+   MacBook-rooted session over SSH like this one did.
+3. Once you've confirmed that flow works, the natural follow-up is
+   making it persistent (tmux + a launchd job on the Mac Mini, same
+   pattern as the WSJ dashboard) so it survives reboots/logouts
+   instead of dying when a terminal window closes — not done yet,
+   deliberately deferred until the basic flow is confirmed working.
+
+After that, real feature work is still waiting: HSK2/3/4 word lists,
+more training modes, etc. — see Status below.
+
 ## Cross-machine setup
 Private GitHub remote (`nighthawk99/chinese-trainer`) is the shared
 source of truth — a separate repo from `nighthawk99/wsj-market-briefing`
@@ -14,14 +37,28 @@ on purpose, kept unmixed. No dev/prod split needed (unlike the WSJ
 project): this is a static site with no server-side secrets or state,
 so any machine's checkout behaves identically.
 
-**On a new machine (e.g. the Mac Mini):**
+**Already set up:**
+- **MacBook** (where this was built) — `~/Projects/chinese-trainer`
+- **Mac Mini** — also cloned to `~/Projects/chinese-trainer`, git
+  identity configured to match. Reachable from the MacBook via
+  `ssh macmini` (SSH config `Host macmini` in `~/.ssh/config`, now
+  pointed at its **Tailscale IP `100.126.244.14`** rather than its old
+  LAN-only IP `192.168.0.33` — the LAN IP only works when both
+  machines share the same home WiFi; Tailscale works from anywhere).
+  Node.js (v26.7.0) and the Claude Code CLI (v2.1.226,
+  `@anthropic-ai/claude-code` via npm) are both installed there too,
+  specifically so a Claude Code Remote Control session can run on it
+  (see "Next steps" above) — not yet signed in/started.
+
+**On any other new machine:**
 ```
 git clone https://github.com/nighthawk99/chinese-trainer.git
 cd chinese-trainer
 python3 -m http.server 8420
 ```
 Then open `http://localhost:8420`. That's the whole setup — no venv, no
-env vars, no install step.
+env vars, no install step. (Or just use the live GitHub Pages URL
+below — no local setup needed at all.)
 
 **Claude Code / preview-tool gotcha:** this repo has its own
 `.claude/launch.json` (config name `chinese-trainer`) which works fine
@@ -93,6 +130,10 @@ work).
       Screen" in Safari for an app-like icon.
 - [ ] Native iOS port — explicitly deferred until the web version is
       validated
+- [~] Claude Code on the Mac Mini (for driving development from your
+      phone) — Node.js + Claude Code CLI installed, repo cloned there,
+      SSH reachable from anywhere via Tailscale. Not yet signed in or
+      started — see "Next steps" at the top of this file.
 
 ## Notes / decisions log
 (running log of things learned/decided along the way)
@@ -228,3 +269,51 @@ work).
   which is only read once at load; this cost one wasted test cycle
   before catching it. Worth remembering for any future test involving
   settings on an already-open tab.
+- 2026-08-08: User noticed the Claude Code session (this whole
+  conversation) shows "wsj-market-briefing" as its project label in
+  the mobile app, despite doing chinese-trainer work throughout —
+  because the session's root working directory has been
+  wsj-cro-briefing since the start (that's just where the session
+  originally opened; all the actual chinese-trainer work happened via
+  absolute paths in a different directory the whole time). Confirmed
+  via grep that there's no real cross-contamination in the actual
+  project (only PROJECT.md itself mentions WSJ, intentionally, as a
+  comparison). The one real consequence: Claude's per-project auto-
+  memory is scoped by session root, so everything learned about this
+  project was being saved under wsj-cro-briefing's memory folder, not
+  a chinese-trainer-specific one. Fixed by creating
+  `~/.claude/projects/-Users-michaeldemuth-Projects-chinese-trainer/memory/`
+  (matching Claude Code's own path-derived naming convention) and
+  copying over the memories that actually apply to this project, so a
+  future session rooted directly in chinese-trainer's own directory
+  will have full context immediately instead of starting blank. This
+  session itself can't be re-rooted mid-conversation though — that's
+  fixed by the platform at session start — so this PROJECT.md file
+  remains the one source of truth guaranteed to reach *any* session
+  regardless of root, which is exactly why it matters.
+- 2026-08-08: Set up Mac Mini access ahead of the user turning off
+  their MacBook for the day. Local-network SSH (the `macmini` alias's
+  old `HostName 192.168.0.33`, from the WSJ project setup) failed —
+  confirmed via `ipconfig`/`ping` that this MacBook wasn't on the same
+  network. Started Tailscale on the MacBook (installed but stopped)
+  and found the Mac Mini already on the tailnet as `m4macminipro` at
+  `100.126.244.14` (same IP the WSJ dashboard already uses). Updated
+  `~/.ssh/config`'s `macmini` entry to that IP so it works from
+  anywhere going forward, accepted its host key via `ssh-keyscan`
+  (first connection from this address), and confirmed SSH access.
+  Cloned this repo there, set matching git identity, and did a real
+  smoke test (started the dev server over SSH, curled it, confirmed
+  vocab.json returns all 678 words) before stopping that test server
+  again. User then asked about connecting from their phone to "that
+  session" — researched Claude Code's Remote Control feature via the
+  claude-code-guide subagent rather than guessing, then verified its
+  claims firsthand instead of relaying them blind: `claude` wasn't
+  even installed on the Mac Mini, so installed Node.js (via
+  Homebrew — also not previously present) and the Claude Code CLI
+  (`@anthropic-ai/claude-code` via npm, had to explicitly
+  `--allow-scripts` for its postinstall), then confirmed for real via
+  `claude --help` that `--remote-control` and `claude auth login` are
+  genuine, current commands. Deliberately stopped short of running
+  `claude auth login` myself — that needs the user's own interactive
+  approval, not something to do on their behalf. See "Next steps" at
+  the top of this file for exactly what's left.
