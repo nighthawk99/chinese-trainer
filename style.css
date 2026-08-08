@@ -1,0 +1,316 @@
+:root {
+  color-scheme: light dark;
+  --bg: #0f1115;
+  --bg-alt: #171a21;
+  --text: #f2f3f5;
+  --text-dim: #9aa0ab;
+  --accent: #4da3ff;
+  --accent-dim: #2a3b52;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  overscroll-behavior: none;
+  user-select: none;
+}
+
+.screen {
+  display: none;
+  flex-direction: column;
+  height: 100dvh;
+  width: 100%;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+.screen.active { display: flex; }
+
+/* Home screen */
+#home-screen {
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px;
+  position: relative;
+}
+
+.settings-corner-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 1.5rem;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.mode-tile {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-alt);
+  border: 1px solid #2a2f3a;
+  border-radius: 16px;
+  padding: 24px;
+  color: var(--text);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font: inherit;
+}
+
+.mode-tile:active { background: var(--accent-dim); }
+
+.mode-name { font-size: 1.3rem; font-weight: 600; }
+.mode-desc { font-size: 0.95rem; color: var(--text-dim); }
+
+/* Trainer screen */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  flex-shrink: 0;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.4rem;
+  padding: 8px 12px;
+  line-height: 1;
+}
+
+.icon-btn:active { color: var(--text); }
+
+.progress-label {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+.tap-zone {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vmin;
+  text-align: center;
+}
+
+/* Sizes use vmin so the Chinese stays large and legible in both
+   portrait and landscape (e.g. glancing at a car-mounted phone). */
+.hanzi-large {
+  font-size: clamp(4rem, 50vmin, 22rem);
+  font-weight: 700;
+  line-height: 1.05;
+  word-break: break-word;
+}
+
+.pinyin-large {
+  font-size: clamp(1.6rem, 12vmin, 5rem);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.english-large {
+  font-size: clamp(2.2rem, 22vmin, 8rem);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.english-alt {
+  font-size: clamp(1rem, 5vmin, 2rem);
+  color: var(--text-dim);
+}
+
+.sentence-hanzi {
+  font-size: clamp(2.4rem, 24vmin, 9rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.sentence-pinyin {
+  font-size: clamp(1.1rem, 7vmin, 2.8rem);
+  color: var(--accent);
+}
+
+.sentence-english {
+  font-size: clamp(0.95rem, 4.5vmin, 1.8rem);
+  color: var(--text-dim);
+  margin-top: 4px;
+}
+
+/* Landscape: reclaim vertical space from chrome so the word itself gets the room */
+@media (orientation: landscape) {
+  .top-bar { padding: 2px 16px; }
+  .icon-btn { padding: 4px 12px; font-size: 1.2rem; }
+  .progress-label { font-size: 0.75rem; }
+  .page-content { padding: 4px 20px; gap: 1.5vmin; }
+}
+
+/* This app is landscape-only: portrait shows a rotate prompt instead of laying out content */
+.rotate-prompt {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  color: var(--text);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.rotate-icon {
+  font-size: 3.5rem;
+  animation: rotate-hint 1.8s ease-in-out infinite;
+}
+
+.rotate-text {
+  font-size: 1.2rem;
+  color: var(--text-dim);
+}
+
+@keyframes rotate-hint {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(-90deg); }
+}
+
+@media (orientation: portrait) {
+  .screen.active { display: none; }
+  .rotate-prompt { display: flex; }
+}
+
+.page-kind-label {
+  position: absolute;
+  top: 70px;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+/* Complete screen */
+#complete-screen {
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+.primary-btn, .secondary-btn {
+  width: 100%;
+  max-width: 320px;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+}
+
+.primary-btn { background: var(--accent); color: #05121f; }
+.secondary-btn { background: none; color: var(--text-dim); }
+
+/* Settings screen */
+.settings-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.settings-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.settings-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.settings-label span { color: var(--accent); font-weight: 700; }
+
+#duration-slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--bg-alt);
+  accent-color: var(--accent);
+}
+
+.vocab-source-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vocab-source-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--bg-alt);
+  border: 1px solid #2a2f3a;
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+.vocab-source-item.selected {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.vocab-source-item.disabled {
+  opacity: 0.45;
+}
+
+.vocab-source-item input[type="radio"] {
+  accent-color: var(--accent);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.vocab-source-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.vocab-source-name { font-size: 0.95rem; font-weight: 600; }
+.vocab-source-count { font-size: 0.8rem; color: var(--text-dim); }
+
+@media (orientation: landscape) {
+  .settings-content { padding: 10px 32px 20px; gap: 16px; }
+}

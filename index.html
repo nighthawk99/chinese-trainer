@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Chinese Trainer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Shown instead of everything else while the phone is in portrait -->
+  <div id="rotate-prompt" class="rotate-prompt">
+    <div class="rotate-icon">&#8635;</div>
+    <div class="rotate-text">Rotate your phone to landscape</div>
+  </div>
+
+  <!-- Home screen: choose a training mode -->
+  <section id="home-screen" class="screen active">
+    <button id="settings-btn" class="icon-btn settings-corner-btn" aria-label="Settings">&#9881;</button>
+    <h1 class="app-title">Chinese Trainer</h1>
+    <button class="mode-tile" id="start-vocab-trainer">
+      <span class="mode-name">Vocabulary Trainer</span>
+      <span class="mode-desc" id="home-mode-desc">Cycle through your word list in random order</span>
+    </button>
+  </section>
+
+  <!-- Settings screen -->
+  <section id="settings-screen" class="screen">
+    <div class="top-bar">
+      <button id="settings-home-btn" class="icon-btn" aria-label="Home">&larr;</button>
+      <div class="progress-label">Settings</div>
+      <div style="width: 2.5em;"></div>
+    </div>
+
+    <div class="settings-content">
+      <div class="settings-group">
+        <label class="settings-label" for="duration-slider">
+          Time per page after speaking: <span id="duration-value">3.0s</span>
+        </label>
+        <input type="range" id="duration-slider" min="0.5" max="5" step="0.1" value="3">
+      </div>
+
+      <div class="settings-group">
+        <div class="settings-label">Vocabulary list</div>
+        <div id="vocab-source-list" class="vocab-source-list">
+          <!-- filled dynamically -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vocabulary Trainer screen -->
+  <section id="trainer-screen" class="screen">
+    <div class="top-bar">
+      <button id="home-btn" class="icon-btn" aria-label="Home">&larr;</button>
+      <div id="progress-label" class="progress-label"></div>
+      <button id="pause-btn" class="icon-btn" aria-label="Pause">&#10073;&#10073;</button>
+    </div>
+
+    <div id="tap-zone" class="tap-zone">
+      <div id="page-content" class="page-content">
+        <!-- filled dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Session complete screen -->
+  <section id="complete-screen" class="screen">
+    <h2>Session complete!</h2>
+    <p id="complete-summary"></p>
+    <button class="primary-btn" id="restart-btn">Practice again</button>
+    <button class="secondary-btn" id="complete-home-btn">Back to home</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

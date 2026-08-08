@@ -1,0 +1,6265 @@
+[
+  {
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "translations": [
+      "to love",
+      "affection"
+    ],
+    "example": {
+      "hanzi": "我爱我的家人。",
+      "pinyin": "Wǒ ài wǒ de jiārén.",
+      "english": "I love my family."
+    }
+  },
+  {
+    "hanzi": "八",
+    "pinyin": "bā",
+    "translations": [
+      "eight"
+    ],
+    "example": {
+      "hanzi": "现在是八点。",
+      "pinyin": "Xiànzài shì bā diǎn.",
+      "english": "It's eight o'clock now."
+    }
+  },
+  {
+    "hanzi": "吧",
+    "pinyin": "ba",
+    "translations": [
+      "sentence-final particle for suggestion or assumption ('...right?', 'let's...')"
+    ],
+    "example": {
+      "hanzi": "我们走吧。",
+      "pinyin": "Wǒmen zǒu ba.",
+      "english": "Let's go."
+    }
+  },
+  {
+    "hanzi": "白",
+    "pinyin": "bái",
+    "translations": [
+      "white",
+      "in vain"
+    ],
+    "example": {
+      "hanzi": "他穿着一件白衣服。",
+      "pinyin": "Tā chuānzhe yī jiàn bái yīfu.",
+      "english": "He is wearing a white piece of clothing."
+    }
+  },
+  {
+    "hanzi": "白天",
+    "pinyin": "báitiān",
+    "translations": [
+      "daytime"
+    ],
+    "example": {
+      "hanzi": "他白天工作，晚上上课。",
+      "pinyin": "Tā báitiān gōngzuò, wǎnshang shàngkè.",
+      "english": "He works during the day and has class at night."
+    }
+  },
+  {
+    "hanzi": "班",
+    "pinyin": "bān",
+    "translations": [
+      "class (bound form)",
+      "shift"
+    ],
+    "example": {
+      "hanzi": "我在三班。",
+      "pinyin": "Wǒ zài sān bān.",
+      "english": "I'm in class three."
+    }
+  },
+  {
+    "hanzi": "帮",
+    "pinyin": "bāng",
+    "translations": [
+      "to help (bound form)"
+    ],
+    "example": {
+      "hanzi": "我来帮你。",
+      "pinyin": "Wǒ lái bāng nǐ.",
+      "english": "Let me help you."
+    }
+  },
+  {
+    "hanzi": "帮忙",
+    "pinyin": "bāngmáng",
+    "translations": [
+      "to help",
+      "to do a favor"
+    ],
+    "example": {
+      "hanzi": "你能帮我个忙吗？",
+      "pinyin": "Nǐ néng bāng wǒ gè máng ma?",
+      "english": "Can you do me a favor?"
+    }
+  },
+  {
+    "hanzi": "杯",
+    "pinyin": "bēi",
+    "translations": [
+      "cup",
+      "glass",
+      "classifier for cups"
+    ],
+    "example": {
+      "hanzi": "我要一杯茶。",
+      "pinyin": "Wǒ yào yī bēi chá.",
+      "english": "I want a cup of tea."
+    }
+  },
+  {
+    "hanzi": "杯子",
+    "pinyin": "bēizi",
+    "translations": [
+      "cup",
+      "glass"
+    ],
+    "example": {
+      "hanzi": "请把杯子放在桌子上。",
+      "pinyin": "Qǐng bǎ bēizi fàng zài zhuōzi shàng.",
+      "english": "Please put the cup on the table."
+    }
+  },
+  {
+    "hanzi": "北",
+    "pinyin": "běi",
+    "translations": [
+      "north"
+    ],
+    "example": {
+      "hanzi": "北京在中国的北方。",
+      "pinyin": "Běijīng zài Zhōngguó de běifāng.",
+      "english": "Beijing is in the north of China."
+    }
+  },
+  {
+    "hanzi": "本",
+    "pinyin": "běn",
+    "translations": [
+      "classifier for books/magazines",
+      "origin, basis"
+    ],
+    "example": {
+      "hanzi": "我买了三本书。",
+      "pinyin": "Wǒ mǎi le sān běn shū.",
+      "english": "I bought three books."
+    }
+  },
+  {
+    "hanzi": "比",
+    "pinyin": "bǐ",
+    "translations": [
+      "compared to",
+      "than (bound form)"
+    ],
+    "example": {
+      "hanzi": "今天比昨天冷。",
+      "pinyin": "Jīntiān bǐ zuótiān lěng.",
+      "english": "Today is colder than yesterday."
+    }
+  },
+  {
+    "hanzi": "别",
+    "pinyin": "bié",
+    "translations": [
+      "don't (imperative negative)"
+    ],
+    "example": {
+      "hanzi": "别担心。",
+      "pinyin": "Bié dānxīn.",
+      "english": "Don't worry."
+    }
+  },
+  {
+    "hanzi": "别的",
+    "pinyin": "biéde",
+    "translations": [
+      "else",
+      "other"
+    ],
+    "example": {
+      "hanzi": "你还需要别的吗？",
+      "pinyin": "Nǐ hái xūyào biéde ma?",
+      "english": "Do you need anything else?"
+    }
+  },
+  {
+    "hanzi": "不",
+    "pinyin": "bù",
+    "translations": [
+      "not",
+      "no"
+    ],
+    "example": {
+      "hanzi": "我不喜欢咖啡。",
+      "pinyin": "Wǒ bù xǐhuan kāfēi.",
+      "english": "I don't like coffee."
+    }
+  },
+  {
+    "hanzi": "菜",
+    "pinyin": "cài",
+    "translations": [
+      "vegetable",
+      "dish (of food)"
+    ],
+    "example": {
+      "hanzi": "这个菜很好吃。",
+      "pinyin": "Zhège cài hěn hǎochī.",
+      "english": "This dish is very tasty."
+    }
+  },
+  {
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "translations": [
+      "tea"
+    ],
+    "example": {
+      "hanzi": "我喜欢喝绿茶。",
+      "pinyin": "Wǒ xǐhuan hē lǜchá.",
+      "english": "I like drinking green tea."
+    }
+  },
+  {
+    "hanzi": "车",
+    "pinyin": "chē",
+    "translations": [
+      "car",
+      "vehicle"
+    ],
+    "example": {
+      "hanzi": "他有一辆新车。",
+      "pinyin": "Tā yǒu yī liàng xīn chē.",
+      "english": "He has a new car."
+    }
+  },
+  {
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "translations": [
+      "to eat"
+    ],
+    "example": {
+      "hanzi": "我想吃苹果。",
+      "pinyin": "Wǒ xiǎng chī píngguǒ.",
+      "english": "I want to eat an apple."
+    }
+  },
+  {
+    "hanzi": "吃饭",
+    "pinyin": "chīfàn",
+    "translations": [
+      "to eat a meal",
+      "to eat"
+    ],
+    "example": {
+      "hanzi": "我们一起吃饭吧。",
+      "pinyin": "Wǒmen yīqǐ chīfàn ba.",
+      "english": "Let's eat together."
+    }
+  },
+  {
+    "hanzi": "出",
+    "pinyin": "chū",
+    "translations": [
+      "to go out",
+      "to come out (bound form)"
+    ],
+    "example": {
+      "hanzi": "他从房间里出来了。",
+      "pinyin": "Tā cóng fángjiān lǐ chūlái le.",
+      "english": "He came out of the room."
+    }
+  },
+  {
+    "hanzi": "出去",
+    "pinyin": "chūqù",
+    "translations": [
+      "to go out"
+    ],
+    "example": {
+      "hanzi": "我们出去走走吧。",
+      "pinyin": "Wǒmen chūqù zǒuzou ba.",
+      "english": "Let's go out for a walk."
+    }
+  },
+  {
+    "hanzi": "穿",
+    "pinyin": "chuān",
+    "translations": [
+      "to wear",
+      "to put on"
+    ],
+    "example": {
+      "hanzi": "她穿了一条红裙子。",
+      "pinyin": "Tā chuānle yī tiáo hóng qúnzi.",
+      "english": "She's wearing a red skirt."
+    }
+  },
+  {
+    "hanzi": "床",
+    "pinyin": "chuáng",
+    "translations": [
+      "bed"
+    ],
+    "example": {
+      "hanzi": "我的床很舒服。",
+      "pinyin": "Wǒ de chuáng hěn shūfu.",
+      "english": "My bed is very comfortable."
+    }
+  },
+  {
+    "hanzi": "次",
+    "pinyin": "cì",
+    "translations": [
+      "classifier for occurrences",
+      "time"
+    ],
+    "example": {
+      "hanzi": "我去过一次北京。",
+      "pinyin": "Wǒ qùguò yī cì Běijīng.",
+      "english": "I've been to Beijing once."
+    }
+  },
+  {
+    "hanzi": "错",
+    "pinyin": "cuò",
+    "translations": [
+      "wrong",
+      "mistake"
+    ],
+    "example": {
+      "hanzi": "你写错了。",
+      "pinyin": "Nǐ xiěcuò le.",
+      "english": "You wrote it wrong."
+    }
+  },
+  {
+    "hanzi": "打",
+    "pinyin": "dǎ",
+    "translations": [
+      "to hit",
+      "to play (a sport)",
+      "to make (a call)"
+    ],
+    "example": {
+      "hanzi": "我们去打篮球吧。",
+      "pinyin": "Wǒmen qù dǎ lánqiú ba.",
+      "english": "Let's go play basketball."
+    }
+  },
+  {
+    "hanzi": "打车",
+    "pinyin": "dǎchē",
+    "translations": [
+      "to take a taxi"
+    ],
+    "example": {
+      "hanzi": "下雨了，我们打车吧。",
+      "pinyin": "Xiàyǔ le, wǒmen dǎchē ba.",
+      "english": "It's raining, let's take a taxi."
+    }
+  },
+  {
+    "hanzi": "大",
+    "pinyin": "dà",
+    "translations": [
+      "big",
+      "large",
+      "great"
+    ],
+    "example": {
+      "hanzi": "这是一个大房子。",
+      "pinyin": "Zhè shì yī gè dà fángzi.",
+      "english": "This is a big house."
+    }
+  },
+  {
+    "hanzi": "大学",
+    "pinyin": "dàxué",
+    "translations": [
+      "university",
+      "college"
+    ],
+    "example": {
+      "hanzi": "我在北京大学上学。",
+      "pinyin": "Wǒ zài Běijīng Dàxué shàngxué.",
+      "english": "I study at Peking University."
+    }
+  },
+  {
+    "hanzi": "到",
+    "pinyin": "dào",
+    "translations": [
+      "to arrive",
+      "to (a place)"
+    ],
+    "example": {
+      "hanzi": "我到家了。",
+      "pinyin": "Wǒ dào jiā le.",
+      "english": "I've arrived home."
+    }
+  },
+  {
+    "hanzi": "地",
+    "pinyin": "de",
+    "translations": [
+      "adverbial particle (before a verb)"
+    ],
+    "example": {
+      "hanzi": "他慢慢地走了。",
+      "pinyin": "Tā mànmàn de zǒu le.",
+      "english": "He walked away slowly."
+    }
+  },
+  {
+    "hanzi": "的",
+    "pinyin": "de",
+    "translations": [
+      "possessive/descriptive particle ('s)"
+    ],
+    "example": {
+      "hanzi": "这是我的书。",
+      "pinyin": "Zhè shì wǒ de shū.",
+      "english": "This is my book."
+    }
+  },
+  {
+    "hanzi": "等",
+    "pinyin": "děng",
+    "translations": [
+      "to wait",
+      "and so on",
+      "class, grade"
+    ],
+    "example": {
+      "hanzi": "请等一下。",
+      "pinyin": "Qǐng děng yīxià.",
+      "english": "Please wait a moment."
+    }
+  },
+  {
+    "hanzi": "地",
+    "pinyin": "dì",
+    "translations": [
+      "land",
+      "earth",
+      "ground (bound form, as in 土地, 地方)"
+    ],
+    "example": {
+      "hanzi": "这是一块好地。",
+      "pinyin": "Zhè shì yī kuài hǎo dì.",
+      "english": "This is a good piece of land."
+    }
+  },
+  {
+    "hanzi": "地方",
+    "pinyin": "dìfāng",
+    "translations": [
+      "place",
+      "area"
+    ],
+    "example": {
+      "hanzi": "这是一个安静的地方。",
+      "pinyin": "Zhè shì yī gè ānjìng de dìfāng.",
+      "english": "This is a quiet place."
+    }
+  },
+  {
+    "hanzi": "弟弟",
+    "pinyin": "dìdi",
+    "translations": [
+      "younger brother"
+    ],
+    "example": {
+      "hanzi": "我弟弟今年十岁。",
+      "pinyin": "Wǒ dìdi jīnnián shí suì.",
+      "english": "My younger brother is ten this year."
+    }
+  },
+  {
+    "hanzi": "第",
+    "pinyin": "dì",
+    "translations": [
+      "ordinal number prefix (bound form, as in 第一)"
+    ],
+    "example": {
+      "hanzi": "这是我第一次来中国。",
+      "pinyin": "Zhè shì wǒ dì yī cì lái Zhōngguó.",
+      "english": "This is my first time coming to China."
+    }
+  },
+  {
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "translations": [
+      "o'clock",
+      "a bit",
+      "to order (food)"
+    ],
+    "example": {
+      "hanzi": "现在几点？",
+      "pinyin": "Xiànzài jǐ diǎn?",
+      "english": "What time is it now?"
+    }
+  },
+  {
+    "hanzi": "电",
+    "pinyin": "diàn",
+    "translations": [
+      "electricity (bound form)"
+    ],
+    "example": {
+      "hanzi": "家里停电了。",
+      "pinyin": "Jiālǐ tíngdiàn le.",
+      "english": "The power went out at home."
+    }
+  },
+  {
+    "hanzi": "电话",
+    "pinyin": "diànhuà",
+    "translations": [
+      "telephone",
+      "phone call"
+    ],
+    "example": {
+      "hanzi": "我给你打电话。",
+      "pinyin": "Wǒ gěi nǐ dǎ diànhuà.",
+      "english": "I'll call you."
+    }
+  },
+  {
+    "hanzi": "电影",
+    "pinyin": "diànyǐng",
+    "translations": [
+      "movie",
+      "film"
+    ],
+    "example": {
+      "hanzi": "我们去看电影吧。",
+      "pinyin": "Wǒmen qù kàn diànyǐng ba.",
+      "english": "Let's go watch a movie."
+    }
+  },
+  {
+    "hanzi": "东",
+    "pinyin": "dōng",
+    "translations": [
+      "east"
+    ],
+    "example": {
+      "hanzi": "太阳从东边升起。",
+      "pinyin": "Tàiyáng cóng dōngbian shēngqǐ.",
+      "english": "The sun rises in the east."
+    }
+  },
+  {
+    "hanzi": "东西",
+    "pinyin": "dōngxi",
+    "translations": [
+      "thing",
+      "stuff"
+    ],
+    "example": {
+      "hanzi": "我要买一些东西。",
+      "pinyin": "Wǒ yào mǎi yīxiē dōngxi.",
+      "english": "I want to buy some things."
+    }
+  },
+  {
+    "hanzi": "都",
+    "pinyin": "dōu",
+    "translations": [
+      "all",
+      "even"
+    ],
+    "example": {
+      "hanzi": "我们都是学生。",
+      "pinyin": "Wǒmen dōu shì xuésheng.",
+      "english": "We are all students."
+    }
+  },
+  {
+    "hanzi": "对",
+    "pinyin": "duì",
+    "translations": [
+      "correct",
+      "right",
+      "toward, facing"
+    ],
+    "example": {
+      "hanzi": "你说得对。",
+      "pinyin": "Nǐ shuō de duì.",
+      "english": "What you said is correct."
+    }
+  },
+  {
+    "hanzi": "多",
+    "pinyin": "duō",
+    "translations": [
+      "many",
+      "much",
+      "how (many/much)"
+    ],
+    "example": {
+      "hanzi": "这里有很多人。",
+      "pinyin": "Zhèlǐ yǒu hěnduō rén.",
+      "english": "There are many people here."
+    }
+  },
+  {
+    "hanzi": "多少",
+    "pinyin": "duōshǎo",
+    "translations": [
+      "how much?",
+      "how many?"
+    ],
+    "example": {
+      "hanzi": "这个多少钱？",
+      "pinyin": "Zhège duōshǎo qián?",
+      "english": "How much is this?"
+    }
+  },
+  {
+    "hanzi": "儿子",
+    "pinyin": "érzi",
+    "translations": [
+      "son"
+    ],
+    "example": {
+      "hanzi": "他的儿子在上大学。",
+      "pinyin": "Tā de érzi zài shàng dàxué.",
+      "english": "His son is attending university."
+    }
+  },
+  {
+    "hanzi": "二",
+    "pinyin": "èr",
+    "translations": [
+      "two"
+    ],
+    "example": {
+      "hanzi": "二加二等于四。",
+      "pinyin": "Èr jiā èr děngyú sì.",
+      "english": "Two plus two equals four."
+    }
+  },
+  {
+    "hanzi": "饭",
+    "pinyin": "fàn",
+    "translations": [
+      "(cooked) rice",
+      "meal"
+    ],
+    "example": {
+      "hanzi": "该吃饭了。",
+      "pinyin": "Gāi chīfàn le.",
+      "english": "Time to eat."
+    }
+  },
+  {
+    "hanzi": "房间",
+    "pinyin": "fángjiān",
+    "translations": [
+      "room"
+    ],
+    "example": {
+      "hanzi": "这个房间很大。",
+      "pinyin": "Zhège fángjiān hěn dà.",
+      "english": "This room is big."
+    }
+  },
+  {
+    "hanzi": "房子",
+    "pinyin": "fángzi",
+    "translations": [
+      "house",
+      "building"
+    ],
+    "example": {
+      "hanzi": "他买了一套新房子。",
+      "pinyin": "Tā mǎile yī tào xīn fángzi.",
+      "english": "He bought a new house."
+    }
+  },
+  {
+    "hanzi": "放",
+    "pinyin": "fàng",
+    "translations": [
+      "to put",
+      "to release",
+      "to let go"
+    ],
+    "example": {
+      "hanzi": "请把书放在桌子上。",
+      "pinyin": "Qǐng bǎ shū fàng zài zhuōzi shàng.",
+      "english": "Please put the book on the table."
+    }
+  },
+  {
+    "hanzi": "放假",
+    "pinyin": "fàngjià",
+    "translations": [
+      "to have a holiday/vacation"
+    ],
+    "example": {
+      "hanzi": "我们明天放假。",
+      "pinyin": "Wǒmen míngtiān fàngjià.",
+      "english": "We're off tomorrow."
+    }
+  },
+  {
+    "hanzi": "放学",
+    "pinyin": "fàngxué",
+    "translations": [
+      "to finish school for the day"
+    ],
+    "example": {
+      "hanzi": "他三点放学。",
+      "pinyin": "Tā sān diǎn fàngxué.",
+      "english": "He gets out of school at three."
+    }
+  },
+  {
+    "hanzi": "飞",
+    "pinyin": "fēi",
+    "translations": [
+      "to fly"
+    ],
+    "example": {
+      "hanzi": "小鸟在天上飞。",
+      "pinyin": "Xiǎoniǎo zài tiānshàng fēi.",
+      "english": "The little bird is flying in the sky."
+    }
+  },
+  {
+    "hanzi": "干净",
+    "pinyin": "gānjìng",
+    "translations": [
+      "clean"
+    ],
+    "example": {
+      "hanzi": "房间很干净。",
+      "pinyin": "Fángjiān hěn gānjìng.",
+      "english": "The room is very clean."
+    }
+  },
+  {
+    "hanzi": "高",
+    "pinyin": "gāo",
+    "translations": [
+      "tall",
+      "high"
+    ],
+    "example": {
+      "hanzi": "他很高。",
+      "pinyin": "Tā hěn gāo.",
+      "english": "He is very tall."
+    }
+  },
+  {
+    "hanzi": "高兴",
+    "pinyin": "gāoxìng",
+    "translations": [
+      "happy",
+      "glad"
+    ],
+    "example": {
+      "hanzi": "见到你我很高兴。",
+      "pinyin": "Jiàndào nǐ wǒ hěn gāoxìng.",
+      "english": "I'm happy to see you."
+    }
+  },
+  {
+    "hanzi": "告诉",
+    "pinyin": "gàosù",
+    "translations": [
+      "to tell",
+      "to inform"
+    ],
+    "example": {
+      "hanzi": "请告诉我你的名字。",
+      "pinyin": "Qǐng gàosù wǒ nǐ de míngzi.",
+      "english": "Please tell me your name."
+    }
+  },
+  {
+    "hanzi": "哥哥",
+    "pinyin": "gēge",
+    "translations": [
+      "older brother"
+    ],
+    "example": {
+      "hanzi": "我哥哥是医生。",
+      "pinyin": "Wǒ gēge shì yīshēng.",
+      "english": "My older brother is a doctor."
+    }
+  },
+  {
+    "hanzi": "歌",
+    "pinyin": "gē",
+    "translations": [
+      "song",
+      "to sing"
+    ],
+    "example": {
+      "hanzi": "她唱歌很好听。",
+      "pinyin": "Tā chànggē hěn hǎotīng.",
+      "english": "She sings very well."
+    }
+  },
+  {
+    "hanzi": "个",
+    "pinyin": "gè",
+    "translations": [
+      "general measure word",
+      "individual"
+    ],
+    "example": {
+      "hanzi": "我有三个朋友。",
+      "pinyin": "Wǒ yǒu sān gè péngyou.",
+      "english": "I have three friends."
+    }
+  },
+  {
+    "hanzi": "给",
+    "pinyin": "gěi",
+    "translations": [
+      "to give",
+      "for",
+      "to"
+    ],
+    "example": {
+      "hanzi": "他给了我一本书。",
+      "pinyin": "Tā gěile wǒ yī běn shū.",
+      "english": "He gave me a book."
+    }
+  },
+  {
+    "hanzi": "跟",
+    "pinyin": "gēn",
+    "translations": [
+      "with",
+      "to follow"
+    ],
+    "example": {
+      "hanzi": "我跟你一起去。",
+      "pinyin": "Wǒ gēn nǐ yīqǐ qù.",
+      "english": "I'll go with you."
+    }
+  },
+  {
+    "hanzi": "工作",
+    "pinyin": "gōngzuò",
+    "translations": [
+      "job",
+      "to work"
+    ],
+    "example": {
+      "hanzi": "他每天工作八个小时。",
+      "pinyin": "Tā měitiān gōngzuò bā gè xiǎoshí.",
+      "english": "He works eight hours every day."
+    }
+  },
+  {
+    "hanzi": "关",
+    "pinyin": "guān",
+    "translations": [
+      "to close",
+      "to turn off"
+    ],
+    "example": {
+      "hanzi": "请关灯。",
+      "pinyin": "Qǐng guān dēng.",
+      "english": "Please turn off the light."
+    }
+  },
+  {
+    "hanzi": "贵",
+    "pinyin": "guì",
+    "translations": [
+      "expensive"
+    ],
+    "example": {
+      "hanzi": "这个太贵了。",
+      "pinyin": "Zhège tài guì le.",
+      "english": "This is too expensive."
+    }
+  },
+  {
+    "hanzi": "国",
+    "pinyin": "guó",
+    "translations": [
+      "country",
+      "nation",
+      "state"
+    ],
+    "example": {
+      "hanzi": "这是一个美丽的国家。",
+      "pinyin": "Zhè shì yī gè měilì de guójiā.",
+      "english": "This is a beautiful country."
+    }
+  },
+  {
+    "hanzi": "国外",
+    "pinyin": "guówài",
+    "translations": [
+      "abroad"
+    ],
+    "example": {
+      "hanzi": "他在国外工作。",
+      "pinyin": "Tā zài guówài gōngzuò.",
+      "english": "He works abroad."
+    }
+  },
+  {
+    "hanzi": "过",
+    "pinyin": "guò",
+    "translations": [
+      "to pass",
+      "to cross",
+      "(experienced-action marker)"
+    ],
+    "example": {
+      "hanzi": "我去过中国。",
+      "pinyin": "Wǒ qùguò Zhōngguó.",
+      "english": "I've been to China."
+    }
+  },
+  {
+    "hanzi": "还",
+    "pinyin": "hái",
+    "translations": [
+      "still",
+      "also"
+    ],
+    "example": {
+      "hanzi": "他还在睡觉。",
+      "pinyin": "Tā hái zài shuìjiào.",
+      "english": "He's still sleeping."
+    }
+  },
+  {
+    "hanzi": "还是",
+    "pinyin": "háishi",
+    "translations": [
+      "still",
+      "or (in questions)"
+    ],
+    "example": {
+      "hanzi": "你要茶还是咖啡？",
+      "pinyin": "Nǐ yào chá háishi kāfēi?",
+      "english": "Do you want tea or coffee?"
+    }
+  },
+  {
+    "hanzi": "还有",
+    "pinyin": "háiyǒu",
+    "translations": [
+      "furthermore",
+      "also"
+    ],
+    "example": {
+      "hanzi": "我要买水果，还有面包。",
+      "pinyin": "Wǒ yào mǎi shuǐguǒ, háiyǒu miànbāo.",
+      "english": "I want to buy fruit, and also bread."
+    }
+  },
+  {
+    "hanzi": "汉语",
+    "pinyin": "hànyǔ",
+    "translations": [
+      "Chinese language"
+    ],
+    "example": {
+      "hanzi": "我在学汉语。",
+      "pinyin": "Wǒ zài xué Hànyǔ.",
+      "english": "I am learning Chinese."
+    }
+  },
+  {
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "translations": [
+      "good",
+      "well",
+      "fine"
+    ],
+    "example": {
+      "hanzi": "这个主意很好。",
+      "pinyin": "Zhège zhǔyi hěn hǎo.",
+      "english": "This is a good idea."
+    }
+  },
+  {
+    "hanzi": "号",
+    "pinyin": "hào",
+    "translations": [
+      "number",
+      "date (of the month)"
+    ],
+    "example": {
+      "hanzi": "今天几号？",
+      "pinyin": "Jīntiān jǐ hào?",
+      "english": "What's the date today?"
+    }
+  },
+  {
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "translations": [
+      "to drink"
+    ],
+    "example": {
+      "hanzi": "你想喝什么？",
+      "pinyin": "Nǐ xiǎng hē shénme?",
+      "english": "What would you like to drink?"
+    }
+  },
+  {
+    "hanzi": "和",
+    "pinyin": "hé",
+    "translations": [
+      "and",
+      "with"
+    ],
+    "example": {
+      "hanzi": "我和他是朋友。",
+      "pinyin": "Wǒ hé tā shì péngyou.",
+      "english": "He and I are friends."
+    }
+  },
+  {
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "translations": [
+      "very"
+    ],
+    "example": {
+      "hanzi": "这本书很有意思。",
+      "pinyin": "Zhè běn shū hěn yǒuyìsi.",
+      "english": "This book is very interesting."
+    }
+  },
+  {
+    "hanzi": "后",
+    "pinyin": "hòu",
+    "translations": [
+      "back",
+      "behind",
+      "after (bound form)"
+    ],
+    "example": {
+      "hanzi": "他坐在我后面。",
+      "pinyin": "Tā zuò zài wǒ hòumiàn.",
+      "english": "He is sitting behind me."
+    }
+  },
+  {
+    "hanzi": "花",
+    "pinyin": "huā",
+    "translations": [
+      "flower"
+    ],
+    "example": {
+      "hanzi": "她喜欢买花。",
+      "pinyin": "Tā xǐhuan mǎi huā.",
+      "english": "She likes buying flowers."
+    }
+  },
+  {
+    "hanzi": "话",
+    "pinyin": "huà",
+    "translations": [
+      "speech",
+      "words (bound form)"
+    ],
+    "example": {
+      "hanzi": "他说的话很有道理。",
+      "pinyin": "Tā shuō de huà hěn yǒu dàolǐ.",
+      "english": "What he said makes a lot of sense."
+    }
+  },
+  {
+    "hanzi": "还",
+    "pinyin": "huán",
+    "translations": [
+      "to return (something)",
+      "to pay back"
+    ],
+    "example": {
+      "hanzi": "请把书还给我。",
+      "pinyin": "Qǐng bǎ shū huán gěi wǒ.",
+      "english": "Please return the book to me."
+    }
+  },
+  {
+    "hanzi": "回",
+    "pinyin": "huí",
+    "translations": [
+      "to return",
+      "classifier for times/occurrences"
+    ],
+    "example": {
+      "hanzi": "我要回家了。",
+      "pinyin": "Wǒ yào huíjiā le.",
+      "english": "I'm going home now."
+    }
+  },
+  {
+    "hanzi": "回答",
+    "pinyin": "huídá",
+    "translations": [
+      "to answer",
+      "reply"
+    ],
+    "example": {
+      "hanzi": "请回答我的问题。",
+      "pinyin": "Qǐng huídá wǒ de wèntí.",
+      "english": "Please answer my question."
+    }
+  },
+  {
+    "hanzi": "回到",
+    "pinyin": "huídào",
+    "translations": [
+      "to return to"
+    ],
+    "example": {
+      "hanzi": "他回到了家乡。",
+      "pinyin": "Tā huídàole jiāxiāng.",
+      "english": "He returned to his hometown."
+    }
+  },
+  {
+    "hanzi": "回来",
+    "pinyin": "huílai",
+    "translations": [
+      "to come back",
+      "to return"
+    ],
+    "example": {
+      "hanzi": "他明天回来。",
+      "pinyin": "Tā míngtiān huílai.",
+      "english": "He'll be back tomorrow."
+    }
+  },
+  {
+    "hanzi": "会",
+    "pinyin": "huì",
+    "translations": [
+      "can (a learned skill)",
+      "to meet",
+      "meeting"
+    ],
+    "example": {
+      "hanzi": "我会说汉语。",
+      "pinyin": "Wǒ huì shuō Hànyǔ.",
+      "english": "I can speak Chinese."
+    }
+  },
+  {
+    "hanzi": "机场",
+    "pinyin": "jīchǎng",
+    "translations": [
+      "airport"
+    ],
+    "example": {
+      "hanzi": "我们去机场接他。",
+      "pinyin": "Wǒmen qù jīchǎng jiē tā.",
+      "english": "We're going to the airport to pick him up."
+    }
+  },
+  {
+    "hanzi": "鸡蛋",
+    "pinyin": "jīdàn",
+    "translations": [
+      "egg"
+    ],
+    "example": {
+      "hanzi": "我每天吃一个鸡蛋。",
+      "pinyin": "Wǒ měitiān chī yī gè jīdàn.",
+      "english": "I eat an egg every day."
+    }
+  },
+  {
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "translations": [
+      "how many?",
+      "a few"
+    ],
+    "example": {
+      "hanzi": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "english": "How many people are in your family?"
+    }
+  },
+  {
+    "hanzi": "记得",
+    "pinyin": "jìde",
+    "translations": [
+      "to remember"
+    ],
+    "example": {
+      "hanzi": "我记得他的名字。",
+      "pinyin": "Wǒ jìde tā de míngzi.",
+      "english": "I remember his name."
+    }
+  },
+  {
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "translations": [
+      "home",
+      "family"
+    ],
+    "example": {
+      "hanzi": "我家有四口人。",
+      "pinyin": "Wǒ jiā yǒu sì kǒu rén.",
+      "english": "There are four people in my family."
+    }
+  },
+  {
+    "hanzi": "间",
+    "pinyin": "jiān",
+    "translations": [
+      "between (bound form)",
+      "room"
+    ],
+    "example": {
+      "hanzi": "房间里很干净。",
+      "pinyin": "Fángjiān lǐ hěn gānjìng.",
+      "english": "The room is very clean."
+    }
+  },
+  {
+    "hanzi": "见",
+    "pinyin": "jiàn",
+    "translations": [
+      "to see",
+      "to meet"
+    ],
+    "example": {
+      "hanzi": "很高兴见到你。",
+      "pinyin": "Hěn gāoxìng jiàndào nǐ.",
+      "english": "Nice to meet you."
+    }
+  },
+  {
+    "hanzi": "见面",
+    "pinyin": "jiànmiàn",
+    "translations": [
+      "to meet",
+      "to see each other"
+    ],
+    "example": {
+      "hanzi": "我们明天见面吧。",
+      "pinyin": "Wǒmen míngtiān jiànmiàn ba.",
+      "english": "Let's meet tomorrow."
+    }
+  },
+  {
+    "hanzi": "教",
+    "pinyin": "jiào",
+    "translations": [
+      "to teach"
+    ],
+    "example": {
+      "hanzi": "她教我们汉语。",
+      "pinyin": "Tā jiāo wǒmen Hànyǔ.",
+      "english": "She teaches us Chinese."
+    }
+  },
+  {
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "translations": [
+      "to be called",
+      "to shout",
+      "to call"
+    ],
+    "example": {
+      "hanzi": "我叫王明。",
+      "pinyin": "Wǒ jiào Wáng Míng.",
+      "english": "My name is Wang Ming."
+    }
+  },
+  {
+    "hanzi": "姐姐",
+    "pinyin": "jiějie",
+    "translations": [
+      "older sister"
+    ],
+    "example": {
+      "hanzi": "我姐姐在上大学。",
+      "pinyin": "Wǒ jiějie zài shàng dàxué.",
+      "english": "My older sister is in college."
+    }
+  },
+  {
+    "hanzi": "介绍",
+    "pinyin": "jièshào",
+    "translations": [
+      "to introduce",
+      "introduction"
+    ],
+    "example": {
+      "hanzi": "让我自我介绍一下。",
+      "pinyin": "Ràng wǒ zìwǒ jièshào yīxià.",
+      "english": "Let me introduce myself."
+    }
+  },
+  {
+    "hanzi": "今天",
+    "pinyin": "jīntiān",
+    "translations": [
+      "today"
+    ],
+    "example": {
+      "hanzi": "今天是星期一。",
+      "pinyin": "Jīntiān shì xīngqīyī.",
+      "english": "Today is Monday."
+    }
+  },
+  {
+    "hanzi": "进",
+    "pinyin": "jìn",
+    "translations": [
+      "to enter"
+    ],
+    "example": {
+      "hanzi": "请进。",
+      "pinyin": "Qǐng jìn.",
+      "english": "Please come in."
+    }
+  },
+  {
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "translations": [
+      "nine"
+    ],
+    "example": {
+      "hanzi": "我们九点见。",
+      "pinyin": "Wǒmen jiǔ diǎn jiàn.",
+      "english": "Let's meet at nine."
+    }
+  },
+  {
+    "hanzi": "就",
+    "pinyin": "jiù",
+    "translations": [
+      "then",
+      "precisely",
+      "as early as"
+    ],
+    "example": {
+      "hanzi": "我马上就来。",
+      "pinyin": "Wǒ mǎshàng jiù lái.",
+      "english": "I'll come right away."
+    }
+  },
+  {
+    "hanzi": "觉得",
+    "pinyin": "juéde",
+    "translations": [
+      "to think that",
+      "to feel that"
+    ],
+    "example": {
+      "hanzi": "我觉得这个主意不错。",
+      "pinyin": "Wǒ juéde zhège zhǔyi bùcuò.",
+      "english": "I think this is a good idea."
+    }
+  },
+  {
+    "hanzi": "开",
+    "pinyin": "kāi",
+    "translations": [
+      "to open",
+      "to start",
+      "to drive"
+    ],
+    "example": {
+      "hanzi": "请开门。",
+      "pinyin": "Qǐng kāimén.",
+      "english": "Please open the door."
+    }
+  },
+  {
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "translations": [
+      "to look",
+      "to watch",
+      "to read"
+    ],
+    "example": {
+      "hanzi": "我喜欢看电影。",
+      "pinyin": "Wǒ xǐhuan kàn diànyǐng.",
+      "english": "I like watching movies."
+    }
+  },
+  {
+    "hanzi": "看病",
+    "pinyin": "kànbìng",
+    "translations": [
+      "to see a doctor"
+    ],
+    "example": {
+      "hanzi": "我要去看病。",
+      "pinyin": "Wǒ yào qù kànbìng.",
+      "english": "I need to go see a doctor."
+    }
+  },
+  {
+    "hanzi": "看到",
+    "pinyin": "kàndào",
+    "translations": [
+      "to see",
+      "to catch sight of"
+    ],
+    "example": {
+      "hanzi": "我看到他在公园里。",
+      "pinyin": "Wǒ kàndào tā zài gōngyuán lǐ.",
+      "english": "I saw him in the park."
+    }
+  },
+  {
+    "hanzi": "看见",
+    "pinyin": "kànjiàn",
+    "translations": [
+      "to see",
+      "to catch sight of"
+    ],
+    "example": {
+      "hanzi": "我看见他了。",
+      "pinyin": "Wǒ kànjiàn tā le.",
+      "english": "I saw him."
+    }
+  },
+  {
+    "hanzi": "考试",
+    "pinyin": "kǎoshì",
+    "translations": [
+      "exam",
+      "to take an exam"
+    ],
+    "example": {
+      "hanzi": "明天有一个考试。",
+      "pinyin": "Míngtiān yǒu yī gè kǎoshì.",
+      "english": "There's an exam tomorrow."
+    }
+  },
+  {
+    "hanzi": "课",
+    "pinyin": "kè",
+    "translations": [
+      "class",
+      "lesson"
+    ],
+    "example": {
+      "hanzi": "我们今天有汉语课。",
+      "pinyin": "Wǒmen jīntiān yǒu Hànyǔ kè.",
+      "english": "We have Chinese class today."
+    }
+  },
+  {
+    "hanzi": "课文",
+    "pinyin": "kèwén",
+    "translations": [
+      "(textbook) text"
+    ],
+    "example": {
+      "hanzi": "请打开课文。",
+      "pinyin": "Qǐng dǎkāi kèwén.",
+      "english": "Please open the text."
+    }
+  },
+  {
+    "hanzi": "口",
+    "pinyin": "kǒu",
+    "translations": [
+      "mouth",
+      "opening"
+    ],
+    "example": {
+      "hanzi": "他家有五口人。",
+      "pinyin": "Tā jiā yǒu wǔ kǒu rén.",
+      "english": "There are five people in his family."
+    }
+  },
+  {
+    "hanzi": "块",
+    "pinyin": "kuài",
+    "translations": [
+      "classifier for money (colloquial 'yuan')",
+      "piece"
+    ],
+    "example": {
+      "hanzi": "这个五块钱。",
+      "pinyin": "Zhège wǔ kuài qián.",
+      "english": "This is five yuan."
+    }
+  },
+  {
+    "hanzi": "快",
+    "pinyin": "kuài",
+    "translations": [
+      "fast",
+      "quick",
+      "soon"
+    ],
+    "example": {
+      "hanzi": "他跑得很快。",
+      "pinyin": "Tā pǎo de hěn kuài.",
+      "english": "He runs very fast."
+    }
+  },
+  {
+    "hanzi": "来",
+    "pinyin": "lái",
+    "translations": [
+      "to come"
+    ],
+    "example": {
+      "hanzi": "请你过来。",
+      "pinyin": "Qǐng nǐ guòlái.",
+      "english": "Please come over."
+    }
+  },
+  {
+    "hanzi": "老师",
+    "pinyin": "lǎoshī",
+    "translations": [
+      "teacher"
+    ],
+    "example": {
+      "hanzi": "我的老师很好。",
+      "pinyin": "Wǒ de lǎoshī hěn hǎo.",
+      "english": "My teacher is very nice."
+    }
+  },
+  {
+    "hanzi": "累",
+    "pinyin": "lèi",
+    "translations": [
+      "tired"
+    ],
+    "example": {
+      "hanzi": "我今天很累。",
+      "pinyin": "Wǒ jīntiān hěn lèi.",
+      "english": "I'm very tired today."
+    }
+  },
+  {
+    "hanzi": "冷",
+    "pinyin": "lěng",
+    "translations": [
+      "cold"
+    ],
+    "example": {
+      "hanzi": "今天很冷。",
+      "pinyin": "Jīntiān hěn lěng.",
+      "english": "It's cold today."
+    }
+  },
+  {
+    "hanzi": "里",
+    "pinyin": "lǐ",
+    "translations": [
+      "inside",
+      "in (bound form)"
+    ],
+    "example": {
+      "hanzi": "书在书包里。",
+      "pinyin": "Shū zài shūbāo lǐ.",
+      "english": "The book is inside the backpack."
+    }
+  },
+  {
+    "hanzi": "两",
+    "pinyin": "liǎng",
+    "translations": [
+      "two (of something)",
+      "a couple of"
+    ],
+    "example": {
+      "hanzi": "我要两杯咖啡。",
+      "pinyin": "Wǒ yào liǎng bēi kāfēi.",
+      "english": "I want two cups of coffee."
+    }
+  },
+  {
+    "hanzi": "零",
+    "pinyin": "líng",
+    "translations": [
+      "zero"
+    ],
+    "example": {
+      "hanzi": "我的电话号码有一个零。",
+      "pinyin": "Wǒ de diànhuà hàomǎ yǒu yī gè líng.",
+      "english": "My phone number has a zero in it."
+    }
+  },
+  {
+    "hanzi": "六",
+    "pinyin": "liù",
+    "translations": [
+      "six"
+    ],
+    "example": {
+      "hanzi": "现在六点了。",
+      "pinyin": "Xiànzài liù diǎn le.",
+      "english": "It's six o'clock now."
+    }
+  },
+  {
+    "hanzi": "路",
+    "pinyin": "lù",
+    "translations": [
+      "road",
+      "route"
+    ],
+    "example": {
+      "hanzi": "这条路很长。",
+      "pinyin": "Zhè tiáo lù hěn cháng.",
+      "english": "This road is very long."
+    }
+  },
+  {
+    "hanzi": "路口",
+    "pinyin": "lùkǒu",
+    "translations": [
+      "intersection"
+    ],
+    "example": {
+      "hanzi": "在路口往左转。",
+      "pinyin": "Zài lùkǒu wǎng zuǒ zhuǎn.",
+      "english": "Turn left at the intersection."
+    }
+  },
+  {
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "translations": [
+      "question particle (turns a statement into a yes/no question)"
+    ],
+    "example": {
+      "hanzi": "你是学生吗？",
+      "pinyin": "Nǐ shì xuésheng ma?",
+      "english": "Are you a student?"
+    }
+  },
+  {
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "translations": [
+      "to buy",
+      "to purchase"
+    ],
+    "example": {
+      "hanzi": "我要买一本书。",
+      "pinyin": "Wǒ yào mǎi yī běn shū.",
+      "english": "I want to buy a book."
+    }
+  },
+  {
+    "hanzi": "慢",
+    "pinyin": "màn",
+    "translations": [
+      "slow"
+    ],
+    "example": {
+      "hanzi": "请说慢一点。",
+      "pinyin": "Qǐng shuō màn yīdiǎn.",
+      "english": "Please speak more slowly."
+    }
+  },
+  {
+    "hanzi": "忙",
+    "pinyin": "máng",
+    "translations": [
+      "busy",
+      "to hurry"
+    ],
+    "example": {
+      "hanzi": "我最近很忙。",
+      "pinyin": "Wǒ zuìjìn hěn máng.",
+      "english": "I've been busy lately."
+    }
+  },
+  {
+    "hanzi": "没",
+    "pinyin": "méi",
+    "translations": [
+      "not",
+      "haven't"
+    ],
+    "example": {
+      "hanzi": "我没有钱。",
+      "pinyin": "Wǒ méiyǒu qián.",
+      "english": "I don't have money."
+    }
+  },
+  {
+    "hanzi": "没有",
+    "pinyin": "méiyǒu",
+    "translations": [
+      "to not have",
+      "there isn't"
+    ],
+    "example": {
+      "hanzi": "我没有时间。",
+      "pinyin": "Wǒ méiyǒu shíjiān.",
+      "english": "I don't have time."
+    }
+  },
+  {
+    "hanzi": "妹妹",
+    "pinyin": "mèimei",
+    "translations": [
+      "younger sister"
+    ],
+    "example": {
+      "hanzi": "我妹妹很可爱。",
+      "pinyin": "Wǒ mèimei hěn kě'ài.",
+      "english": "My younger sister is very cute."
+    }
+  },
+  {
+    "hanzi": "门",
+    "pinyin": "mén",
+    "translations": [
+      "door",
+      "gate"
+    ],
+    "example": {
+      "hanzi": "请关门。",
+      "pinyin": "Qǐng guānmén.",
+      "english": "Please close the door."
+    }
+  },
+  {
+    "hanzi": "米饭",
+    "pinyin": "mǐfàn",
+    "translations": [
+      "cooked rice"
+    ],
+    "example": {
+      "hanzi": "我要一碗米饭。",
+      "pinyin": "Wǒ yào yī wǎn mǐfàn.",
+      "english": "I'd like a bowl of rice."
+    }
+  },
+  {
+    "hanzi": "名字",
+    "pinyin": "míngzi",
+    "translations": [
+      "name"
+    ],
+    "example": {
+      "hanzi": "你的名字很好听。",
+      "pinyin": "Nǐ de míngzi hěn hǎotīng.",
+      "english": "Your name sounds very nice."
+    }
+  },
+  {
+    "hanzi": "明天",
+    "pinyin": "míngtiān",
+    "translations": [
+      "tomorrow"
+    ],
+    "example": {
+      "hanzi": "明天我们去公园。",
+      "pinyin": "Míngtiān wǒmen qù gōngyuán.",
+      "english": "Tomorrow we're going to the park."
+    }
+  },
+  {
+    "hanzi": "拿",
+    "pinyin": "ná",
+    "translations": [
+      "to take",
+      "to hold"
+    ],
+    "example": {
+      "hanzi": "请把杯子拿给我。",
+      "pinyin": "Qǐng bǎ bēizi ná gěi wǒ.",
+      "english": "Please hand me the cup."
+    }
+  },
+  {
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "translations": [
+      "which"
+    ],
+    "example": {
+      "hanzi": "你是哪国人？",
+      "pinyin": "Nǐ shì nǎ guó rén?",
+      "english": "Which country are you from?"
+    }
+  },
+  {
+    "hanzi": "哪些",
+    "pinyin": "nǎxiē",
+    "translations": [
+      "which ones?"
+    ],
+    "example": {
+      "hanzi": "你喜欢哪些运动？",
+      "pinyin": "Nǐ xǐhuan nǎxiē yùndòng?",
+      "english": "Which sports do you like?"
+    }
+  },
+  {
+    "hanzi": "那",
+    "pinyin": "nà",
+    "translations": [
+      "that"
+    ],
+    "example": {
+      "hanzi": "那是我的车。",
+      "pinyin": "Nà shì wǒ de chē.",
+      "english": "That is my car."
+    }
+  },
+  {
+    "hanzi": "那些",
+    "pinyin": "nàxiē",
+    "translations": [
+      "those"
+    ],
+    "example": {
+      "hanzi": "那些人是谁？",
+      "pinyin": "Nàxiē rén shì shéi?",
+      "english": "Who are those people?"
+    }
+  },
+  {
+    "hanzi": "男",
+    "pinyin": "nán",
+    "translations": [
+      "male"
+    ],
+    "example": {
+      "hanzi": "他是我的男朋友。",
+      "pinyin": "Tā shì wǒ de nánpéngyou.",
+      "english": "He is my boyfriend."
+    }
+  },
+  {
+    "hanzi": "南",
+    "pinyin": "nán",
+    "translations": [
+      "south"
+    ],
+    "example": {
+      "hanzi": "他往南走了。",
+      "pinyin": "Tā wǎng nán zǒu le.",
+      "english": "He walked south."
+    }
+  },
+  {
+    "hanzi": "难",
+    "pinyin": "nán",
+    "translations": [
+      "difficult",
+      "hard"
+    ],
+    "example": {
+      "hanzi": "这个问题很难。",
+      "pinyin": "Zhège wèntí hěn nán.",
+      "english": "This problem is very difficult."
+    }
+  },
+  {
+    "hanzi": "呢",
+    "pinyin": "ne",
+    "translations": [
+      "question particle continuing a topic ('what about...?')"
+    ],
+    "example": {
+      "hanzi": "我很好，你呢？",
+      "pinyin": "Wǒ hěn hǎo, nǐ ne?",
+      "english": "I'm good, what about you?"
+    }
+  },
+  {
+    "hanzi": "能",
+    "pinyin": "néng",
+    "translations": [
+      "can",
+      "to be able to"
+    ],
+    "example": {
+      "hanzi": "我能帮你吗？",
+      "pinyin": "Wǒ néng bāng nǐ ma?",
+      "english": "Can I help you?"
+    }
+  },
+  {
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "translations": [
+      "you"
+    ],
+    "example": {
+      "hanzi": "你叫什么名字？",
+      "pinyin": "Nǐ jiào shénme míngzi?",
+      "english": "What is your name?"
+    }
+  },
+  {
+    "hanzi": "年",
+    "pinyin": "nián",
+    "translations": [
+      "year"
+    ],
+    "example": {
+      "hanzi": "明年我要去中国。",
+      "pinyin": "Míngnián wǒ yào qù Zhōngguó.",
+      "english": "Next year I'm going to China."
+    }
+  },
+  {
+    "hanzi": "您",
+    "pinyin": "nín",
+    "translations": [
+      "you (polite form)"
+    ],
+    "example": {
+      "hanzi": "您好，请坐。",
+      "pinyin": "Nín hǎo, qǐng zuò.",
+      "english": "Hello, please sit."
+    }
+  },
+  {
+    "hanzi": "牛奶",
+    "pinyin": "niúnǎi",
+    "translations": [
+      "(cow's) milk"
+    ],
+    "example": {
+      "hanzi": "我每天喝牛奶。",
+      "pinyin": "Wǒ měitiān hē niúnǎi.",
+      "english": "I drink milk every day."
+    }
+  },
+  {
+    "hanzi": "女",
+    "pinyin": "nǚ",
+    "translations": [
+      "female",
+      "woman"
+    ],
+    "example": {
+      "hanzi": "她是一位女老师。",
+      "pinyin": "Tā shì yī wèi nǚ lǎoshī.",
+      "english": "She is a female teacher."
+    }
+  },
+  {
+    "hanzi": "女儿",
+    "pinyin": "nǚ'ér",
+    "translations": [
+      "daughter"
+    ],
+    "example": {
+      "hanzi": "我的女儿五岁了。",
+      "pinyin": "Wǒ de nǚ'ér wǔ suì le.",
+      "english": "My daughter is five years old."
+    }
+  },
+  {
+    "hanzi": "旁边",
+    "pinyin": "pángbiān",
+    "translations": [
+      "side",
+      "next to"
+    ],
+    "example": {
+      "hanzi": "银行在超市旁边。",
+      "pinyin": "Yínháng zài chāoshì pángbiān.",
+      "english": "The bank is next to the supermarket."
+    }
+  },
+  {
+    "hanzi": "朋友",
+    "pinyin": "péngyou",
+    "translations": [
+      "friend"
+    ],
+    "example": {
+      "hanzi": "他是我最好的朋友。",
+      "pinyin": "Tā shì wǒ zuì hǎo de péngyou.",
+      "english": "He is my best friend."
+    }
+  },
+  {
+    "hanzi": "票",
+    "pinyin": "piào",
+    "translations": [
+      "ticket"
+    ],
+    "example": {
+      "hanzi": "我买了两张票。",
+      "pinyin": "Wǒ mǎile liǎng zhāng piào.",
+      "english": "I bought two tickets."
+    }
+  },
+  {
+    "hanzi": "七",
+    "pinyin": "qī",
+    "translations": [
+      "seven"
+    ],
+    "example": {
+      "hanzi": "他七点起床。",
+      "pinyin": "Tā qī diǎn qǐchuáng.",
+      "english": "He gets up at seven."
+    }
+  },
+  {
+    "hanzi": "起",
+    "pinyin": "qǐ",
+    "translations": [
+      "to rise",
+      "classifier for events (bound form)"
+    ],
+    "example": {
+      "hanzi": "快起床了！",
+      "pinyin": "Kuài qǐchuáng le!",
+      "english": "Get up already!"
+    }
+  },
+  {
+    "hanzi": "起床",
+    "pinyin": "qǐchuáng",
+    "translations": [
+      "to get out of bed",
+      "to get up"
+    ],
+    "example": {
+      "hanzi": "我每天七点起床。",
+      "pinyin": "Wǒ měitiān qī diǎn qǐchuáng.",
+      "english": "I get up at seven every day."
+    }
+  },
+  {
+    "hanzi": "前",
+    "pinyin": "qián",
+    "translations": [
+      "front",
+      "before",
+      "ago (bound form)"
+    ],
+    "example": {
+      "hanzi": "他坐在我前面。",
+      "pinyin": "Tā zuò zài wǒ qiánmiàn.",
+      "english": "He is sitting in front of me."
+    }
+  },
+  {
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "translations": [
+      "money"
+    ],
+    "example": {
+      "hanzi": "我没有很多钱。",
+      "pinyin": "Wǒ méiyǒu hěnduō qián.",
+      "english": "I don't have a lot of money."
+    }
+  },
+  {
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "translations": [
+      "please",
+      "to invite",
+      "to treat (someone)"
+    ],
+    "example": {
+      "hanzi": "请进。",
+      "pinyin": "Qǐng jìn.",
+      "english": "Please come in."
+    }
+  },
+  {
+    "hanzi": "球",
+    "pinyin": "qiú",
+    "translations": [
+      "ball"
+    ],
+    "example": {
+      "hanzi": "我们去打球吧。",
+      "pinyin": "Wǒmen qù dǎqiú ba.",
+      "english": "Let's go play ball."
+    }
+  },
+  {
+    "hanzi": "去",
+    "pinyin": "qù",
+    "translations": [
+      "to go"
+    ],
+    "example": {
+      "hanzi": "我们去公园吧。",
+      "pinyin": "Wǒmen qù gōngyuán ba.",
+      "english": "Let's go to the park."
+    }
+  },
+  {
+    "hanzi": "去年",
+    "pinyin": "qùnián",
+    "translations": [
+      "last year"
+    ],
+    "example": {
+      "hanzi": "去年我去了日本。",
+      "pinyin": "Qùnián wǒ qùle Rìběn.",
+      "english": "Last year I went to Japan."
+    }
+  },
+  {
+    "hanzi": "热",
+    "pinyin": "rè",
+    "translations": [
+      "hot",
+      "to heat up"
+    ],
+    "example": {
+      "hanzi": "这碗汤很热。",
+      "pinyin": "Zhè wǎn tāng hěn rè.",
+      "english": "This bowl of soup is very hot."
+    }
+  },
+  {
+    "hanzi": "人",
+    "pinyin": "rén",
+    "translations": [
+      "person",
+      "people"
+    ],
+    "example": {
+      "hanzi": "这里有很多人。",
+      "pinyin": "Zhèlǐ yǒu hěnduō rén.",
+      "english": "There are a lot of people here."
+    }
+  },
+  {
+    "hanzi": "认识",
+    "pinyin": "rènshi",
+    "translations": [
+      "to know (a person)",
+      "to recognize"
+    ],
+    "example": {
+      "hanzi": "很高兴认识你。",
+      "pinyin": "Hěn gāoxìng rènshi nǐ.",
+      "english": "Nice to meet you."
+    }
+  },
+  {
+    "hanzi": "日",
+    "pinyin": "rì",
+    "translations": [
+      "sun",
+      "day",
+      "date"
+    ],
+    "example": {
+      "hanzi": "今天是几月几日？",
+      "pinyin": "Jīntiān shì jǐ yuè jǐ rì?",
+      "english": "What is today's date?"
+    }
+  },
+  {
+    "hanzi": "三",
+    "pinyin": "sān",
+    "translations": [
+      "three"
+    ],
+    "example": {
+      "hanzi": "现在是三点。",
+      "pinyin": "Xiànzài shì sān diǎn.",
+      "english": "It's three o'clock now."
+    }
+  },
+  {
+    "hanzi": "山",
+    "pinyin": "shān",
+    "translations": [
+      "mountain",
+      "hill"
+    ],
+    "example": {
+      "hanzi": "我们周末去爬山。",
+      "pinyin": "Wǒmen zhōumò qù páshān.",
+      "english": "We're going to climb a mountain this weekend."
+    }
+  },
+  {
+    "hanzi": "商场",
+    "pinyin": "shāngchǎng",
+    "translations": [
+      "shopping mall"
+    ],
+    "example": {
+      "hanzi": "我们去商场买东西吧。",
+      "pinyin": "Wǒmen qù shāngchǎng mǎi dōngxi ba.",
+      "english": "Let's go to the mall to shop."
+    }
+  },
+  {
+    "hanzi": "商店",
+    "pinyin": "shāngdiàn",
+    "translations": [
+      "store",
+      "shop"
+    ],
+    "example": {
+      "hanzi": "商店几点开门？",
+      "pinyin": "Shāngdiàn jǐ diǎn kāimén?",
+      "english": "What time does the store open?"
+    }
+  },
+  {
+    "hanzi": "上",
+    "pinyin": "shàng",
+    "translations": [
+      "up",
+      "on top of",
+      "above",
+      "to go to (e.g. school/work)"
+    ],
+    "example": {
+      "hanzi": "书在桌子上。",
+      "pinyin": "Shū zài zhuōzi shàng.",
+      "english": "The book is on the table."
+    }
+  },
+  {
+    "hanzi": "上班",
+    "pinyin": "shàngbān",
+    "translations": [
+      "to go to work"
+    ],
+    "example": {
+      "hanzi": "我九点上班。",
+      "pinyin": "Wǒ jiǔ diǎn shàngbān.",
+      "english": "I start work at nine."
+    }
+  },
+  {
+    "hanzi": "少",
+    "pinyin": "shǎo",
+    "translations": [
+      "few",
+      "less"
+    ],
+    "example": {
+      "hanzi": "这里的人很少。",
+      "pinyin": "Zhèlǐ de rén hěn shǎo.",
+      "english": "There are very few people here."
+    }
+  },
+  {
+    "hanzi": "谁",
+    "pinyin": "shéi",
+    "translations": [
+      "who"
+    ],
+    "example": {
+      "hanzi": "他是谁？",
+      "pinyin": "Tā shì shéi?",
+      "english": "Who is he?"
+    }
+  },
+  {
+    "hanzi": "身体",
+    "pinyin": "shēntǐ",
+    "translations": [
+      "body",
+      "health"
+    ],
+    "example": {
+      "hanzi": "他身体很健康。",
+      "pinyin": "Tā shēntǐ hěn jiànkāng.",
+      "english": "He is very healthy."
+    }
+  },
+  {
+    "hanzi": "生病",
+    "pinyin": "shēngbìng",
+    "translations": [
+      "to fall ill"
+    ],
+    "example": {
+      "hanzi": "他生病了，不能来上课。",
+      "pinyin": "Tā shēngbìng le, bùnéng lái shàngkè.",
+      "english": "He's sick and can't come to class."
+    }
+  },
+  {
+    "hanzi": "十",
+    "pinyin": "shí",
+    "translations": [
+      "ten"
+    ],
+    "example": {
+      "hanzi": "十减五等于五。",
+      "pinyin": "Shí jiǎn wǔ děngyú wǔ.",
+      "english": "Ten minus five equals five."
+    }
+  },
+  {
+    "hanzi": "时候",
+    "pinyin": "shíhou",
+    "translations": [
+      "time",
+      "moment"
+    ],
+    "example": {
+      "hanzi": "你什么时候来？",
+      "pinyin": "Nǐ shénme shíhou lái?",
+      "english": "When are you coming?"
+    }
+  },
+  {
+    "hanzi": "时间",
+    "pinyin": "shíjiān",
+    "translations": [
+      "time"
+    ],
+    "example": {
+      "hanzi": "时间过得很快。",
+      "pinyin": "Shíjiān guòde hěn kuài.",
+      "english": "Time passes quickly."
+    }
+  },
+  {
+    "hanzi": "事",
+    "pinyin": "shì",
+    "translations": [
+      "matter",
+      "thing",
+      "affair"
+    ],
+    "example": {
+      "hanzi": "我有点事。",
+      "pinyin": "Wǒ yǒudiǎn shì.",
+      "english": "I have something to attend to."
+    }
+  },
+  {
+    "hanzi": "试",
+    "pinyin": "shì",
+    "translations": [
+      "to try",
+      "to test (bound form)"
+    ],
+    "example": {
+      "hanzi": "你可以试试这件衣服。",
+      "pinyin": "Nǐ kěyǐ shìshi zhè jiàn yīfu.",
+      "english": "You can try on this piece of clothing."
+    }
+  },
+  {
+    "hanzi": "是",
+    "pinyin": "shì",
+    "translations": [
+      "to be",
+      "is"
+    ],
+    "example": {
+      "hanzi": "这是我的书。",
+      "pinyin": "Zhè shì wǒ de shū.",
+      "english": "This is my book."
+    }
+  },
+  {
+    "hanzi": "手",
+    "pinyin": "shǒu",
+    "translations": [
+      "hand"
+    ],
+    "example": {
+      "hanzi": "请举手。",
+      "pinyin": "Qǐng jǔshǒu.",
+      "english": "Please raise your hand."
+    }
+  },
+  {
+    "hanzi": "书",
+    "pinyin": "shū",
+    "translations": [
+      "book"
+    ],
+    "example": {
+      "hanzi": "我在看一本书。",
+      "pinyin": "Wǒ zài kàn yī běn shū.",
+      "english": "I'm reading a book."
+    }
+  },
+  {
+    "hanzi": "树",
+    "pinyin": "shù",
+    "translations": [
+      "tree"
+    ],
+    "example": {
+      "hanzi": "公园里有很多树。",
+      "pinyin": "Gōngyuán lǐ yǒu hěnduō shù.",
+      "english": "There are many trees in the park."
+    }
+  },
+  {
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "translations": [
+      "water"
+    ],
+    "example": {
+      "hanzi": "我想喝水。",
+      "pinyin": "Wǒ xiǎng hē shuǐ.",
+      "english": "I want to drink water."
+    }
+  },
+  {
+    "hanzi": "水果",
+    "pinyin": "shuǐguǒ",
+    "translations": [
+      "fruit"
+    ],
+    "example": {
+      "hanzi": "我每天吃水果。",
+      "pinyin": "Wǒ měitiān chī shuǐguǒ.",
+      "english": "I eat fruit every day."
+    }
+  },
+  {
+    "hanzi": "睡觉",
+    "pinyin": "shuìjiào",
+    "translations": [
+      "to sleep",
+      "to go to bed"
+    ],
+    "example": {
+      "hanzi": "我十点睡觉。",
+      "pinyin": "Wǒ shí diǎn shuìjiào.",
+      "english": "I go to bed at ten."
+    }
+  },
+  {
+    "hanzi": "说",
+    "pinyin": "shuō",
+    "translations": [
+      "to speak",
+      "to say"
+    ],
+    "example": {
+      "hanzi": "请你再说一遍。",
+      "pinyin": "Qǐng nǐ zài shuō yī biàn.",
+      "english": "Please say it again."
+    }
+  },
+  {
+    "hanzi": "说话",
+    "pinyin": "shuōhuà",
+    "translations": [
+      "to speak",
+      "to talk"
+    ],
+    "example": {
+      "hanzi": "请小声说话。",
+      "pinyin": "Qǐng xiǎoshēng shuōhuà.",
+      "english": "Please speak quietly."
+    }
+  },
+  {
+    "hanzi": "四",
+    "pinyin": "sì",
+    "translations": [
+      "four"
+    ],
+    "example": {
+      "hanzi": "我家有四个人。",
+      "pinyin": "Wǒ jiā yǒu sì gè rén.",
+      "english": "There are four people in my family."
+    }
+  },
+  {
+    "hanzi": "岁",
+    "pinyin": "suì",
+    "translations": [
+      "years old"
+    ],
+    "example": {
+      "hanzi": "我今年二十岁。",
+      "pinyin": "Wǒ jīnnián èrshí suì.",
+      "english": "I am twenty years old this year."
+    }
+  },
+  {
+    "hanzi": "他",
+    "pinyin": "tā",
+    "translations": [
+      "he",
+      "him"
+    ],
+    "example": {
+      "hanzi": "他是我哥哥。",
+      "pinyin": "Tā shì wǒ gēge.",
+      "english": "He is my older brother."
+    }
+  },
+  {
+    "hanzi": "她",
+    "pinyin": "tā",
+    "translations": [
+      "she",
+      "her"
+    ],
+    "example": {
+      "hanzi": "她是我的朋友。",
+      "pinyin": "Tā shì wǒ de péngyou.",
+      "english": "She is my friend."
+    }
+  },
+  {
+    "hanzi": "太",
+    "pinyin": "tài",
+    "translations": [
+      "too (much)",
+      "very"
+    ],
+    "example": {
+      "hanzi": "今天太热了。",
+      "pinyin": "Jīntiān tài rè le.",
+      "english": "It's too hot today."
+    }
+  },
+  {
+    "hanzi": "天",
+    "pinyin": "tiān",
+    "translations": [
+      "sky",
+      "day",
+      "heaven"
+    ],
+    "example": {
+      "hanzi": "今天天气很好。",
+      "pinyin": "Jīntiān tiānqì hěn hǎo.",
+      "english": "Today's weather is very nice."
+    }
+  },
+  {
+    "hanzi": "天气",
+    "pinyin": "tiānqì",
+    "translations": [
+      "weather"
+    ],
+    "example": {
+      "hanzi": "明天天气怎么样？",
+      "pinyin": "Míngtiān tiānqì zěnmeyàng?",
+      "english": "How's the weather tomorrow?"
+    }
+  },
+  {
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "translations": [
+      "to listen",
+      "to hear"
+    ],
+    "example": {
+      "hanzi": "我喜欢听音乐。",
+      "pinyin": "Wǒ xǐhuan tīng yīnyuè.",
+      "english": "I like listening to music."
+    }
+  },
+  {
+    "hanzi": "听到",
+    "pinyin": "tīngdào",
+    "translations": [
+      "to hear (successfully)"
+    ],
+    "example": {
+      "hanzi": "我听到了好消息。",
+      "pinyin": "Wǒ tīngdàole hǎo xiāoxi.",
+      "english": "I heard some good news."
+    }
+  },
+  {
+    "hanzi": "听见",
+    "pinyin": "tīngjiàn",
+    "translations": [
+      "to hear"
+    ],
+    "example": {
+      "hanzi": "我没听见你说什么。",
+      "pinyin": "Wǒ méi tīngjiàn nǐ shuō shénme.",
+      "english": "I didn't hear what you said."
+    }
+  },
+  {
+    "hanzi": "同学",
+    "pinyin": "tóngxué",
+    "translations": [
+      "classmate"
+    ],
+    "example": {
+      "hanzi": "他是我的同学。",
+      "pinyin": "Tā shì wǒ de tóngxué.",
+      "english": "He is my classmate."
+    }
+  },
+  {
+    "hanzi": "外",
+    "pinyin": "wài",
+    "translations": [
+      "outside",
+      "foreign",
+      "in addition"
+    ],
+    "example": {
+      "hanzi": "他在外面。",
+      "pinyin": "Tā zài wàimiàn.",
+      "english": "He's outside."
+    }
+  },
+  {
+    "hanzi": "外国",
+    "pinyin": "wàiguó",
+    "translations": [
+      "foreign (country)"
+    ],
+    "example": {
+      "hanzi": "他去过很多外国。",
+      "pinyin": "Tā qùguò hěnduō wàiguó.",
+      "english": "He's been to many foreign countries."
+    }
+  },
+  {
+    "hanzi": "外语",
+    "pinyin": "wàiyǔ",
+    "translations": [
+      "foreign language"
+    ],
+    "example": {
+      "hanzi": "你学过什么外语？",
+      "pinyin": "Nǐ xuéguò shénme wàiyǔ?",
+      "english": "What foreign languages have you studied?"
+    }
+  },
+  {
+    "hanzi": "晚",
+    "pinyin": "wǎn",
+    "translations": [
+      "late",
+      "evening"
+    ],
+    "example": {
+      "hanzi": "我今天起晚了。",
+      "pinyin": "Wǒ jīntiān qǐ wǎn le.",
+      "english": "I got up late today."
+    }
+  },
+  {
+    "hanzi": "忘",
+    "pinyin": "wàng",
+    "translations": [
+      "to forget"
+    ],
+    "example": {
+      "hanzi": "我忘了他的名字。",
+      "pinyin": "Wǒ wàngle tā de míngzi.",
+      "english": "I forgot his name."
+    }
+  },
+  {
+    "hanzi": "问",
+    "pinyin": "wèn",
+    "translations": [
+      "to ask",
+      "to inquire"
+    ],
+    "example": {
+      "hanzi": "我可以问你一个问题吗？",
+      "pinyin": "Wǒ kěyǐ wèn nǐ yī gè wèntí ma?",
+      "english": "Can I ask you a question?"
+    }
+  },
+  {
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "translations": [
+      "I",
+      "me"
+    ],
+    "example": {
+      "hanzi": "我是学生。",
+      "pinyin": "Wǒ shì xuésheng.",
+      "english": "I am a student."
+    }
+  },
+  {
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "translations": [
+      "five"
+    ],
+    "example": {
+      "hanzi": "我五点下班。",
+      "pinyin": "Wǒ wǔ diǎn xiàbān.",
+      "english": "I get off work at five."
+    }
+  },
+  {
+    "hanzi": "西",
+    "pinyin": "xī",
+    "translations": [
+      "west"
+    ],
+    "example": {
+      "hanzi": "太阳从西边落下。",
+      "pinyin": "Tàiyáng cóng xībian luòxià.",
+      "english": "The sun sets in the west."
+    }
+  },
+  {
+    "hanzi": "洗",
+    "pinyin": "xǐ",
+    "translations": [
+      "to wash"
+    ],
+    "example": {
+      "hanzi": "我要洗衣服。",
+      "pinyin": "Wǒ yào xǐ yīfu.",
+      "english": "I need to wash clothes."
+    }
+  },
+  {
+    "hanzi": "洗手间",
+    "pinyin": "xǐshǒujiān",
+    "translations": [
+      "restroom",
+      "toilet"
+    ],
+    "example": {
+      "hanzi": "洗手间在哪里？",
+      "pinyin": "Xǐshǒujiān zài nǎlǐ?",
+      "english": "Where's the restroom?"
+    }
+  },
+  {
+    "hanzi": "喜欢",
+    "pinyin": "xǐhuan",
+    "translations": [
+      "to like",
+      "to be fond of"
+    ],
+    "example": {
+      "hanzi": "我喜欢喝茶。",
+      "pinyin": "Wǒ xǐhuan hē chá.",
+      "english": "I like drinking tea."
+    }
+  },
+  {
+    "hanzi": "下",
+    "pinyin": "xià",
+    "translations": [
+      "down",
+      "below",
+      "under",
+      "next (e.g. next week)"
+    ],
+    "example": {
+      "hanzi": "猫在桌子下面。",
+      "pinyin": "Māo zài zhuōzi xiàmiàn.",
+      "english": "The cat is under the table."
+    }
+  },
+  {
+    "hanzi": "下班",
+    "pinyin": "xiàbān",
+    "translations": [
+      "to finish work",
+      "to get off work"
+    ],
+    "example": {
+      "hanzi": "他六点下班。",
+      "pinyin": "Tā liù diǎn xiàbān.",
+      "english": "He gets off work at six."
+    }
+  },
+  {
+    "hanzi": "先生",
+    "pinyin": "xiānsheng",
+    "translations": [
+      "Mr.",
+      "sir",
+      "husband"
+    ],
+    "example": {
+      "hanzi": "王先生，您好。",
+      "pinyin": "Wáng xiānsheng, nín hǎo.",
+      "english": "Hello, Mr. Wang."
+    }
+  },
+  {
+    "hanzi": "现在",
+    "pinyin": "xiànzài",
+    "translations": [
+      "now",
+      "at present"
+    ],
+    "example": {
+      "hanzi": "现在几点了？",
+      "pinyin": "Xiànzài jǐ diǎn le?",
+      "english": "What time is it now?"
+    }
+  },
+  {
+    "hanzi": "想",
+    "pinyin": "xiǎng",
+    "translations": [
+      "to want to",
+      "to think",
+      "to miss (someone)"
+    ],
+    "example": {
+      "hanzi": "我想你。",
+      "pinyin": "Wǒ xiǎng nǐ.",
+      "english": "I miss you."
+    }
+  },
+  {
+    "hanzi": "小",
+    "pinyin": "xiǎo",
+    "translations": [
+      "small",
+      "little"
+    ],
+    "example": {
+      "hanzi": "这只狗很小。",
+      "pinyin": "Zhè zhī gǒu hěn xiǎo.",
+      "english": "This dog is very small."
+    }
+  },
+  {
+    "hanzi": "小时",
+    "pinyin": "xiǎoshí",
+    "translations": [
+      "hour"
+    ],
+    "example": {
+      "hanzi": "我睡了八个小时。",
+      "pinyin": "Wǒ shuìle bā gè xiǎoshí.",
+      "english": "I slept eight hours."
+    }
+  },
+  {
+    "hanzi": "笑",
+    "pinyin": "xiào",
+    "translations": [
+      "to laugh",
+      "to smile"
+    ],
+    "example": {
+      "hanzi": "她笑得很开心。",
+      "pinyin": "Tā xiào de hěn kāixīn.",
+      "english": "She laughed happily."
+    }
+  },
+  {
+    "hanzi": "写",
+    "pinyin": "xiě",
+    "translations": [
+      "to write"
+    ],
+    "example": {
+      "hanzi": "请写你的名字。",
+      "pinyin": "Qǐng xiě nǐ de míngzi.",
+      "english": "Please write your name."
+    }
+  },
+  {
+    "hanzi": "新",
+    "pinyin": "xīn",
+    "translations": [
+      "new"
+    ],
+    "example": {
+      "hanzi": "我买了一部新手机。",
+      "pinyin": "Wǒ mǎile yī bù xīn shǒujī.",
+      "english": "I bought a new phone."
+    }
+  },
+  {
+    "hanzi": "星期",
+    "pinyin": "xīngqī",
+    "translations": [
+      "week"
+    ],
+    "example": {
+      "hanzi": "一个星期有七天。",
+      "pinyin": "Yī gè xīngqī yǒu qī tiān.",
+      "english": "There are seven days in a week."
+    }
+  },
+  {
+    "hanzi": "行",
+    "pinyin": "xíng",
+    "translations": [
+      "okay",
+      "capable",
+      "to go, to travel"
+    ],
+    "example": {
+      "hanzi": "行，就这么办。",
+      "pinyin": "Xíng, jiù zhème bàn.",
+      "english": "Okay, let's do it that way."
+    }
+  },
+  {
+    "hanzi": "休息",
+    "pinyin": "xiūxi",
+    "translations": [
+      "to rest"
+    ],
+    "example": {
+      "hanzi": "你应该多休息。",
+      "pinyin": "Nǐ yīnggāi duō xiūxi.",
+      "english": "You should rest more."
+    }
+  },
+  {
+    "hanzi": "学",
+    "pinyin": "xué",
+    "translations": [
+      "to study",
+      "to learn (bound form)"
+    ],
+    "example": {
+      "hanzi": "他喜欢学新东西。",
+      "pinyin": "Tā xǐhuan xué xīn dōngxi.",
+      "english": "He likes learning new things."
+    }
+  },
+  {
+    "hanzi": "学生",
+    "pinyin": "xuésheng",
+    "translations": [
+      "student"
+    ],
+    "example": {
+      "hanzi": "她是一个好学生。",
+      "pinyin": "Tā shì yī gè hǎo xuésheng.",
+      "english": "She is a good student."
+    }
+  },
+  {
+    "hanzi": "学习",
+    "pinyin": "xuéxí",
+    "translations": [
+      "to study",
+      "to learn"
+    ],
+    "example": {
+      "hanzi": "我每天学习汉语。",
+      "pinyin": "Wǒ měitiān xuéxí Hànyǔ.",
+      "english": "I study Chinese every day."
+    }
+  },
+  {
+    "hanzi": "要",
+    "pinyin": "yào",
+    "translations": [
+      "to want",
+      "to need to",
+      "will"
+    ],
+    "example": {
+      "hanzi": "我要一杯咖啡。",
+      "pinyin": "Wǒ yào yī bēi kāfēi.",
+      "english": "I want a cup of coffee."
+    }
+  },
+  {
+    "hanzi": "也",
+    "pinyin": "yě",
+    "translations": [
+      "also",
+      "too"
+    ],
+    "example": {
+      "hanzi": "我也是老师。",
+      "pinyin": "Wǒ yě shì lǎoshī.",
+      "english": "I am also a teacher."
+    }
+  },
+  {
+    "hanzi": "一",
+    "pinyin": "yī",
+    "translations": [
+      "one"
+    ],
+    "example": {
+      "hanzi": "我要一杯水。",
+      "pinyin": "Wǒ yào yī bēi shuǐ.",
+      "english": "I want a glass of water."
+    }
+  },
+  {
+    "hanzi": "衣服",
+    "pinyin": "yīfu",
+    "translations": [
+      "clothes"
+    ],
+    "example": {
+      "hanzi": "这件衣服很漂亮。",
+      "pinyin": "Zhè jiàn yīfu hěn piàoliang.",
+      "english": "This piece of clothing is very pretty."
+    }
+  },
+  {
+    "hanzi": "医院",
+    "pinyin": "yīyuàn",
+    "translations": [
+      "hospital"
+    ],
+    "example": {
+      "hanzi": "他去医院看病。",
+      "pinyin": "Tā qù yīyuàn kànbìng.",
+      "english": "He went to the hospital to see a doctor."
+    }
+  },
+  {
+    "hanzi": "一会儿",
+    "pinyin": "yīhuìr",
+    "translations": [
+      "a moment",
+      "a while"
+    ],
+    "example": {
+      "hanzi": "请等一会儿。",
+      "pinyin": "Qǐng děng yīhuìr.",
+      "english": "Please wait a moment."
+    }
+  },
+  {
+    "hanzi": "一样",
+    "pinyin": "yīyàng",
+    "translations": [
+      "same",
+      "alike"
+    ],
+    "example": {
+      "hanzi": "我们的想法一样。",
+      "pinyin": "Wǒmen de xiǎngfǎ yīyàng.",
+      "english": "Our ideas are the same."
+    }
+  },
+  {
+    "hanzi": "一起",
+    "pinyin": "yīqǐ",
+    "translations": [
+      "together"
+    ],
+    "example": {
+      "hanzi": "我们一起去吧。",
+      "pinyin": "Wǒmen yīqǐ qù ba.",
+      "english": "Let's go together."
+    }
+  },
+  {
+    "hanzi": "一些",
+    "pinyin": "yīxiē",
+    "translations": [
+      "some",
+      "a few"
+    ],
+    "example": {
+      "hanzi": "桌子上有一些书。",
+      "pinyin": "Zhuōzi shàng yǒu yīxiē shū.",
+      "english": "There are some books on the table."
+    }
+  },
+  {
+    "hanzi": "用",
+    "pinyin": "yòng",
+    "translations": [
+      "to use"
+    ],
+    "example": {
+      "hanzi": "我可以用你的手机吗？",
+      "pinyin": "Wǒ kěyǐ yòng nǐ de shǒujī ma?",
+      "english": "Can I use your phone?"
+    }
+  },
+  {
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "translations": [
+      "to have",
+      "there is"
+    ],
+    "example": {
+      "hanzi": "我有一只猫。",
+      "pinyin": "Wǒ yǒu yī zhī māo.",
+      "english": "I have a cat."
+    }
+  },
+  {
+    "hanzi": "有时候",
+    "pinyin": "yǒushíhou",
+    "translations": [
+      "sometimes"
+    ],
+    "example": {
+      "hanzi": "我有时候会迟到。",
+      "pinyin": "Wǒ yǒushíhou huì chídào.",
+      "english": "I sometimes am late."
+    }
+  },
+  {
+    "hanzi": "有用",
+    "pinyin": "yǒuyòng",
+    "translations": [
+      "useful"
+    ],
+    "example": {
+      "hanzi": "这本书很有用。",
+      "pinyin": "Zhè běn shū hěn yǒuyòng.",
+      "english": "This book is very useful."
+    }
+  },
+  {
+    "hanzi": "雨",
+    "pinyin": "yǔ",
+    "translations": [
+      "rain"
+    ],
+    "example": {
+      "hanzi": "外面在下雨。",
+      "pinyin": "Wàimiàn zài xiàyǔ.",
+      "english": "It's raining outside."
+    }
+  },
+  {
+    "hanzi": "远",
+    "pinyin": "yuǎn",
+    "translations": [
+      "far"
+    ],
+    "example": {
+      "hanzi": "学校离这里很远。",
+      "pinyin": "Xuéxiào lí zhèlǐ hěn yuǎn.",
+      "english": "The school is far from here."
+    }
+  },
+  {
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "translations": [
+      "moon",
+      "month"
+    ],
+    "example": {
+      "hanzi": "今天晚上月亮很美。",
+      "pinyin": "Jīntiān wǎnshang yuèliang hěn měi.",
+      "english": "The moon is very beautiful tonight."
+    }
+  },
+  {
+    "hanzi": "再",
+    "pinyin": "zài",
+    "translations": [
+      "again",
+      "then (afterwards)"
+    ],
+    "example": {
+      "hanzi": "请再说一遍。",
+      "pinyin": "Qǐng zài shuō yī biàn.",
+      "english": "Please say it again."
+    }
+  },
+  {
+    "hanzi": "在",
+    "pinyin": "zài",
+    "translations": [
+      "at",
+      "in",
+      "to be located at"
+    ],
+    "example": {
+      "hanzi": "我在家。",
+      "pinyin": "Wǒ zài jiā.",
+      "english": "I am at home."
+    }
+  },
+  {
+    "hanzi": "早",
+    "pinyin": "zǎo",
+    "translations": [
+      "early",
+      "Good morning!"
+    ],
+    "example": {
+      "hanzi": "早上好！",
+      "pinyin": "Zǎoshang hǎo!",
+      "english": "Good morning!"
+    }
+  },
+  {
+    "hanzi": "怎么",
+    "pinyin": "zěnme",
+    "translations": [
+      "how?",
+      "why?"
+    ],
+    "example": {
+      "hanzi": "这个字怎么写？",
+      "pinyin": "Zhège zì zěnme xiě?",
+      "english": "How do you write this character?"
+    }
+  },
+  {
+    "hanzi": "站",
+    "pinyin": "zhàn",
+    "translations": [
+      "to stand",
+      "station, stop"
+    ],
+    "example": {
+      "hanzi": "公共汽车站在哪里？",
+      "pinyin": "Gōnggòng qìchē zhàn zài nǎlǐ?",
+      "english": "Where's the bus stop?"
+    }
+  },
+  {
+    "hanzi": "找",
+    "pinyin": "zhǎo",
+    "translations": [
+      "to look for",
+      "to give change"
+    ],
+    "example": {
+      "hanzi": "我在找我的钥匙。",
+      "pinyin": "Wǒ zài zhǎo wǒ de yàoshi.",
+      "english": "I'm looking for my keys."
+    }
+  },
+  {
+    "hanzi": "找到",
+    "pinyin": "zhǎodào",
+    "translations": [
+      "to find (successfully)"
+    ],
+    "example": {
+      "hanzi": "我找到我的钥匙了。",
+      "pinyin": "Wǒ zhǎodào wǒ de yàoshi le.",
+      "english": "I found my keys."
+    }
+  },
+  {
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "translations": [
+      "this"
+    ],
+    "example": {
+      "hanzi": "这是什么？",
+      "pinyin": "Zhè shì shénme?",
+      "english": "What is this?"
+    }
+  },
+  {
+    "hanzi": "这些",
+    "pinyin": "zhèxiē",
+    "translations": [
+      "these"
+    ],
+    "example": {
+      "hanzi": "这些苹果很甜。",
+      "pinyin": "Zhèxiē píngguǒ hěn tián.",
+      "english": "These apples are very sweet."
+    }
+  },
+  {
+    "hanzi": "真",
+    "pinyin": "zhēn",
+    "translations": [
+      "really",
+      "truly"
+    ],
+    "example": {
+      "hanzi": "这个真好吃。",
+      "pinyin": "Zhège zhēn hǎochī.",
+      "english": "This is really delicious."
+    }
+  },
+  {
+    "hanzi": "正在",
+    "pinyin": "zhèngzài",
+    "translations": [
+      "in the process of (doing something)"
+    ],
+    "example": {
+      "hanzi": "他正在吃饭。",
+      "pinyin": "Tā zhèngzài chīfàn.",
+      "english": "He is eating right now."
+    }
+  },
+  {
+    "hanzi": "知道",
+    "pinyin": "zhīdào",
+    "translations": [
+      "to know",
+      "to become aware of"
+    ],
+    "example": {
+      "hanzi": "我不知道答案。",
+      "pinyin": "Wǒ bù zhīdào dá'àn.",
+      "english": "I don't know the answer."
+    }
+  },
+  {
+    "hanzi": "中",
+    "pinyin": "zhōng",
+    "translations": [
+      "middle",
+      "center",
+      "China (short for 中国)"
+    ],
+    "example": {
+      "hanzi": "他在中国工作。",
+      "pinyin": "Tā zài Zhōngguó gōngzuò.",
+      "english": "He works in China."
+    }
+  },
+  {
+    "hanzi": "重要",
+    "pinyin": "zhòngyào",
+    "translations": [
+      "important"
+    ],
+    "example": {
+      "hanzi": "这是一个重要的决定。",
+      "pinyin": "Zhè shì yī gè zhòngyào de juédìng.",
+      "english": "This is an important decision."
+    }
+  },
+  {
+    "hanzi": "住",
+    "pinyin": "zhù",
+    "translations": [
+      "to live (somewhere)",
+      "to stay"
+    ],
+    "example": {
+      "hanzi": "我住在北京。",
+      "pinyin": "Wǒ zhù zài Běijīng.",
+      "english": "I live in Beijing."
+    }
+  },
+  {
+    "hanzi": "准备",
+    "pinyin": "zhǔnbèi",
+    "translations": [
+      "to prepare",
+      "preparation"
+    ],
+    "example": {
+      "hanzi": "我在准备考试。",
+      "pinyin": "Wǒ zài zhǔnbèi kǎoshì.",
+      "english": "I'm preparing for an exam."
+    }
+  },
+  {
+    "hanzi": "桌子",
+    "pinyin": "zhuōzi",
+    "translations": [
+      "table",
+      "desk"
+    ],
+    "example": {
+      "hanzi": "桌子上有一本书。",
+      "pinyin": "Zhuōzi shàng yǒu yī běn shū.",
+      "english": "There's a book on the table."
+    }
+  },
+  {
+    "hanzi": "字",
+    "pinyin": "zì",
+    "translations": [
+      "(written) character",
+      "word"
+    ],
+    "example": {
+      "hanzi": "这个字怎么读？",
+      "pinyin": "Zhège zì zěnme dú?",
+      "english": "How do you read this character?"
+    }
+  },
+  {
+    "hanzi": "子",
+    "pinyin": "zǐ",
+    "translations": [
+      "son",
+      "child",
+      "noun suffix (as in 桌子, 儿子)"
+    ],
+    "example": {
+      "hanzi": "孔子是有名的老师。",
+      "pinyin": "Kǒngzǐ shì yǒumíng de lǎoshī.",
+      "english": "Confucius was a famous teacher."
+    }
+  },
+  {
+    "hanzi": "走",
+    "pinyin": "zǒu",
+    "translations": [
+      "to walk",
+      "to leave"
+    ],
+    "example": {
+      "hanzi": "我们走路去吧。",
+      "pinyin": "Wǒmen zǒulù qù ba.",
+      "english": "Let's walk there."
+    }
+  },
+  {
+    "hanzi": "走路",
+    "pinyin": "zǒulù",
+    "translations": [
+      "to walk"
+    ],
+    "example": {
+      "hanzi": "他每天走路上班。",
+      "pinyin": "Tā měitiān zǒulù shàngbān.",
+      "english": "He walks to work every day."
+    }
+  },
+  {
+    "hanzi": "最",
+    "pinyin": "zuì",
+    "translations": [
+      "most",
+      "-est (superlative)"
+    ],
+    "example": {
+      "hanzi": "他是最好的学生。",
+      "pinyin": "Tā shì zuì hǎo de xuésheng.",
+      "english": "He is the best student."
+    }
+  },
+  {
+    "hanzi": "昨天",
+    "pinyin": "zuótiān",
+    "translations": [
+      "yesterday"
+    ],
+    "example": {
+      "hanzi": "昨天我很忙。",
+      "pinyin": "Zuótiān wǒ hěn máng.",
+      "english": "I was busy yesterday."
+    }
+  },
+  {
+    "hanzi": "左",
+    "pinyin": "zuǒ",
+    "translations": [
+      "left (direction)"
+    ],
+    "example": {
+      "hanzi": "请往左转。",
+      "pinyin": "Qǐng wǎng zuǒ zhuǎn.",
+      "english": "Please turn left."
+    }
+  },
+  {
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "translations": [
+      "to sit",
+      "to take (a vehicle)"
+    ],
+    "example": {
+      "hanzi": "请坐。",
+      "pinyin": "Qǐng zuò.",
+      "english": "Please sit down."
+    }
+  },
+  {
+    "hanzi": "做",
+    "pinyin": "zuò",
+    "translations": [
+      "to do",
+      "to make"
+    ],
+    "example": {
+      "hanzi": "你在做什么？",
+      "pinyin": "Nǐ zài zuò shénme?",
+      "english": "What are you doing?"
+    }
+  },
+  {
+    "hanzi": "爱好",
+    "pinyin": "àihào",
+    "translations": [
+      "hobby",
+      "interest"
+    ],
+    "example": {
+      "hanzi": "我的爱好是画画。",
+      "pinyin": "Wǒ de àihào shì huàhuà.",
+      "english": "My hobby is drawing."
+    }
+  },
+  {
+    "hanzi": "爸爸",
+    "pinyin": "bàba",
+    "translations": [
+      "dad",
+      "father"
+    ],
+    "example": {
+      "hanzi": "爸爸在看报纸。",
+      "pinyin": "Bàba zài kàn bàozhǐ.",
+      "english": "Dad is reading the newspaper."
+    }
+  },
+  {
+    "hanzi": "百",
+    "pinyin": "bǎi",
+    "translations": [
+      "hundred"
+    ],
+    "example": {
+      "hanzi": "这本书有一百页。",
+      "pinyin": "Zhè běn shū yǒu yībǎi yè.",
+      "english": "This book has a hundred pages."
+    }
+  },
+  {
+    "hanzi": "半",
+    "pinyin": "bàn",
+    "translations": [
+      "half"
+    ],
+    "example": {
+      "hanzi": "现在是三点半。",
+      "pinyin": "Xiànzài shì sān diǎn bàn.",
+      "english": "It's half past three now."
+    }
+  },
+  {
+    "hanzi": "半年",
+    "pinyin": "bànnián",
+    "translations": [
+      "half a year"
+    ],
+    "example": {
+      "hanzi": "我学了半年汉语。",
+      "pinyin": "Wǒ xuéle bànnián Hànyǔ.",
+      "english": "I've studied Chinese for half a year."
+    }
+  },
+  {
+    "hanzi": "半天",
+    "pinyin": "bàntiān",
+    "translations": [
+      "half a day",
+      "a long while"
+    ],
+    "example": {
+      "hanzi": "我等了他半天。",
+      "pinyin": "Wǒ děngle tā bàntiān.",
+      "english": "I waited for him for a long while."
+    }
+  },
+  {
+    "hanzi": "包",
+    "pinyin": "bāo",
+    "translations": [
+      "bag",
+      "to wrap"
+    ],
+    "example": {
+      "hanzi": "她拿着一个包。",
+      "pinyin": "Tā názhe yī gè bāo.",
+      "english": "She's carrying a bag."
+    }
+  },
+  {
+    "hanzi": "包子",
+    "pinyin": "bāozi",
+    "translations": [
+      "steamed bun (with filling)"
+    ],
+    "example": {
+      "hanzi": "我早饭吃了两个包子。",
+      "pinyin": "Wǒ zǎofàn chīle liǎng gè bāozi.",
+      "english": "I ate two steamed buns for breakfast."
+    }
+  },
+  {
+    "hanzi": "北边",
+    "pinyin": "běibian",
+    "translations": [
+      "north side"
+    ],
+    "example": {
+      "hanzi": "图书馆在学校北边。",
+      "pinyin": "Túshūguǎn zài xuéxiào běibian.",
+      "english": "The library is on the north side of the school."
+    }
+  },
+  {
+    "hanzi": "北京",
+    "pinyin": "běijīng",
+    "translations": [
+      "Beijing"
+    ],
+    "example": {
+      "hanzi": "我去过北京。",
+      "pinyin": "Wǒ qùguò Běijīng.",
+      "english": "I've been to Beijing."
+    }
+  },
+  {
+    "hanzi": "本子",
+    "pinyin": "běnzi",
+    "translations": [
+      "notebook"
+    ],
+    "example": {
+      "hanzi": "请把答案写在本子上。",
+      "pinyin": "Qǐng bǎ dá'àn xiě zài běnzi shàng.",
+      "english": "Please write the answer in your notebook."
+    }
+  },
+  {
+    "hanzi": "别人",
+    "pinyin": "biéren",
+    "translations": [
+      "other people",
+      "others"
+    ],
+    "example": {
+      "hanzi": "别人怎么想不重要。",
+      "pinyin": "Biéren zěnme xiǎng bù zhòngyào.",
+      "english": "What others think doesn't matter."
+    }
+  },
+  {
+    "hanzi": "病",
+    "pinyin": "bìng",
+    "translations": [
+      "illness",
+      "disease"
+    ],
+    "example": {
+      "hanzi": "他得了重病。",
+      "pinyin": "Tā déle zhòngbìng.",
+      "english": "He got seriously ill."
+    }
+  },
+  {
+    "hanzi": "病人",
+    "pinyin": "bìngrén",
+    "translations": [
+      "patient (sick person)"
+    ],
+    "example": {
+      "hanzi": "医生正在检查病人。",
+      "pinyin": "Yīshēng zhèngzài jiǎnchá bìngrén.",
+      "english": "The doctor is examining the patient."
+    }
+  },
+  {
+    "hanzi": "不大",
+    "pinyin": "bùdà",
+    "translations": [
+      "not very",
+      "not big"
+    ],
+    "example": {
+      "hanzi": "这个问题不大。",
+      "pinyin": "Zhège wèntí bùdà.",
+      "english": "This isn't a big problem."
+    }
+  },
+  {
+    "hanzi": "不对",
+    "pinyin": "bùduì",
+    "translations": [
+      "wrong",
+      "incorrect"
+    ],
+    "example": {
+      "hanzi": "你的答案不对。",
+      "pinyin": "Nǐ de dá'àn bùduì.",
+      "english": "Your answer is wrong."
+    }
+  },
+  {
+    "hanzi": "不客气",
+    "pinyin": "bùkèqi",
+    "translations": [
+      "you're welcome"
+    ],
+    "example": {
+      "hanzi": "不客气，应该的。",
+      "pinyin": "Bùkèqi, yīnggāi de.",
+      "english": "You're welcome, it's my pleasure."
+    }
+  },
+  {
+    "hanzi": "不用",
+    "pinyin": "bùyòng",
+    "translations": [
+      "no need to"
+    ],
+    "example": {
+      "hanzi": "不用谢。",
+      "pinyin": "Bùyòng xiè.",
+      "english": "No need to thank me."
+    }
+  },
+  {
+    "hanzi": "差",
+    "pinyin": "chà",
+    "translations": [
+      "to lack",
+      "short of",
+      "poor (quality)"
+    ],
+    "example": {
+      "hanzi": "现在差五分三点。",
+      "pinyin": "Xiànzài chà wǔ fēn sān diǎn.",
+      "english": "It's five minutes to three."
+    }
+  },
+  {
+    "hanzi": "常",
+    "pinyin": "cháng",
+    "translations": [
+      "often (bound form)"
+    ],
+    "example": {
+      "hanzi": "他常来我家玩。",
+      "pinyin": "Tā cháng lái wǒ jiā wán.",
+      "english": "He often comes to my house to hang out."
+    }
+  },
+  {
+    "hanzi": "常常",
+    "pinyin": "chángcháng",
+    "translations": [
+      "often"
+    ],
+    "example": {
+      "hanzi": "我常常去图书馆。",
+      "pinyin": "Wǒ chángcháng qù túshūguǎn.",
+      "english": "I often go to the library."
+    }
+  },
+  {
+    "hanzi": "唱",
+    "pinyin": "chàng",
+    "translations": [
+      "to sing"
+    ],
+    "example": {
+      "hanzi": "她喜欢唱歌。",
+      "pinyin": "Tā xǐhuan chànggē.",
+      "english": "She likes singing."
+    }
+  },
+  {
+    "hanzi": "唱歌",
+    "pinyin": "chànggē",
+    "translations": [
+      "to sing (a song)"
+    ],
+    "example": {
+      "hanzi": "我们一起唱歌吧。",
+      "pinyin": "Wǒmen yīqǐ chànggē ba.",
+      "english": "Let's sing together."
+    }
+  },
+  {
+    "hanzi": "车票",
+    "pinyin": "chēpiào",
+    "translations": [
+      "(bus/train) ticket"
+    ],
+    "example": {
+      "hanzi": "请给我看一下你的车票。",
+      "pinyin": "Qǐng gěi wǒ kàn yīxià nǐ de chēpiào.",
+      "english": "Please show me your ticket."
+    }
+  },
+  {
+    "hanzi": "车上",
+    "pinyin": "chēshàng",
+    "translations": [
+      "on the vehicle/bus"
+    ],
+    "example": {
+      "hanzi": "车上有很多人。",
+      "pinyin": "Chēshàng yǒu hěnduō rén.",
+      "english": "There are many people on the bus."
+    }
+  },
+  {
+    "hanzi": "车站",
+    "pinyin": "chēzhàn",
+    "translations": [
+      "(bus/train) station"
+    ],
+    "example": {
+      "hanzi": "车站离这儿不远。",
+      "pinyin": "Chēzhàn lí zhèr bù yuǎn.",
+      "english": "The station isn't far from here."
+    }
+  },
+  {
+    "hanzi": "出来",
+    "pinyin": "chūlái",
+    "translations": [
+      "to come out"
+    ],
+    "example": {
+      "hanzi": "他从房间里出来了。",
+      "pinyin": "Tā cóng fángjiān lǐ chūlái le.",
+      "english": "He came out of the room."
+    }
+  },
+  {
+    "hanzi": "从",
+    "pinyin": "cóng",
+    "translations": [
+      "from"
+    ],
+    "example": {
+      "hanzi": "我从北京来。",
+      "pinyin": "Wǒ cóng Běijīng lái.",
+      "english": "I come from Beijing."
+    }
+  },
+  {
+    "hanzi": "打电话",
+    "pinyin": "dǎ diànhuà",
+    "translations": [
+      "to make a phone call"
+    ],
+    "example": {
+      "hanzi": "我给妈妈打电话。",
+      "pinyin": "Wǒ gěi māma dǎ diànhuà.",
+      "english": "I called my mom."
+    }
+  },
+  {
+    "hanzi": "打开",
+    "pinyin": "dǎkāi",
+    "translations": [
+      "to open",
+      "to turn on"
+    ],
+    "example": {
+      "hanzi": "请打开窗户。",
+      "pinyin": "Qǐng dǎkāi chuānghu.",
+      "english": "Please open the window."
+    }
+  },
+  {
+    "hanzi": "打球",
+    "pinyin": "dǎqiú",
+    "translations": [
+      "to play ball"
+    ],
+    "example": {
+      "hanzi": "我们下午打球吧。",
+      "pinyin": "Wǒmen xiàwǔ dǎqiú ba.",
+      "english": "Let's play ball this afternoon."
+    }
+  },
+  {
+    "hanzi": "大学生",
+    "pinyin": "dàxuéshēng",
+    "translations": [
+      "university student"
+    ],
+    "example": {
+      "hanzi": "我姐姐是大学生。",
+      "pinyin": "Wǒ jiějie shì dàxuéshēng.",
+      "english": "My older sister is a university student."
+    }
+  },
+  {
+    "hanzi": "得到",
+    "pinyin": "dédào",
+    "translations": [
+      "to obtain",
+      "to get"
+    ],
+    "example": {
+      "hanzi": "他得到了很多帮助。",
+      "pinyin": "Tā dédàole hěnduō bāngzhù.",
+      "english": "He got a lot of help."
+    }
+  },
+  {
+    "hanzi": "地点",
+    "pinyin": "dìdiǎn",
+    "translations": [
+      "location",
+      "place"
+    ],
+    "example": {
+      "hanzi": "请告诉我见面的地点。",
+      "pinyin": "Qǐng gàosù wǒ jiànmiàn de dìdiǎn.",
+      "english": "Please tell me the meeting location."
+    }
+  },
+  {
+    "hanzi": "地上",
+    "pinyin": "dìshàng",
+    "translations": [
+      "on the ground"
+    ],
+    "example": {
+      "hanzi": "地上有一本书。",
+      "pinyin": "Dìshàng yǒu yī běn shū.",
+      "english": "There's a book on the ground."
+    }
+  },
+  {
+    "hanzi": "地图",
+    "pinyin": "dìtú",
+    "translations": [
+      "map"
+    ],
+    "example": {
+      "hanzi": "请给我看一下地图。",
+      "pinyin": "Qǐng gěi wǒ kàn yīxià dìtú.",
+      "english": "Please show me the map."
+    }
+  },
+  {
+    "hanzi": "电脑",
+    "pinyin": "diànnǎo",
+    "translations": [
+      "computer"
+    ],
+    "example": {
+      "hanzi": "我用电脑工作。",
+      "pinyin": "Wǒ yòng diànnǎo gōngzuò.",
+      "english": "I use a computer to work."
+    }
+  },
+  {
+    "hanzi": "电视",
+    "pinyin": "diànshì",
+    "translations": [
+      "television"
+    ],
+    "example": {
+      "hanzi": "我们看电视吧。",
+      "pinyin": "Wǒmen kàn diànshì ba.",
+      "english": "Let's watch TV."
+    }
+  },
+  {
+    "hanzi": "电视机",
+    "pinyin": "diànshìjī",
+    "translations": [
+      "television set"
+    ],
+    "example": {
+      "hanzi": "客厅里有一台电视机。",
+      "pinyin": "Kètīng lǐ yǒu yī tái diànshìjī.",
+      "english": "There's a TV set in the living room."
+    }
+  },
+  {
+    "hanzi": "电影院",
+    "pinyin": "diànyǐngyuàn",
+    "translations": [
+      "movie theater"
+    ],
+    "example": {
+      "hanzi": "我们去电影院看电影吧。",
+      "pinyin": "Wǒmen qù diànyǐngyuàn kàn diànyǐng ba.",
+      "english": "Let's go to the movie theater to watch a film."
+    }
+  },
+  {
+    "hanzi": "东边",
+    "pinyin": "dōngbian",
+    "translations": [
+      "east side"
+    ],
+    "example": {
+      "hanzi": "太阳从东边升起。",
+      "pinyin": "Tàiyáng cóng dōngbian shēngqǐ.",
+      "english": "The sun rises from the east."
+    }
+  },
+  {
+    "hanzi": "动",
+    "pinyin": "dòng",
+    "translations": [
+      "to move"
+    ],
+    "example": {
+      "hanzi": "别动！",
+      "pinyin": "Bié dòng!",
+      "english": "Don't move!"
+    }
+  },
+  {
+    "hanzi": "动作",
+    "pinyin": "dòngzuò",
+    "translations": [
+      "movement",
+      "action"
+    ],
+    "example": {
+      "hanzi": "他的动作很快。",
+      "pinyin": "Tā de dòngzuò hěn kuài.",
+      "english": "His movements are very fast."
+    }
+  },
+  {
+    "hanzi": "读",
+    "pinyin": "dú",
+    "translations": [
+      "to read (aloud)"
+    ],
+    "example": {
+      "hanzi": "请大声读课文。",
+      "pinyin": "Qǐng dàshēng dú kèwén.",
+      "english": "Please read the text aloud."
+    }
+  },
+  {
+    "hanzi": "读书",
+    "pinyin": "dúshū",
+    "translations": [
+      "to read (books)",
+      "to study"
+    ],
+    "example": {
+      "hanzi": "他喜欢读书。",
+      "pinyin": "Tā xǐhuan dúshū.",
+      "english": "He likes reading."
+    }
+  },
+  {
+    "hanzi": "对不起",
+    "pinyin": "duìbuqǐ",
+    "translations": [
+      "sorry"
+    ],
+    "example": {
+      "hanzi": "对不起，我迟到了。",
+      "pinyin": "Duìbuqǐ, wǒ chídào le.",
+      "english": "Sorry, I'm late."
+    }
+  },
+  {
+    "hanzi": "饿",
+    "pinyin": "è",
+    "translations": [
+      "hungry"
+    ],
+    "example": {
+      "hanzi": "我很饿。",
+      "pinyin": "Wǒ hěn è.",
+      "english": "I'm very hungry."
+    }
+  },
+  {
+    "hanzi": "饭店",
+    "pinyin": "fàndiàn",
+    "translations": [
+      "restaurant",
+      "hotel"
+    ],
+    "example": {
+      "hanzi": "我们去饭店吃饭吧。",
+      "pinyin": "Wǒmen qù fàndiàn chīfàn ba.",
+      "english": "Let's go eat at the restaurant."
+    }
+  },
+  {
+    "hanzi": "飞机",
+    "pinyin": "fēijī",
+    "translations": [
+      "airplane"
+    ],
+    "example": {
+      "hanzi": "他坐飞机去北京。",
+      "pinyin": "Tā zuò fēijī qù Běijīng.",
+      "english": "He's flying to Beijing."
+    }
+  },
+  {
+    "hanzi": "非常",
+    "pinyin": "fēicháng",
+    "translations": [
+      "very",
+      "extremely"
+    ],
+    "example": {
+      "hanzi": "这个电影非常好看。",
+      "pinyin": "Zhège diànyǐng fēicháng hǎokàn.",
+      "english": "This movie is extremely good."
+    }
+  },
+  {
+    "hanzi": "分",
+    "pinyin": "fēn",
+    "translations": [
+      "minute",
+      "cent",
+      "to divide (bound form)"
+    ],
+    "example": {
+      "hanzi": "现在是五点十分。",
+      "pinyin": "Xiànzài shì wǔ diǎn shí fēn.",
+      "english": "It's 5:10 now."
+    }
+  },
+  {
+    "hanzi": "风",
+    "pinyin": "fēng",
+    "translations": [
+      "wind"
+    ],
+    "example": {
+      "hanzi": "今天风很大。",
+      "pinyin": "Jīntiān fēng hěn dà.",
+      "english": "It's very windy today."
+    }
+  },
+  {
+    "hanzi": "干",
+    "pinyin": "gān",
+    "translations": [
+      "dry"
+    ],
+    "example": {
+      "hanzi": "衣服还没干。",
+      "pinyin": "Yīfu hái méi gān.",
+      "english": "The clothes aren't dry yet."
+    }
+  },
+  {
+    "hanzi": "干",
+    "pinyin": "gàn",
+    "translations": [
+      "to do",
+      "to work on"
+    ],
+    "example": {
+      "hanzi": "你在干什么？",
+      "pinyin": "Nǐ zài gàn shénme?",
+      "english": "What are you doing?"
+    }
+  },
+  {
+    "hanzi": "干什么",
+    "pinyin": "gàn shénme",
+    "translations": [
+      "to do what?"
+    ],
+    "example": {
+      "hanzi": "你周末干什么？",
+      "pinyin": "Nǐ zhōumò gàn shénme?",
+      "english": "What are you doing this weekend?"
+    }
+  },
+  {
+    "hanzi": "工人",
+    "pinyin": "gōngrén",
+    "translations": [
+      "worker"
+    ],
+    "example": {
+      "hanzi": "他是一名工人。",
+      "pinyin": "Tā shì yī míng gōngrén.",
+      "english": "He is a worker."
+    }
+  },
+  {
+    "hanzi": "关上",
+    "pinyin": "guānshàng",
+    "translations": [
+      "to close",
+      "to shut"
+    ],
+    "example": {
+      "hanzi": "请把门关上。",
+      "pinyin": "Qǐng bǎ mén guānshàng.",
+      "english": "Please close the door."
+    }
+  },
+  {
+    "hanzi": "国家",
+    "pinyin": "guójiā",
+    "translations": [
+      "country",
+      "nation"
+    ],
+    "example": {
+      "hanzi": "中国是一个大国家。",
+      "pinyin": "Zhōngguó shì yī gè dà guójiā.",
+      "english": "China is a big country."
+    }
+  },
+  {
+    "hanzi": "孩子",
+    "pinyin": "háizi",
+    "translations": [
+      "child"
+    ],
+    "example": {
+      "hanzi": "她有两个孩子。",
+      "pinyin": "Tā yǒu liǎng gè háizi.",
+      "english": "She has two children."
+    }
+  },
+  {
+    "hanzi": "汉字",
+    "pinyin": "hànzì",
+    "translations": [
+      "Chinese character"
+    ],
+    "example": {
+      "hanzi": "我在学写汉字。",
+      "pinyin": "Wǒ zài xué xiě hànzì.",
+      "english": "I'm learning to write Chinese characters."
+    }
+  },
+  {
+    "hanzi": "好吃",
+    "pinyin": "hǎochī",
+    "translations": [
+      "delicious"
+    ],
+    "example": {
+      "hanzi": "这个菜很好吃。",
+      "pinyin": "Zhège cài hěn hǎochī.",
+      "english": "This dish is delicious."
+    }
+  },
+  {
+    "hanzi": "好看",
+    "pinyin": "hǎokàn",
+    "translations": [
+      "good-looking",
+      "nice to look at"
+    ],
+    "example": {
+      "hanzi": "这条裙子很好看。",
+      "pinyin": "Zhè tiáo qúnzi hěn hǎokàn.",
+      "english": "This skirt looks nice."
+    }
+  },
+  {
+    "hanzi": "好听",
+    "pinyin": "hǎotīng",
+    "translations": [
+      "pleasant to hear"
+    ],
+    "example": {
+      "hanzi": "这首歌很好听。",
+      "pinyin": "Zhè shǒu gē hěn hǎotīng.",
+      "english": "This song sounds great."
+    }
+  },
+  {
+    "hanzi": "好玩儿",
+    "pinyin": "hǎowánr",
+    "translations": [
+      "fun",
+      "interesting"
+    ],
+    "example": {
+      "hanzi": "这个游戏很好玩儿。",
+      "pinyin": "Zhège yóuxì hěn hǎowánr.",
+      "english": "This game is a lot of fun."
+    }
+  },
+  {
+    "hanzi": "后边",
+    "pinyin": "hòubian",
+    "translations": [
+      "behind",
+      "back side"
+    ],
+    "example": {
+      "hanzi": "他坐在我后边。",
+      "pinyin": "Tā zuò zài wǒ hòubian.",
+      "english": "He is sitting behind me."
+    }
+  },
+  {
+    "hanzi": "后天",
+    "pinyin": "hòutiān",
+    "translations": [
+      "the day after tomorrow"
+    ],
+    "example": {
+      "hanzi": "我们后天见。",
+      "pinyin": "Wǒmen hòutiān jiàn.",
+      "english": "See you the day after tomorrow."
+    }
+  },
+  {
+    "hanzi": "坏",
+    "pinyin": "huài",
+    "translations": [
+      "bad",
+      "broken"
+    ],
+    "example": {
+      "hanzi": "我的手机坏了。",
+      "pinyin": "Wǒ de shǒujī huài le.",
+      "english": "My phone is broken."
+    }
+  },
+  {
+    "hanzi": "回家",
+    "pinyin": "huíjiā",
+    "translations": [
+      "to go home"
+    ],
+    "example": {
+      "hanzi": "我要回家了。",
+      "pinyin": "Wǒ yào huíjiā le.",
+      "english": "I'm going home."
+    }
+  },
+  {
+    "hanzi": "回去",
+    "pinyin": "huíqù",
+    "translations": [
+      "to go back"
+    ],
+    "example": {
+      "hanzi": "他已经回去了。",
+      "pinyin": "Tā yǐjīng huíqù le.",
+      "english": "He has already gone back."
+    }
+  },
+  {
+    "hanzi": "火车",
+    "pinyin": "huǒchē",
+    "translations": [
+      "train"
+    ],
+    "example": {
+      "hanzi": "我们坐火车去上海。",
+      "pinyin": "Wǒmen zuò huǒchē qù Shànghǎi.",
+      "english": "We're taking the train to Shanghai."
+    }
+  },
+  {
+    "hanzi": "机票",
+    "pinyin": "jīpiào",
+    "translations": [
+      "plane ticket"
+    ],
+    "example": {
+      "hanzi": "我买了一张机票。",
+      "pinyin": "Wǒ mǎile yī zhāng jīpiào.",
+      "english": "I bought a plane ticket."
+    }
+  },
+  {
+    "hanzi": "记",
+    "pinyin": "jì",
+    "translations": [
+      "to remember",
+      "to note down"
+    ],
+    "example": {
+      "hanzi": "请把这个记下来。",
+      "pinyin": "Qǐng bǎ zhège jì xiàlái.",
+      "english": "Please note this down."
+    }
+  },
+  {
+    "hanzi": "记住",
+    "pinyin": "jìzhù",
+    "translations": [
+      "to remember",
+      "to keep in mind"
+    ],
+    "example": {
+      "hanzi": "请记住我的名字。",
+      "pinyin": "Qǐng jìzhù wǒ de míngzi.",
+      "english": "Please remember my name."
+    }
+  },
+  {
+    "hanzi": "家里",
+    "pinyin": "jiālǐ",
+    "translations": [
+      "at home",
+      "in the family"
+    ],
+    "example": {
+      "hanzi": "家里有几口人？",
+      "pinyin": "Jiālǐ yǒu jǐ kǒu rén?",
+      "english": "How many people are in the family?"
+    }
+  },
+  {
+    "hanzi": "家人",
+    "pinyin": "jiārén",
+    "translations": [
+      "family members"
+    ],
+    "example": {
+      "hanzi": "我很想我的家人。",
+      "pinyin": "Wǒ hěn xiǎng wǒ de jiārén.",
+      "english": "I miss my family very much."
+    }
+  },
+  {
+    "hanzi": "教学楼",
+    "pinyin": "jiàoxuélóu",
+    "translations": [
+      "teaching building (on campus)"
+    ],
+    "example": {
+      "hanzi": "教室在教学楼三楼。",
+      "pinyin": "Jiàoshì zài jiàoxuélóu sān lóu.",
+      "english": "The classroom is on the third floor of the teaching building."
+    }
+  },
+  {
+    "hanzi": "今年",
+    "pinyin": "jīnnián",
+    "translations": [
+      "this year"
+    ],
+    "example": {
+      "hanzi": "今年我二十岁。",
+      "pinyin": "Jīnnián wǒ èrshí suì.",
+      "english": "I'm twenty this year."
+    }
+  },
+  {
+    "hanzi": "进来",
+    "pinyin": "jìnlái",
+    "translations": [
+      "to come in"
+    ],
+    "example": {
+      "hanzi": "请进来。",
+      "pinyin": "Qǐng jìnlái.",
+      "english": "Please come in."
+    }
+  },
+  {
+    "hanzi": "进去",
+    "pinyin": "jìnqù",
+    "translations": [
+      "to go in"
+    ],
+    "example": {
+      "hanzi": "我们进去吧。",
+      "pinyin": "Wǒmen jìnqù ba.",
+      "english": "Let's go in."
+    }
+  },
+  {
+    "hanzi": "开车",
+    "pinyin": "kāichē",
+    "translations": [
+      "to drive"
+    ],
+    "example": {
+      "hanzi": "他会开车。",
+      "pinyin": "Tā huì kāichē.",
+      "english": "He can drive."
+    }
+  },
+  {
+    "hanzi": "开会",
+    "pinyin": "kāihuì",
+    "translations": [
+      "to have a meeting"
+    ],
+    "example": {
+      "hanzi": "他正在开会。",
+      "pinyin": "Tā zhèngzài kāihuì.",
+      "english": "He is in a meeting."
+    }
+  },
+  {
+    "hanzi": "开玩笑",
+    "pinyin": "kāi wánxiào",
+    "translations": [
+      "to joke"
+    ],
+    "example": {
+      "hanzi": "别开玩笑了。",
+      "pinyin": "Bié kāi wánxiào le.",
+      "english": "Stop joking."
+    }
+  },
+  {
+    "hanzi": "考",
+    "pinyin": "kǎo",
+    "translations": [
+      "to test",
+      "to take an exam"
+    ],
+    "example": {
+      "hanzi": "明天要考数学。",
+      "pinyin": "Míngtiān yào kǎo shùxué.",
+      "english": "There's a math test tomorrow."
+    }
+  },
+  {
+    "hanzi": "渴",
+    "pinyin": "kě",
+    "translations": [
+      "thirsty"
+    ],
+    "example": {
+      "hanzi": "我很渴，想喝水。",
+      "pinyin": "Wǒ hěn kě, xiǎng hē shuǐ.",
+      "english": "I'm thirsty, I want some water."
+    }
+  },
+  {
+    "hanzi": "课本",
+    "pinyin": "kèběn",
+    "translations": [
+      "textbook"
+    ],
+    "example": {
+      "hanzi": "请打开课本。",
+      "pinyin": "Qǐng dǎkāi kèběn.",
+      "english": "Please open your textbook."
+    }
+  },
+  {
+    "hanzi": "来到",
+    "pinyin": "láidào",
+    "translations": [
+      "to arrive at"
+    ],
+    "example": {
+      "hanzi": "我们来到了北京。",
+      "pinyin": "Wǒmen láidàole Běijīng.",
+      "english": "We arrived in Beijing."
+    }
+  },
+  {
+    "hanzi": "老",
+    "pinyin": "lǎo",
+    "translations": [
+      "old (of people/age)"
+    ],
+    "example": {
+      "hanzi": "他已经很老了。",
+      "pinyin": "Tā yǐjīng hěn lǎo le.",
+      "english": "He is already very old."
+    }
+  },
+  {
+    "hanzi": "老人",
+    "pinyin": "lǎorén",
+    "translations": [
+      "elderly person"
+    ],
+    "example": {
+      "hanzi": "公园里有很多老人。",
+      "pinyin": "Gōngyuán lǐ yǒu hěnduō lǎorén.",
+      "english": "There are many elderly people in the park."
+    }
+  },
+  {
+    "hanzi": "了",
+    "pinyin": "le",
+    "translations": [
+      "particle marking completed action or change"
+    ],
+    "example": {
+      "hanzi": "我吃饭了。",
+      "pinyin": "Wǒ chīfàn le.",
+      "english": "I've eaten."
+    }
+  },
+  {
+    "hanzi": "里边",
+    "pinyin": "lǐbian",
+    "translations": [
+      "inside"
+    ],
+    "example": {
+      "hanzi": "书在包里边。",
+      "pinyin": "Shū zài bāo lǐbian.",
+      "english": "The book is inside the bag."
+    }
+  },
+  {
+    "hanzi": "楼",
+    "pinyin": "lóu",
+    "translations": [
+      "building",
+      "floor (story)"
+    ],
+    "example": {
+      "hanzi": "我住在五楼。",
+      "pinyin": "Wǒ zhù zài wǔ lóu.",
+      "english": "I live on the fifth floor."
+    }
+  },
+  {
+    "hanzi": "楼上",
+    "pinyin": "lóushàng",
+    "translations": [
+      "upstairs"
+    ],
+    "example": {
+      "hanzi": "他在楼上。",
+      "pinyin": "Tā zài lóushàng.",
+      "english": "He is upstairs."
+    }
+  },
+  {
+    "hanzi": "楼下",
+    "pinyin": "lóuxià",
+    "translations": [
+      "downstairs"
+    ],
+    "example": {
+      "hanzi": "我们在楼下等你。",
+      "pinyin": "Wǒmen zài lóuxià děng nǐ.",
+      "english": "We'll wait for you downstairs."
+    }
+  },
+  {
+    "hanzi": "路上",
+    "pinyin": "lùshàng",
+    "translations": [
+      "on the way",
+      "on the road"
+    ],
+    "example": {
+      "hanzi": "我在路上了。",
+      "pinyin": "Wǒ zài lùshàng le.",
+      "english": "I'm on my way."
+    }
+  },
+  {
+    "hanzi": "妈妈",
+    "pinyin": "māma",
+    "translations": [
+      "mom",
+      "mother"
+    ],
+    "example": {
+      "hanzi": "妈妈在做饭。",
+      "pinyin": "Māma zài zuòfàn.",
+      "english": "Mom is cooking."
+    }
+  },
+  {
+    "hanzi": "马路",
+    "pinyin": "mǎlù",
+    "translations": [
+      "road",
+      "street"
+    ],
+    "example": {
+      "hanzi": "过马路要小心。",
+      "pinyin": "Guò mǎlù yào xiǎoxīn.",
+      "english": "Be careful crossing the street."
+    }
+  },
+  {
+    "hanzi": "马上",
+    "pinyin": "mǎshàng",
+    "translations": [
+      "immediately",
+      "right away"
+    ],
+    "example": {
+      "hanzi": "我马上就到。",
+      "pinyin": "Wǒ mǎshàng jiù dào.",
+      "english": "I'll be there right away."
+    }
+  },
+  {
+    "hanzi": "毛",
+    "pinyin": "máo",
+    "translations": [
+      "a Chinese dime (1/10 yuan)",
+      "hair, fur"
+    ],
+    "example": {
+      "hanzi": "这个三块五毛钱。",
+      "pinyin": "Zhège sān kuài wǔ máo qián.",
+      "english": "This costs three yuan and five jiao."
+    }
+  },
+  {
+    "hanzi": "没关系",
+    "pinyin": "méiguānxi",
+    "translations": [
+      "it doesn't matter",
+      "never mind"
+    ],
+    "example": {
+      "hanzi": "没关系，不用担心。",
+      "pinyin": "Méiguānxi, bùyòng dānxīn.",
+      "english": "It's okay, no need to worry."
+    }
+  },
+  {
+    "hanzi": "没什么",
+    "pinyin": "méishénme",
+    "translations": [
+      "it's nothing",
+      "not a big deal"
+    ],
+    "example": {
+      "hanzi": "没什么，别担心。",
+      "pinyin": "Méishénme, bié dānxīn.",
+      "english": "It's nothing, don't worry."
+    }
+  },
+  {
+    "hanzi": "没事儿",
+    "pinyin": "méishìr",
+    "translations": [
+      "it's nothing",
+      "no big deal"
+    ],
+    "example": {
+      "hanzi": "没事儿，我没受伤。",
+      "pinyin": "Méishìr, wǒ méi shòushāng.",
+      "english": "It's fine, I'm not hurt."
+    }
+  },
+  {
+    "hanzi": "门口",
+    "pinyin": "ménkǒu",
+    "translations": [
+      "doorway",
+      "entrance"
+    ],
+    "example": {
+      "hanzi": "他在门口等我。",
+      "pinyin": "Tā zài ménkǒu děng wǒ.",
+      "english": "He is waiting for me at the entrance."
+    }
+  },
+  {
+    "hanzi": "门票",
+    "pinyin": "ménpiào",
+    "translations": [
+      "(entrance) ticket"
+    ],
+    "example": {
+      "hanzi": "门票多少钱？",
+      "pinyin": "Ménpiào duōshǎo qián?",
+      "english": "How much is the entrance ticket?"
+    }
+  },
+  {
+    "hanzi": "们",
+    "pinyin": "men",
+    "translations": [
+      "plural suffix (for pronouns/people)"
+    ],
+    "example": {
+      "hanzi": "我们是朋友。",
+      "pinyin": "Wǒmen shì péngyou.",
+      "english": "We are friends."
+    }
+  },
+  {
+    "hanzi": "面包",
+    "pinyin": "miànbāo",
+    "translations": [
+      "bread"
+    ],
+    "example": {
+      "hanzi": "我早饭吃面包。",
+      "pinyin": "Wǒ zǎofàn chī miànbāo.",
+      "english": "I eat bread for breakfast."
+    }
+  },
+  {
+    "hanzi": "面条儿",
+    "pinyin": "miàntiáor",
+    "translations": [
+      "noodles"
+    ],
+    "example": {
+      "hanzi": "我想吃面条儿。",
+      "pinyin": "Wǒ xiǎng chī miàntiáor.",
+      "english": "I want to eat noodles."
+    }
+  },
+  {
+    "hanzi": "明白",
+    "pinyin": "míngbai",
+    "translations": [
+      "to understand",
+      "clear"
+    ],
+    "example": {
+      "hanzi": "我明白你的意思。",
+      "pinyin": "Wǒ míngbai nǐ de yìsi.",
+      "english": "I understand what you mean."
+    }
+  },
+  {
+    "hanzi": "明年",
+    "pinyin": "míngnián",
+    "translations": [
+      "next year"
+    ],
+    "example": {
+      "hanzi": "明年我要去中国。",
+      "pinyin": "Míngnián wǒ yào qù Zhōngguó.",
+      "english": "Next year I'm going to China."
+    }
+  },
+  {
+    "hanzi": "哪里",
+    "pinyin": "nǎlǐ",
+    "translations": [
+      "where?"
+    ],
+    "example": {
+      "hanzi": "你住在哪里？",
+      "pinyin": "Nǐ zhù zài nǎlǐ?",
+      "english": "Where do you live?"
+    }
+  },
+  {
+    "hanzi": "哪儿",
+    "pinyin": "nǎr",
+    "translations": [
+      "where?"
+    ],
+    "example": {
+      "hanzi": "你去哪儿？",
+      "pinyin": "Nǐ qù nǎr?",
+      "english": "Where are you going?"
+    }
+  },
+  {
+    "hanzi": "那边",
+    "pinyin": "nàbiān",
+    "translations": [
+      "over there"
+    ],
+    "example": {
+      "hanzi": "请把书放在那边。",
+      "pinyin": "Qǐng bǎ shū fàng zài nàbiān.",
+      "english": "Please put the book over there."
+    }
+  },
+  {
+    "hanzi": "那里",
+    "pinyin": "nàlǐ",
+    "translations": [
+      "there"
+    ],
+    "example": {
+      "hanzi": "他在那里工作。",
+      "pinyin": "Tā zài nàlǐ gōngzuò.",
+      "english": "He works there."
+    }
+  },
+  {
+    "hanzi": "那儿",
+    "pinyin": "nàr",
+    "translations": [
+      "there"
+    ],
+    "example": {
+      "hanzi": "我们在那儿见面吧。",
+      "pinyin": "Wǒmen zài nàr jiànmiàn ba.",
+      "english": "Let's meet there."
+    }
+  },
+  {
+    "hanzi": "奶",
+    "pinyin": "nǎi",
+    "translations": [
+      "milk (bound form)"
+    ],
+    "example": {
+      "hanzi": "我喜欢喝牛奶。",
+      "pinyin": "Wǒ xǐhuan hē niúnǎi.",
+      "english": "I like drinking milk."
+    }
+  },
+  {
+    "hanzi": "奶奶",
+    "pinyin": "nǎinai",
+    "translations": [
+      "grandmother (paternal)"
+    ],
+    "example": {
+      "hanzi": "我奶奶身体很好。",
+      "pinyin": "Wǒ nǎinai shēntǐ hěn hǎo.",
+      "english": "My grandmother is in good health."
+    }
+  },
+  {
+    "hanzi": "男孩儿",
+    "pinyin": "nánháir",
+    "translations": [
+      "boy"
+    ],
+    "example": {
+      "hanzi": "那个男孩儿是我表弟。",
+      "pinyin": "Nàge nánháir shì wǒ biǎodì.",
+      "english": "That boy is my cousin."
+    }
+  },
+  {
+    "hanzi": "男朋友",
+    "pinyin": "nánpéngyou",
+    "translations": [
+      "boyfriend"
+    ],
+    "example": {
+      "hanzi": "她的男朋友很帅。",
+      "pinyin": "Tā de nánpéngyou hěn shuài.",
+      "english": "Her boyfriend is very handsome."
+    }
+  },
+  {
+    "hanzi": "男人",
+    "pinyin": "nánrén",
+    "translations": [
+      "man"
+    ],
+    "example": {
+      "hanzi": "那个男人是我爸爸。",
+      "pinyin": "Nàge nánrén shì wǒ bàba.",
+      "english": "That man is my father."
+    }
+  },
+  {
+    "hanzi": "男生",
+    "pinyin": "nánshēng",
+    "translations": [
+      "male student",
+      "boy"
+    ],
+    "example": {
+      "hanzi": "班里有十个男生。",
+      "pinyin": "Bān lǐ yǒu shí gè nánshēng.",
+      "english": "There are ten boys in the class."
+    }
+  },
+  {
+    "hanzi": "南边",
+    "pinyin": "nánbian",
+    "translations": [
+      "south side"
+    ],
+    "example": {
+      "hanzi": "公园在学校南边。",
+      "pinyin": "Gōngyuán zài xuéxiào nánbian.",
+      "english": "The park is on the south side of the school."
+    }
+  },
+  {
+    "hanzi": "你们",
+    "pinyin": "nǐmen",
+    "translations": [
+      "you (plural)"
+    ],
+    "example": {
+      "hanzi": "你们好！",
+      "pinyin": "Nǐmen hǎo!",
+      "english": "Hello everyone!"
+    }
+  },
+  {
+    "hanzi": "女孩儿",
+    "pinyin": "nǚháir",
+    "translations": [
+      "girl"
+    ],
+    "example": {
+      "hanzi": "那个女孩儿在唱歌。",
+      "pinyin": "Nàge nǚháir zài chànggē.",
+      "english": "That girl is singing."
+    }
+  },
+  {
+    "hanzi": "女朋友",
+    "pinyin": "nǚpéngyou",
+    "translations": [
+      "girlfriend"
+    ],
+    "example": {
+      "hanzi": "他还没有女朋友。",
+      "pinyin": "Tā hái méiyǒu nǚpéngyou.",
+      "english": "He doesn't have a girlfriend yet."
+    }
+  },
+  {
+    "hanzi": "女人",
+    "pinyin": "nǚrén",
+    "translations": [
+      "woman"
+    ],
+    "example": {
+      "hanzi": "那个女人是医生。",
+      "pinyin": "Nàge nǚrén shì yīshēng.",
+      "english": "That woman is a doctor."
+    }
+  },
+  {
+    "hanzi": "女生",
+    "pinyin": "nǚshēng",
+    "translations": [
+      "female student",
+      "girl"
+    ],
+    "example": {
+      "hanzi": "她是我们班的女生。",
+      "pinyin": "Tā shì wǒmen bān de nǚshēng.",
+      "english": "She is a girl in our class."
+    }
+  },
+  {
+    "hanzi": "跑",
+    "pinyin": "pǎo",
+    "translations": [
+      "to run"
+    ],
+    "example": {
+      "hanzi": "他跑得很快。",
+      "pinyin": "Tā pǎo de hěn kuài.",
+      "english": "He runs very fast."
+    }
+  },
+  {
+    "hanzi": "起来",
+    "pinyin": "qǐlái",
+    "translations": [
+      "to get up",
+      "to rise"
+    ],
+    "example": {
+      "hanzi": "快起来吧。",
+      "pinyin": "Kuài qǐlái ba.",
+      "english": "Get up already."
+    }
+  },
+  {
+    "hanzi": "汽车",
+    "pinyin": "qìchē",
+    "translations": [
+      "car",
+      "automobile"
+    ],
+    "example": {
+      "hanzi": "他买了一辆新汽车。",
+      "pinyin": "Tā mǎile yī liàng xīn qìchē.",
+      "english": "He bought a new car."
+    }
+  },
+  {
+    "hanzi": "前边",
+    "pinyin": "qiánbian",
+    "translations": [
+      "in front"
+    ],
+    "example": {
+      "hanzi": "前边有一家饭店。",
+      "pinyin": "Qiánbian yǒu yī jiā fàndiàn.",
+      "english": "There's a restaurant up ahead."
+    }
+  },
+  {
+    "hanzi": "前天",
+    "pinyin": "qiántiān",
+    "translations": [
+      "the day before yesterday"
+    ],
+    "example": {
+      "hanzi": "我前天去了图书馆。",
+      "pinyin": "Wǒ qiántiān qùle túshūguǎn.",
+      "english": "I went to the library the day before yesterday."
+    }
+  },
+  {
+    "hanzi": "钱包",
+    "pinyin": "qiánbāo",
+    "translations": [
+      "wallet"
+    ],
+    "example": {
+      "hanzi": "我的钱包丢了。",
+      "pinyin": "Wǒ de qiánbāo diū le.",
+      "english": "I lost my wallet."
+    }
+  },
+  {
+    "hanzi": "请假",
+    "pinyin": "qǐngjià",
+    "translations": [
+      "to ask for leave/time off"
+    ],
+    "example": {
+      "hanzi": "他今天请假了。",
+      "pinyin": "Tā jīntiān qǐngjià le.",
+      "english": "He took the day off today."
+    }
+  },
+  {
+    "hanzi": "请进",
+    "pinyin": "qǐng jìn",
+    "translations": [
+      "Please come in"
+    ],
+    "example": {
+      "hanzi": "请进，别客气。",
+      "pinyin": "Qǐng jìn, bié kèqi.",
+      "english": "Please come in, make yourself at home."
+    }
+  },
+  {
+    "hanzi": "请问",
+    "pinyin": "qǐngwèn",
+    "translations": [
+      "excuse me (before a question)"
+    ],
+    "example": {
+      "hanzi": "请问，洗手间在哪儿？",
+      "pinyin": "Qǐngwèn, xǐshǒujiān zài nǎr?",
+      "english": "Excuse me, where's the restroom?"
+    }
+  },
+  {
+    "hanzi": "请坐",
+    "pinyin": "qǐng zuò",
+    "translations": [
+      "Please sit down"
+    ],
+    "example": {
+      "hanzi": "请坐，喝杯茶吧。",
+      "pinyin": "Qǐng zuò, hē bēi chá ba.",
+      "english": "Please sit down and have some tea."
+    }
+  },
+  {
+    "hanzi": "认真",
+    "pinyin": "rènzhēn",
+    "translations": [
+      "serious",
+      "conscientious"
+    ],
+    "example": {
+      "hanzi": "他工作很认真。",
+      "pinyin": "Tā gōngzuò hěn rènzhēn.",
+      "english": "He works very conscientiously."
+    }
+  },
+  {
+    "hanzi": "日期",
+    "pinyin": "rìqī",
+    "translations": [
+      "date"
+    ],
+    "example": {
+      "hanzi": "请写上今天的日期。",
+      "pinyin": "Qǐng xiěshàng jīntiān de rìqī.",
+      "english": "Please write today's date."
+    }
+  },
+  {
+    "hanzi": "肉",
+    "pinyin": "ròu",
+    "translations": [
+      "meat"
+    ],
+    "example": {
+      "hanzi": "我不吃肉。",
+      "pinyin": "Wǒ bù chī ròu.",
+      "english": "I don't eat meat."
+    }
+  },
+  {
+    "hanzi": "上边",
+    "pinyin": "shàngbian",
+    "translations": [
+      "above",
+      "on top"
+    ],
+    "example": {
+      "hanzi": "桌子上边有一本书。",
+      "pinyin": "Zhuōzi shàngbian yǒu yī běn shū.",
+      "english": "There's a book on top of the table."
+    }
+  },
+  {
+    "hanzi": "上车",
+    "pinyin": "shàngchē",
+    "translations": [
+      "to get on (a vehicle)"
+    ],
+    "example": {
+      "hanzi": "请上车吧。",
+      "pinyin": "Qǐng shàngchē ba.",
+      "english": "Please get on the bus."
+    }
+  },
+  {
+    "hanzi": "上次",
+    "pinyin": "shàngcì",
+    "translations": [
+      "last time"
+    ],
+    "example": {
+      "hanzi": "上次我们在这儿见面。",
+      "pinyin": "Shàngcì wǒmen zài zhèr jiànmiàn.",
+      "english": "We met here last time."
+    }
+  },
+  {
+    "hanzi": "上网",
+    "pinyin": "shàngwǎng",
+    "translations": [
+      "to go online"
+    ],
+    "example": {
+      "hanzi": "我每天上网看新闻。",
+      "pinyin": "Wǒ měitiān shàngwǎng kàn xīnwén.",
+      "english": "I go online to read news every day."
+    }
+  },
+  {
+    "hanzi": "上学",
+    "pinyin": "shàngxué",
+    "translations": [
+      "to go to school"
+    ],
+    "example": {
+      "hanzi": "他七岁开始上学。",
+      "pinyin": "Tā qī suì kāishǐ shàngxué.",
+      "english": "He started school at age seven."
+    }
+  },
+  {
+    "hanzi": "身上",
+    "pinyin": "shēnshàng",
+    "translations": [
+      "on one's body"
+    ],
+    "example": {
+      "hanzi": "我身上没有钱。",
+      "pinyin": "Wǒ shēnshàng méiyǒu qián.",
+      "english": "I don't have any money on me."
+    }
+  },
+  {
+    "hanzi": "什么",
+    "pinyin": "shénme",
+    "translations": [
+      "what?"
+    ],
+    "example": {
+      "hanzi": "这是什么？",
+      "pinyin": "Zhè shì shénme?",
+      "english": "What is this?"
+    }
+  },
+  {
+    "hanzi": "生气",
+    "pinyin": "shēngqì",
+    "translations": [
+      "to get angry"
+    ],
+    "example": {
+      "hanzi": "别生气了。",
+      "pinyin": "Bié shēngqì le.",
+      "english": "Don't be angry."
+    }
+  },
+  {
+    "hanzi": "生日",
+    "pinyin": "shēngrì",
+    "translations": [
+      "birthday"
+    ],
+    "example": {
+      "hanzi": "今天是我的生日。",
+      "pinyin": "Jīntiān shì wǒ de shēngrì.",
+      "english": "Today is my birthday."
+    }
+  },
+  {
+    "hanzi": "是不是",
+    "pinyin": "shì bù shì",
+    "translations": [
+      "is (it) or not?"
+    ],
+    "example": {
+      "hanzi": "你是不是学生？",
+      "pinyin": "Nǐ shì bù shì xuésheng?",
+      "english": "Are you a student or not?"
+    }
+  },
+  {
+    "hanzi": "手机",
+    "pinyin": "shǒujī",
+    "translations": [
+      "mobile phone"
+    ],
+    "example": {
+      "hanzi": "我的手机没电了。",
+      "pinyin": "Wǒ de shǒujī méi diàn le.",
+      "english": "My phone is out of battery."
+    }
+  },
+  {
+    "hanzi": "书包",
+    "pinyin": "shūbāo",
+    "translations": [
+      "schoolbag",
+      "backpack"
+    ],
+    "example": {
+      "hanzi": "他的书包很重。",
+      "pinyin": "Tā de shūbāo hěn zhòng.",
+      "english": "His backpack is very heavy."
+    }
+  },
+  {
+    "hanzi": "书店",
+    "pinyin": "shūdiàn",
+    "translations": [
+      "bookstore"
+    ],
+    "example": {
+      "hanzi": "我们去书店看看吧。",
+      "pinyin": "Wǒmen qù shūdiàn kànkan ba.",
+      "english": "Let's go take a look at the bookstore."
+    }
+  },
+  {
+    "hanzi": "睡",
+    "pinyin": "shuì",
+    "translations": [
+      "to sleep"
+    ],
+    "example": {
+      "hanzi": "我要去睡了。",
+      "pinyin": "Wǒ yào qù shuì le.",
+      "english": "I'm going to sleep."
+    }
+  },
+  {
+    "hanzi": "送",
+    "pinyin": "sòng",
+    "translations": [
+      "to give (a gift)",
+      "to see someone off",
+      "to deliver"
+    ],
+    "example": {
+      "hanzi": "我送你一份礼物。",
+      "pinyin": "Wǒ sòng nǐ yī fèn lǐwù.",
+      "english": "I'll give you a gift."
+    }
+  },
+  {
+    "hanzi": "他们",
+    "pinyin": "tāmen",
+    "translations": [
+      "they",
+      "them (male or mixed)"
+    ],
+    "example": {
+      "hanzi": "他们是我的同学。",
+      "pinyin": "Tāmen shì wǒ de tóngxué.",
+      "english": "They are my classmates."
+    }
+  },
+  {
+    "hanzi": "她们",
+    "pinyin": "tāmen",
+    "translations": [
+      "they",
+      "them (female)"
+    ],
+    "example": {
+      "hanzi": "她们在图书馆学习。",
+      "pinyin": "Tāmen zài túshūguǎn xuéxí.",
+      "english": "They are studying in the library."
+    }
+  },
+  {
+    "hanzi": "听写",
+    "pinyin": "tīngxiě",
+    "translations": [
+      "dictation"
+    ],
+    "example": {
+      "hanzi": "明天有一个听写。",
+      "pinyin": "Míngtiān yǒu yī gè tīngxiě.",
+      "english": "There's a dictation tomorrow."
+    }
+  },
+  {
+    "hanzi": "图书馆",
+    "pinyin": "túshūguǎn",
+    "translations": [
+      "library"
+    ],
+    "example": {
+      "hanzi": "我在图书馆看书。",
+      "pinyin": "Wǒ zài túshūguǎn kànshū.",
+      "english": "I'm reading in the library."
+    }
+  },
+  {
+    "hanzi": "外边",
+    "pinyin": "wàibian",
+    "translations": [
+      "outside"
+    ],
+    "example": {
+      "hanzi": "外边在下雨。",
+      "pinyin": "Wàibian zài xiàyǔ.",
+      "english": "It's raining outside."
+    }
+  },
+  {
+    "hanzi": "玩儿",
+    "pinyin": "wánr",
+    "translations": [
+      "to play",
+      "to have fun"
+    ],
+    "example": {
+      "hanzi": "孩子们在外面玩儿。",
+      "pinyin": "Háizimen zài wàimiàn wánr.",
+      "english": "The kids are playing outside."
+    }
+  },
+  {
+    "hanzi": "晚饭",
+    "pinyin": "wǎnfàn",
+    "translations": [
+      "dinner"
+    ],
+    "example": {
+      "hanzi": "我们一起吃晚饭吧。",
+      "pinyin": "Wǒmen yīqǐ chī wǎnfàn ba.",
+      "english": "Let's have dinner together."
+    }
+  },
+  {
+    "hanzi": "晚上",
+    "pinyin": "wǎnshang",
+    "translations": [
+      "evening",
+      "at night"
+    ],
+    "example": {
+      "hanzi": "晚上你想做什么？",
+      "pinyin": "Wǎnshang nǐ xiǎng zuò shénme?",
+      "english": "What do you want to do tonight?"
+    }
+  },
+  {
+    "hanzi": "上课",
+    "pinyin": "shàngkè",
+    "translations": [
+      "to attend class",
+      "to have class"
+    ],
+    "example": {
+      "hanzi": "我们九点上课。",
+      "pinyin": "Wǒmen jiǔ diǎn shàngkè.",
+      "english": "Our class starts at nine."
+    }
+  },
+  {
+    "hanzi": "上午",
+    "pinyin": "shàngwǔ",
+    "translations": [
+      "morning (before noon)"
+    ],
+    "example": {
+      "hanzi": "我上午有课。",
+      "pinyin": "Wǒ shàngwǔ yǒu kè.",
+      "english": "I have class in the morning."
+    }
+  },
+  {
+    "hanzi": "网上",
+    "pinyin": "wǎngshàng",
+    "translations": [
+      "online",
+      "on the internet"
+    ],
+    "example": {
+      "hanzi": "我在网上买东西。",
+      "pinyin": "Wǒ zài wǎngshàng mǎi dōngxi.",
+      "english": "I shop online."
+    }
+  },
+  {
+    "hanzi": "网友",
+    "pinyin": "wǎngyǒu",
+    "translations": [
+      "online friend"
+    ],
+    "example": {
+      "hanzi": "他是我的网友。",
+      "pinyin": "Tā shì wǒ de wǎngyǒu.",
+      "english": "He is my online friend."
+    }
+  },
+  {
+    "hanzi": "忘记",
+    "pinyin": "wàngjì",
+    "translations": [
+      "to forget"
+    ],
+    "example": {
+      "hanzi": "我忘记他的名字了。",
+      "pinyin": "Wǒ wàngjìle tā de míngzi.",
+      "english": "I forgot his name."
+    }
+  },
+  {
+    "hanzi": "我们",
+    "pinyin": "wǒmen",
+    "translations": [
+      "we",
+      "us"
+    ],
+    "example": {
+      "hanzi": "我们是同学。",
+      "pinyin": "Wǒmen shì tóngxué.",
+      "english": "We are classmates."
+    }
+  },
+  {
+    "hanzi": "午饭",
+    "pinyin": "wǔfàn",
+    "translations": [
+      "lunch"
+    ],
+    "example": {
+      "hanzi": "我们一起吃午饭吧。",
+      "pinyin": "Wǒmen yīqǐ chī wǔfàn ba.",
+      "english": "Let's have lunch together."
+    }
+  },
+  {
+    "hanzi": "西边",
+    "pinyin": "xībian",
+    "translations": [
+      "west side"
+    ],
+    "example": {
+      "hanzi": "商店在学校西边。",
+      "pinyin": "Shāngdiàn zài xuéxiào xībian.",
+      "english": "The shop is on the west side of the school."
+    }
+  },
+  {
+    "hanzi": "下边",
+    "pinyin": "xiàbian",
+    "translations": [
+      "below",
+      "underneath"
+    ],
+    "example": {
+      "hanzi": "桌子下边有一只猫。",
+      "pinyin": "Zhuōzi xiàbian yǒu yī zhī māo.",
+      "english": "There's a cat under the table."
+    }
+  },
+  {
+    "hanzi": "下车",
+    "pinyin": "xiàchē",
+    "translations": [
+      "to get off (a vehicle)"
+    ],
+    "example": {
+      "hanzi": "请在下一站下车。",
+      "pinyin": "Qǐng zài xià yī zhàn xiàchē.",
+      "english": "Please get off at the next stop."
+    }
+  },
+  {
+    "hanzi": "下次",
+    "pinyin": "xiàcì",
+    "translations": [
+      "next time"
+    ],
+    "example": {
+      "hanzi": "下次再来玩儿吧。",
+      "pinyin": "Xiàcì zài lái wánr ba.",
+      "english": "Come play again next time."
+    }
+  },
+  {
+    "hanzi": "下课",
+    "pinyin": "xiàkè",
+    "translations": [
+      "class is over"
+    ],
+    "example": {
+      "hanzi": "我们十点下课。",
+      "pinyin": "Wǒmen shí diǎn xiàkè.",
+      "english": "Our class ends at ten."
+    }
+  },
+  {
+    "hanzi": "下午",
+    "pinyin": "xiàwǔ",
+    "translations": [
+      "afternoon"
+    ],
+    "example": {
+      "hanzi": "下午我要上班。",
+      "pinyin": "Xiàwǔ wǒ yào shàngbān.",
+      "english": "I have to work in the afternoon."
+    }
+  },
+  {
+    "hanzi": "下雨",
+    "pinyin": "xiàyǔ",
+    "translations": [
+      "to rain"
+    ],
+    "example": {
+      "hanzi": "外面在下雨。",
+      "pinyin": "Wàimiàn zài xiàyǔ.",
+      "english": "It's raining outside."
+    }
+  },
+  {
+    "hanzi": "先",
+    "pinyin": "xiān",
+    "translations": [
+      "first",
+      "before"
+    ],
+    "example": {
+      "hanzi": "你先走吧。",
+      "pinyin": "Nǐ xiān zǒu ba.",
+      "english": "You go first."
+    }
+  },
+  {
+    "hanzi": "小孩儿",
+    "pinyin": "xiǎoháir",
+    "translations": [
+      "child",
+      "kid"
+    ],
+    "example": {
+      "hanzi": "那个小孩儿很可爱。",
+      "pinyin": "Nàge xiǎoháir hěn kě'ài.",
+      "english": "That kid is very cute."
+    }
+  },
+  {
+    "hanzi": "小姐",
+    "pinyin": "xiǎojiě",
+    "translations": [
+      "Miss",
+      "young lady"
+    ],
+    "example": {
+      "hanzi": "王小姐，您好。",
+      "pinyin": "Wáng xiǎojiě, nín hǎo.",
+      "english": "Hello, Miss Wang."
+    }
+  },
+  {
+    "hanzi": "小朋友",
+    "pinyin": "xiǎopéngyǒu",
+    "translations": [
+      "little friend (child)"
+    ],
+    "example": {
+      "hanzi": "小朋友，你几岁了？",
+      "pinyin": "Xiǎopéngyǒu, nǐ jǐ suì le?",
+      "english": "Little one, how old are you?"
+    }
+  },
+  {
+    "hanzi": "小学",
+    "pinyin": "xiǎoxué",
+    "translations": [
+      "elementary school"
+    ],
+    "example": {
+      "hanzi": "我妹妹在上小学。",
+      "pinyin": "Wǒ mèimei zài shàng xiǎoxué.",
+      "english": "My younger sister is in elementary school."
+    }
+  },
+  {
+    "hanzi": "小学生",
+    "pinyin": "xiǎoxuéshēng",
+    "translations": [
+      "elementary school student"
+    ],
+    "example": {
+      "hanzi": "他还是个小学生。",
+      "pinyin": "Tā háishi gè xiǎoxuéshēng.",
+      "english": "He's still an elementary school student."
+    }
+  },
+  {
+    "hanzi": "谢谢",
+    "pinyin": "xièxie",
+    "translations": [
+      "thank you"
+    ],
+    "example": {
+      "hanzi": "谢谢你的帮助。",
+      "pinyin": "Xièxie nǐ de bāngzhù.",
+      "english": "Thank you for your help."
+    }
+  },
+  {
+    "hanzi": "新年",
+    "pinyin": "xīnnián",
+    "translations": [
+      "New Year"
+    ],
+    "example": {
+      "hanzi": "新年快乐！",
+      "pinyin": "Xīnnián kuàilè!",
+      "english": "Happy New Year!"
+    }
+  },
+  {
+    "hanzi": "星期日",
+    "pinyin": "xīngqīrì",
+    "translations": [
+      "Sunday"
+    ],
+    "example": {
+      "hanzi": "星期日我们去公园吧。",
+      "pinyin": "Xīngqīrì wǒmen qù gōngyuán ba.",
+      "english": "Let's go to the park on Sunday."
+    }
+  },
+  {
+    "hanzi": "星期天",
+    "pinyin": "xīngqītiān",
+    "translations": [
+      "Sunday"
+    ],
+    "example": {
+      "hanzi": "星期天我不上班。",
+      "pinyin": "Xīngqītiān wǒ bù shàngbān.",
+      "english": "I don't work on Sundays."
+    }
+  },
+  {
+    "hanzi": "学校",
+    "pinyin": "xuéxiào",
+    "translations": [
+      "school"
+    ],
+    "example": {
+      "hanzi": "我的学校很大。",
+      "pinyin": "Wǒ de xuéxiào hěn dà.",
+      "english": "My school is very big."
+    }
+  },
+  {
+    "hanzi": "学院",
+    "pinyin": "xuéyuàn",
+    "translations": [
+      "college",
+      "institute"
+    ],
+    "example": {
+      "hanzi": "他在一所艺术学院学习。",
+      "pinyin": "Tā zài yī suǒ yìshù xuéyuàn xuéxí.",
+      "english": "He studies at an art college."
+    }
+  },
+  {
+    "hanzi": "爷爷",
+    "pinyin": "yéye",
+    "translations": [
+      "grandfather (paternal)"
+    ],
+    "example": {
+      "hanzi": "我爷爷喜欢喝茶。",
+      "pinyin": "Wǒ yéye xǐhuan hē chá.",
+      "english": "My grandfather likes drinking tea."
+    }
+  },
+  {
+    "hanzi": "页",
+    "pinyin": "yè",
+    "translations": [
+      "page"
+    ],
+    "example": {
+      "hanzi": "请翻到第十页。",
+      "pinyin": "Qǐng fāndào dì shí yè.",
+      "english": "Please turn to page ten."
+    }
+  },
+  {
+    "hanzi": "医生",
+    "pinyin": "yīshēng",
+    "translations": [
+      "doctor"
+    ],
+    "example": {
+      "hanzi": "她是一位医生。",
+      "pinyin": "Tā shì yī wèi yīshēng.",
+      "english": "She is a doctor."
+    }
+  },
+  {
+    "hanzi": "一半",
+    "pinyin": "yībàn",
+    "translations": [
+      "half"
+    ],
+    "example": {
+      "hanzi": "我吃了一半。",
+      "pinyin": "Wǒ chīle yībàn.",
+      "english": "I ate half of it."
+    }
+  },
+  {
+    "hanzi": "一块儿",
+    "pinyin": "yīkuàir",
+    "translations": [
+      "together"
+    ],
+    "example": {
+      "hanzi": "我们一块儿去吧。",
+      "pinyin": "Wǒmen yīkuàir qù ba.",
+      "english": "Let's go together."
+    }
+  },
+  {
+    "hanzi": "一下儿",
+    "pinyin": "yīxiàr",
+    "translations": [
+      "a little bit",
+      "briefly"
+    ],
+    "example": {
+      "hanzi": "请等一下儿。",
+      "pinyin": "Qǐng děng yīxiàr.",
+      "english": "Please wait a moment."
+    }
+  },
+  {
+    "hanzi": "一边",
+    "pinyin": "yībiān",
+    "translations": [
+      "one side",
+      "simultaneously (as in 一边...一边...)"
+    ],
+    "example": {
+      "hanzi": "他一边走一边说话。",
+      "pinyin": "Tā yībiān zǒu yībiān shuōhuà.",
+      "english": "He talks while walking."
+    }
+  },
+  {
+    "hanzi": "一点儿",
+    "pinyin": "yīdiǎnr",
+    "translations": [
+      "a little bit"
+    ],
+    "example": {
+      "hanzi": "我会说一点儿汉语。",
+      "pinyin": "Wǒ huì shuō yīdiǎnr Hànyǔ.",
+      "english": "I can speak a little Chinese."
+    }
+  },
+  {
+    "hanzi": "有的",
+    "pinyin": "yǒude",
+    "translations": [
+      "some"
+    ],
+    "example": {
+      "hanzi": "有的人喜欢茶，有的人喜欢咖啡。",
+      "pinyin": "Yǒude rén xǐhuan chá, yǒude rén xǐhuan kāfēi.",
+      "english": "Some people like tea, some like coffee."
+    }
+  },
+  {
+    "hanzi": "有名",
+    "pinyin": "yǒumíng",
+    "translations": [
+      "famous"
+    ],
+    "example": {
+      "hanzi": "他是一位有名的医生。",
+      "pinyin": "Tā shì yī wèi yǒumíng de yīshēng.",
+      "english": "He is a famous doctor."
+    }
+  },
+  {
+    "hanzi": "有些",
+    "pinyin": "yǒuxiē",
+    "translations": [
+      "some"
+    ],
+    "example": {
+      "hanzi": "有些学生不喜欢考试。",
+      "pinyin": "Yǒuxiē xuésheng bù xǐhuan kǎoshì.",
+      "english": "Some students don't like exams."
+    }
+  },
+  {
+    "hanzi": "右",
+    "pinyin": "yòu",
+    "translations": [
+      "right (direction, bound form)"
+    ],
+    "example": {
+      "hanzi": "请往右走。",
+      "pinyin": "Qǐng wǎng yòu zǒu.",
+      "english": "Please go right."
+    }
+  },
+  {
+    "hanzi": "右边",
+    "pinyin": "yòubian",
+    "translations": [
+      "right side"
+    ],
+    "example": {
+      "hanzi": "银行在右边。",
+      "pinyin": "Yínháng zài yòubian.",
+      "english": "The bank is on the right."
+    }
+  },
+  {
+    "hanzi": "元",
+    "pinyin": "yuán",
+    "translations": [
+      "yuan (Chinese currency unit)"
+    ],
+    "example": {
+      "hanzi": "这个苹果三元钱。",
+      "pinyin": "Zhège píngguǒ sān yuán qián.",
+      "english": "This apple costs three yuan."
+    }
+  },
+  {
+    "hanzi": "再见",
+    "pinyin": "zàijiàn",
+    "translations": [
+      "goodbye"
+    ],
+    "example": {
+      "hanzi": "再见，明天见！",
+      "pinyin": "Zàijiàn, míngtiān jiàn!",
+      "english": "Goodbye, see you tomorrow!"
+    }
+  },
+  {
+    "hanzi": "在家",
+    "pinyin": "zàijiā",
+    "translations": [
+      "at home"
+    ],
+    "example": {
+      "hanzi": "我周末在家休息。",
+      "pinyin": "Wǒ zhōumò zàijiā xiūxi.",
+      "english": "I rest at home on weekends."
+    }
+  },
+  {
+    "hanzi": "早饭",
+    "pinyin": "zǎofàn",
+    "translations": [
+      "breakfast"
+    ],
+    "example": {
+      "hanzi": "我没吃早饭。",
+      "pinyin": "Wǒ méi chī zǎofàn.",
+      "english": "I didn't eat breakfast."
+    }
+  },
+  {
+    "hanzi": "早上",
+    "pinyin": "zǎoshang",
+    "translations": [
+      "morning"
+    ],
+    "example": {
+      "hanzi": "早上好！",
+      "pinyin": "Zǎoshang hǎo!",
+      "english": "Good morning!"
+    }
+  },
+  {
+    "hanzi": "这边",
+    "pinyin": "zhèbiān",
+    "translations": [
+      "this way",
+      "over here"
+    ],
+    "example": {
+      "hanzi": "请走这边。",
+      "pinyin": "Qǐng zǒu zhèbiān.",
+      "english": "Please come this way."
+    }
+  },
+  {
+    "hanzi": "这里",
+    "pinyin": "zhèlǐ",
+    "translations": [
+      "here"
+    ],
+    "example": {
+      "hanzi": "我住在这里。",
+      "pinyin": "Wǒ zhù zài zhèlǐ.",
+      "english": "I live here."
+    }
+  },
+  {
+    "hanzi": "这儿",
+    "pinyin": "zhèr",
+    "translations": [
+      "here"
+    ],
+    "example": {
+      "hanzi": "我们在这儿等你。",
+      "pinyin": "Wǒmen zài zhèr děng nǐ.",
+      "english": "We'll wait for you here."
+    }
+  },
+  {
+    "hanzi": "着",
+    "pinyin": "zhe",
+    "translations": [
+      "particle indicating an ongoing state or action"
+    ],
+    "example": {
+      "hanzi": "门开着呢。",
+      "pinyin": "Mén kāizhe ne.",
+      "english": "The door is open."
+    }
+  },
+  {
+    "hanzi": "真的",
+    "pinyin": "zhēnde",
+    "translations": [
+      "really",
+      "truly"
+    ],
+    "example": {
+      "hanzi": "这是真的吗？",
+      "pinyin": "Zhè shì zhēnde ma?",
+      "english": "Is this really true?"
+    }
+  },
+  {
+    "hanzi": "正",
+    "pinyin": "zhèng",
+    "translations": [
+      "just",
+      "exactly (bound form, as in 正在)"
+    ],
+    "example": {
+      "hanzi": "他正说着话呢。",
+      "pinyin": "Tā zhèng shuōzhe huà ne.",
+      "english": "He's just now talking."
+    }
+  },
+  {
+    "hanzi": "知识",
+    "pinyin": "zhīshi",
+    "translations": [
+      "knowledge"
+    ],
+    "example": {
+      "hanzi": "他有很多知识。",
+      "pinyin": "Tā yǒu hěnduō zhīshi.",
+      "english": "He has a lot of knowledge."
+    }
+  },
+  {
+    "hanzi": "中国",
+    "pinyin": "zhōngguó",
+    "translations": [
+      "China"
+    ],
+    "example": {
+      "hanzi": "我爱中国。",
+      "pinyin": "Wǒ ài Zhōngguó.",
+      "english": "I love China."
+    }
+  },
+  {
+    "hanzi": "中间",
+    "pinyin": "zhōngjiān",
+    "translations": [
+      "middle",
+      "between"
+    ],
+    "example": {
+      "hanzi": "他坐在中间。",
+      "pinyin": "Tā zuò zài zhōngjiān.",
+      "english": "He sits in the middle."
+    }
+  },
+  {
+    "hanzi": "中文",
+    "pinyin": "zhōngwén",
+    "translations": [
+      "Chinese (language/writing)"
+    ],
+    "example": {
+      "hanzi": "我在学中文。",
+      "pinyin": "Wǒ zài xué Zhōngwén.",
+      "english": "I'm learning Chinese."
+    }
+  },
+  {
+    "hanzi": "中午",
+    "pinyin": "zhōngwǔ",
+    "translations": [
+      "noon"
+    ],
+    "example": {
+      "hanzi": "我们中午吃饭吧。",
+      "pinyin": "Wǒmen zhōngwǔ chīfàn ba.",
+      "english": "Let's eat at noon."
+    }
+  },
+  {
+    "hanzi": "中学",
+    "pinyin": "zhōngxué",
+    "translations": [
+      "middle/high school"
+    ],
+    "example": {
+      "hanzi": "他在中学教书。",
+      "pinyin": "Tā zài zhōngxué jiāoshū.",
+      "english": "He teaches at a middle school."
+    }
+  },
+  {
+    "hanzi": "中学生",
+    "pinyin": "zhōngxuéshēng",
+    "translations": [
+      "middle/high school student"
+    ],
+    "example": {
+      "hanzi": "我弟弟是中学生。",
+      "pinyin": "Wǒ dìdi shì zhōngxuéshēng.",
+      "english": "My younger brother is a middle school student."
+    }
+  },
+  {
+    "hanzi": "重",
+    "pinyin": "zhòng",
+    "translations": [
+      "heavy"
+    ],
+    "example": {
+      "hanzi": "这个包很重。",
+      "pinyin": "Zhège bāo hěn zhòng.",
+      "english": "This bag is very heavy."
+    }
+  },
+  {
+    "hanzi": "最好",
+    "pinyin": "zuìhǎo",
+    "translations": [
+      "best",
+      "had better"
+    ],
+    "example": {
+      "hanzi": "你最好早点休息。",
+      "pinyin": "Nǐ zuìhǎo zǎodiǎn xiūxi.",
+      "english": "You'd better rest early."
+    }
+  },
+  {
+    "hanzi": "最后",
+    "pinyin": "zuìhòu",
+    "translations": [
+      "finally",
+      "last"
+    ],
+    "example": {
+      "hanzi": "最后我们赢了。",
+      "pinyin": "Zuìhòu wǒmen yíng le.",
+      "english": "In the end, we won."
+    }
+  },
+  {
+    "hanzi": "左边",
+    "pinyin": "zuǒbian",
+    "translations": [
+      "left side"
+    ],
+    "example": {
+      "hanzi": "洗手间在左边。",
+      "pinyin": "Xǐshǒujiān zài zuǒbian.",
+      "english": "The restroom is on the left."
+    }
+  },
+  {
+    "hanzi": "坐下",
+    "pinyin": "zuòxià",
+    "translations": [
+      "to sit down"
+    ],
+    "example": {
+      "hanzi": "请坐下。",
+      "pinyin": "Qǐng zuòxià.",
+      "english": "Please sit down."
+    }
+  }
+]
