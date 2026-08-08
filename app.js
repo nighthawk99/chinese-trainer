@@ -1,6 +1,6 @@
 (() => {
   const SETTINGS_KEY = 'chineseTrainer.settings';
-  const DEFAULT_SETTINGS = { pageDurationMs: 3000, vocabSource: 'own' };
+  const DEFAULT_SETTINGS = { pageDurationMs: 3000, vocabSource: 'own', speechRate: 1.0 };
 
   const VOCAB_SOURCES = {
     own: { label: 'My own vocabulary list', file: 'data/vocab.json' },
@@ -39,6 +39,8 @@
   const homeModeDesc = document.getElementById('home-mode-desc');
   const durationSlider = document.getElementById('duration-slider');
   const durationValue = document.getElementById('duration-value');
+  const rateSlider = document.getElementById('rate-slider');
+  const rateValue = document.getElementById('rate-value');
   const vocabSourceList = document.getElementById('vocab-source-list');
 
   let vocab = [];
@@ -81,7 +83,7 @@
     const utter = new SpeechSynthesisUtterance(text);
     utter.lang = lang;
     if (voice) utter.voice = voice;
-    utter.rate = 0.95;
+    utter.rate = settings.speechRate;
     window.speechSynthesis.speak(utter);
   }
 
@@ -163,6 +165,18 @@
     const seconds = parseFloat(durationSlider.value);
     durationValue.textContent = seconds.toFixed(1) + 's';
     settings.pageDurationMs = Math.round(seconds * 1000);
+    saveSettings();
+  });
+
+  function renderRateSlider() {
+    rateSlider.value = String(settings.speechRate);
+    rateValue.textContent = settings.speechRate.toFixed(1) + '×';
+  }
+
+  rateSlider.addEventListener('input', () => {
+    const rate = parseFloat(rateSlider.value);
+    rateValue.textContent = rate.toFixed(1) + '×';
+    settings.speechRate = rate;
     saveSettings();
   });
 
@@ -309,6 +323,7 @@
 
   document.getElementById('settings-btn').addEventListener('click', () => {
     renderDurationSlider();
+    renderRateSlider();
     renderVocabSourceList();
     showScreen(settingsScreen);
   });
@@ -318,5 +333,6 @@
   });
 
   renderDurationSlider();
+  renderRateSlider();
   updateHomeDesc();
 })();

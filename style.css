@@ -262,7 +262,7 @@ html, body {
 
 .settings-label span { color: var(--accent); font-weight: 700; }
 
-#duration-slider {
+.settings-slider {
   width: 100%;
   height: 8px;
   border-radius: 4px;
