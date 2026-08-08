@@ -60,7 +60,10 @@ work).
 ## Status
 - [x] Vocabulary Trainer mode: random order, 3 auto-advancing pages per
       word (Hanzi+Pinyin → English → word in an example sentence), each
-      spoken aloud, tap left/right to go back/skip, pause button
+      spoken aloud. Quick tap left/right to go back/skip; holding a
+      finger down pauses the page-turn timer for as long as it's held
+      (pointer events, duration-based tap-vs-hold disambiguation).
+      Explicit pause button also still there.
 - [x] Works in both portrait and landscape. Text sized with `vmin`-
       based `clamp()` as an upper bound (readable at a glance, e.g.
       car-mounted phone in landscape) plus a JS shrink-to-fit pass
@@ -212,3 +215,16 @@ work).
   in both a small portrait viewport (375×667) and landscape — both fit
   with zero leftover overflow. Kept `overflow-y: auto` on the tap zone
   as a last-resort safety net, though it shouldn't normally trigger.
+- 2026-08-08: Added hold-to-pause. Replaced the tap zone's plain
+  `click` listener with `pointerdown`/`pointerup`/`pointercancel` so
+  real press duration is measurable — `pointerdown` clears the timer
+  immediately, `pointerup` checks elapsed time (<300ms + <10px
+  movement = tap → navigate; otherwise → just resume the timer,
+  no navigation). Verified with synthetic `PointerEvent`s (not
+  `MouseEvent`, which the tap zone no longer listens for) at a
+  temporarily short page duration set live via the actual settings
+  slider — setting `localStorage` directly in a test script does
+  *not* affect a page's already-running in-memory `settings` object,
+  which is only read once at load; this cost one wasted test cycle
+  before catching it. Worth remembering for any future test involving
+  settings on an already-open tab.
