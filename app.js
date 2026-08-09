@@ -65,6 +65,8 @@
   let timerId = null;
   let zhVoice = null;
   let enVoice = null;
+  let speechEnded = false; // gates scheduleAutoAdvance until the page's speak() call has finished
+  let renderGen = 0; // discards a stale speak() onEnd callback from a page the user has since left
 
   function shuffle(arr) {
     const a = arr.slice();
@@ -91,14 +93,31 @@
     window.speechSynthesis.onvoiceschanged = pickVoices;
   }
 
-  function speak(text, lang, voice) {
-    if (!('speechSynthesis' in window)) return;
+  // onEnd fires once, whether speech actually finished, errored, or (if
+  // speechSynthesis isn't available at all) never started. The 8s safety
+  // timeout covers a real WebKit quirk we've hit before: onend/onerror
+  // occasionally never fires at all — without it the trainer would just
+  // get stuck on that page forever.
+  function speak(text, lang, voice, onEnd) {
+    if (!('speechSynthesis' in window)) {
+      if (onEnd) onEnd();
+      return;
+    }
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      if (onEnd) onEnd();
+    };
     const doSpeak = () => {
       const utter = new SpeechSynthesisUtterance(text);
       utter.lang = lang;
       if (voice) utter.voice = voice;
       utter.rate = settings.speechRate;
+      utter.onend = finish;
+      utter.onerror = finish;
       window.speechSynthesis.speak(utter);
+      setTimeout(finish, 8000);
     };
     // Safari (esp. iOS) can silently drop a speak() called in the same tick
     // right after cancel() — only cancel when something's actually playing,
@@ -242,12 +261,21 @@
     updateProgress();
     const word = sessionWords[wordIndex];
 
+    speechEnded = false;
+    renderGen += 1;
+    const myGen = renderGen;
+    const onSpeechEnd = () => {
+      if (myGen !== renderGen) return; // stale — user has since moved to another page
+      speechEnded = true;
+      scheduleAutoAdvance();
+    };
+
     if (pageIndex === 0) {
       pageContent.innerHTML = `
         <div class="hanzi-large">${word.hanzi}</div>
         <div class="pinyin-large">${word.pinyin}</div>
       `;
-      speak(word.hanzi, 'zh-CN', zhVoice);
+      speak(word.hanzi, 'zh-CN', zhVoice, onSpeechEnd);
     } else if (pageIndex === 1) {
       const [primary, ...rest] = word.translations;
       const altHtml = rest.length
@@ -257,18 +285,17 @@
         <div class="english-large">${primary}</div>
         ${altHtml}
       `;
-      speak(primary, 'en-US', enVoice);
+      speak(primary, 'en-US', enVoice, onSpeechEnd);
     } else if (pageIndex === 2) {
       pageContent.innerHTML = `
         <div class="sentence-hanzi">${word.example.hanzi}</div>
         <div class="sentence-pinyin">${word.example.pinyin}</div>
         <div class="sentence-english">${word.example.english}</div>
       `;
-      speak(word.example.hanzi, 'zh-CN', zhVoice);
+      speak(word.example.hanzi, 'zh-CN', zhVoice, onSpeechEnd);
     }
 
     fitContentToContainer();
-    scheduleAutoAdvance();
   }
 
   // Pure CSS (vmin/clamp) sizes text off viewport dimensions alone, which
@@ -276,18 +303,34 @@
   // — a long word on a narrow phone can overflow. Shrink --fit-scale (a
   // multiplier on every font-size in page-content) only as much as needed
   // so the whole page always fits, starting from full size each time.
+  // The hanzi word (page 0) has `white-space: nowrap` in CSS so it can
+  // never wrap onto a second line — its width is checked here too, so
+  // it shrinks as needed to stay on one row instead of overflowing.
   function fitContentToContainer() {
     pageContent.style.setProperty('--fit-scale', '1');
     let scale = 1;
     const maxHeight = tapZone.clientHeight;
-    while (pageContent.scrollHeight > maxHeight && scale > 0.25) {
+    const maxWidth = tapZone.clientWidth;
+    const hanziEl = pageContent.querySelector('.hanzi-large');
+    const fits = () =>
+      pageContent.scrollHeight <= maxHeight &&
+      (!hanziEl || hanziEl.scrollWidth <= maxWidth);
+    // A handful of vocab.json entries are grammar-pattern strings rather
+    // than real single words (e.g. "S + 比 + S + 大/小 + number + 岁"),
+    // long enough to need a much smaller floor than any real word does
+    // to fit on one row. overflow-x on the tap zone is the last-resort
+    // safety net if even this floor isn't enough.
+    while (!fits() && scale > 0.1) {
       scale = Math.round((scale - 0.05) * 100) / 100;
       pageContent.style.setProperty('--fit-scale', String(scale));
     }
   }
 
   function scheduleAutoAdvance() {
-    if (paused) return;
+    // Waits for the page's speech to finish (speechEnded, set by renderPage's
+    // onSpeechEnd callback) before starting the per-page timer — called again
+    // from there once speech ends if this no-ops here for that reason.
+    if (paused || !speechEnded) return;
     timerId = setTimeout(advance, settings.pageDurationsMs[pageIndex]);
   }
 

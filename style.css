@@ -110,6 +110,11 @@ html, body {
   justify-content: center;
   min-height: 0;
   overflow-y: auto;
+  /* Last-resort safety net: app.js's shrink-to-fit has a floor, so an
+     extreme edge case (e.g. one of vocab.json's long grammar-pattern
+     entries on a very narrow screen) could still be wider than the
+     screen even at minimum scale — scroll rather than clip/overflow. */
+  overflow-x: auto;
 }
 
 .page-content {
@@ -134,7 +139,9 @@ html, body {
   font-size: calc(clamp(4rem, 50vmin, 22rem) * var(--fit-scale, 1));
   font-weight: 700;
   line-height: 1.05;
-  word-break: break-word;
+  /* Always one row — app.js shrinks --fit-scale until it fits rather
+     than letting a long word wrap onto a second line. */
+  white-space: nowrap;
 }
 
 .pinyin-large {
