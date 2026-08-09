@@ -1,6 +1,9 @@
 (() => {
   const SETTINGS_KEY = 'chineseTrainer.settings';
-  const DEFAULT_SETTINGS = { pageDurationMs: 3000, vocabSource: 'own', speechRate: 1.0 };
+  // pageDurationsMs is indexed by pageIndex: [hanzi/pinyin, english, sentence].
+  function defaultSettings() {
+    return { pageDurationsMs: [3000, 3000, 3000], vocabSource: 'own', speechRate: 1.0 };
+  }
 
   const VOCAB_SOURCES = {
     own: { label: 'My own vocabulary list', file: 'data/vocab.json' },
@@ -11,13 +14,24 @@
   };
 
   function loadSettings() {
+    const defaults = defaultSettings();
     try {
       const raw = localStorage.getItem(SETTINGS_KEY);
-      if (!raw) return { ...DEFAULT_SETTINGS };
+      if (!raw) return defaults;
       const parsed = JSON.parse(raw);
-      return { ...DEFAULT_SETTINGS, ...parsed };
+      const merged = { ...defaults, ...parsed };
+      if (Array.isArray(parsed.pageDurationsMs) && parsed.pageDurationsMs.length === 3) {
+        merged.pageDurationsMs = parsed.pageDurationsMs.slice();
+      } else if (typeof parsed.pageDurationMs === 'number') {
+        // Migrate from the old single per-session duration setting.
+        merged.pageDurationsMs = [parsed.pageDurationMs, parsed.pageDurationMs, parsed.pageDurationMs];
+      } else {
+        merged.pageDurationsMs = defaults.pageDurationsMs.slice();
+      }
+      delete merged.pageDurationMs;
+      return merged;
     } catch (e) {
-      return { ...DEFAULT_SETTINGS };
+      return defaults;
     }
   }
 
@@ -37,8 +51,8 @@
   const pauseBtn = document.getElementById('pause-btn');
   const tapZone = document.getElementById('tap-zone');
   const homeModeDesc = document.getElementById('home-mode-desc');
-  const durationSlider = document.getElementById('duration-slider');
-  const durationValue = document.getElementById('duration-value');
+  const durationSliders = [0, 1, 2].map(i => document.getElementById(`duration-slider-${i}`));
+  const durationValues = [0, 1, 2].map(i => document.getElementById(`duration-value-${i}`));
   const rateSlider = document.getElementById('rate-slider');
   const rateValue = document.getElementById('rate-value');
   const vocabSourceList = document.getElementById('vocab-source-list');
@@ -165,17 +179,21 @@
     });
   }
 
-  function renderDurationSlider() {
-    const seconds = settings.pageDurationMs / 1000;
-    durationSlider.value = String(seconds);
-    durationValue.textContent = seconds.toFixed(1) + 's';
+  function renderDurationSliders() {
+    settings.pageDurationsMs.forEach((ms, i) => {
+      const seconds = ms / 1000;
+      durationSliders[i].value = String(seconds);
+      durationValues[i].textContent = seconds.toFixed(1) + 's';
+    });
   }
 
-  durationSlider.addEventListener('input', () => {
-    const seconds = parseFloat(durationSlider.value);
-    durationValue.textContent = seconds.toFixed(1) + 's';
-    settings.pageDurationMs = Math.round(seconds * 1000);
-    saveSettings();
+  durationSliders.forEach((slider, i) => {
+    slider.addEventListener('input', () => {
+      const seconds = parseFloat(slider.value);
+      durationValues[i].textContent = seconds.toFixed(1) + 's';
+      settings.pageDurationsMs[i] = Math.round(seconds * 1000);
+      saveSettings();
+    });
   });
 
   function renderRateSlider() {
@@ -270,7 +288,7 @@
 
   function scheduleAutoAdvance() {
     if (paused) return;
-    timerId = setTimeout(advance, settings.pageDurationMs);
+    timerId = setTimeout(advance, settings.pageDurationsMs[pageIndex]);
   }
 
   function clearTimer() {
@@ -397,7 +415,7 @@
   });
 
   document.getElementById('settings-btn').addEventListener('click', () => {
-    renderDurationSlider();
+    renderDurationSliders();
     renderRateSlider();
     renderVocabSourceList();
     showScreen(settingsScreen);
@@ -407,7 +425,7 @@
     showScreen(homeScreen);
   });
 
-  renderDurationSlider();
+  renderDurationSliders();
   renderRateSlider();
   updateHomeDesc();
 })();

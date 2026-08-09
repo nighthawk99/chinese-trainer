@@ -237,6 +237,26 @@ html, body {
 
 .settings-label span { color: var(--accent); font-weight: 700; }
 
+.settings-multi {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.settings-subgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-sublabel {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-dim);
+}
+
+.settings-sublabel span { color: var(--accent); font-weight: 700; }
+
 .settings-slider {
   width: 100%;
   height: 8px;
