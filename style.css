@@ -18,6 +18,12 @@ html, body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   overscroll-behavior: none;
   user-select: none;
+  -webkit-user-select: none;
+  /* iOS Safari's long-press "callout" (Copy/Look Up/Share + selection
+     handles) is a separate mechanism from text selection and isn't
+     suppressed by user-select alone — this is what actually fires on
+     hold-to-pause in the trainer. */
+  -webkit-touch-callout: none;
 }
 
 .screen {
