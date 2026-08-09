@@ -117,7 +117,7 @@ work).
       parsed from it)
 - [x] HSK 1 — 500 words, complete and verified against the official
       list
-- [ ] HSK 2 — 772 new words, not started (empty placeholder file)
+- [x] HSK 2 — 749 entries (746 unique words), complete
 - [ ] HSK 3 — 973 new words, not started (empty placeholder file)
 - [ ] HSK 4 — 1,000 new words, not started (empty placeholder file)
 - [ ] Additional training modes beyond Vocabulary Trainer (not yet
@@ -317,3 +317,35 @@ work).
   `claude auth login` myself — that needs the user's own interactive
   approval, not something to do on their behalf. See "Next steps" at
   the top of this file for exactly what's left.
+- 2026-08-08: Built HSK2 (749 entries, 746 unique words). Sourced the
+  real word list the same way as HSK1 (raw `curl` of
+  `krmanik/HSK-3.0`'s `HSK 2.txt`, not `WebFetch`). Found and fixed
+  two source-list issues before authoring: (1) 17 words in the raw
+  HSK2 list were already present in `hsk1.json` — excluded as
+  not-actually-new, since the project's "new words per level, not
+  cumulative" scope decision means a level-2 list re-listing a
+  level-1 word is a source glitch, not a deliberate re-teach; (2) the
+  adjacent lines `表`/`示` were a scraping split of the single word
+  `表示` (`示` isn't a standalone modern word) — merged back into one
+  entry rather than authoring two spurious single-character words.
+  Also resolved 6 same-hanzi-appears-twice cases in the source: `长`
+  (cháng/zhǎng), `倒` (dào/dǎo), and `得` (dé/děi) are genuine
+  dual-pronunciation words and got two full entries each (matching
+  the 干/地/还 precedent from HSK1); `头`, `省`, `实在` were same-
+  reading duplicates (a data-entry artifact like HSK1's 地/还) and got
+  one merged entry each with multiple senses in `translations`.
+  Diffed the remaining 746 target words against `vocab.json` and
+  reused 153 entries (152 words, +1 for `长`'s two vocab.json
+  readings) directly; the other 596 needed fresh authoring. Given the
+  volume, split the 596 into 6 batches of ~100 and authored them via
+  6 parallel forked subagents (same session context, so each already
+  knew the schema/precedents/quality bar from this conversation)
+  rather than one long sequential pass — each fork wrote its batch to
+  a scratchpad JSON file and self-validated count/schema before
+  reporting back; all 6 landed clean on the first pass; merging and
+  final validation (exact word-list coverage, no unintended duplicate
+  (hanzi, pinyin) pairs, all fields present, punctuation/capitalization
+  conventions matching hsk1.json/vocab.json) was done centrally
+  afterward. Caught and fixed 2 minor style inconsistencies this way
+  (`春节`/`英文` had capitalized word-pinyin; house style is lowercase
+  even for proper nouns, e.g. `zhōngguó` in hsk1.json).
