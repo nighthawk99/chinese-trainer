@@ -66,38 +66,15 @@
     el.classList.add('active');
   }
 
-  // TEMPORARY: on-screen speechSynthesis diagnostics for tracking down a
-  // reported "no audio" issue on a specific iPhone. Remove once resolved.
-  const debugLines = [];
-  let debugEl = null;
-  function debugLog(msg) {
-    const time = new Date().toISOString().slice(11, 19);
-    debugLines.push(`${time} ${msg}`);
-    while (debugLines.length > 10) debugLines.shift();
-    if (!debugEl) {
-      debugEl = document.createElement('div');
-      debugEl.id = 'speech-debug';
-      debugEl.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:99999;' +
-        'background:rgba(0,0,0,0.85);color:#0f0;font:10px/1.4 monospace;' +
-        'padding:6px;max-height:35vh;overflow-y:auto;white-space:pre-wrap;pointer-events:none;';
-      document.body.appendChild(debugEl);
-    }
-    debugEl.textContent = debugLines.join('\n');
-  }
-
   function pickVoices() {
     const voices = window.speechSynthesis.getVoices();
     zhVoice = voices.find(v => v.lang === 'zh-CN') || voices.find(v => v.lang && v.lang.startsWith('zh')) || null;
     enVoice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang && v.lang.startsWith('en')) || null;
-    debugLog(`voices: ${voices.length} total, zh=${zhVoice ? zhVoice.name : 'none'}, en=${enVoice ? enVoice.name : 'none'}`);
   }
 
   if ('speechSynthesis' in window) {
     pickVoices();
     window.speechSynthesis.onvoiceschanged = pickVoices;
-    debugLog('speechSynthesis API present');
-  } else {
-    debugLog('speechSynthesis API MISSING from window');
   }
 
   function speak(text, lang, voice) {
@@ -107,10 +84,6 @@
       utter.lang = lang;
       if (voice) utter.voice = voice;
       utter.rate = settings.speechRate;
-      utter.onstart = () => debugLog(`onstart: "${text}"`);
-      utter.onend = () => debugLog(`onend: "${text}"`);
-      utter.onerror = (e) => debugLog(`onerror: "${text}" -> ${e.error}`);
-      debugLog(`speak() calling: "${text}" lang=${lang} voice=${voice ? voice.name : 'default'} rate=${settings.speechRate} speaking=${window.speechSynthesis.speaking} pending=${window.speechSynthesis.pending} paused=${window.speechSynthesis.paused}`);
       window.speechSynthesis.speak(utter);
     };
     // Safari (esp. iOS) can silently drop a speak() called in the same tick
@@ -228,10 +201,6 @@
     if (!('speechSynthesis' in window)) return;
     const primer = new SpeechSynthesisUtterance(' ');
     primer.volume = 0;
-    primer.onstart = () => debugLog('primer onstart');
-    primer.onend = () => debugLog('primer onend');
-    primer.onerror = (e) => debugLog(`primer onerror -> ${e.error}`);
-    debugLog(`primer speak() called, speaking=${window.speechSynthesis.speaking} pending=${window.speechSynthesis.pending}`);
     window.speechSynthesis.speak(primer);
   }
 

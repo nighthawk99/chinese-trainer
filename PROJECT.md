@@ -349,3 +349,35 @@ work).
   afterward. Caught and fixed 2 minor style inconsistencies this way
   (`春节`/`英文` had capitalized word-pinyin; house style is lowercase
   even for proper nouns, e.g. `zhōngguó` in hsk1.json).
+- 2026-08-09: User reported no TTS audio at all on their iPhone
+  (Home Screen icon, then confirmed also silent in a plain Safari
+  tab). Chased two real-but-not-the-cause code issues first: Safari's
+  documented same-tick `cancel()`+`speak()` race (now fixed in
+  `speak()` — only cancels when something's actually playing, then
+  defers the next `speak()` by one tick), and the async-gesture-
+  timing gap in `startSession()` (now mitigated with a
+  `primeSpeechSynthesis()` call — a near-silent utterance fired
+  synchronously in the Start/Restart button's click handler, before
+  the awaited vocab fetch, so a later timer-driven `speak()` isn't
+  blocked by iOS's user-gesture requirement for standalone/Home
+  Screen apps). Neither fixed it, so added a temporary on-screen
+  debug panel (logged every `speak()` call, voice list, and
+  utterance `onstart`/`onend`/`onerror`) rather than keep guessing —
+  and it showed `onstart`/`onend` firing normally with correct voices
+  (`Tingting`/`Samantha`) and realistic durations, no errors at all.
+  That meant speech synthesis was genuinely "succeeding" from the
+  API's point of view, which pointed away from app code entirely.
+  Root cause, confirmed by the user via Control Center: **iOS
+  Safari's Web Speech API respects the Focus/Do Not Disturb mute
+  state** (the crossed-out bell in Control Center) — toggling it off
+  brought audio back immediately. This is a genuine WebKit quirk with
+  no JS-level workaround: `<video>`/`<audio>` playback uses a
+  different audio session category that ignores Focus/DND, but
+  `speechSynthesis` doesn't, and the browser never surfaces this as
+  an error (`onstart`/`onend` fire as if it played normally). Not a
+  bug in this app — removed the debug panel and kept the two
+  legitimate defensive fixes (the cancel/speak race guard and the
+  gesture-priming call), since both address real, separately-
+  documented WebKit issues even though neither was this specific
+  cause. Worth remembering next time TTS audio reportedly stops:
+  check Focus/Do Not Disturb before assuming a regression.
