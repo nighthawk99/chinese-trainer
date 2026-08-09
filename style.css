@@ -6,6 +6,11 @@
   --text-dim: #9aa0ab;
   --accent: #4da3ff;
   --accent-dim: #2a3b52;
+  /* Reserved for grammar-pattern notation (e.g. "A + 比 + B + adj") — a
+     distinct color used only for these formula-like strings, so they
+     read as "this is a slot pattern" at a glance, separate from --accent. */
+  --pattern: #f2c14e;
+  --pattern-bg: #332a12;
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -315,4 +320,142 @@ html, body {
 
 @media (orientation: landscape) {
   .settings-content { padding: 10px 32px 20px; gap: 16px; }
+}
+
+/* Grammar Review */
+.grammar-category-list,
+.grammar-construct-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 20px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  /* This is a read/reference feature, not a timed drill — unlike the
+     rest of the app, the user may want to select and copy text here. */
+  user-select: text;
+  -webkit-user-select: text;
+  -webkit-touch-callout: default;
+}
+
+.grammar-category-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--bg-alt);
+  border: 1px solid #2a2f3a;
+  border-radius: 12px;
+  padding: 14px 16px;
+  color: var(--text);
+  text-align: left;
+  font: inherit;
+}
+
+.grammar-category-item:active { background: var(--accent-dim); }
+
+.grammar-category-name { font-size: 0.98rem; font-weight: 600; }
+.grammar-category-count { font-size: 0.8rem; color: var(--text-dim); white-space: nowrap; }
+
+.construct-card {
+  background: var(--bg-alt);
+  border: 1px solid #2a2f3a;
+  border-radius: 12px;
+  padding: 4px 16px;
+}
+
+.construct-card > summary {
+  padding: 14px 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.construct-card > summary::-webkit-details-marker { display: none; }
+
+.construct-card > summary::after {
+  content: '+';
+  color: var(--text-dim);
+  font-size: 1.2rem;
+  font-weight: 400;
+  flex-shrink: 0;
+}
+
+.construct-card[open] > summary::after { content: '\2212'; }
+
+.construct-body {
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sub-pattern {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sub-pattern-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+.pattern-pill {
+  display: inline-block;
+  font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  color: var(--pattern);
+  background: var(--pattern-bg);
+  border-radius: 6px;
+  padding: 6px 10px;
+  line-height: 1.4;
+  width: fit-content;
+}
+
+.sub-pattern-explanation {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+.example-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.example {
+  border-left: 2px solid var(--accent-dim);
+  padding-left: 10px;
+}
+
+.example-hanzi { font-size: 1.05rem; }
+.example-pinyin { font-size: 0.85rem; color: var(--accent); }
+.example-english { font-size: 0.85rem; color: var(--text-dim); }
+
+.construct-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.construct-links a {
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+
+.grammar-empty {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 32px 16px;
 }

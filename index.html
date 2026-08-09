@@ -16,6 +16,34 @@
       <span class="mode-name">Vocabulary Trainer</span>
       <span class="mode-desc" id="home-mode-desc">Cycle through your word list in random order</span>
     </button>
+    <button class="mode-tile" id="start-grammar-review">
+      <span class="mode-name">Grammar Review</span>
+      <span class="mode-desc" id="home-grammar-desc">Browse grammar patterns and constructs by topic</span>
+    </button>
+  </section>
+
+  <!-- Grammar Review: choose a topic -->
+  <section id="grammar-screen" class="screen">
+    <div class="top-bar">
+      <button id="grammar-home-btn" class="icon-btn" aria-label="Home">&larr;</button>
+      <div class="progress-label">Grammar Review</div>
+      <div style="width: 2.5em;"></div>
+    </div>
+    <div id="grammar-category-list" class="grammar-category-list">
+      <!-- filled dynamically -->
+    </div>
+  </section>
+
+  <!-- Grammar Review: constructs within one topic -->
+  <section id="grammar-detail-screen" class="screen">
+    <div class="top-bar">
+      <button id="grammar-detail-back-btn" class="icon-btn" aria-label="Back">&larr;</button>
+      <div id="grammar-detail-title" class="progress-label"></div>
+      <div style="width: 2.5em;"></div>
+    </div>
+    <div id="grammar-construct-list" class="grammar-construct-list">
+      <!-- filled dynamically -->
+    </div>
   </section>
 
   <!-- Settings screen -->

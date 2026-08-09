@@ -46,6 +46,11 @@
   const settingsScreen = document.getElementById('settings-screen');
   const trainerScreen = document.getElementById('trainer-screen');
   const completeScreen = document.getElementById('complete-screen');
+  const grammarScreen = document.getElementById('grammar-screen');
+  const grammarDetailScreen = document.getElementById('grammar-detail-screen');
+  const grammarCategoryList = document.getElementById('grammar-category-list');
+  const grammarConstructList = document.getElementById('grammar-construct-list');
+  const grammarDetailTitle = document.getElementById('grammar-detail-title');
   const pageContent = document.getElementById('page-content');
   const progressLabel = document.getElementById('progress-label');
   const pauseBtn = document.getElementById('pause-btn');
@@ -78,7 +83,8 @@
   }
 
   function showScreen(el) {
-    [homeScreen, settingsScreen, trainerScreen, completeScreen].forEach(s => s.classList.remove('active'));
+    [homeScreen, settingsScreen, trainerScreen, completeScreen, grammarScreen, grammarDetailScreen]
+      .forEach(s => s.classList.remove('active'));
     el.classList.add('active');
   }
 
@@ -153,6 +159,82 @@
     const source = VOCAB_SOURCES[settings.vocabSource] || VOCAB_SOURCES.own;
     const res = await fetch(source.file);
     vocab = await res.json();
+  }
+
+  let grammarData = null; // cached data/grammar.json, fetched once
+
+  async function loadGrammarData() {
+    if (!grammarData) {
+      const res = await fetch('data/grammar.json');
+      grammarData = await res.json();
+    }
+    return grammarData;
+  }
+
+  // Categories are already grouped in data/grammar.json in the intended
+  // display order, so a first-seen pass over the array preserves it.
+  function buildGrammarCategories(data) {
+    const counts = new Map();
+    data.forEach(c => counts.set(c.category, (counts.get(c.category) || 0) + 1));
+    return Array.from(counts.entries()).map(([name, count]) => ({ name, count }));
+  }
+
+  async function renderGrammarCategoryList() {
+    const data = await loadGrammarData();
+    const categories = buildGrammarCategories(data);
+    grammarCategoryList.innerHTML = '';
+    categories.forEach(({ name, count }) => {
+      const btn = document.createElement('button');
+      btn.className = 'grammar-category-item';
+      btn.innerHTML = `
+        <span class="grammar-category-name">${name}</span>
+        <span class="grammar-category-count">${count}</span>
+      `;
+      btn.addEventListener('click', () => openGrammarCategory(name));
+      grammarCategoryList.appendChild(btn);
+    });
+  }
+
+  function renderSubPattern(sp) {
+    let html = '<div class="sub-pattern">';
+    if (sp.label) html += `<div class="sub-pattern-label">${sp.label}</div>`;
+    if (sp.pattern) html += `<div class="pattern-pill">${sp.pattern}</div>`;
+    if (sp.explanation) html += `<div class="sub-pattern-explanation">${sp.explanation}</div>`;
+    html += '<div class="example-list">';
+    sp.examples.forEach(ex => {
+      html += `
+        <div class="example">
+          <div class="example-hanzi">${ex.hanzi}</div>
+          <div class="example-pinyin">${ex.pinyin}</div>
+          <div class="example-english">${ex.english}</div>
+        </div>
+      `;
+    });
+    html += '</div></div>';
+    return html;
+  }
+
+  function renderGrammarConstructList(categoryName) {
+    grammarDetailTitle.textContent = categoryName;
+    const constructs = grammarData.filter(c => c.category === categoryName);
+    grammarConstructList.innerHTML = '';
+    constructs.forEach(construct => {
+      const card = document.createElement('details');
+      card.className = 'construct-card';
+      let bodyHtml = construct.subPatterns.map(renderSubPattern).join('');
+      if (construct.links && construct.links.length) {
+        bodyHtml += '<div class="construct-links">' +
+          construct.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener">${l.label}</a>`).join('') +
+          '</div>';
+      }
+      card.innerHTML = `<summary>${construct.title}</summary><div class="construct-body">${bodyHtml}</div>`;
+      grammarConstructList.appendChild(card);
+    });
+  }
+
+  function openGrammarCategory(categoryName) {
+    renderGrammarConstructList(categoryName);
+    showScreen(grammarDetailScreen);
   }
 
   async function updateHomeDesc() {
@@ -446,6 +528,19 @@
   document.getElementById('start-vocab-trainer').addEventListener('click', () => {
     primeSpeechSynthesis();
     startSession();
+  });
+
+  document.getElementById('start-grammar-review').addEventListener('click', async () => {
+    await renderGrammarCategoryList();
+    showScreen(grammarScreen);
+  });
+
+  document.getElementById('grammar-home-btn').addEventListener('click', () => {
+    showScreen(homeScreen);
+  });
+
+  document.getElementById('grammar-detail-back-btn').addEventListener('click', () => {
+    showScreen(grammarScreen);
   });
 
   document.getElementById('restart-btn').addEventListener('click', () => {

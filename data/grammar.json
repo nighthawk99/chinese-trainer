@@ -1,0 +1,3042 @@
+[
+ {
+  "id": "比-age-difference",
+  "category": "Comparisons & Equality",
+  "title": "比 — age difference",
+  "sourceLessons": [
+   "L188"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "S1 + 比 + S2 + 大/小 + 几岁？ · S1 + 比 + S2 + 大/小 + number + 岁。",
+    "explanation": "Expresses how many years older or younger one person is compared to another.",
+    "examples": [
+     {
+      "hanzi": "你姐姐比你大几岁？",
+      "pinyin": "Nǐ jiějie bǐ nǐ dà jǐ suì?",
+      "english": "How many years older than you is your older sister?"
+     },
+     {
+      "hanzi": "他哥哥比他大三岁。",
+      "pinyin": "Tā gēge bǐ tā dà sān suì.",
+      "english": "His older brother is three years older than him."
+     },
+     {
+      "hanzi": "他比他哥哥小三岁。",
+      "pinyin": "Tā bǐ tā gēge xiǎo sān suì.",
+      "english": "He is three years younger than his older brother."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "比-degree-of-difference",
+  "category": "Comparisons & Equality",
+  "title": "比 — degree of difference",
+  "sourceLessons": [
+   "L188",
+   "L195&196"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "S1 + 比 + S2 + adj + 一点（儿）/一些/很多/多了/得多/number + measure word",
+    "explanation": "Adds a degree-of-difference phrase after a 比 comparison to say by how much.",
+    "examples": [
+     {
+      "hanzi": "今天比昨天热一点儿。",
+      "pinyin": "Jīntiān bǐ zuótiān rè yìdiǎnr.",
+      "english": "Today is a little hotter than yesterday."
+     },
+     {
+      "hanzi": "昨天的天气比今天的好一些。",
+      "pinyin": "Zuótiān de tiānqì bǐ jīntiān de hǎo yìxiē.",
+      "english": "Yesterday's weather was a bit better than today's."
+     },
+     {
+      "hanzi": "我今天比昨天忙一些。",
+      "pinyin": "Wǒ jīntiān bǐ zuótiān máng yìxiē.",
+      "english": "I'm a bit busier today than yesterday."
+     },
+     {
+      "hanzi": "这件衣服比那件贵很多。",
+      "pinyin": "Zhè jiàn yīfu bǐ nà jiàn guì hěn duō.",
+      "english": "This piece of clothing is much more expensive than that one."
+     },
+     {
+      "hanzi": "我觉得中文比英文难多了。",
+      "pinyin": "Wǒ juéde zhōngwén bǐ yīngwén nán duō le.",
+      "english": "I think Chinese is much harder than English."
+     },
+     {
+      "hanzi": "你做的菜比我做的好吃得多。",
+      "pinyin": "Nǐ zuò de cài bǐ wǒ zuò de hǎochī de duō.",
+      "english": "The food you cook is much more delicious than what I cook."
+     }
+    ]
+   },
+   {
+    "pattern": "A + 比 + B + adj + 很多/多了/得多/一点/一些",
+    "explanation": "Adds a degree word after the adjective in a 比 comparison to say how much more/less, from a big difference (很多/多了/得多) to a small one (一点/一些).",
+    "examples": [
+     {
+      "hanzi": "苹果比西瓜便宜很多/多了/得多。",
+      "pinyin": "Píngguǒ bǐ xīguā piányi hěnduō / duō le / de duō.",
+      "english": "Apples are much cheaper than watermelons."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "比-via-得-complement",
+  "category": "Comparisons & Equality",
+  "title": "比 — via 得-complement",
+  "sourceLessons": [
+   "L191"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "S1 + 比 + S2 + Verb + 得 + adj.",
+    "explanation": "Compares how well/how a certain way two people do the same action, using 得 to attach the manner/degree complement.",
+    "examples": [
+     {
+      "hanzi": "你比我起得早。",
+      "pinyin": "Nǐ bǐ wǒ qǐ de zǎo.",
+      "english": "You get up earlier than me."
+     },
+     {
+      "hanzi": "我比你起得晚。",
+      "pinyin": "Wǒ bǐ nǐ qǐ de wǎn.",
+      "english": "I get up later than you."
+     },
+     {
+      "hanzi": "我妻子比我做得好。",
+      "pinyin": "Wǒ qīzi bǐ wǒ zuò de hǎo.",
+      "english": "My wife does it better than me."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "比-comparing-duration",
+  "category": "Comparisons & Equality",
+  "title": "比 — comparing duration",
+  "sourceLessons": [
+   "L191"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "S1 + 比 + S2 + 早起/晚起/早睡/晚睡 + duration",
+    "explanation": "Compares by how much time one person does something earlier or later than another.",
+    "examples": [
+     {
+      "hanzi": "我比你早起两个小时。",
+      "pinyin": "Wǒ bǐ nǐ zǎo qǐ liǎng ge xiǎoshí.",
+      "english": "I get up two hours earlier than you."
+     },
+     {
+      "hanzi": "你比我晚睡三个小时。",
+      "pinyin": "Nǐ bǐ wǒ wǎn shuì sān ge xiǎoshí.",
+      "english": "You go to bed three hours later than me."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "跟和一样-equality",
+  "category": "Comparisons & Equality",
+  "title": "跟/和……一样 — equality",
+  "sourceLessons": [
+   "L195&196"
+  ],
+  "subPatterns": [
+   {
+    "label": "Two things are identical",
+    "pattern": "A + 跟/和 + B + 一样",
+    "explanation": "Says two people or things are identical in nature (same phone, same name, etc.).",
+    "examples": [
+     {
+      "hanzi": "你的衣服跟我的一样。",
+      "pinyin": "Nǐ de yīfu gēn wǒ de yíyàng.",
+      "english": "Your clothes are the same as mine."
+     },
+     {
+      "hanzi": "他们两个的手机一样。",
+      "pinyin": "Tāmen liǎng ge de shǒujī yíyàng.",
+      "english": "Their phones are the same."
+     },
+     {
+      "hanzi": "他的手机跟我的一样。",
+      "pinyin": "Tā de shǒujī gēn wǒ de yíyàng.",
+      "english": "His phone is the same as mine."
+     },
+     {
+      "hanzi": "你们两个人的名字一样。",
+      "pinyin": "Nǐmen liǎng gè rén de míngzì yíyàng.",
+      "english": "Your names are the same."
+     }
+    ]
+   },
+   {
+    "label": "Comparing an attribute (equal degree)",
+    "pattern": "A + 跟/和 + B + 一样 + adjective",
+    "explanation": "Used to compare attributes such as size, appearance, age, or skill — A is just as [adj] as B.",
+    "examples": [
+     {
+      "hanzi": "我和她一样高。",
+      "pinyin": "Wǒ hé tā yíyàng gāo.",
+      "english": "I am as tall as her."
+     },
+     {
+      "hanzi": "今天和昨天一样冷。",
+      "pinyin": "Jīntiān hé zuótiān yíyàng lěng.",
+      "english": "Today is as cold as yesterday."
+     },
+     {
+      "hanzi": "他和她一样大。",
+      "pinyin": "Tā hé tā yíyàng dà.",
+      "english": "He is the same age as her."
+     },
+     {
+      "hanzi": "今天和昨天一样热。",
+      "pinyin": "Jīntiān hé zuótiān yíyàng rè.",
+      "english": "Today is as hot as yesterday."
+     },
+     {
+      "hanzi": "这个星期和上个星期一样忙。",
+      "pinyin": "Zhège xīngqī hé shàng ge xīngqī yíyàng máng.",
+      "english": "This week is as busy as last week."
+     },
+     {
+      "hanzi": "这件衣服和那件一样贵。",
+      "pinyin": "Zhè jiàn yīfu hé nà jiàn yíyàng guì.",
+      "english": "This piece of clothing is as expensive as that one."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "没有-这么那么-negative-comparison",
+  "category": "Comparisons & Equality",
+  "title": "没(有) + 这么/那么 — negative comparison",
+  "sourceLessons": [
+   "L190"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "S1 + 没/没有 + S2 + （这么/那么）+ adj.",
+    "explanation": "\"S1 isn't as [adj] as S2.\" 这么 is used for something closer in location or time (e.g. the present); 那么 is used for something farther away (e.g. the past, the future, or something physically distant).",
+    "examples": [
+     {
+      "hanzi": "今天没有昨天那么冷。",
+      "pinyin": "Jīntiān méiyǒu zuótiān nàme lěng.",
+      "english": "Today isn't as cold as yesterday."
+     },
+     {
+      "hanzi": "昨天没有今天这么热。",
+      "pinyin": "Zuótiān méiyǒu jīntiān zhème rè.",
+      "english": "Yesterday wasn't as hot as today."
+     },
+     {
+      "hanzi": "这件衣服没有那件那么贵。",
+      "pinyin": "Zhè jiàn yīfu méiyǒu nà jiàn nàme guì.",
+      "english": "This piece of clothing isn't as expensive as that one."
+     },
+     {
+      "hanzi": "那条裤子没有这条这么好看。",
+      "pinyin": "Nà tiáo kùzi méiyǒu zhè tiáo zhème hǎokàn.",
+      "english": "Those pants aren't as nice-looking as these."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "从到-duration",
+  "category": "Time & Duration",
+  "title": "从……到…… + duration",
+  "sourceLessons": [
+   "L161"
+  ],
+  "subPatterns": [
+   {
+    "label": "How long it takes from A to B",
+    "pattern": "从 + A + 到 + B + 要/需要 + duration",
+    "explanation": "States how much time it takes to get from one place to another.",
+    "examples": [
+     {
+      "hanzi": "从我家到公司需要三十分钟。",
+      "pinyin": "Cóng wǒ jiā dào gōngsī xūyào sānshí fēnzhōng.",
+      "english": "It takes 30 minutes to get from my home to my company."
+     },
+     {
+      "hanzi": "从这里到机场要一个小时。",
+      "pinyin": "Cóng zhèlǐ dào jīchǎng yào yí gè xiǎoshí.",
+      "english": "It takes an hour to get from here to the airport."
+     }
+    ]
+   },
+   {
+    "label": "Emphasizing how quick it is",
+    "pattern": "从 + A + 到 + B + duration + 就到了",
+    "explanation": "Emphasizes that the trip from A to B is quick — \"just/only takes...\"",
+    "examples": [
+     {
+      "hanzi": "从学校到商场开车十分钟就到了。",
+      "pinyin": "Cóng xuéxiào dào shāngchǎng kāichē shí fēnzhōng jiù dào le.",
+      "english": "It only takes 10 minutes to drive from the school to the mall."
+     },
+     {
+      "hanzi": "从我家到地铁站走路五分钟就到了。",
+      "pinyin": "Cóng wǒ jiā dào dìtiě zhàn zǒulù wǔ fēnzhōng jiù dào le.",
+      "english": "It only takes five minutes to walk from my home to the subway station."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "还有还需要多长时间-time-estimation",
+  "category": "Time & Duration",
+  "title": "还有/还需要多长时间 — time estimation",
+  "sourceLessons": [
+   "L170"
+  ],
+  "subPatterns": [
+   {
+    "label": null,
+    "pattern": "还有/还需要多长时间 (能) + verb …?",
+    "explanation": "\"How much longer until...?\" / \"How much more time is needed to...?\" The optional 能 makes the question slightly more polite. 师傅 (shīfu) is a polite way to address a driver.",
+    "examples": [
+     {
+      "hanzi": "你还有多长时间能到机场？",
+      "pinyin": "Nǐ hái yǒu duō cháng shíjiān néng dào jīchǎng?",
+      "english": "How much longer until you arrive at the airport?"
+     },
+     {
+      "hanzi": "请问，还需要多长时间能到火车站？",
+      "pinyin": "Qǐngwèn, hái xūyào duō cháng shíjiān néng dào huǒchē zhàn?",
+      "english": "Excuse me, how much more time until we reach the train station?"
+     },
+     {
+      "hanzi": "师傅，还有多长时间能到市中心？",
+      "pinyin": "Shīfu, hái yǒu duō cháng shíjiān néng dào shì zhōngxīn?",
+      "english": "Driver, how much longer until we reach downtown?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "等到的时候",
+  "category": "Time & Duration",
+  "title": "等（到）……的时候",
+  "sourceLessons": [
+   "L172"
+  ],
+  "subPatterns": [
+   {
+    "label": null,
+    "pattern": "等 + [noun/verb phrase] + 的时候，S + V + O",
+    "explanation": "Indicates a specific time when something happens or will happen — \"when...\", \"wait till...\", or \"at/by the time...\"",
+    "examples": [
+     {
+      "hanzi": "等你来的时候，我们已经吃完饭了。",
+      "pinyin": "Děng nǐ lái de shíhou, wǒmen yǐjīng chī wán fàn le.",
+      "english": "When you arrived, we had already finished eating."
+     },
+     {
+      "hanzi": "等电影开始的时候，他才到。",
+      "pinyin": "Děng diànyǐng kāishǐ de shíhou, tā cái dào.",
+      "english": "He arrived only when the movie started."
+     },
+     {
+      "hanzi": "等她下课的时候，我去接她。",
+      "pinyin": "Děng tā xiàkè de shíhou, wǒ qù jiē tā.",
+      "english": "I'll pick her up when her class ends."
+     },
+     {
+      "hanzi": "等我们去北京的时候，记得带护照。",
+      "pinyin": "Děng wǒmen qù Běijīng de shíhou, jìde dài hùzhào.",
+      "english": "When we go to Beijing, remember to bring your passport."
+     },
+     {
+      "hanzi": "等你有时间的时候，我们一起喝咖啡吧。",
+      "pinyin": "Děng nǐ yǒu shíjiān de shíhou, wǒmen yìqǐ hē kāfēi ba.",
+      "english": "When you have time, let's get coffee together."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "第一次是的时候",
+  "category": "Time & Duration",
+  "title": "第一次……是……的时候",
+  "sourceLessons": [
+   "L174"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "Someone + 第一次 + verb + … + 是 + （在）+ time/age（的时候）",
+    "explanation": "Describes when someone did something for the first time. 在 is optional before the time/age, especially in questions. Works for both specific years and ages. Question forms replace the time/age with 什么时候/哪（一）年 or 几岁/多大（的时候）.",
+    "examples": [
+     {
+      "hanzi": "我第一次吃寿司是在大学的时候。",
+      "pinyin": "Wǒ dì yī cì chī shòusī shì zài dàxué de shíhou.",
+      "english": "The first time I ate sushi was in college."
+     },
+     {
+      "hanzi": "他第一次坐飞机是五岁的时候。",
+      "pinyin": "Tā dì yī cì zuò fēijī shì wǔ suì de shíhou.",
+      "english": "The first time he took a plane was when he was five."
+     },
+     {
+      "hanzi": "她第一次见我是在2020年。",
+      "pinyin": "Tā dì yī cì jiàn wǒ shì zài 2020 nián.",
+      "english": "The first time she saw me was in 2020."
+     },
+     {
+      "hanzi": "你第一次学中文是什么时候？",
+      "pinyin": "Nǐ dì yī cì xué Zhōngwén shì shénme shíhou?",
+      "english": "When was the first time you studied Chinese?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "从开始",
+  "category": "Time & Duration",
+  "title": "从……开始",
+  "sourceLessons": [
+   "L174"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "Someone（是）+ 从 + time/age（的时候）+ 开始 + verb …（的）",
+    "explanation": "Expresses when someone began doing something — can refer to a point in time or an age.",
+    "examples": [
+     {
+      "hanzi": "我从2018年开始工作。",
+      "pinyin": "Wǒ cóng 2018 nián kāishǐ gōngzuò.",
+      "english": "I started working in 2018."
+     },
+     {
+      "hanzi": "她从五岁开始学钢琴。",
+      "pinyin": "Tā cóng wǔ suì kāishǐ xué gāngqín.",
+      "english": "She started learning piano at age five."
+     },
+     {
+      "hanzi": "他高中毕业的时候开始学习法语。",
+      "pinyin": "Tā gāozhōng bìyè de shíhou kāishǐ xuéxí Fǎyǔ.",
+      "english": "He started studying French when he graduated from high school."
+     },
+     {
+      "hanzi": "我是从大学开始对历史感兴趣的。",
+      "pinyin": "Wǒ shì cóng dàxué kāishǐ duì lìshǐ gǎn xìngqù de.",
+      "english": "I started to become interested in history in college."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "前后-beforeafteragofrom-now",
+  "category": "Time & Duration",
+  "title": "前/后 — before/after/ago/from now",
+  "sourceLessons": [
+   "L180&181"
+  ],
+  "subPatterns": [
+   {
+    "label": "前 (qián) — in front / before a time / X ago",
+    "pattern": "Time + 前 = before…; Duration + 前 = … ago",
+    "explanation": "前 marks location (in front of), a point before a specific time, or a duration ago.",
+    "examples": [
+     {
+      "hanzi": "车在我前面。",
+      "pinyin": "Chē zài wǒ qiánmiàn.",
+      "english": "The car is in front of me."
+     },
+     {
+      "hanzi": "两点前",
+      "pinyin": "liǎng diǎn qián",
+      "english": "before 2 o'clock"
+     },
+     {
+      "hanzi": "星期五前",
+      "pinyin": "xīngqīwǔ qián",
+      "english": "before Friday"
+     },
+     {
+      "hanzi": "明天前",
+      "pinyin": "míngtiān qián",
+      "english": "before tomorrow"
+     },
+     {
+      "hanzi": "两天前",
+      "pinyin": "liǎng tiān qián",
+      "english": "two days ago"
+     },
+     {
+      "hanzi": "一个月前",
+      "pinyin": "yí gè yuè qián",
+      "english": "a month ago"
+     },
+     {
+      "hanzi": "饭前吃药。",
+      "pinyin": "Fàn qián chī yào.",
+      "english": "Take medicine before meals."
+     }
+    ]
+   },
+   {
+    "label": "后 (hòu) — behind / after a time / X from now",
+    "pattern": "Time + 后 = after…; Duration + 后 = … from now / in …",
+    "explanation": "后 marks location (behind), a point after a specific time, or a duration from now.",
+    "examples": [
+     {
+      "hanzi": "他坐在我后面。",
+      "pinyin": "Tā zuò zài wǒ hòumiàn.",
+      "english": "He sits behind me."
+     },
+     {
+      "hanzi": "五点后",
+      "pinyin": "wǔ diǎn hòu",
+      "english": "after 5 o'clock"
+     },
+     {
+      "hanzi": "星期天后",
+      "pinyin": "xīngqītiān hòu",
+      "english": "after Sunday"
+     },
+     {
+      "hanzi": "两天后",
+      "pinyin": "liǎng tiān hòu",
+      "english": "two days from now"
+     },
+     {
+      "hanzi": "五分钟后",
+      "pinyin": "wǔ fēnzhōng hòu",
+      "english": "in five minutes"
+     },
+     {
+      "hanzi": "饭后运动对身体不好。",
+      "pinyin": "Fàn hòu yùndòng duì shēntǐ bù hǎo.",
+      "english": "Exercising right after a meal is not good for your health."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "出生年份-我是年的",
+  "category": "Time & Duration",
+  "title": "出生年份 — 我是……年的",
+  "sourceLessons": [
+   "L195&196"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "我是 + year + 年的",
+    "explanation": "A common way to state one's birth year — the year is read digit by digit.",
+    "examples": [
+     {
+      "hanzi": "我是八七年的。",
+      "pinyin": "Wǒ shì bā qī nián de.",
+      "english": "I was born in 1987."
+     },
+     {
+      "hanzi": "他是九九年的。",
+      "pinyin": "Tā shì jiǔ jiǔ nián de.",
+      "english": "He was born in 1999."
+     },
+     {
+      "hanzi": "他是八六年的。",
+      "pinyin": "Tā shì bā liù nián de.",
+      "english": "He was born in 1986."
+     },
+     {
+      "hanzi": "我弟弟是零零年的。",
+      "pinyin": "Wǒ dìdi shì líng líng nián de.",
+      "english": "My younger brother was born in 2000."
+     },
+     {
+      "hanzi": "我妹妹是零三年的。",
+      "pinyin": "Wǒ mèimei shì líng sān nián de.",
+      "english": "My younger sister was born in 2003."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "到时候-when-the-time-comes",
+  "category": "Time & Duration",
+  "title": "到时候 — when the time comes",
+  "sourceLessons": [
+   "L207"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "到时候 + Clause",
+    "explanation": "\"When the time comes / at that time\" — refers to some future point without specifying exactly when.",
+    "examples": [
+     {
+      "hanzi": "到时候我再告诉你。",
+      "pinyin": "Dào shíhòu wǒ zài gàosu nǐ.",
+      "english": "I'll tell you when the time comes."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "最近-duration",
+  "category": "Time & Duration",
+  "title": "最近 + duration",
+  "sourceLessons": [
+   "L209"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "最近 + duration",
+    "explanation": "\"Recently, in the past (period of time)\" — describes something that happened or has been happening over the recent stretch of days/weeks/months/years.",
+    "examples": [
+     {
+      "hanzi": "最近三个月我都在学习中文。",
+      "pinyin": "Zuìjìn sān gè yuè wǒ dōu zài xuéxí zhōngwén.",
+      "english": "I've been studying Chinese for the past three months."
+     },
+     {
+      "hanzi": "最近几个星期天气一直很热。",
+      "pinyin": "Zuìjìn jǐ gè xīngqī tiānqì yīzhí hěn rè.",
+      "english": "The weather has been hot for the past few weeks."
+     },
+     {
+      "hanzi": "最近一年公司发展得很快。",
+      "pinyin": "Zuìjìn yī nián gōngsī fāzhǎn de hěn kuài.",
+      "english": "The company has grown quickly in the past year."
+     },
+     {
+      "hanzi": "最近几天我没怎么睡觉。",
+      "pinyin": "Zuìjìn jǐ tiān wǒ méi zěnme shuìjiào.",
+      "english": "I haven't slept much in the past few days."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "给-someone-看病",
+  "category": "Common Verb-Object Patterns",
+  "title": "给 + someone + 看病",
+  "sourceLessons": [
+   "L166"
+  ],
+  "subPatterns": [
+   {
+    "label": null,
+    "pattern": "给 + someone + 看病",
+    "explanation": "To treat someone (for illness) or examine someone, as a doctor.",
+    "examples": [
+     {
+      "hanzi": "医生每天给很多人看病。",
+      "pinyin": "Yīshēng měitiān gěi hěn duō rén kànbìng.",
+      "english": "The doctor treats many people every day."
+     },
+     {
+      "hanzi": "大夫正在给他看病。",
+      "pinyin": "Dàifu zhèngzài gěi tā kànbìng.",
+      "english": "The doctor is examining him right now."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "想-sthsb-to-miss",
+  "category": "Common Verb-Object Patterns",
+  "title": "想 + sth/sb — \"to miss\"",
+  "sourceLessons": [
+   "L169"
+  ],
+  "subPatterns": [
+   {
+    "label": null,
+    "pattern": "想 + something / someone",
+    "explanation": "Expresses missing or thinking about a person, thing, or event. This is different from 想 + verb, which means \"to want to.\"",
+    "examples": [
+     {
+      "hanzi": "我很想你。",
+      "pinyin": "Wǒ hěn xiǎng nǐ.",
+      "english": "I miss you."
+     },
+     {
+      "hanzi": "她总是想她的家人。",
+      "pinyin": "Tā zǒngshì xiǎng tā de jiārén.",
+      "english": "She always thinks about her family."
+     },
+     {
+      "hanzi": "我在想明天的考试。",
+      "pinyin": "Wǒ zài xiǎng míngtiān de kǎoshì.",
+      "english": "I'm thinking about tomorrow's exam."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "找-someone",
+  "category": "Common Verb-Object Patterns",
+  "title": "找 + someone",
+  "sourceLessons": [
+   "L172"
+  ],
+  "subPatterns": [
+   {
+    "label": null,
+    "pattern": "找 + someone (+ 有事 / 有什么事？)",
+    "explanation": "Used when someone is trying to reach or speak to another person, often with a specific purpose.",
+    "examples": [
+     {
+      "hanzi": "我想找老师谈谈我的作业。",
+      "pinyin": "Wǒ xiǎng zhǎo lǎoshī tántan wǒ de zuòyè.",
+      "english": "I want to talk to the teacher about my homework."
+     },
+     {
+      "hanzi": "他找我有事。",
+      "pinyin": "Tā zhǎo wǒ yǒu shì.",
+      "english": "He came to see me for something."
+     },
+     {
+      "hanzi": "你找她有什么事？",
+      "pinyin": "Nǐ zhǎo tā yǒu shénme shì?",
+      "english": "What do you need her for?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "教-someonesomethingverb",
+  "category": "Common Verb-Object Patterns",
+  "title": "教 + someone/something/verb",
+  "sourceLessons": [
+   "L174"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "教 + someone / 教 + something / 教 + someone + verb",
+    "explanation": "教 (jiāo) means \"to teach\" someone something, or to teach someone to do something. It can take a direct object (the thing being taught) or be followed by a full clause (someone + verb).",
+    "examples": [
+     {
+      "hanzi": "我教中文。",
+      "pinyin": "Wǒ jiāo Zhōngwén.",
+      "english": "I teach Chinese."
+     },
+     {
+      "hanzi": "她教我跳舞。",
+      "pinyin": "Tā jiāo wǒ tiàowǔ.",
+      "english": "She teaches me to dance."
+     },
+     {
+      "hanzi": "妈妈教孩子写字。",
+      "pinyin": "Māma jiāo háizi xiězì.",
+      "english": "Mom teaches the child to write."
+     },
+     {
+      "hanzi": "他在大学教历史。",
+      "pinyin": "Tā zài dàxué jiāo lìshǐ.",
+      "english": "He teaches history at the university."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "希望-clause",
+  "category": "Common Verb-Object Patterns",
+  "title": "希望 + clause",
+  "sourceLessons": [
+   "L174"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "我希望 + clause",
+    "explanation": "希望 (xīwàng) can be both a verb and a noun. As a verb it means \"to hope\" or \"to wish\"; as a noun it means \"a hope\" or \"a wish\".",
+    "examples": [
+     {
+      "hanzi": "我希望你喜欢这本书。",
+      "pinyin": "Wǒ xīwàng nǐ xǐhuan zhè běn shū.",
+      "english": "I hope you like this book."
+     },
+     {
+      "hanzi": "她希望明年能去中国旅游。",
+      "pinyin": "Tā xīwàng míngnián néng qù Zhōngguó lǚyóu.",
+      "english": "She hopes to travel to China next year."
+     },
+     {
+      "hanzi": "他们对未来充满希望。",
+      "pinyin": "Tāmen duì wèilái chōngmǎn xīwàng.",
+      "english": "They are full of hope for the future."
+     },
+     {
+      "hanzi": "我的希望是成为一名医生。",
+      "pinyin": "Wǒ de xīwàng shì chéngwéi yì míng yīshēng.",
+      "english": "My hope is to become a doctor."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "听-someone-的",
+  "category": "Common Verb-Object Patterns",
+  "title": "听 + someone + 的",
+  "sourceLessons": [
+   "L179"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "听 + someone + 的",
+    "explanation": "To listen to / follow someone's advice, order, opinion, instructions, directions, or suggestions.",
+    "examples": [
+     {
+      "hanzi": "听我的。",
+      "pinyin": "Tīng wǒ de.",
+      "english": "Listen to my advice."
+     },
+     {
+      "hanzi": "听妈妈的。",
+      "pinyin": "Tīng māma de.",
+      "english": "Listen to Mom's opinion."
+     },
+     {
+      "hanzi": "医生让你听我的。",
+      "pinyin": "Yīshēng ràng nǐ tīng wǒ de.",
+      "english": "The doctor told you to listen to me."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "我们这儿没有叫的",
+  "category": "Common Verb-Object Patterns",
+  "title": "我们这儿没有叫……的",
+  "sourceLessons": [
+   "L174"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "我们这儿没有叫 + Name + 的 / 你们那儿有叫 + Name + 的吗？",
+    "explanation": "Used to say (or ask) that no one by a given name is present or known at a place — common on the phone, or when asking after someone. 这儿/那儿 swap depending on whose location is meant.",
+    "examples": [
+     {
+      "hanzi": "我们这儿没有叫小李的。",
+      "pinyin": "Wǒmen zhèr méiyǒu jiào Xiǎo Lǐ de.",
+      "english": "There's no one named Xiao Li here."
+     },
+     {
+      "hanzi": "对不起，你们那儿有叫王芳的吗？——没有，我们这儿没有叫王芳的。",
+      "pinyin": "Duìbuqǐ, nǐmen nàr yǒu jiào Wáng Fāng de ma? — Méiyǒu, wǒmen zhèr méiyǒu jiào Wáng Fāng de.",
+      "english": "Sorry, is there a Wang Fang there? — No, we don't have anyone named Wang Fang."
+     },
+     {
+      "hanzi": "他们那儿没有叫张伟的，请你再确认一下。",
+      "pinyin": "Tāmen nàr méiyǒu jiào Zhāng Wěi de, qǐng nǐ zài quèrèn yíxià.",
+      "english": "They don't have anyone named Zhang Wei, please double-check."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "介绍-collocations",
+  "category": "Common Verb-Object Patterns",
+  "title": "介绍 — collocations",
+  "sourceLessons": [
+   "L195&196"
+  ],
+  "subPatterns": [
+   {
+    "label": "介绍 + someone + to + someone",
+    "pattern": "介绍 + person A + 给/给...认识",
+    "explanation": "Introducing one person to another.",
+    "examples": [
+     {
+      "hanzi": "我来介绍一下，这是我的朋友李明。",
+      "pinyin": "Wǒ lái jièshào yíxià, zhè shì wǒ de péngyou Lǐ Míng.",
+      "english": "Let me introduce you — this is my friend Li Ming."
+     }
+    ]
+   },
+   {
+    "label": "介绍 + something",
+    "pattern": "介绍 + place/product/etc.",
+    "explanation": "Explaining or recommending something, such as a place or a product.",
+    "examples": [
+     {
+      "hanzi": "请你介绍一下你们的学校。",
+      "pinyin": "Qǐng nǐ jièshào yíxià nǐmen de xuéxiào.",
+      "english": "Please introduce your school."
+     }
+    ]
+   },
+   {
+    "label": "帮 + someone + 介绍 + something",
+    "pattern": "帮 + someone + 介绍 + job/opportunity",
+    "explanation": "Helping someone by recommending or connecting them to a job or opportunity.",
+    "examples": [
+     {
+      "hanzi": "我的朋友帮我介绍了一个工作。",
+      "pinyin": "Wǒ de péngyǒu bāng wǒ jièshào le yí ge gōngzuò.",
+      "english": "My friend helped introduce me to a job."
+     }
+    ]
+   },
+   {
+    "label": "自我介绍 — self-introduction (noun)",
+    "pattern": "做一个自我介绍",
+    "explanation": "介绍 also works as a noun — \"an introduction\".",
+    "examples": [
+     {
+      "hanzi": "上课前，请大家做一个自我介绍。",
+      "pinyin": "Shàngkè qián, qǐng dàjiā zuò yí ge zìwǒ jièshào.",
+      "english": "Before class, please give a brief self-introduction."
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "label": "Listening practice (L195&196)",
+    "url": "https://www.youtube.com/watch?v=wPJ0JEZbJkw"
+   }
+  ]
+ },
+ {
+  "id": "再-zài-5-uses",
+  "category": "Particles: 再 / 呢 / 还",
+  "title": "再 (zài) — 5 uses",
+  "sourceLessons": [
+   "L166",
+   "L169",
+   "L186&187",
+   "L195&196"
+  ],
+  "subPatterns": [
+   {
+    "label": "Add more of something",
+    "pattern": "S + 再 + Verb + Quantity (Number + Measure Word + Noun)",
+    "explanation": "Indicates a desire or decision to add more of something. 再 (zài) marks a continuation of the action, usually a future action or an addition to a previous one.",
+    "examples": [
+     {
+      "hanzi": "我想再喝一杯咖啡。",
+      "pinyin": "Wǒ xiǎng zài hē yì bēi kāfēi.",
+      "english": "I want to drink another cup of coffee."
+     },
+     {
+      "hanzi": "你吃了两个包子，还想再吃一个吗？",
+      "pinyin": "Nǐ chī le liǎng gè bāozi, hái xiǎng zài chī yí gè ma?",
+      "english": "You ate two buns — do you want to eat one more?"
+     },
+     {
+      "hanzi": "请你再给我三分钟。",
+      "pinyin": "Qǐng nǐ zài gěi wǒ sān fēnzhōng.",
+      "english": "Please give me three more minutes."
+     },
+     {
+      "hanzi": "我已经吃了两个饺子了，我想再吃五个。",
+      "pinyin": "Wǒ yǐjīng chī le liǎng gè jiǎozi le, wǒ xiǎng zài chī wǔ gè.",
+      "english": "I've already eaten two dumplings — I want to eat five more."
+     }
+    ]
+   },
+   {
+    "label": "Extend an action for more time",
+    "pattern": "S + 再 + Verb + Duration of Time",
+    "explanation": "Indicates the desire or decision to extend an action for more time.",
+    "examples": [
+     {
+      "hanzi": "我们再等五分钟吧。",
+      "pinyin": "Wǒmen zài děng wǔ fēnzhōng ba.",
+      "english": "Let's wait five more minutes."
+     },
+     {
+      "hanzi": "你可以再住两天。",
+      "pinyin": "Nǐ kěyǐ zài zhù liǎng tiān.",
+      "english": "You can stay two more days."
+     },
+     {
+      "hanzi": "我想再看一会儿电视。",
+      "pinyin": "Wǒ xiǎng zài kàn yí huìr diànshì.",
+      "english": "I want to watch TV a bit longer."
+     }
+    ]
+   },
+   {
+    "label": "Postpone to a later time",
+    "pattern": "[Future time] + 再 + [verb] + (吧)",
+    "explanation": "Suggests delaying or postponing an action to a later time, often as a polite suggestion.",
+    "examples": [
+     {
+      "hanzi": "明天再说吧。",
+      "pinyin": "Míngtiān zài shuō ba.",
+      "english": "Let's talk about it tomorrow."
+     },
+     {
+      "hanzi": "下个月再去中国。",
+      "pinyin": "Xià ge yuè zài qù Zhōngguó.",
+      "english": "Go to China next month instead."
+     },
+     {
+      "hanzi": "我们晚一点再吃饭吧。",
+      "pinyin": "Wǒmen wǎn yìdiǎn zài chīfàn ba.",
+      "english": "Let's eat a little later."
+     }
+    ]
+   },
+   {
+    "label": "Sequence — first this, then that",
+    "pattern": "V1 (+了) + 再 + V2",
+    "explanation": "Do the second action only after finishing the first.",
+    "examples": [
+     {
+      "hanzi": "吃了再走。",
+      "pinyin": "Chī le zài zǒu.",
+      "english": "Eat, then leave."
+     },
+     {
+      "hanzi": "吃了饭再走。",
+      "pinyin": "Chī le fàn zài zǒu.",
+      "english": "Eat, then leave."
+     },
+     {
+      "hanzi": "看完电影再走。",
+      "pinyin": "Kàn wán diànyǐng zài zǒu.",
+      "english": "Finish the movie, then leave."
+     }
+    ]
+   },
+   {
+    "label": "Soften/hedge a decision",
+    "pattern": "再 + verb + verb (e.g. 再看看)",
+    "explanation": "A polite way to decline a salesperson or express hesitation while shopping — softens a rejection. Roughly \"let me look around some more.\"",
+    "examples": [
+     {
+      "hanzi": "卖家：这个手机现在打折，要买吗？顾客：我再看看吧。",
+      "pinyin": "Màijiā: Zhège shǒujī xiànzài dǎzhé, yào mǎi ma? Gùkè: Wǒ zài kànkan ba.",
+      "english": "Seller: This phone is on sale now, do you want it? Customer: Let me take another look."
+     }
+    ]
+   }
+  ],
+  "links": [
+   {
+    "label": "Listening practice (再)",
+    "url": "https://www.youtube.com/watch?v=TDkNh4DsVN0"
+   }
+  ]
+ },
+ {
+  "id": "还-hái-2-functions-vs-再",
+  "category": "Particles: 再 / 呢 / 还",
+  "title": "还 (hái) — 2 functions + vs. 再",
+  "sourceLessons": [
+   "L170"
+  ],
+  "subPatterns": [
+   {
+    "label": "Continuation (\"still / yet\")",
+    "pattern": "还在 + Verb · 还没 + Verb · 还不 + Verb",
+    "explanation": "Expresses that a situation or action is ongoing or unchanged. Use 没 for actions (还没去 = haven't gone yet) and 不 for states (还不明白 = still don't understand).",
+    "examples": [
+     {
+      "hanzi": "他还在工作。",
+      "pinyin": "Tā hái zài gōngzuò.",
+      "english": "He is still working."
+     },
+     {
+      "hanzi": "我还没决定。",
+      "pinyin": "Wǒ hái méi juédìng.",
+      "english": "I haven't decided yet."
+     },
+     {
+      "hanzi": "她还不知道这个消息。",
+      "pinyin": "Tā hái bù zhīdào zhè ge xiāoxi.",
+      "english": "She still doesn't know this news."
+     }
+    ]
+   },
+   {
+    "label": "Addition (\"also / in addition\")",
+    "pattern": "[First point]，还 + [additional point]",
+    "explanation": "Adds supplementary information, similar to \"also\" or \"besides.\" Common mistake: don't use 还 to mean \"and\" between two nouns (我喜欢茶还咖啡 is wrong — use 和: 我喜欢茶和咖啡). Also don't confuse 还 (ongoing state) with 再 (repetition, \"do it again\").",
+    "examples": [
+     {
+      "hanzi": "他会说英语，还会说法语。",
+      "pinyin": "Tā huì shuō Yīngyǔ, hái huì shuō Fǎyǔ.",
+      "english": "He speaks English and also French."
+     },
+     {
+      "hanzi": "我买了苹果，还买了香蕉。",
+      "pinyin": "Wǒ mǎi le píngguǒ, hái mǎi le xiāngjiāo.",
+      "english": "I bought apples and bananas too."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "呢-ne-4-functions",
+  "category": "Particles: 再 / 呢 / 还",
+  "title": "呢 (ne) — 4 functions",
+  "sourceLessons": [
+   "L171",
+   "L180&181"
+  ],
+  "subPatterns": [
+   {
+    "label": "Returning a question",
+    "pattern": "S1, 你呢?",
+    "explanation": "Turns a question back on the listener after stating something about yourself.",
+    "examples": [
+     {
+      "hanzi": "我是老师，你呢？",
+      "pinyin": "Wǒ shì lǎoshī, nǐ ne?",
+      "english": "I'm a teacher, what about you?"
+     }
+    ]
+   },
+   {
+    "label": "Ongoing action (with 在)",
+    "pattern": "S + 在 + Verb + 呢",
+    "explanation": "Marks an action in progress. Negated with 没(在), which drops 呢.",
+    "examples": [
+     {
+      "hanzi": "他在做饭呢。",
+      "pinyin": "Tā zài zuòfàn ne.",
+      "english": "He is cooking."
+     },
+     {
+      "hanzi": "他们在打篮球呢。",
+      "pinyin": "Tāmen zài dǎ lánqiú ne.",
+      "english": "They are playing basketball."
+     },
+     {
+      "hanzi": "我没（在）看电视。",
+      "pinyin": "Wǒ méi (zài) kàn diànshì.",
+      "english": "I'm not watching TV."
+     }
+    ]
+   },
+   {
+    "label": "Asking where someone/something is",
+    "pattern": "S + 呢？ (= S + 在哪儿/在哪里？)",
+    "explanation": "A short way to ask where a person or thing is.",
+    "examples": [
+     {
+      "hanzi": "小明呢？",
+      "pinyin": "Xiǎomíng ne?",
+      "english": "Where is Xiaoming?"
+     },
+     {
+      "hanzi": "我的手机呢？",
+      "pinyin": "Wǒ de shǒujī ne?",
+      "english": "Where is my phone?"
+     }
+    ]
+   },
+   {
+    "label": "Emphasis / emotion",
+    "pattern": "…… + 呢！",
+    "explanation": "Adds emphasis or emotional tone to a statement — can sound dramatic or persuasive.",
+    "examples": [
+     {
+      "hanzi": "我真的不知道呢！",
+      "pinyin": "Wǒ zhēn de bù zhīdào ne!",
+      "english": "I really don't know!"
+     },
+     {
+      "hanzi": "这件事很重要呢！",
+      "pinyin": "Zhè jiàn shì hěn zhòngyào ne!",
+      "english": "This is really important!"
+     }
+    ]
+   },
+   {
+    "label": "\"Where is...?\"",
+    "pattern": "Noun + 呢？ = Noun + 在哪儿？",
+    "explanation": "Asks where something or someone is, more casual than the full 在哪儿 question.",
+    "examples": [
+     {
+      "hanzi": "书包呢？",
+      "pinyin": "Shūbāo ne?",
+      "english": "Where's the backpack?"
+     },
+     {
+      "hanzi": "我的手机呢？",
+      "pinyin": "Wǒ de shǒujī ne?",
+      "english": "Where's my phone?"
+     },
+     {
+      "hanzi": "爸爸呢？",
+      "pinyin": "Bàba ne?",
+      "english": "Where's Dad?"
+     }
+    ]
+   },
+   {
+    "label": "Ongoing-action marker",
+    "pattern": "正在 + verb (+ 呢)",
+    "explanation": "Marks an action in progress — \"in the middle of doing...\"",
+    "examples": [
+     {
+      "hanzi": "他正在写作业呢。",
+      "pinyin": "Tā zhèngzài xiě zuòyè ne.",
+      "english": "He is doing homework."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "resultative-complements",
+  "category": "Aspect & Result",
+  "title": "Resultative Complements",
+  "sourceLessons": [
+   "L175&176",
+   "L177&178",
+   "L183&184"
+  ],
+  "subPatterns": [
+   {
+    "label": "Verb + 完 (wán) — to finish doing something",
+    "pattern": "Verb + 完",
+    "explanation": "The action is completed. Common: 做完, 写完, 吃完, 看完, 洗完, 说完, 喝完.",
+    "examples": [
+     {
+      "hanzi": "我写完作业了。",
+      "pinyin": "Wǒ xiěwán zuòyè le.",
+      "english": "I finished the homework."
+     },
+     {
+      "hanzi": "我还没洗完衣服。",
+      "pinyin": "Wǒ hái méi xǐ wán yīfú.",
+      "english": "I haven't finished washing the clothes yet."
+     }
+    ]
+   },
+   {
+    "label": "Verb + 懂 (dǒng) — to understand something",
+    "pattern": "Verb + 懂",
+    "explanation": "The action leads to understanding. Common: 看懂, 听懂, 读懂.",
+    "examples": [
+     {
+      "hanzi": "我听懂老师说的话了。",
+      "pinyin": "Wǒ tīngdǒng lǎoshī shuō de huà le.",
+      "english": "I understood what the teacher said."
+     }
+    ]
+   },
+   {
+    "label": "Verb + 到 (dào) — to reach or obtain something",
+    "pattern": "Verb + 到",
+    "explanation": "The action successfully achieves a goal — finding, hearing, seeing, getting, etc. Common: 找到, 买到, 看到, 听到.",
+    "examples": [
+     {
+      "hanzi": "我买到票了。",
+      "pinyin": "Wǒ mǎidào piào le.",
+      "english": "I managed to buy the ticket."
+     }
+    ]
+   },
+   {
+    "label": "Verb + 见 (jiàn) — to perceive (visually/auditorily)",
+    "pattern": "Verb + 见",
+    "explanation": "To successfully perceive something — similar to 到 but emphasizes the act of perception itself (see/hear). Common: 看见, 听见 (roughly = 看到, 听到, but slightly more colloquial/basic).",
+    "examples": [
+     {
+      "hanzi": "我看见他了。",
+      "pinyin": "Wǒ kànjiàn tā le.",
+      "english": "I saw him."
+     }
+    ]
+   },
+   {
+    "label": "Verb + 好 (hǎo) — to complete properly / prepare well",
+    "pattern": "Verb + 好",
+    "explanation": "The action is completed and done well, to the speaker's satisfaction, or something is ready. Common: 做好, 准备好, 写好.",
+    "examples": [
+     {
+      "hanzi": "我准备好了。",
+      "pinyin": "Wǒ zhǔnbèi hǎo le.",
+      "english": "I'm ready."
+     }
+    ]
+   },
+   {
+    "label": "Verb + 对 (duì) — to do something correctly",
+    "pattern": "Verb + 对",
+    "explanation": "The action is correct. Common: 写对, 做对, 说对.",
+    "examples": [
+     {
+      "hanzi": "你写对了！",
+      "pinyin": "Nǐ xiěduì le!",
+      "english": "You wrote it correctly!"
+     }
+    ]
+   },
+   {
+    "label": "Verb + 错 (cuò) — to do something wrong",
+    "pattern": "Verb + 错",
+    "explanation": "The action is wrong or has an error. Common: 打错, 做错, 听错, 看错, 说错, 写错.",
+    "examples": [
+     {
+      "hanzi": "我打错电话号码了。",
+      "pinyin": "Wǒ dǎcuò diànhuà hàomǎ le.",
+      "english": "I dialed the wrong number."
+     }
+    ]
+   },
+   {
+    "label": "错 (wrong) as a result",
+    "pattern": "V + 错",
+    "explanation": "Additional examples of the 错 resultative complement (the action was done, but with the wrong result).",
+    "examples": [
+     {
+      "hanzi": "他走错路了。",
+      "pinyin": "Tā zǒu cuò lù le.",
+      "english": "He went the wrong way."
+     },
+     {
+      "hanzi": "我们可能去错地方了。",
+      "pinyin": "Wǒmen kěnéng qù cuò dìfang le.",
+      "english": "We might have gone to the wrong place."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "potential-complements",
+  "category": "Aspect & Result",
+  "title": "Potential Complements",
+  "sourceLessons": [
+   "L183&184"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "V + 得/不 + complement (ability/possibility) vs. V + complement (resultative — the result actually happened)",
+    "explanation": "听得清楚 means \"can hear clearly\" (possible to), while 听清楚 means \"heard clearly\" (the result actually occurred) — same complement, different grammar.",
+    "examples": [
+     {
+      "hanzi": "听得清楚",
+      "pinyin": "tīng de qīngchǔ",
+      "english": "can hear clearly (potential)"
+     },
+     {
+      "hanzi": "看得清楚",
+      "pinyin": "kàn de qīngchǔ",
+      "english": "can see clearly (potential)"
+     },
+     {
+      "hanzi": "听清楚",
+      "pinyin": "tīng qīngchǔ",
+      "english": "heard clearly (resultative)"
+     },
+     {
+      "hanzi": "看清楚",
+      "pinyin": "kàn qīngchǔ",
+      "english": "saw clearly (resultative)"
+     },
+     {
+      "hanzi": "你听得清楚吗？",
+      "pinyin": "Nǐ tīng de qīngchǔ ma?",
+      "english": "Can you hear clearly?"
+     },
+     {
+      "hanzi": "我没看清楚他写了什么。",
+      "pinyin": "Wǒ méi kàn qīngchǔ tā xiě le shénme.",
+      "english": "I didn't clearly see what he wrote."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "过-guò-past-experience",
+  "category": "Aspect & Result",
+  "title": "过 (guò) — past experience",
+  "sourceLessons": [
+   "L207",
+   "L208",
+   "L209"
+  ],
+  "subPatterns": [
+   {
+    "label": "Statement & question forms",
+    "pattern": "Affirmative: S + V + 过 + O。  Negative: S + 没（有）+ V + 过 + O。  Questions: S + V + 过 + O + 吗？ / S + V + 过 + O + 没有？ / S + 有没有 + V + 过 + O？ / S + V + 没 + V + 过 + O？",
+    "explanation": "Marks that an action has been experienced at least once before (past experience, not simply \"completed\"). Four different yes/no question forms are all acceptable, including the V-not-V pattern.",
+    "examples": [
+     {
+      "hanzi": "你买没买过这个牌子的咖啡？",
+      "pinyin": "Nǐ mǎi méi mǎi guò zhège páizi de kāfēi?",
+      "english": "Have you ever bought this brand of coffee?"
+     },
+     {
+      "hanzi": "你有没有买过中国茶？",
+      "pinyin": "Nǐ yǒu méiyǒu mǎi guò Zhōngguó chá?",
+      "english": "Have you ever bought Chinese tea?"
+     }
+    ]
+   },
+   {
+    "label": "Number of times (\"过...次\") — word order by object type",
+    "pattern": "Place object: S + V + 过 + number + 次 + place。 / S + V + 过 + place + number + 次。  Regular-noun object: S + V + 过 + number + 次 + O。  Pronoun object: S + V + 过 + pronoun + number + 次。",
+    "explanation": "Word order for \"how many times\" shifts depending on what kind of object follows 过: a place can go either before or after the number+次, a plain noun object comes after, and a pronoun object slots in between 过 and the number+次. The source doc only gives worked examples for the pronoun case — the place/noun patterns above are the abstract rules as taught, without example sentences.",
+    "examples": [
+     {
+      "hanzi": "我见过他一次。",
+      "pinyin": "Wǒ jiàn guò tā yí cì.",
+      "english": "I've met him once."
+     },
+     {
+      "hanzi": "我见过他几次。",
+      "pinyin": "Wǒ jiàn guò tā jǐ cì.",
+      "english": "I've met him a few times."
+     },
+     {
+      "hanzi": "去年我去看过他两次。",
+      "pinyin": "Qùnián wǒ qù kàn guò tā liǎng cì.",
+      "english": "Last year I went to see him twice."
+     },
+     {
+      "hanzi": "他打过我一次。",
+      "pinyin": "Tā dǎ guò wǒ yí cì.",
+      "english": "He hit me once (before)."
+     },
+     {
+      "hanzi": "昨天上课的时候，老师叫过我三次。",
+      "pinyin": "Zuótiān shàngkè de shíhou, lǎoshī jiào guò wǒ sān cì.",
+      "english": "Yesterday during class, the teacher called on me three times."
+     },
+     {
+      "hanzi": "他今天来办公室找过我几次。",
+      "pinyin": "Tā jīntiān lái bàngōngshì zhǎo guò wǒ jǐ cì.",
+      "english": "He came to my office looking for me a few times today."
+     },
+     {
+      "hanzi": "今天他找过你几次？",
+      "pinyin": "Jīntiān tā zhǎo guò nǐ jǐ cì?",
+      "english": "How many times did he come looking for you today?"
+     },
+     {
+      "hanzi": "你见过他们多少次？",
+      "pinyin": "Nǐ jiàn guò tāmen duōshao cì?",
+      "english": "How many times have you met them?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "completed-action-了吗了没有了没",
+  "category": "Questions",
+  "title": "Completed action — 了吗/了没有/了没",
+  "sourceLessons": [
+   "L175&176",
+   "L183&184"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "Verb (+ Resultative Complement) + Object + 了吗？ = ……了没有？/ ……了没？/ ……没有？/ ……没？",
+    "explanation": "Several equivalent ways to ask a yes/no question about whether an action has already happened, often combined with a resultative complement (完/好/etc.) to ask whether the action was finished.",
+    "examples": [
+     {
+      "hanzi": "你吃完饭了吗？",
+      "pinyin": "Nǐ chī wán fàn le ma?",
+      "english": "Did you finish eating?"
+     },
+     {
+      "hanzi": "她写完作业了吗？",
+      "pinyin": "Tā xiě wán zuòyè le ma?",
+      "english": "Did she finish the homework?"
+     },
+     {
+      "hanzi": "你看完书了吗？",
+      "pinyin": "Nǐ kàn wán shū le ma?",
+      "english": "Did you finish reading the book?"
+     },
+     {
+      "hanzi": "他们搬完东西了吗？",
+      "pinyin": "Tāmen bān wán dōngxi le ma?",
+      "english": "Did they finish moving the stuff?"
+     },
+     {
+      "hanzi": "你洗干净手了吗？",
+      "pinyin": "Nǐ xǐ gānjìng shǒu le ma?",
+      "english": "Did you wash your hands clean?"
+     }
+    ]
+   },
+   {
+    "pattern": "……了吗？ = ……了没有？ = ……了没？",
+    "explanation": "Three interchangeable ways to ask whether something has already happened.",
+    "examples": [
+     {
+      "hanzi": "你吃饭了吗？= 你吃饭了没有？= 你吃饭了没？",
+      "pinyin": "Nǐ chīfàn le ma? / le méiyǒu? / le méi?",
+      "english": "Have you eaten?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "v-not-v-adj-not-adj-indirect",
+  "category": "Questions",
+  "title": "V-not-V / Adj-not-Adj (+ indirect)",
+  "sourceLessons": [
+   "L175&176",
+   "L200&201"
+  ],
+  "subPatterns": [
+   {
+    "label": "Verb + 不/没 + Verb",
+    "pattern": "Verb + 不/没 + Verb",
+    "explanation": "A yes/no question formed by stating the verb, its negation, then the verb again — asking whether or not something happened or will happen. Common: 去不去, 看不看, 吃不吃, 是不是, 喜欢不喜欢, 爱不爱, 做没做, 写没写, 听没听, 喝没喝.",
+    "examples": [
+     {
+      "hanzi": "你明天去不去北京？",
+      "pinyin": "Nǐ míngtiān qù bu qù Běijīng?",
+      "english": "Will you go to Beijing tomorrow?"
+     },
+     {
+      "hanzi": "他今天上班去不去？",
+      "pinyin": "Tā jīntiān shàngbān qù bu qù?",
+      "english": "Is he going to work today?"
+     },
+     {
+      "hanzi": "我们现在去不去吃饭？",
+      "pinyin": "Wǒmen xiànzài qù bu qù chīfàn?",
+      "english": "Are we going to eat now?"
+     },
+     {
+      "hanzi": "你写没写作业？",
+      "pinyin": "Nǐ xiě méi xiě zuòyè?",
+      "english": "Did you do your homework?"
+     },
+     {
+      "hanzi": "他写没写报告？",
+      "pinyin": "Tā xiě méi xiě bàogào?",
+      "english": "Did he write the report?"
+     },
+     {
+      "hanzi": "你昨天写没写那封信？",
+      "pinyin": "Nǐ zuótiān xiě méi xiě nà fēng xìn?",
+      "english": "Did you write that letter yesterday?"
+     },
+     {
+      "hanzi": "你听没听这首歌？",
+      "pinyin": "Nǐ tīng méi tīng zhè shǒu gē?",
+      "english": "Have you listened to this song?"
+     },
+     {
+      "hanzi": "你上课的时候听没听老师说的话？",
+      "pinyin": "Nǐ shàngkè de shíhou tīng méi tīng lǎoshī shuō de huà?",
+      "english": "Did you listen to what the teacher said in class?"
+     },
+     {
+      "hanzi": "你听没听新闻？",
+      "pinyin": "Nǐ tīng méi tīng xīnwén?",
+      "english": "Did you listen to the news?"
+     }
+    ]
+   },
+   {
+    "label": "Adjective + 不 + Adjective",
+    "pattern": "Adj + 不 + Adj",
+    "explanation": "The same yes/no question pattern, built from an adjective instead of a verb — asking whether or not something is a certain way. Common: 好不好, 忙不忙, 难不难, 好吃不好吃, 热不热, 多不多.",
+    "examples": [
+     {
+      "hanzi": "你今天忙不忙？",
+      "pinyin": "Nǐ jīntiān máng bu máng?",
+      "english": "Are you busy today?"
+     },
+     {
+      "hanzi": "你这个星期忙不忙？",
+      "pinyin": "Nǐ zhège xīngqī máng bu máng?",
+      "english": "Are you busy this week?"
+     },
+     {
+      "hanzi": "他最近工作忙不忙？",
+      "pinyin": "Tā zuìjìn gōngzuò máng bu máng?",
+      "english": "Is he busy with work lately?"
+     },
+     {
+      "hanzi": "这本书好不好？",
+      "pinyin": "Zhè běn shū hǎo bu hǎo?",
+      "english": "Is this book good?"
+     },
+     {
+      "hanzi": "电影好不好看？",
+      "pinyin": "Diànyǐng hǎo bu hǎokàn?",
+      "english": "Is the movie good?"
+     },
+     {
+      "hanzi": "你觉得这个菜好不好吃？",
+      "pinyin": "Nǐ juéde zhège cài hǎo bu hǎochī?",
+      "english": "Do you think this dish tastes good?"
+     },
+     {
+      "hanzi": "今天热不热？",
+      "pinyin": "Jīntiān rè bu rè?",
+      "english": "Is it hot today?"
+     },
+     {
+      "hanzi": "你家夏天热不热？",
+      "pinyin": "Nǐ jiā xiàtiān rè bu rè?",
+      "english": "Is it hot at your place in the summer?"
+     },
+     {
+      "hanzi": "穿这个衣服热不热？",
+      "pinyin": "Chuān zhège yīfu rè bu rè?",
+      "english": "Is it hot wearing this?"
+     }
+    ]
+   },
+   {
+    "label": "Indirect yes/no questions (reported speech)",
+    "pattern": "A 问 B 他 + V-not-V/Adj-not-Adj + something",
+    "explanation": "Embeds a V-not-V or Adj-not-Adj yes/no question inside reported speech, e.g. \"A asked B whether...\" or \"I want to know if...\". Either word order works for the reduplication — 认不认识 or 认识不认识, 喜不喜欢 or 喜欢不喜欢, 知不知道 or 知道不知道.",
+    "examples": [
+     {
+      "hanzi": "A问B他认不认识她的女朋友。",
+      "pinyin": "A wèn B tā rèn bù rènshi tā de nǚpéngyou.",
+      "english": "A asked B whether he knew her girlfriend."
+     },
+     {
+      "hanzi": "我想知道你喜不喜欢这本书。",
+      "pinyin": "Wǒ xiǎng zhīdào nǐ xǐ bù xǐhuān zhè běn shū.",
+      "english": "I want to know if you like this book."
+     },
+     {
+      "hanzi": "他不知道我会不会来。",
+      "pinyin": "Tā bù zhīdào wǒ huì bù huì lái.",
+      "english": "He doesn't know whether I will come."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "rhetorical-不是吗",
+  "category": "Questions",
+  "title": "Rhetorical — 不是……吗？",
+  "sourceLessons": [
+   "L200&201"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "不是 + phrase + 吗？",
+    "explanation": "Reminds someone of something they should already know, often expressing surprise or mild disagreement.",
+    "examples": [
+     {
+      "hanzi": "你不是说你不来了吗？",
+      "pinyin": "Nǐ bú shì shuō nǐ bù lái le ma?",
+      "english": "Didn't you say you weren't coming?"
+     },
+     {
+      "hanzi": "他不是已经走了吗？",
+      "pinyin": "Tā bú shì yǐjīng zǒu le ma?",
+      "english": "Didn't he already leave?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "directions-navigation",
+  "category": "Directions & Navigation",
+  "title": "Directions & Navigation",
+  "sourceLessons": [
+   "L183&184",
+   "L200&201",
+   "L202&203"
+  ],
+  "subPatterns": [
+   {
+    "label": "去 + place + 的路 — the way to somewhere",
+    "pattern": "去 + place + 的路",
+    "explanation": "",
+    "examples": [
+     {
+      "hanzi": "你真的认识去医院的路吗？",
+      "pinyin": "Nǐ zhēn de rènshi qù yīyuàn de lù ma?",
+      "english": "Do you really know the way to the hospital?"
+     }
+    ]
+   },
+   {
+    "label": "在 + 去 + place + 的路上 — on the way to",
+    "pattern": "在 + 去 + place + 的路上",
+    "explanation": "",
+    "examples": [
+     {
+      "hanzi": "我在去学校的路上。",
+      "pinyin": "Wǒ zài qù xuéxiào de lùshàng.",
+      "english": "I'm on the way to school."
+     }
+    ]
+   },
+   {
+    "label": "Direction words + verb",
+    "pattern": "往 + direction word + verb",
+    "explanation": "往 (towards) combines with a direction word (上/下/左/右/前/后/里/外 — up/down/left/right/forward/back/inside/outside) and a verb of motion to say which way to go.",
+    "examples": [
+     {
+      "hanzi": "往左走。",
+      "pinyin": "Wǎng zuǒ zǒu.",
+      "english": "Turn left."
+     },
+     {
+      "hanzi": "一直往前走。",
+      "pinyin": "Yìzhí wǎng qián zǒu.",
+      "english": "Keep going straight."
+     },
+     {
+      "hanzi": "他往屋里跑了进去。",
+      "pinyin": "Tā wǎng wū lǐ pǎo le jìnqù.",
+      "english": "He ran into the room."
+     }
+    ]
+   },
+   {
+    "label": "Asking for directions",
+    "pattern": "请问，你能告诉我从……去/到……怎么走吗？",
+    "explanation": "Common polite templates for asking how to get somewhere.",
+    "examples": [
+     {
+      "hanzi": "请问，你能告诉我从....去/到.....怎么走吗？",
+      "pinyin": "Qǐngwèn, nǐ néng gàosù wǒ cóng... qù/dào... zěnme zǒu ma?",
+      "english": "Excuse me, could you tell me how to get from... to...?"
+     },
+     {
+      "hanzi": "请问，从....怎么走路去/到.....？",
+      "pinyin": "Qǐngwèn, cóng... zěnme zǒulù qù/dào...?",
+      "english": "Excuse me, how do I walk from... to...?"
+     },
+     {
+      "hanzi": "请问，从.....怎么（走路/坐地铁/坐公交车）去.....?",
+      "pinyin": "Qǐngwèn, cóng... zěnme (zǒulù/zuò dìtiě/zuò gōngjiāochē) qù...?",
+      "english": "Excuse me, how do I get to... from... (on foot/by subway/by bus)?"
+     },
+     {
+      "hanzi": "请问，你知道（从......）怎么去.....吗？",
+      "pinyin": "Qǐngwèn, nǐ zhīdào (cóng...) zěnme qù... ma?",
+      "english": "Excuse me, do you know how to get to... (from...)?"
+     }
+    ]
+   },
+   {
+    "label": "Giving directions",
+    "pattern": "先……然后……再…… ／ 一直 + 往 + direction + verb ／ 在第N个路口往 + direction + verb",
+    "explanation": "先...然后...再... chains steps together; 一直 means \"straight/continuously\"; 在第N个路口 names which intersection to turn at; 拐/转 both mean \"to turn\".",
+    "examples": [
+     {
+      "hanzi": "从你家去超市怎么走？出了我的公寓（先）往左走，然后/再一直往前走十分钟就到了。",
+      "pinyin": "Cóng nǐ jiā qù chāoshì zěnme zǒu? Chū le wǒ de gōngyù (xiān) wǎng zuǒ zǒu, ránhòu/zài yìzhí wǎng qián zǒu shí fēnzhōng jiù dào le.",
+      "english": "How do you get from your place to the supermarket? Leaving my apartment, first turn left, then walk straight for ten minutes and you're there."
+     },
+     {
+      "hanzi": "从你家去公园怎么走？出了我的公寓（先）往右走，然后在第三个路口往左拐，往前走十分钟，再往左转，走五分钟就到了。",
+      "pinyin": "Cóng nǐ jiā qù gōngyuán zěnme zǒu? Chū le wǒ de gōngyù (xiān) wǎng yòu zǒu, ránhòu zài dì sān gè lùkǒu wǎng zuǒ guǎi, wǎng qián zǒu shí fēnzhōng, zài wǎng zuǒ zhuǎn, zǒu wǔ fēnzhōng jiù dào le.",
+      "english": "How do you get from your place to the park? Leaving my apartment, first turn right, then turn left at the third intersection, walk straight ten minutes, turn left again, and a five-minute walk gets you there."
+     },
+     {
+      "hanzi": "从这里去电影院怎么走？出了我家（先）往左走，然后在第一个路口往右走，然后你需要走到第三个路口就到了。",
+      "pinyin": "Cóng zhèlǐ qù diànyǐngyuàn zěnme zǒu? Chū le wǒ jiā (xiān) wǎng zuǒ zǒu, ránhòu zài dì yī gè lùkǒu wǎng yòu zǒu, ránhòu nǐ xūyào zǒu dào dì sān gè lùkǒu jiù dào le.",
+      "english": "How do you get from here to the movie theater? Leaving my house, first turn left, then turn right at the first intersection, then walk to the third intersection and you're there."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "这么那么-adj-的-noun",
+  "category": "Degree, Manner & Extent",
+  "title": "这么/那么 + adj (+ 的 + noun)",
+  "sourceLessons": [
+   "L180&181",
+   "L183&184"
+  ],
+  "subPatterns": [
+   {
+    "label": "Bare: 这么/那么 + adj",
+    "pattern": "这么/那么 + adj",
+    "explanation": "\"This/that so...\" — intensifies an adjective or verb, referring to the current or previously mentioned degree.",
+    "examples": [
+     {
+      "hanzi": "这么多",
+      "pinyin": "zhème duō",
+      "english": "so many"
+     },
+     {
+      "hanzi": "那么热",
+      "pinyin": "nàme rè",
+      "english": "so hot"
+     },
+     {
+      "hanzi": "这么快",
+      "pinyin": "zhème kuài",
+      "english": "so fast"
+     },
+     {
+      "hanzi": "那么慢",
+      "pinyin": "nàme màn",
+      "english": "so slow"
+     },
+     {
+      "hanzi": "这么喜欢",
+      "pinyin": "zhème xǐhuān",
+      "english": "like so much"
+     },
+     {
+      "hanzi": "那么爱",
+      "pinyin": "nàme ài",
+      "english": "love so much"
+     }
+    ]
+   },
+   {
+    "label": "Modifying a noun: 这么/那么 + adj + (的) + noun",
+    "pattern": "这么/那么 + adj + (的) + noun",
+    "explanation": "\"Such (a)... noun\" — used to describe quantity, size, or degree of a following noun. Other degree adverbs (很/非常/最/更/太) work the same way but require 的 before the noun — dropping 的 after them (很新椅子) is incorrect, unlike a bare adjective (新椅子/新的椅子 are both fine).",
+    "examples": [
+     {
+      "hanzi": "这么多（的）衣服",
+      "pinyin": "zhème duō (de) yīfu",
+      "english": "so many clothes"
+     },
+     {
+      "hanzi": "那么冷的天气",
+      "pinyin": "nàme lěng de tiānqì",
+      "english": "such cold weather"
+     },
+     {
+      "hanzi": "这么贵的手机",
+      "pinyin": "zhème guì de shǒujī",
+      "english": "such an expensive phone"
+     },
+     {
+      "hanzi": "那么难的汉字",
+      "pinyin": "nàme nán de hànzì",
+      "english": "such a difficult Chinese character"
+     },
+     {
+      "hanzi": "很新的椅子",
+      "pinyin": "hěn xīn de yǐzi",
+      "english": "a very new chair"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "得-complement-mannerdegree",
+  "category": "Degree, Manner & Extent",
+  "title": "得-Complement (manner/degree)",
+  "sourceLessons": [
+   "L191",
+   "L192"
+  ],
+  "subPatterns": [
+   {
+    "label": "Basic form",
+    "pattern": "S + V + 得 + adj.",
+    "explanation": "Attaches 得 after a verb to describe the manner or degree of the action.",
+    "examples": [
+     {
+      "hanzi": "你起得很早。",
+      "pinyin": "Nǐ qǐ de hěn zǎo.",
+      "english": "You get up very early."
+     },
+     {
+      "hanzi": "你起得不早。",
+      "pinyin": "Nǐ qǐ de bù zǎo.",
+      "english": "You don't get up early."
+     },
+     {
+      "hanzi": "我起得晚。",
+      "pinyin": "Wǒ qǐ de wǎn.",
+      "english": "I get up late."
+     },
+     {
+      "hanzi": "你每天起得很早。",
+      "pinyin": "Nǐ měitiān qǐ de hěn zǎo.",
+      "english": "You get up very early every day."
+     },
+     {
+      "hanzi": "我每天起得很晚。",
+      "pinyin": "Wǒ měitiān qǐ de hěn wǎn.",
+      "english": "I get up very late every day."
+     },
+     {
+      "hanzi": "她吃得太少了。",
+      "pinyin": "Tā chī de tài shǎo le.",
+      "english": "She eats too little."
+     },
+     {
+      "hanzi": "我今天吃的很好。",
+      "pinyin": "Wǒ jīntiān chī de hěn hǎo.",
+      "english": "I ate well today."
+     }
+    ]
+   },
+   {
+    "label": "Question forms (with a verb-object)",
+    "pattern": "S + V + O + V + 得 + adj. / 怎么样？/ 好吗？/ 好不好？",
+    "explanation": "When the verb has an object, the verb repeats before the 得-complement. Any of 怎么样/好吗/好不好 can ask how it went.",
+    "examples": [
+     {
+      "hanzi": "你昨天睡觉睡得怎么样？",
+      "pinyin": "Nǐ zuótiān shuìjiào shuì de zěnmeyàng?",
+      "english": "How did you sleep last night?"
+     },
+     {
+      "hanzi": "她踢足球踢得好吗？",
+      "pinyin": "Tā tī zúqiú tī de hǎo ma?",
+      "english": "Does she play soccer well?"
+     },
+     {
+      "hanzi": "他做饭做得好不好？",
+      "pinyin": "Tā zuòfàn zuò de hǎo bù hǎo?",
+      "english": "Is he good at cooking?"
+     },
+     {
+      "hanzi": "他说中文说得非常好。",
+      "pinyin": "Tā shuō Zhōngwén shuō de fēicháng hǎo.",
+      "english": "He speaks Chinese extremely well."
+     },
+     {
+      "hanzi": "上个月你在中国玩得怎么样？",
+      "pinyin": "Shàng ge yuè nǐ zài Zhōngguó wán de zěnmeyàng?",
+      "english": "How was your time in China last month?"
+     },
+     {
+      "hanzi": "我玩得很开心。",
+      "pinyin": "Wǒ wán de hěn kāixīn.",
+      "english": "I had a great time."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "有-extent-marker-asasup-to",
+  "category": "Degree, Manner & Extent",
+  "title": "有 — extent marker (\"as...as/up to\")",
+  "sourceLessons": [
+   "L192"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "[Subject] + 有 + [Number] + [Unit] (+ [Adjective])",
+    "explanation": "有 (yǒu) can act as a quantity/degree marker meaning \"as...as\", \"up to\", or \"reaching\" — it adds emphasis to an extreme value, rather than just stating a fact neutrally with 是. The adjective (高/深/重 etc.) can be dropped if it's clear from context, but the unit is mandatory. Compare 今天有零下十度！(emphatic — \"as cold as -10°C!\") with the neutral 今天零下十度 (just states the fact). Common collocations: 有...度 (temperature), 有...米 (height/depth), 有...斤 (weight), 有...公里/小时 (speed).",
+    "examples": [
+     {
+      "hanzi": "今天真冷，有零下十度。",
+      "pinyin": "Jīntiān zhēn lěng, yǒu líng xià shí dù.",
+      "english": "It's so cold today — as low as minus ten degrees!"
+     },
+     {
+      "hanzi": "这口井有30米深。",
+      "pinyin": "Zhè kǒu jǐng yǒu sānshí mǐ shēn.",
+      "english": "This well is as deep as 30 meters."
+     },
+     {
+      "hanzi": "风速有100公里（快）。",
+      "pinyin": "Fēngsù yǒu yìbǎi gōnglǐ (kuài).",
+      "english": "The wind speed reaches 100 km/h."
+     },
+     {
+      "hanzi": "这棵树有20米（高）。",
+      "pinyin": "Zhè kē shù yǒu èrshí mǐ (gāo).",
+      "english": "This tree is up to 20 meters tall!"
+     },
+     {
+      "hanzi": "油价有每升10元！",
+      "pinyin": "Yóujià yǒu měi shēng shí yuán!",
+      "english": "Gas prices reach 10 yuan per liter!"
+     },
+     {
+      "hanzi": "这个包有50公斤（重）！",
+      "pinyin": "Zhège bāo yǒu wǔshí gōngjīn (zhòng)!",
+      "english": "This bag weighs as much as 50kg!"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "过-spendcelebrate-an-occasion",
+  "category": "过 (guò) — Other Uses",
+  "title": "过 — spend/celebrate an occasion",
+  "sourceLessons": [
+   "L170"
+  ],
+  "subPatterns": [
+   {
+    "label": "Common combinations",
+    "pattern": "过 (guò) + [holiday / special occasion]",
+    "explanation": "过 here means \"to spend\" or \"to celebrate\" a day or occasion. Common combinations: 过生日 (celebrate a birthday), 过新年 (celebrate New Year), 过周末 (spend the weekend), 过春节 (celebrate Spring Festival), 过圣诞节 (celebrate Christmas).",
+    "examples": [
+     {
+      "hanzi": "昨天我们给妈妈过生日。",
+      "pinyin": "Zuótiān wǒmen gěi māma guò shēngrì.",
+      "english": "Yesterday we celebrated mom's birthday."
+     }
+    ]
+   },
+   {
+    "label": "Asking how someone spent/celebrated something",
+    "pattern": "Someone + [occasion] + 是怎么过的？/ 过得怎么样？/ 过得好吗？",
+    "explanation": "Three related question forms for asking how someone spent or celebrated a day or occasion.",
+    "examples": [
+     {
+      "hanzi": "你周末是怎么过的？",
+      "pinyin": "Nǐ zhōumò shì zěnme guò de?",
+      "english": "How did you spend your weekend?"
+     },
+     {
+      "hanzi": "你春节过得怎么样？",
+      "pinyin": "Nǐ chūnjié guò de zěnmeyàng?",
+      "english": "How was your Spring Festival?"
+     },
+     {
+      "hanzi": "你生日是怎么过的？",
+      "pinyin": "Nǐ shēngrì shì zěnme guò de?",
+      "english": "How did you celebrate your birthday?"
+     },
+     {
+      "hanzi": "你最近过得好吗？",
+      "pinyin": "Nǐ zuìjìn guò de hǎo ma?",
+      "english": "Have you been doing well recently?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "过-vs-花",
+  "category": "过 (guò) — Other Uses",
+  "title": "过 vs 花",
+  "sourceLessons": [
+   "L170"
+  ],
+  "subPatterns": [
+   {
+    "label": null,
+    "pattern": "S + 花 + duration/money + verb …",
+    "explanation": "过 (guò) means to spend/pass time, for experiences. 花 (huā) means to spend time or money on doing something, with a focus on consumption.",
+    "examples": [
+     {
+      "hanzi": "我花了两小时做作业。",
+      "pinyin": "Wǒ huā le liǎng xiǎoshí zuò zuòyè.",
+      "english": "I spent two hours doing homework."
+     },
+     {
+      "hanzi": "他花了很多钱买手机。",
+      "pinyin": "Tā huā le hěnduō qián mǎi shǒujī.",
+      "english": "He spent a lot of money buying a phone."
+     },
+     {
+      "hanzi": "做这个项目花了我三个月。",
+      "pinyin": "Zuò zhège xiàngmù huā le wǒ sān gè yuè.",
+      "english": "This project took me three months."
+     },
+     {
+      "hanzi": "修车花了他500元。",
+      "pinyin": "Xiū chē huā le tā wǔbǎi yuán.",
+      "english": "The car repair cost him 500 yuan."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "告诉-vs-让",
+  "category": "Word-Pair Comparisons",
+  "title": "告诉 vs 让",
+  "sourceLessons": [
+   "L171"
+  ],
+  "subPatterns": [
+   {
+    "label": null,
+    "pattern": "告诉 + sb + sth  ·  让 + sb + do sth",
+    "explanation": "告诉 (gàosu) focuses on conveying information — telling someone something they don't know. 让 (ràng) is about causing someone to do something — it can mean to allow, make, or ask, depending on context. Common mistake: you can't say \"他让我今天有考试\" — this should be \"他告诉我今天有考试。\"",
+    "examples": [
+     {
+      "hanzi": "请告诉我你的名字。",
+      "pinyin": "Qǐng gàosu wǒ nǐ de míngzi.",
+      "english": "Please tell me your name."
+     },
+     {
+      "hanzi": "妈妈让我早点回家。",
+      "pinyin": "Māma ràng wǒ zǎodiǎn huíjiā.",
+      "english": "Mom asked me to come home earlier."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "得病-vs-生病",
+  "category": "Word-Pair Comparisons",
+  "title": "得病 vs 生病",
+  "sourceLessons": [
+   "L209"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "得病 (débìng) vs 生病 (shēngbìng)",
+    "explanation": "得病 emphasizes contracting or being diagnosed with a specific (often more serious) illness. 生病 is more general — just being sick or unwell.",
+    "examples": [
+     {
+      "hanzi": "他去年得了重感冒。",
+      "pinyin": "Tā qùnián dé le zhòng gǎnmào.",
+      "english": "He caught a severe cold last year."
+     },
+     {
+      "hanzi": "他得病以后就住院了。",
+      "pinyin": "Tā débìng yǐhòu jiù zhùyuàn le.",
+      "english": "He was hospitalized after getting sick."
+     },
+     {
+      "hanzi": "昨天我生病没去上班。",
+      "pinyin": "Zuótiān wǒ shēngbìng méi qù shàngbān.",
+      "english": "I was sick yesterday and didn't go to work."
+     },
+     {
+      "hanzi": "最近天气变化大，很多人生病了。",
+      "pinyin": "Zuìjìn tiānqì biànhuà dà, hěn duō rén shēngbìng le.",
+      "english": "The weather has changed a lot recently, and many people have gotten sick."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "还是吧-had-better",
+  "category": "Suggestions & Advice",
+  "title": "还是……吧 — \"had better\"",
+  "sourceLessons": [
+   "L171",
+   "L195&196"
+  ],
+  "subPatterns": [
+   {
+    "label": null,
+    "pattern": "S + 还是……吧",
+    "explanation": "Expresses a polite suggestion after considering alternatives. The sentence-ending 吧 softens the tone, showing the speaker's consideration and flexibility.",
+    "examples": [
+     {
+      "hanzi": "现在太晚了，我们还是别出门了吧。",
+      "pinyin": "Xiànzài tài wǎn le, wǒmen háishi bié chūmén le ba.",
+      "english": "It's too late now. We'd better not go out."
+     },
+     {
+      "hanzi": "这家饭馆的菜不好吃，我们还是去那家吧。",
+      "pinyin": "Zhè jiā fànguǎn de cài bù hǎochī, wǒmen háishi qù nà jiā ba.",
+      "english": "The food here is not good. Let's go to that other one instead."
+     },
+     {
+      "hanzi": "坐公交车太慢了，我们还是坐出租车吧。",
+      "pinyin": "Zuò gōngjiāochē tài màn le, wǒmen háishi zuò chūzūchē ba.",
+      "english": "Taking the bus is too slow. Let's take a taxi instead."
+     },
+     {
+      "hanzi": "外面下雨了，我们还是明天再去打球吧。",
+      "pinyin": "Wàimiàn xiàyǔ le, wǒmen háishi míngtiān zài qù dǎqiú ba.",
+      "english": "It's raining outside. We'd better go play ball tomorrow."
+     }
+    ]
+   },
+   {
+    "pattern": "还是 + Verb / Option + 吧",
+    "explanation": "Used to suggest an option, often as a final decision or gentle recommendation after weighing alternatives or when something didn't go as planned. Implies \"I guess I'd better...\" or \"let's just...\", sometimes with a sense of compromise or resignation.",
+    "examples": [
+     {
+      "hanzi": "我们还是走路吧。",
+      "pinyin": "Wǒmen háishì zǒulù ba.",
+      "english": "Let's just walk. (Maybe other ways were considered, but walking is best.)"
+     },
+     {
+      "hanzi": "太晚了，我还是回家吧。",
+      "pinyin": "Tài wǎn le, wǒ háishì huí jiā ba.",
+      "english": "It's too late, I'd better go home."
+     },
+     {
+      "hanzi": "这家店太贵了，我们还是去那家吧。",
+      "pinyin": "Zhè jiā diàn tài guì le, wǒmen háishì qù nà jiā ba.",
+      "english": "This shop is too expensive, let's go to the other one instead."
+     },
+     {
+      "hanzi": "天气不好，还是别出去了吧。",
+      "pinyin": "Tiānqì bù hǎo, háishì bié chūqù le ba.",
+      "english": "The weather's bad, maybe we'd better not go out."
+     },
+     {
+      "hanzi": "你还是别告诉他吧。",
+      "pinyin": "Nǐ háishì bié gàosu tā ba.",
+      "english": "You'd better not tell him."
+     },
+     {
+      "hanzi": "坐公交车太慢了，我们还是坐地铁吧。",
+      "pinyin": "Zuò gōngjiāochē tài màn le, wǒmen háishì zuò dìtiě ba.",
+      "english": "Taking the bus is too slow, let's take the subway instead."
+     },
+     {
+      "hanzi": "你还是早点休息吧。",
+      "pinyin": "Nǐ háishi zǎodiǎn xiūxi ba.",
+      "english": "You'd better rest early."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "可以-polite-suggestions",
+  "category": "Suggestions & Advice",
+  "title": "可以 — polite suggestions",
+  "sourceLessons": [
+   "L202&203"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "Subject + 可以 + Verb Phrase",
+    "explanation": "可以 (kěyǐ) makes a polite, gentle suggestion — something is possible/allowed and might be a good option, without sounding forceful. Common in spoken Chinese for friendly recommendations.",
+    "examples": [
+     {
+      "hanzi": "你可以从这儿走路去宾馆。",
+      "pinyin": "Nǐ kěyǐ cóng zhèr zǒulù qù bīnguǎn.",
+      "english": "You can walk to the hotel from here."
+     },
+     {
+      "hanzi": "你可以多练习口语。",
+      "pinyin": "Nǐ kěyǐ duō liànxí kǒuyǔ.",
+      "english": "You can practice your speaking more."
+     },
+     {
+      "hanzi": "你可以问老师这个问题。",
+      "pinyin": "Nǐ kěyǐ wèn lǎoshī zhège wèntí.",
+      "english": "You can ask the teacher this question."
+     },
+     {
+      "hanzi": "你们可以明天再来。",
+      "pinyin": "Nǐmen kěyǐ míngtiān zài lái.",
+      "english": "You guys can come again tomorrow."
+     },
+     {
+      "hanzi": "我们可以先吃饭，再复习。",
+      "pinyin": "Wǒmen kěyǐ xiān chīfàn, zài fùxí.",
+      "english": "We can eat first, then review."
+     },
+     {
+      "hanzi": "可以看看这本书，对考试有帮助。",
+      "pinyin": "Kěyǐ kànkan zhè běn shū, duì kǎoshì yǒu bāngzhù.",
+      "english": "You could take a look at this book — it will help with the exam."
+     },
+     {
+      "hanzi": "天气很好，可以出去散步。",
+      "pinyin": "Tiānqì hěn hǎo, kěyǐ chūqù sànbù.",
+      "english": "The weather is nice — you could go out for a walk."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "另一-measure-word-noun",
+  "category": "Everyday Life & Quantities",
+  "title": "另一 + measure word + noun",
+  "sourceLessons": [
+   "L164"
+  ],
+  "subPatterns": [
+   {
+    "label": null,
+    "pattern": "另一 (lìngyī) + measure word + noun",
+    "explanation": "\"Another one\" or \"the other one\" — 另一 attaches to a measure word before the noun.",
+    "examples": [
+     {
+      "hanzi": "我想吃另一个苹果。",
+      "pinyin": "Wǒ xiǎng chī lìng yí gè píngguǒ.",
+      "english": "I want to eat another apple."
+     },
+     {
+      "hanzi": "他买了另一件衣服。",
+      "pinyin": "Tā mǎi le lìng yí jiàn yīfu.",
+      "english": "He bought another piece of clothing."
+     },
+     {
+      "hanzi": "我们去另一家商店吧。",
+      "pinyin": "Wǒmen qù lìng yì jiā shāngdiàn ba.",
+      "english": "Let's go to another store."
+     },
+     {
+      "hanzi": "老师给了我们另一张纸。",
+      "pinyin": "Lǎoshī gěi le wǒmen lìng yì zhāng zhǐ.",
+      "english": "The teacher gave us another sheet of paper."
+     },
+     {
+      "hanzi": "他已经吃了一碗面，现在又要吃另一碗。",
+      "pinyin": "Tā yǐjīng chī le yì wǎn miàn, xiànzài yòu yào chī lìng yì wǎn.",
+      "english": "He already ate one bowl of noodles, and now he wants to eat another bowl."
+     },
+     {
+      "hanzi": "我们可以换一个房间吗？我们想住在另一间。",
+      "pinyin": "Wǒmen kěyǐ huàn yí gè fángjiān ma? Wǒmen xiǎng zhù zài lìng yì jiān.",
+      "english": "Can we change rooms? We'd like to stay in another one."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "money-expressions-价钱",
+  "category": "Everyday Life & Quantities",
+  "title": "Money expressions / 价钱",
+  "sourceLessons": [
+   "L188",
+   "L189"
+  ],
+  "subPatterns": [
+   {
+    "label": "Reading prices",
+    "pattern": "number + 块 + number + (毛/角)",
+    "explanation": "How prices with cents are read aloud.",
+    "examples": [
+     {
+      "hanzi": "三块五",
+      "pinyin": "sān kuài wǔ",
+      "english": "$3.50"
+     },
+     {
+      "hanzi": "五块八",
+      "pinyin": "wǔ kuài bā",
+      "english": "$5.80"
+     },
+     {
+      "hanzi": "六块二",
+      "pinyin": "liù kuài èr",
+      "english": "$6.20"
+     }
+    ]
+   },
+   {
+    "label": "Asking the price",
+    "pattern": "……怎么卖？ = ……多少钱？",
+    "explanation": "Idiomatic way to ask the price of something, especially food sold by weight.",
+    "examples": [
+     {
+      "hanzi": "西瓜怎么卖？三块五一斤。",
+      "pinyin": "Xīguā zěnme mài? Sān kuài wǔ yì jīn.",
+      "english": "How much is the watermelon? $3.50 per jin."
+     },
+     {
+      "hanzi": "苹果怎么卖？五块八一斤。",
+      "pinyin": "Píngguǒ zěnme mài? Wǔ kuài bā yì jīn.",
+      "english": "How much are the apples? $5.80 per jin."
+     },
+     {
+      "hanzi": "这件衣服怎么卖？60块。",
+      "pinyin": "Zhè jiàn yīfu zěnme mài? Liùshí kuài.",
+      "english": "How much is this piece of clothing? 60 kuai."
+     }
+    ]
+   },
+   {
+    "pattern": "块 (kuài) / 毛 (máo) / 分 (fēn) — yuan / 10-cent unit / cent",
+    "explanation": "The everyday spoken units for money (块=yuan, 毛=1/10 yuan, 分=1/100 yuan). A price like ¥3.50 can be read in full or with the last unit dropped.",
+    "examples": [
+     {
+      "hanzi": "三块五 = 三块五毛",
+      "pinyin": "sān kuài wǔ = sān kuài wǔ máo",
+      "english": "¥3.50"
+     },
+     {
+      "hanzi": "五块六 = 五块六毛",
+      "pinyin": "wǔ kuài liù = wǔ kuài liù máo",
+      "english": "¥5.60"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "temperature-零上零下-度",
+  "category": "Everyday Life & Quantities",
+  "title": "Temperature — 零上/零下 + 度",
+  "sourceLessons": [
+   "L192"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "零上/零下 + number + 度",
+    "explanation": "零上 = above zero, 零下 = below zero, used with 度 (degrees) to state a temperature.",
+    "examples": [
+     {
+      "hanzi": "零下10度",
+      "pinyin": "líng xià shí dù",
+      "english": "10 degrees below zero"
+     },
+     {
+      "hanzi": "零上20度",
+      "pinyin": "líng shàng èrshí dù",
+      "english": "20 degrees above zero"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "上下-vehicle",
+  "category": "Everyday Life & Quantities",
+  "title": "上/下 + vehicle",
+  "sourceLessons": [
+   "L198"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "上/下 + vehicle",
+    "explanation": "上 (to get on/board) and 下 (to get off) combine with a vehicle word to describe boarding and alighting.",
+    "examples": [
+     {
+      "hanzi": "上车",
+      "pinyin": "shàng chē",
+      "english": "to get in a car"
+     },
+     {
+      "hanzi": "上飞机",
+      "pinyin": "shàng fēijī",
+      "english": "to board a plane"
+     },
+     {
+      "hanzi": "上火车",
+      "pinyin": "shàng huǒchē",
+      "english": "to board a train"
+     },
+     {
+      "hanzi": "上地铁",
+      "pinyin": "shàng dìtiě",
+      "english": "to get on the subway"
+     },
+     {
+      "hanzi": "下车",
+      "pinyin": "xià chē",
+      "english": "to get out of a car"
+     },
+     {
+      "hanzi": "下飞机",
+      "pinyin": "xià fēijī",
+      "english": "to get off a plane"
+     },
+     {
+      "hanzi": "下火车",
+      "pinyin": "xià huǒchē",
+      "english": "to get off a train"
+     },
+     {
+      "hanzi": "下地铁",
+      "pinyin": "xià dìtiě",
+      "english": "to get off the subway"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "family-name-哥姐-address-terms",
+  "category": "Everyday Life & Quantities",
+  "title": "Family name + 哥/姐 — address terms",
+  "sourceLessons": [
+   "L204"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "Family Name + 哥 (gē) / 姐 (jiě)",
+    "explanation": "A casual, respectful way to address a slightly older man (+哥) or woman (+姐) — common in workplaces, neighborhoods, and everyday social settings in mainland China. Adds warmth and closeness without sounding overly formal, and stands in for a full name or a formal title like \"Mr./Ms.\". Not appropriate for strangers or very formal situations; typically used by someone younger than or equal in age/status to the person addressed.",
+    "examples": [
+     {
+      "hanzi": "李哥，今天您下班早啊！",
+      "pinyin": "Lǐ gē, jīntiān nín xiàbān zǎo a!",
+      "english": "Brother Li, you're leaving work early today!"
+     },
+     {
+      "hanzi": "张姐，这个项目还是您最有经验。",
+      "pinyin": "Zhāng jiě, zhège xiàngmù háishì nín zuì yǒu jīngyàn.",
+      "english": "Sister Zhang, you still have the most experience with this project."
+     },
+     {
+      "hanzi": "王哥，明天能帮我搬一下桌子吗？",
+      "pinyin": "Wáng gē, míngtiān néng bāng wǒ bān yīxià zhuōzi ma?",
+      "english": "Brother Wang, could you help me move the table tomorrow?"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "好几-measure-word",
+  "category": "Everyday Life & Quantities",
+  "title": "好几 + measure word",
+  "sourceLessons": [
+   "L207"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "好几 + measure word",
+    "explanation": "\"Quite a few\" — used before a measure word to say there were more of something than expected.",
+    "examples": [
+     {
+      "hanzi": "好几次",
+      "pinyin": "hǎo jǐ cì",
+      "english": "quite a few times"
+     },
+     {
+      "hanzi": "好几天",
+      "pinyin": "hǎo jǐ tiān",
+      "english": "quite a few days"
+     },
+     {
+      "hanzi": "好几个",
+      "pinyin": "hǎo jǐ gè",
+      "english": "quite a few (people/things)"
+     },
+     {
+      "hanzi": "好几本",
+      "pinyin": "hǎo jǐ běn",
+      "english": "quite a few (books)"
+     },
+     {
+      "hanzi": "好几年",
+      "pinyin": "hǎo jǐ nián",
+      "english": "quite a few years"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "negative-commands-别不要了",
+  "category": "Sentence Connectors & Commands",
+  "title": "Negative commands — 别/不要（了）",
+  "sourceLessons": [
+   "L171",
+   "L179"
+  ],
+  "subPatterns": [
+   {
+    "label": null,
+    "pattern": "别 + verb",
+    "explanation": "A negative command or suggestion, common in spoken Chinese for advising or stopping someone from doing something.",
+    "examples": [
+     {
+      "hanzi": "别说话！",
+      "pinyin": "Bié shuōhuà!",
+      "english": "Don't talk!"
+     },
+     {
+      "hanzi": "太晚了，别出门了。",
+      "pinyin": "Tài wǎn le, bié chūmén le.",
+      "english": "It's too late, don't go out."
+     }
+    ]
+   },
+   {
+    "label": "Basic form",
+    "pattern": "不要……（了）= 别……（了）",
+    "explanation": "Both 不要 and 别 are used to give advice, warnings, or commands not to do something (anymore).",
+    "examples": [
+     {
+      "hanzi": "不要玩手机了！",
+      "pinyin": "Bù yào wán shǒujī le!",
+      "english": "Stop playing on your phone!"
+     },
+     {
+      "hanzi": "别玩手机了！",
+      "pinyin": "Bié wán shǒujī le!",
+      "english": "Stop playing on your phone!"
+     },
+     {
+      "hanzi": "别说话了，快睡觉。",
+      "pinyin": "Bié shuōhuà le, kuài shuìjiào.",
+      "english": "Stop talking and go to sleep."
+     }
+    ]
+   },
+   {
+    "label": "With a time window",
+    "pattern": "Time word (+ duration) + 不要 + action",
+    "explanation": "Time-based advice — telling someone not to do something during/within a stated window of time.",
+    "examples": [
+     {
+      "hanzi": "医生说吃药后两个小时不要喝茶。",
+      "pinyin": "Yīshēng shuō chī yào hòu liǎng gè xiǎoshí bù yào hē chá.",
+      "english": "The doctor said not to drink tea for two hours after taking the medicine."
+     },
+     {
+      "hanzi": "他说吃饭后一个小时不要运动。",
+      "pinyin": "Tā shuō chīfàn hòu yí ge xiǎoshí bù yào yùndòng.",
+      "english": "He said not to exercise for one hour after eating."
+     },
+     {
+      "hanzi": "喝酒后四个小时不要开车。",
+      "pinyin": "Hējiǔ hòu sì ge xiǎoshí bù yào kāichē.",
+      "english": "Don't drive within four hours of drinking alcohol."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "reportedindirect-speech-transform",
+  "category": "Sentence Connectors & Commands",
+  "title": "Reported/indirect speech transform",
+  "sourceLessons": [
+   "L179"
+  ],
+  "subPatterns": [
+   {
+    "explanation": "Converting a direct quotation into reported (indirect) speech — a yes/no question inside quotes (…吗？) typically becomes a 是不是 clause with no quotation marks and no question mark.",
+    "examples": [
+     {
+      "hanzi": "妈妈问：\"明天的课你都准备好了吗？\"",
+      "pinyin": "Māma wèn: \"Míngtiān de kè nǐ dōu zhǔnbèi hǎo le ma?\"",
+      "english": "Mom asked: \"Have you gotten ready for tomorrow's classes?\" (direct quote)"
+     },
+     {
+      "hanzi": "妈妈问儿子明天的课是不是都准备好了。",
+      "pinyin": "Māma wèn érzi míngtiān de kè shì bù shì dōu zhǔnbèi hǎo le.",
+      "english": "Mom asked her son whether he had prepared all his classes for tomorrow. (reported speech)"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "modifying-clause-attributive-的-noun",
+  "category": "Sentence Connectors & Commands",
+  "title": "Modifying clause — attributive + 的 + noun",
+  "sourceLessons": [
+   "L188"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "[Attributive element / describer] + 的 + noun",
+    "explanation": "A descriptive phrase (often a mini-clause) placed before 的 to modify the following noun, similar to a relative clause in English.",
+    "examples": [
+     {
+      "hanzi": "前边说话的那个人是我的汉语老师。",
+      "pinyin": "Qiánbian shuōhuà de nàge rén shì wǒ de hànyǔ lǎoshī.",
+      "english": "The person talking up front is my Chinese teacher."
+     },
+     {
+      "hanzi": "左边这个看报纸的女孩子是我姐姐。",
+      "pinyin": "Zuǒbian zhège kàn bàozhǐ de nǚháizi shì wǒ jiějie.",
+      "english": "The girl on the left reading the newspaper is my older sister."
+     },
+     {
+      "hanzi": "右边写字的那个人是我哥哥。",
+      "pinyin": "Yòubian xiězì de nàge rén shì wǒ gēge.",
+      "english": "The person writing on the right is my older brother."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sequencing-先-v1再然后-v2",
+  "category": "Sentence Connectors & Commands",
+  "title": "Sequencing — 先 + V1，再/然后 + V2",
+  "sourceLessons": [
+   "L202&203"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "先 + V1，再/然后（+ 再）+ V2",
+    "explanation": "先 (first) marks the first action; 再 (then) or 然后 (after that) marks the next one. All three variants below are used interchangeably in casual speech to sequence actions — see the Directions & Navigation examples for these in full sentences.",
+    "examples": [
+     {
+      "hanzi": "先 + verb1 + …，再 + verb2 + …",
+      "pinyin": "xiān + verb1..., zài + verb2...",
+      "english": "first do verb1, then do verb2"
+     },
+     {
+      "hanzi": "先 + verb1 + …，然后 + verb2 + …",
+      "pinyin": "xiān + verb1..., ránhòu + verb2...",
+      "english": "first do verb1, then (after that) do verb2"
+     },
+     {
+      "hanzi": "先 + verb1 + …，然后 + 再 + verb2 + …",
+      "pinyin": "xiān + verb1..., ránhòu zài + verb2...",
+      "english": "first do verb1, then subsequently do verb2"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "虽然但是",
+  "category": "Sentence Connectors & Commands",
+  "title": "虽然……但是……",
+  "sourceLessons": [
+   "L207"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "虽然 + Clause 1，但是 + Clause 2",
+    "explanation": "\"Although..., but...\" — introduces a contrast between two clauses.",
+    "examples": [
+     {
+      "hanzi": "虽然他很累，但是他还是去上班了。",
+      "pinyin": "Suīrán tā hěn lèi, dànshì tā háishì qù shàngbān le.",
+      "english": "Although he was very tired, he still went to work."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "这就-verb-right-away",
+  "category": "Adverbial Modifiers",
+  "title": "这就 + verb — \"right away\"",
+  "sourceLessons": [
+   "L182"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "S + 这就 + Verb + …",
+    "explanation": "Says you're about to do something right away — \"right away\", \"I'll ... now\", \"coming!\"",
+    "examples": [
+     {
+      "hanzi": "你饿了吗？我这就去做饭。",
+      "pinyin": "Nǐ è le ma? Wǒ zhè jiù qù zuò fàn.",
+      "english": "Are you hungry? I'll go cook right now."
+     },
+     {
+      "hanzi": "你下班了吗？我这就去接你。",
+      "pinyin": "Nǐ xiàbān le ma? Wǒ zhè jiù qù jiē nǐ.",
+      "english": "Are you off work? I'll come pick you up right away."
+     },
+     {
+      "hanzi": "等我一下，我这就来。",
+      "pinyin": "Děng wǒ yīxià, wǒ zhè jiù lái.",
+      "english": "Wait a second, I'm coming now."
+     },
+     {
+      "hanzi": "等等，我这就出门。",
+      "pinyin": "Děngděng, wǒ zhè jiù chūmén.",
+      "english": "Hold on, I'm leaving right now."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "imminent-action-快要就要-v-了",
+  "category": "Adverbial Modifiers",
+  "title": "Imminent action — 快（要）/就（要）+ V + 了",
+  "sourceLessons": [
+   "L186&187",
+   "L211"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "快（要）/ 就（要）+ verb + 了",
+    "explanation": "\"About to...\", \"...soon\" — for an action or event expected in the near future. 快（要）and 就（要）are near-interchangeable for this pattern.",
+    "examples": [
+     {
+      "hanzi": "我快（要）写完作业了。",
+      "pinyin": "Wǒ kuài (yào) xiě wán zuòyè le.",
+      "english": "I'm about to finish my homework."
+     },
+     {
+      "hanzi": "快（要）下雨了。",
+      "pinyin": "Kuài (yào) xià yǔ le.",
+      "english": "It's about to rain."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "speed-adverbs-快点儿慢点儿",
+  "category": "Adverbial Modifiers",
+  "title": "Speed adverbs — 快点儿/慢点儿",
+  "sourceLessons": [
+   "L186&187",
+   "L193&194"
+  ],
+  "subPatterns": [
+   {
+    "pattern": "快点儿/慢点儿 + verb",
+    "explanation": "Tells someone to do something faster or slower — an implied comparison to their current pace.",
+    "examples": [
+     {
+      "hanzi": "快点儿走！",
+      "pinyin": "Kuài diǎnr zǒu!",
+      "english": "Hurry up and go!"
+     }
+    ]
+   },
+   {
+    "pattern": "快（一）点（儿） — a bit faster / hurry up · 慢（一）点（儿） — a bit slower / slow down",
+    "explanation": "A mild command telling someone to speed up or slow down.",
+    "examples": [
+     {
+      "hanzi": "快一点，我们要迟到了！",
+      "pinyin": "Kuài yìdiǎn, wǒmen yào chídào le!",
+      "english": "Hurry up! We're going to be late!"
+     },
+     {
+      "hanzi": "医生说我走路要快一点。",
+      "pinyin": "Yīshēng shuō wǒ zǒulù yào kuài yìdiǎn.",
+      "english": "The doctor said I should walk a bit faster."
+     },
+     {
+      "hanzi": "慢一点跑，小心摔倒！",
+      "pinyin": "Màn yìdiǎn pǎo, xiǎoxīn shuāidǎo!",
+      "english": "Run slower, don't fall!"
+     },
+     {
+      "hanzi": "你说得太快了，请慢一点。",
+      "pinyin": "Nǐ shuō de tài kuài le, qǐng màn yìdiǎn.",
+      "english": "You're speaking too fast — please slow down."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "degree-negation-不怎么没怎么不怎么样",
+  "category": "Adverbial Modifiers",
+  "title": "Degree negation — 不怎么/没怎么/不怎么样",
+  "sourceLessons": [
+   "L191",
+   "L193&194"
+  ],
+  "subPatterns": [
+   {
+    "label": "不怎么 + verb — \"don't really / not much\" (general/present)",
+    "pattern": "不怎么 + verb",
+    "explanation": "Expresses low frequency or quantity — used generally or in the present.",
+    "examples": [
+     {
+      "hanzi": "我现在不怎么运动。",
+      "pinyin": "Wǒ xiànzài bù zěnme yùndòng.",
+      "english": "I don't exercise much currently."
+     },
+     {
+      "hanzi": "她不怎么复习，可是考试总是考得不错。",
+      "pinyin": "Tā bù zěnme fùxí, kěshì kǎoshì zǒngshì kǎo de búcuò.",
+      "english": "She doesn't really review, but still does well on exams."
+     }
+    ]
+   },
+   {
+    "label": "没怎么 + verb — \"didn't really\" (past)",
+    "pattern": "没怎么 + verb",
+    "explanation": "The past-tense counterpart of 不怎么 — didn't do something much/a lot.",
+    "examples": [
+     {
+      "hanzi": "昨天我没怎么工作。",
+      "pinyin": "Zuótiān wǒ méi zěnme gōngzuò.",
+      "english": "I didn't really work yesterday."
+     },
+     {
+      "hanzi": "放假期间他没怎么学习。",
+      "pinyin": "Fàngjià qījiān tā méi zěnme xuéxí.",
+      "english": "He didn't study much during the holiday."
+     }
+    ]
+   },
+   {
+    "label": "不怎么样 — \"not very good / not great\"",
+    "pattern": "不怎么样 (= 不太好)",
+    "explanation": "A standalone way to say something isn't very good — often used as a mild, hedged criticism.",
+    "examples": [
+     {
+      "hanzi": "那家饭馆不怎么样，我们下次换一家吧。",
+      "pinyin": "Nà jiā fànguǎn bù zěnme yàng, wǒmen xiàcì huàn yì jiā ba.",
+      "english": "That restaurant wasn't very good — let's try a different one next time."
+     },
+     {
+      "hanzi": "今天的天气不怎么样，有点儿闷热。",
+      "pinyin": "Jīntiān de tiānqì bù zěnme yàng, yǒudiǎnr mēnrè.",
+      "english": "The weather today isn't great — it's a bit stuffy and hot."
+     },
+     {
+      "hanzi": "我做饭做得不怎么样。",
+      "pinyin": "Wǒ zuòfàn zuò de bù zěnme yàng.",
+      "english": "I'm not great at cooking."
+     },
+     {
+      "hanzi": "我昨晚睡得不怎么样。",
+      "pinyin": "Wǒ zuówǎn shuì de bù zěnme yàng.",
+      "english": "I didn't sleep very well last night."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "对-x-好不好有用有帮助",
+  "category": "Evaluating & Describing",
+  "title": "对 + X + 好/不好/有用/有帮助",
+  "sourceLessons": [
+   "L179",
+   "L180&181"
+  ],
+  "subPatterns": [
+   {
+    "label": "对 + X + 有帮助",
+    "pattern": "A + 对 + B + 有帮助",
+    "explanation": "A is helpful to B.",
+    "examples": [
+     {
+      "hanzi": "这个建议对我很有帮助。",
+      "pinyin": "Zhège jiànyì duì wǒ hěn yǒu bāngzhù.",
+      "english": "This suggestion is very helpful to me."
+     }
+    ]
+   },
+   {
+    "label": "……对……有用 — useful for",
+    "pattern": "X + 对 + Y + 有用",
+    "explanation": "Says something is useful for a person or purpose.",
+    "examples": [
+     {
+      "hanzi": "这个办法对我很有用。",
+      "pinyin": "Zhège bànfǎ duì wǒ hěn yǒuyòng.",
+      "english": "This method is very useful for me."
+     }
+    ]
+   },
+   {
+    "label": "……对……有帮助 — helpful for",
+    "pattern": "X + 对 + Y + 有帮助",
+    "explanation": "Says something is helpful for a person or purpose.",
+    "examples": [
+     {
+      "hanzi": "多说中文对学习有帮助。",
+      "pinyin": "Duō shuō zhōngwén duì xuéxí yǒu bāngzhù.",
+      "english": "Speaking more Chinese is helpful for learning."
+     }
+    ]
+   },
+   {
+    "label": "……对……好/不好 — good/bad for, or nice/mean to",
+    "pattern": "X + 对 + Y + 好/不好",
+    "explanation": "Two senses: (1) good/bad for someone's health or wellbeing, (2) nice/mean to — how one person treats another.",
+    "examples": [
+     {
+      "hanzi": "喝水对身体好。",
+      "pinyin": "Hē shuǐ duì shēntǐ hǎo.",
+      "english": "Drinking water is good for your health."
+     },
+     {
+      "hanzi": "他对我不好。",
+      "pinyin": "Tā duì wǒ bù hǎo.",
+      "english": "He is not nice to me."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "describing-people-appearance-personality",
+  "category": "Evaluating & Describing",
+  "title": "Describing people — appearance & personality",
+  "sourceLessons": [
+   "L200&201",
+   "L202&203"
+  ],
+  "subPatterns": [
+   {
+    "label": "Describing appearance",
+    "pattern": "长什么样（子）？ ／ 长着……的…… ／ 有……的……",
+    "explanation": "长什么样（子） asks what someone looks like. 长着 + descriptive phrase + 的 + noun and 有 + descriptive phrase + 的 + noun both describe physical features — 长着 reads as slightly more vivid/descriptive than 有.",
+    "examples": [
+     {
+      "hanzi": "他长什么样（子）？",
+      "pinyin": "Tā zhǎng shénme yàng(zi)?",
+      "english": "What does he look like?"
+     },
+     {
+      "hanzi": "她长着大大的眼睛。",
+      "pinyin": "Tā zhǎngzhe dàdà de yǎnjīng.",
+      "english": "She has big eyes."
+     },
+     {
+      "hanzi": "他有一个高鼻子。",
+      "pinyin": "Tā yǒu yí gè gāo bízi.",
+      "english": "He has a high nose."
+     },
+     {
+      "hanzi": "她的眼睛很漂亮。",
+      "pinyin": "Tā de yǎnjīng hěn piàoliang.",
+      "english": "Her eyes are very beautiful."
+     },
+     {
+      "hanzi": "他眼睛很大，头发很长，是黑色的，鼻子很高，嘴巴很大。",
+      "pinyin": "Tā yǎnjīng hěn dà, tóufa hěn cháng, shì hēisè de, bízi hěn gāo, zuǐba hěn dà.",
+      "english": "His eyes are big, his hair is long and black, his nose is high, and his mouth is big."
+     }
+    ]
+   },
+   {
+    "label": "Describing personality",
+    "pattern": "Someone + 人 + 怎么样？",
+    "explanation": "Asks about or describes someone's character/personality.",
+    "examples": [
+     {
+      "hanzi": "他这个人怎么样？",
+      "pinyin": "Tā zhè ge rén zěnmeyàng?",
+      "english": "What is he like as a person?"
+     },
+     {
+      "hanzi": "她人很好，很热情。",
+      "pinyin": "Tā rén hěn hǎo, hěn rèqíng.",
+      "english": "She is a really nice and enthusiastic person."
+     },
+     {
+      "hanzi": "他很友好。",
+      "pinyin": "Tā hěn yǒuhǎo.",
+      "english": "He is very friendly."
+     },
+     {
+      "hanzi": "他非常爱笑。",
+      "pinyin": "Tā fēicháng ài xiào.",
+      "english": "He loves to smile/laugh."
+     },
+     {
+      "hanzi": "他不太友好。",
+      "pinyin": "Tā bú tài yǒuhǎo.",
+      "english": "He isn't very friendly."
+     }
+    ]
+   }
+  ]
+ }
+]

@@ -79,20 +79,39 @@ one's will be picked up.
 No backend, no build step — just static files opened via a plain HTTP
 server (needed for `fetch()` of the JSON data files; `file://` won't
 work).
-- `index.html` / `style.css` / `app.js` — single-page app, three
-  screens (home, settings, trainer) toggled via a CSS `.active` class.
-- `data/*.json` — one file per vocabulary source, shape:
+- `index.html` / `style.css` / `app.js` — single-page app, six screens
+  (home, settings, vocab trainer, vocab session-complete, grammar
+  category list, grammar category detail) toggled via a CSS `.active`
+  class.
+- `data/vocab.json` / `hsk1.json` / `hsk2.json` / `hsk3.json` /
+  `hsk4.json` — one file per Vocabulary Trainer word source, shape:
   ```json
   { "hanzi": "...", "pinyin": "...", "translations": ["...", "..."],
     "example": { "hanzi": "...", "pinyin": "...", "english": "..." } }
   ```
   - `vocab.json` — "My own vocabulary list" (678 words)
   - `hsk1.json` — HSK 1, complete (500 words)
-  - `hsk2.json` / `hsk3.json` / `hsk4.json` — empty `[]` placeholders
+  - `hsk2.json` — HSK 2, complete (749 entries)
+  - `hsk3.json` / `hsk4.json` — empty `[]` placeholders
+- `data/grammar.json` — Grammar Review feature's data, a flat array of
+  59 constructs grouped into 15 topic categories, shape:
+  ```json
+  { "id": "...", "category": "...", "title": "...",
+    "sourceLessons": ["L166", "..."],
+    "subPatterns": [
+      { "label": "... (optional, for multi-sense constructs)",
+        "pattern": "... (optional slot-pattern notation)",
+        "explanation": "...",
+        "examples": [{ "hanzi": "...", "pinyin": "...", "english": "..." }] }
+    ],
+    "links": [{ "label": "...", "url": "..." }]  }
+  ```
 - Settings (`app.js`) persist to `localStorage` under key
-  `chineseTrainer.settings`: `{ pageDurationMs, vocabSource }`.
+  `chineseTrainer.settings`: `{ pageDurationsMs: [hanziMs, englishMs,
+  sentenceMs], vocabSource, speechRate }`.
 - TTS via the browser's built-in Web Speech API (`speechSynthesis`,
   zh-CN / en-US voices) — free, offline, no API key, works in Safari.
+  Vocabulary Trainer only — Grammar Review is browsed silently.
 
 ## Status
 - [x] Vocabulary Trainer mode: random order, 3 auto-advancing pages per
@@ -108,9 +127,12 @@ work).
       CSS variable) that scales a page's text down only as much as
       needed so long words/sentences never overflow a narrow portrait
       screen
-- [x] Settings page: per-page duration slider (0.5s–5s), speech-rate
-      slider (0.5x–1.5x, controls `SpeechSynthesisUtterance.rate`) +
-      vocabulary source picker, all persisted
+- [x] Settings page: independent duration slider per page (Hanzi+Pinyin
+      / English / Sentence, 0–10s in 0.5s steps — the auto-advance
+      timer only starts once that page's speech finishes, not on
+      render), speech-rate slider (0.5x–1.5x, controls
+      `SpeechSynthesisUtterance.rate`) + vocabulary source picker, all
+      persisted
 - [x] "My own vocabulary list" — 678 words, authored from the user's
       PDF (which turned out to be a garbled CC-CEDICT export, so
       translations/pinyin/examples were written fresh rather than
@@ -120,8 +142,14 @@ work).
 - [x] HSK 2 — 749 entries (746 unique words), complete
 - [ ] HSK 3 — 973 new words, not started (empty placeholder file)
 - [ ] HSK 4 — 1,000 new words, not started (empty placeholder file)
-- [ ] Additional training modes beyond Vocabulary Trainer (not yet
-      specified by user)
+- [x] Grammar Review — second top-level feature (self-paced browsing,
+      no timer, no TTS, unlike Vocabulary Trainer). 59 grammar
+      constructs grouped into 15 topic categories, extracted and
+      merged from a 54-lesson doc developed with the user's Chinese
+      teacher. Home screen → pick a category → tap a construct to
+      expand pattern/explanation/examples.
+- [ ] Additional training modes beyond Vocabulary Trainer / Grammar
+      Review (not yet specified by user)
 - [x] Persistent phone access — live at
       **https://nighthawk99.github.io/chinese-trainer/** via GitHub
       Pages. Reachable from anywhere (WiFi or cellular), no Mac needs
@@ -381,3 +409,70 @@ work).
   documented WebKit issues even though neither was this specific
   cause. Worth remembering next time TTS audio reportedly stops:
   check Focus/Do Not Disturb before assuming a regression.
+- 2026-08-09: Fixed the iOS long-press callout (Copy/Look Up/Share +
+  selection handles) firing on hold-to-pause — the existing global
+  `user-select: none` wasn't enough; `-webkit-touch-callout: none` is
+  the separate property actually responsible for it on iOS Safari.
+- 2026-08-09: Replaced the single "time per page" slider with three
+  independent ones (Hanzi+Pinyin / English / Sentence, 0–10s), and
+  made the auto-advance timer start only once that page's TTS
+  `onend` fires rather than immediately on render (previously the
+  configured duration ran in parallel with the spoken audio). Added
+  an 8s safety timeout in `speak()` in case `onend`/`onerror` never
+  fires (a real WebKit flakiness this app has hit before) and a
+  render-generation guard so a late callback from a page the user has
+  since left can't trigger a spurious advance.
+- 2026-08-09: Made the Hanzi+Pinyin page's word always render on one
+  line (`white-space: nowrap` + a width check added to
+  `fitContentToContainer`'s existing shrink loop) instead of allowing
+  wrap. Found via testing against real data that this broke for
+  `vocab.json`'s ~20 grammar-pattern entries (e.g. `S + 比 + S +
+  大/小 + number + 岁`, 28 characters) at the prior shrink floor —
+  lowered the floor (0.25 → 0.1) and added `overflow-x: auto` on the
+  tap zone as a last-resort safety net.
+- 2026-08-09: Built **Grammar Review**, a second top-level feature
+  alongside Vocabulary Trainer. Source: "生词+生字+语法", a Google Doc
+  developed with the user's Chinese teacher (54 lessons, L158–L211,
+  ~95K characters, mixing plain vocabulary with grammar constructs,
+  no thematic organization, several points taught in duplicate or
+  scattered across lessons). Process:
+  1. Read the whole doc via forked subagents (too large for one
+     context window) to scope structure before designing anything —
+     confirmed the fetched content's truncation at the end matched
+     the doc's real ending (L211), not a fetch error.
+  2. Proposed a 15-category topic taxonomy as a published Artifact
+     (grounded in a full construct inventory, not guessed) — user
+     reviewed and asked for the initial "ungrouped standalone items"
+     bucket to be folded into a few more invented categories rather
+     than left as a flat list.
+  3. Extracted full content (pattern notation, explanation, examples)
+     via 6 parallel forks, each assigned a contiguous line range of
+     the raw doc (mapped from the doc's own lesson-header line
+     numbers) rather than splitting by category, since a single
+     lesson often contains multiple different grammar points —
+     avoided redundant re-reads of the same source text. Constructs
+     scattered across lesson ranges (e.g. 再's 5 senses across 4
+     non-adjacent lessons) were extracted piecemeal per-chunk using a
+     shared canonical-title list, then merged centrally by exact
+     title match afterward.
+  4. Validated: schema check, no empty example fields, spot-checked
+     the most-merged entries (再, 过 past-experience, Resultative
+     Complements, Directions & Navigation) for correct concatenation.
+     Caught and fixed 2 issues: an empty-examples subPattern left over
+     from a source lesson that only briefly re-mentioned something
+     taught earlier (merged into the fuller entry instead), and a
+     fork's meta-commentary ("flagging for parent to decide...")
+     that had leaked into a construct's user-facing explanation text.
+     Also caught that the taxonomy's original 7-item guess for
+     Comparisons & Equality was one over — no separate "basic
+     comparison" content actually exists in the source distinct from
+     "degree of difference"; real count is 6.
+  Final: 59 constructs (including 2 the extraction forks found and
+  flagged as legitimate but outside the original 58 — included after
+  review), 15 categories, 342 examples, in `data/grammar.json`. UI:
+  self-paced (no timer, no TTS, per user's explicit choice — this
+  content has more to read per item than a vocab word) — home screen
+  tile → category list → tap a category → expandable `<details>`
+  cards per construct with pattern/explanation/examples. Text
+  selection is deliberately re-enabled on these screens (unlike the
+  rest of the app) since it's a reference feature, not a timed drill.
