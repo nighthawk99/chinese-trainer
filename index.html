@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-<title>Chinese Trainer</title>
+<title>Chinese Companion</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="theme-color" content="#0f1115">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,8 +15,9 @@
   <!-- Home screen: choose a training mode -->
   <section id="home-screen" class="screen active">
     <button id="settings-btn" class="icon-btn settings-corner-btn" aria-label="Settings">&#9881;</button>
+    <img class="app-logo" src="icon.svg" alt="" width="64" height="64">
     <div class="app-eyebrow">中文 &middot; Mandarin Chinese</div>
-    <h1 class="app-title">Chinese Trainer</h1>
+    <h1 class="app-title">Chinese Companion</h1>
     <button class="mode-tile" id="start-vocab-trainer">
       <span class="mode-icon">词</span>
       <span class="mode-text">
@@ -96,6 +101,14 @@
     </div>
 
     <div class="settings-content">
+      <div class="settings-group">
+        <div class="settings-label">Appearance</div>
+        <div id="theme-toggle" class="theme-toggle">
+          <button class="theme-option" id="theme-option-dark" data-theme-choice="dark">Dark</button>
+          <button class="theme-option" id="theme-option-light" data-theme-choice="light">Light</button>
+        </div>
+      </div>
+
       <div class="settings-group">
         <div class="settings-label">Time per page after speaking</div>
         <div class="settings-multi">

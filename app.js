@@ -2,7 +2,7 @@
   const SETTINGS_KEY = 'chineseTrainer.settings';
   // pageDurationsMs is indexed by pageIndex: [hanzi/pinyin, english, sentence].
   function defaultSettings() {
-    return { pageDurationsMs: [3000, 3000, 3000], vocabSource: 'own', speechRate: 1.0 };
+    return { pageDurationsMs: [3000, 3000, 3000], vocabSource: 'own', speechRate: 1.0, theme: 'dark' };
   }
 
   const VOCAB_SOURCES = {
@@ -39,7 +39,12 @@
     localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
   }
 
+  function applyTheme() {
+    document.documentElement.setAttribute('data-theme', settings.theme);
+  }
+
   let settings = loadSettings();
+  applyTheme();
   let sourceCountsCache = null;
 
   const homeScreen = document.getElementById('home-screen');
@@ -354,6 +359,23 @@
     saveSettings();
   });
 
+  const themeOptionButtons = document.querySelectorAll('.theme-option');
+
+  function renderThemeToggle() {
+    themeOptionButtons.forEach(btn => {
+      btn.classList.toggle('selected', btn.dataset.themeChoice === settings.theme);
+    });
+  }
+
+  themeOptionButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      settings.theme = btn.dataset.themeChoice;
+      saveSettings();
+      applyTheme();
+      renderThemeToggle();
+    });
+  });
+
   // iOS Safari (especially an installed Home Screen app) only allows
   // speechSynthesis.speak() unprompted for a brief window after a real user
   // gesture. startSession() is async (awaits a vocab fetch before the first
@@ -613,6 +635,7 @@
   document.getElementById('settings-btn').addEventListener('click', () => {
     renderDurationSliders();
     renderRateSlider();
+    renderThemeToggle();
     renderVocabSourceList();
     showScreen(settingsScreen);
   });

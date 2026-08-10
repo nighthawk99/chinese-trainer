@@ -1,4 +1,7 @@
-# Chinese Trainer App
+# Chinese Companion App
+(in-app display name; repo/GitHub Pages URL is still `chinese-trainer` —
+not renamed, to avoid breaking the live URL and any Home Screen icons
+already pointing at it)
 
 ## Goal
 Personal iPhone Chinese vocabulary learning app. Building it as a plain
@@ -120,11 +123,23 @@ work).
   ```
 - Settings (`app.js`) persist to `localStorage` under key
   `chineseTrainer.settings`: `{ pageDurationsMs: [hanziMs, englishMs,
-  sentenceMs], vocabSource, speechRate }`.
+  sentenceMs], vocabSource, speechRate, theme }`.
 - TTS via the browser's built-in Web Speech API (`speechSynthesis`,
   zh-CN / en-US voices) — free, offline, no API key, works in Safari.
   Vocabulary Trainer only — Grammar Review and Travel Phrases are
   browsed silently (by design, per the user).
+- Dark/Light theme: every color in `style.css` is a CSS custom
+  property on `:root` (dark, the original look) with a full override
+  block on `:root[data-theme="light"]`. `applyTheme()` in `app.js`
+  sets that `data-theme` attribute on `<html>` from
+  `settings.theme` — manually switched via a segmented control in
+  Settings ("Appearance"), not tied to `prefers-color-scheme`. Default
+  is `dark`.
+- `icon.svg` — the app logo/icon (gradient-blue rounded square, white
+  中 character), used as favicon and, rasterized to `icon-180.png` /
+  `icon-32.png` (no SVG-to-PNG tool available locally, so rendered via
+  a headless-Chrome screenshot of the SVG then downscaled with
+  `sips`), as the `apple-touch-icon` for "Add to Home Screen."
 
 ## Status
 - [x] Vocabulary Trainer mode: random order, 3 auto-advancing pages per
@@ -168,6 +183,12 @@ work).
       shopping/bargaining, directions, emergencies, connectivity,
       socializing, sightseeing, numbers/time). Home screen → pick a
       situation → scroll a flat list of phrase cards.
+- [x] App logo (`icon.svg`, gradient-blue square + white 中) wired up
+      as favicon and Home Screen icon; app renamed in-app from
+      "Chinese Trainer" to "Chinese Companion" (repo/URL unchanged)
+- [x] Dark/Light theme toggle in Settings — every color tokenized as a
+      CSS custom property, manually switched (not OS-linked), verified
+      across all screens in both themes
 - [ ] Additional training modes beyond Vocabulary Trainer / Grammar
       Review / Travel Phrases (not yet specified by user)
 - [x] Persistent phone access — live at
@@ -581,3 +602,42 @@ work).
   debug overlay. Worth remembering: don't trust `--window-size` alone
   for viewport-accurate headless screenshots on this setup — verify
   `window.innerWidth` directly, or use the iframe trick.
+- 2026-08-10: User reported the redesigned home screen looked broken
+  in real Safari (icon/text/chevron stacked vertically instead of in
+  a row). Confirmed the live server was serving the correct, current
+  CSS — same stale-cache pattern hit multiple times before with this
+  app (new HTML + old cached CSS = unstyled-looking layout). Resolved
+  by the user force-reloading; not a real bug.
+- 2026-08-10: Designed an app logo (`icon.svg`) — gradient-blue
+  rounded square with a bold white 中, chosen over the feature-tile
+  characters (词/语/旅) because it needed to read clearly at favicon
+  size (中 is 4 strokes, simple and symmetric) and represent the whole
+  app rather than one feature. No SVG→PNG tool available locally
+  (checked rsvg-convert/cairosvg/imagemagick/inkscape — none
+  installed, and `sips` doesn't read SVG), so rasterized by screenshotting
+  the SVG in headless Chrome at 512×512 and downscaling with `sips`
+  to get `icon-180.png` (apple-touch-icon) and `icon-32.png`
+  (favicon fallback) — confirmed legible at both real target sizes,
+  not just the source render, since small type/glyphs can break down
+  at actual icon sizes even when the source looks fine. Wired up as
+  favicon + apple-touch-icon, and also shown in-app above the home
+  screen title, not just as a hidden browser-chrome icon.
+- 2026-08-10: Renamed the app (in-app display name only) from
+  "Chinese Trainer" to "Chinese Companion" — user's pick from a
+  shortlist, chosen since "Trainer" undersold the app now that it's
+  also a browsable grammar/phrase reference, not just a drill.
+  Deliberately did NOT rename the GitHub repo or change the live
+  GitHub Pages URL (`nighthawk99.github.io/chinese-trainer/`) — that
+  would break the URL for any Home Screen icon already pointing at it
+  with no real benefit, since the repo name isn't user-facing.
+- 2026-08-10: Added a manually-switched Dark/Light theme (Settings →
+  Appearance), keeping the existing look as Dark exactly as-is per
+  the user's explicit preference for white-on-black. Required
+  tokenizing every color in `style.css` first — several were
+  hardcoded hex/rgba literals scattered across rules (border color,
+  two shadow values, the home-screen glow, the primary-button text
+  color) rather than CSS custom properties, so `:root[data-theme=
+  "light"]` could override them. Verified all four screens (home,
+  settings, Grammar Review detail, Vocabulary Trainer) in both themes
+  via screenshots before considering it done, including the toggle's
+  own active/inactive visual state.

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a3f6e"/>
+      <stop offset="100%" stop-color="#4da3ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <text x="256" y="256" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', sans-serif"
+        font-size="300" font-weight="700" fill="#ffffff" text-anchor="middle"
+        dominant-baseline="central">中</text>
+</svg>
