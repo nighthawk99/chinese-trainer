@@ -541,3 +541,43 @@ work).
   pinyin-consistency issue during merge (`duōshao` vs the house
   convention `duōshǎo`, plus one un-sandhi'd `Yīgòng` that should be
   `Yígòng`) before finalizing.
+- 2026-08-09: User asked whether the Vocabulary Trainer keeps running
+  (auto-advance + spoken audio) when the phone is locked or Safari is
+  backgrounded/minimized. Answered from first-hand knowledge of iOS
+  Safari rather than assuming: **no**, it doesn't — iOS suspends a
+  plain web page's JS execution (including `setTimeout` timers and,
+  in effect, `speechSynthesis`) once backgrounded/locked. The one
+  exception iOS allows is a real `<audio>`/`<video>` element with
+  Media Session metadata, which is how web-based podcast/music
+  players survive a locked screen — `speechSynthesis` doesn't get
+  that same treatment. There's an unofficial, undocumented workaround
+  (loop a silent `<audio>` element to keep the page "alive"), but it's
+  not guaranteed to keep the actual TTS voice playing behind a locked
+  screen, and can't be verified without a real on-device test — user
+  hasn't asked for this to be attempted yet.
+- 2026-08-09: Redesigned the home screen only (user explicitly said
+  not to touch the layout of Vocabulary Trainer or the other
+  features) — kept the existing dark palette exactly (white text on
+  near-black, per user's stated preference) but added: a small
+  eyebrow tagline, a subtle radial-gradient background scoped to
+  `#home-screen` only, and per-tile icon badges using real Chinese
+  characters (词/语/旅) rather than generic icons or emoji, tying
+  each tile to its actual content. Hit a real CSS bug restructuring
+  `.mode-tile` into an icon+text+chevron row: flex items default to
+  `min-width: auto`, which let the row's content force the tile wider
+  than its own explicit `width`, overflowing past the screen edge on
+  narrow viewports — fixed with an explicit `min-width: 0` on
+  `.mode-tile`. Chased a false alarm while verifying the fix:
+  headless Chrome's `--window-size` flag doesn't reliably set
+  `window.innerWidth` for `--screenshot`/`--dump-dom` on this
+  machine's Chrome build (kept reporting 500 regardless of the flag,
+  across `--headless`/`--headless=new`, fresh profiles, and
+  `--force-device-scale-factor=1`), which produced screenshots that
+  looked genuinely overflowing purely because the image was saved at
+  the requested pixel size while the page had actually been laid out
+  at 500px and then cropped. Confirmed the real fix was correct by
+  wrapping the page in a fixed-width `<iframe>` instead (immune to
+  the flag issue) and reading real computed styles off an on-page
+  debug overlay. Worth remembering: don't trust `--window-size` alone
+  for viewport-accurate headless screenshots on this setup — verify
+  `window.innerWidth` directly, or use the iframe trick.
