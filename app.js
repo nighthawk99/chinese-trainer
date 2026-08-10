@@ -51,6 +51,11 @@
   const grammarCategoryList = document.getElementById('grammar-category-list');
   const grammarConstructList = document.getElementById('grammar-construct-list');
   const grammarDetailTitle = document.getElementById('grammar-detail-title');
+  const phrasesScreen = document.getElementById('phrases-screen');
+  const phrasesDetailScreen = document.getElementById('phrases-detail-screen');
+  const phrasesSituationList = document.getElementById('phrases-situation-list');
+  const phrasesList = document.getElementById('phrases-list');
+  const phrasesDetailTitle = document.getElementById('phrases-detail-title');
   const pageContent = document.getElementById('page-content');
   const progressLabel = document.getElementById('progress-label');
   const pauseBtn = document.getElementById('pause-btn');
@@ -83,8 +88,8 @@
   }
 
   function showScreen(el) {
-    [homeScreen, settingsScreen, trainerScreen, completeScreen, grammarScreen, grammarDetailScreen]
-      .forEach(s => s.classList.remove('active'));
+    [homeScreen, settingsScreen, trainerScreen, completeScreen, grammarScreen, grammarDetailScreen,
+     phrasesScreen, phrasesDetailScreen].forEach(s => s.classList.remove('active'));
     el.classList.add('active');
   }
 
@@ -171,28 +176,35 @@
     return grammarData;
   }
 
-  // Categories are already grouped in data/grammar.json in the intended
-  // display order, so a first-seen pass over the array preserves it.
-  function buildGrammarCategories(data) {
+  // Groups a flat data array by `field`, preserving first-seen order —
+  // both grammar.json and phrases.json are pre-ordered by category/
+  // situation, so this reproduces the intended display order.
+  function groupCounts(data, field) {
     const counts = new Map();
-    data.forEach(c => counts.set(c.category, (counts.get(c.category) || 0) + 1));
+    data.forEach(item => counts.set(item[field], (counts.get(item[field]) || 0) + 1));
     return Array.from(counts.entries()).map(([name, count]) => ({ name, count }));
+  }
+
+  // Shared by Grammar Review's category list and Travel Phrases' situation
+  // list — both are "tap a topic to see a detail list" screens.
+  function renderTopicList(container, data, field, onSelect) {
+    const groups = groupCounts(data, field);
+    container.innerHTML = '';
+    groups.forEach(({ name, count }) => {
+      const btn = document.createElement('button');
+      btn.className = 'topic-item';
+      btn.innerHTML = `
+        <span class="topic-item-name">${name}</span>
+        <span class="topic-item-count">${count}</span>
+      `;
+      btn.addEventListener('click', () => onSelect(name));
+      container.appendChild(btn);
+    });
   }
 
   async function renderGrammarCategoryList() {
     const data = await loadGrammarData();
-    const categories = buildGrammarCategories(data);
-    grammarCategoryList.innerHTML = '';
-    categories.forEach(({ name, count }) => {
-      const btn = document.createElement('button');
-      btn.className = 'grammar-category-item';
-      btn.innerHTML = `
-        <span class="grammar-category-name">${name}</span>
-        <span class="grammar-category-count">${count}</span>
-      `;
-      btn.addEventListener('click', () => openGrammarCategory(name));
-      grammarCategoryList.appendChild(btn);
-    });
+    renderTopicList(grammarCategoryList, data, 'category', openGrammarCategory);
   }
 
   function renderSubPattern(sp) {
@@ -235,6 +247,39 @@
   function openGrammarCategory(categoryName) {
     renderGrammarConstructList(categoryName);
     showScreen(grammarDetailScreen);
+  }
+
+  let phrasesData = null; // cached data/phrases.json, fetched once
+
+  async function loadPhrasesData() {
+    if (!phrasesData) {
+      const res = await fetch('data/phrases.json');
+      phrasesData = await res.json();
+    }
+    return phrasesData;
+  }
+
+  async function renderPhrasesSituationList() {
+    const data = await loadPhrasesData();
+    renderTopicList(phrasesSituationList, data, 'situation', openPhraseSituation);
+  }
+
+  function renderPhrasesList(situationName) {
+    phrasesDetailTitle.textContent = situationName;
+    const phrases = phrasesData.filter(p => p.situation === situationName);
+    phrasesList.innerHTML = phrases.map(p => `
+      <div class="phrase-card">
+        <div class="example-hanzi">${p.hanzi}</div>
+        <div class="example-pinyin">${p.pinyin}</div>
+        <div class="example-english">${p.english}</div>
+        ${p.note ? `<div class="phrase-note">${p.note}</div>` : ''}
+      </div>
+    `).join('');
+  }
+
+  function openPhraseSituation(situationName) {
+    renderPhrasesList(situationName);
+    showScreen(phrasesDetailScreen);
   }
 
   async function updateHomeDesc() {
@@ -541,6 +586,19 @@
 
   document.getElementById('grammar-detail-back-btn').addEventListener('click', () => {
     showScreen(grammarScreen);
+  });
+
+  document.getElementById('start-travel-phrases').addEventListener('click', async () => {
+    await renderPhrasesSituationList();
+    showScreen(phrasesScreen);
+  });
+
+  document.getElementById('phrases-home-btn').addEventListener('click', () => {
+    showScreen(homeScreen);
+  });
+
+  document.getElementById('phrases-detail-back-btn').addEventListener('click', () => {
+    showScreen(phrasesScreen);
   });
 
   document.getElementById('restart-btn').addEventListener('click', () => {

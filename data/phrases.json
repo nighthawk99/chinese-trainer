@@ -1,0 +1,1605 @@
+[
+ {
+  "id": "airport-immigration-1",
+  "situation": "Airport & Immigration",
+  "hanzi": "请出示您的护照和登机牌。",
+  "pinyin": "Qǐng chūshì nín de hùzhào hé dēngjīpái.",
+  "english": "Please show your passport and boarding pass.",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "airport-immigration-2",
+  "situation": "Airport & Immigration",
+  "hanzi": "这是我的护照。",
+  "pinyin": "Zhè shì wǒ de hùzhào.",
+  "english": "This is my passport."
+ },
+ {
+  "id": "airport-immigration-3",
+  "situation": "Airport & Immigration",
+  "hanzi": "您来中国的目的是什么？",
+  "pinyin": "Nín lái Zhōngguó de mùdì shì shénme?",
+  "english": "What is the purpose of your visit to China?",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "airport-immigration-4",
+  "situation": "Airport & Immigration",
+  "hanzi": "我是来旅游的。",
+  "pinyin": "Wǒ shì lái lǚyóu de.",
+  "english": "I'm here for tourism."
+ },
+ {
+  "id": "airport-immigration-5",
+  "situation": "Airport & Immigration",
+  "hanzi": "我是来出差的。",
+  "pinyin": "Wǒ shì lái chūchāi de.",
+  "english": "I'm here on business."
+ },
+ {
+  "id": "airport-immigration-6",
+  "situation": "Airport & Immigration",
+  "hanzi": "您会在中国待多久？",
+  "pinyin": "Nín huì zài Zhōngguó dāi duōjiǔ?",
+  "english": "How long will you be staying in China?",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "airport-immigration-7",
+  "situation": "Airport & Immigration",
+  "hanzi": "我会待十天。",
+  "pinyin": "Wǒ huì dāi shí tiān.",
+  "english": "I'll be staying for ten days."
+ },
+ {
+  "id": "airport-immigration-8",
+  "situation": "Airport & Immigration",
+  "hanzi": "您住在哪里？",
+  "pinyin": "Nín zhù zài nǎlǐ?",
+  "english": "Where are you staying?",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "airport-immigration-9",
+  "situation": "Airport & Immigration",
+  "hanzi": "我住在这家酒店。",
+  "pinyin": "Wǒ zhù zài zhè jiā jiǔdiàn.",
+  "english": "I'm staying at this hotel.",
+  "note": "Handy to point at a hotel booking confirmation while saying this"
+ },
+ {
+  "id": "airport-immigration-10",
+  "situation": "Airport & Immigration",
+  "hanzi": "请问入境申请表在哪里拿？",
+  "pinyin": "Qǐngwèn rùjìng shēnqǐngbiǎo zài nǎlǐ ná?",
+  "english": "Excuse me, where can I get the arrival form?"
+ },
+ {
+  "id": "airport-immigration-11",
+  "situation": "Airport & Immigration",
+  "hanzi": "这张表要怎么填？",
+  "pinyin": "Zhè zhāng biǎo yào zěnme tián?",
+  "english": "How do I fill out this form?"
+ },
+ {
+  "id": "airport-immigration-12",
+  "situation": "Airport & Immigration",
+  "hanzi": "有没有需要申报的物品？",
+  "pinyin": "Yǒu méiyǒu xūyào shēnbào de wùpǐn?",
+  "english": "Do you have anything to declare?",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "airport-immigration-13",
+  "situation": "Airport & Immigration",
+  "hanzi": "没有，我没有需要申报的东西。",
+  "pinyin": "Méiyǒu, wǒ méiyǒu xūyào shēnbào de dōngxi.",
+  "english": "No, I don't have anything to declare."
+ },
+ {
+  "id": "airport-immigration-14",
+  "situation": "Airport & Immigration",
+  "hanzi": "请把包放到这里检查一下。",
+  "pinyin": "Qǐng bǎ bāo fàng dào zhèlǐ jiǎnchá yíxià.",
+  "english": "Please put your bag here for inspection.",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "airport-immigration-15",
+  "situation": "Airport & Immigration",
+  "hanzi": "行李提取处在哪儿？",
+  "pinyin": "Xínglǐ tíqǔchù zài nǎr?",
+  "english": "Where is baggage claim?"
+ },
+ {
+  "id": "airport-immigration-16",
+  "situation": "Airport & Immigration",
+  "hanzi": "我的航班号是这个。",
+  "pinyin": "Wǒ de hángbān hào shì zhège.",
+  "english": "This is my flight number."
+ },
+ {
+  "id": "airport-immigration-17",
+  "situation": "Airport & Immigration",
+  "hanzi": "我找不到我的行李了。",
+  "pinyin": "Wǒ zhǎo bú dào wǒ de xínglǐ le.",
+  "english": "I can't find my luggage."
+ },
+ {
+  "id": "airport-immigration-18",
+  "situation": "Airport & Immigration",
+  "hanzi": "我的箱子好像丢了，我应该去哪里报告？",
+  "pinyin": "Wǒ de xiāngzi hǎoxiàng diū le, wǒ yīnggāi qù nǎlǐ bàogào?",
+  "english": "My suitcase seems to be lost — where should I report it?"
+ },
+ {
+  "id": "airport-immigration-19",
+  "situation": "Airport & Immigration",
+  "hanzi": "请问出口/出租车站在哪个方向？",
+  "pinyin": "Qǐngwèn chūkǒu/chūzūchē zhàn zài nǎge fāngxiàng?",
+  "english": "Excuse me, which way is the exit / the taxi stand?"
+ },
+ {
+  "id": "airport-immigration-20",
+  "situation": "Airport & Immigration",
+  "hanzi": "请问有免费的机场大巴或者地铁到市区吗？",
+  "pinyin": "Qǐngwèn yǒu miǎnfèi de jīchǎng dàbā huòzhě dìtiě dào shìqū ma?",
+  "english": "Excuse me, is there an airport shuttle bus or subway into the city?"
+ },
+ {
+  "id": "transportation-1",
+  "situation": "Transportation",
+  "hanzi": "师傅，请去这个地址。",
+  "pinyin": "Shīfu, qǐng qù zhège dìzhǐ.",
+  "english": "Driver, please take me to this address.",
+  "note": "\"师傅\" is the standard polite way to address a taxi driver"
+ },
+ {
+  "id": "transportation-2",
+  "situation": "Transportation",
+  "hanzi": "请打表。",
+  "pinyin": "Qǐng dǎ biǎo.",
+  "english": "Please use the meter."
+ },
+ {
+  "id": "transportation-3",
+  "situation": "Transportation",
+  "hanzi": "到这里大概要多长时间？",
+  "pinyin": "Dào zhèlǐ dàgài yào duō cháng shíjiān?",
+  "english": "About how long will it take to get there?"
+ },
+ {
+  "id": "transportation-4",
+  "situation": "Transportation",
+  "hanzi": "一共多少钱？",
+  "pinyin": "Yígòng duōshǎo qián?",
+  "english": "How much is it in total?"
+ },
+ {
+  "id": "transportation-5",
+  "situation": "Transportation",
+  "hanzi": "可以刷微信支付吗？",
+  "pinyin": "Kěyǐ shuā WeChat zhīfù ma?",
+  "english": "Can I pay with WeChat Pay?"
+ },
+ {
+  "id": "transportation-6",
+  "situation": "Transportation",
+  "hanzi": "麻烦在前面停一下。",
+  "pinyin": "Máfan zài qiánmiàn tíng yíxià.",
+  "english": "Could you please stop up ahead?"
+ },
+ {
+  "id": "transportation-7",
+  "situation": "Transportation",
+  "hanzi": "我叫了一辆滴滴，司机快到了。",
+  "pinyin": "Wǒ jiào le yí liàng dīdī, sījī kuài dào le.",
+  "english": "I called a DiDi, the driver is almost here."
+ },
+ {
+  "id": "transportation-8",
+  "situation": "Transportation",
+  "hanzi": "您好，我是您的滴滴乘客。",
+  "pinyin": "Nín hǎo, wǒ shì nín de dīdī chéngkè.",
+  "english": "Hello, I'm your DiDi passenger.",
+  "note": "Useful to say when meeting your driver in a crowd"
+ },
+ {
+  "id": "transportation-9",
+  "situation": "Transportation",
+  "hanzi": "请问最近的地铁站怎么走？",
+  "pinyin": "Qǐngwèn zuìjìn de dìtiě zhàn zěnme zǒu?",
+  "english": "Excuse me, how do I get to the nearest subway station?"
+ },
+ {
+  "id": "transportation-10",
+  "situation": "Transportation",
+  "hanzi": "一张票多少钱？",
+  "pinyin": "Yì zhāng piào duōshǎo qián?",
+  "english": "How much is one ticket?"
+ },
+ {
+  "id": "transportation-11",
+  "situation": "Transportation",
+  "hanzi": "去王府井要坐几号线？",
+  "pinyin": "Qù Wángfǔjǐng yào zuò jǐ hào xiàn?",
+  "english": "Which subway line do I take to Wangfujing?",
+  "note": "Swap in any destination in place of 王府井"
+ },
+ {
+  "id": "transportation-12",
+  "situation": "Transportation",
+  "hanzi": "请问在哪一站换乘？",
+  "pinyin": "Qǐngwèn zài nǎ yí zhàn huànchéng?",
+  "english": "Excuse me, which stop do I transfer at?"
+ },
+ {
+  "id": "transportation-13",
+  "situation": "Transportation",
+  "hanzi": "下一站是什么站？",
+  "pinyin": "Xià yí zhàn shì shénme zhàn?",
+  "english": "What is the next stop?"
+ },
+ {
+  "id": "transportation-14",
+  "situation": "Transportation",
+  "hanzi": "请注意，列车即将进站。",
+  "pinyin": "Qǐng zhùyì, lièchē jíjiāng jìnzhàn.",
+  "english": "Attention, the train is about to arrive.",
+  "note": "You'll hear this announced, not say it"
+ },
+ {
+  "id": "transportation-15",
+  "situation": "Transportation",
+  "hanzi": "我想买一张明天去上海的高铁票。",
+  "pinyin": "Wǒ xiǎng mǎi yì zhāng míngtiān qù Shànghǎi de gāotiě piào.",
+  "english": "I'd like to buy a high-speed rail ticket to Shanghai for tomorrow."
+ },
+ {
+  "id": "transportation-16",
+  "situation": "Transportation",
+  "hanzi": "请出示您的身份证或者护照。",
+  "pinyin": "Qǐng chūshì nín de shēnfènzhèng huòzhě hùzhào.",
+  "english": "Please show your ID card or passport.",
+  "note": "You'll hear this at the station security/ticket check, not say it"
+ },
+ {
+  "id": "transportation-17",
+  "situation": "Transportation",
+  "hanzi": "我的车次是几点检票？",
+  "pinyin": "Wǒ de chēcì shì jǐ diǎn jiǎnpiào?",
+  "english": "What time does boarding start for my train?"
+ },
+ {
+  "id": "transportation-18",
+  "situation": "Transportation",
+  "hanzi": "请问这个座位有人坐吗？",
+  "pinyin": "Qǐngwèn zhège zuòwèi yǒu rén zuò ma?",
+  "english": "Excuse me, is this seat taken?"
+ },
+ {
+  "id": "transportation-19",
+  "situation": "Transportation",
+  "hanzi": "这辆公交车到火车站吗？",
+  "pinyin": "Zhè liàng gōngjiāochē dào huǒchē zhàn ma?",
+  "english": "Does this bus go to the train station?"
+ },
+ {
+  "id": "transportation-20",
+  "situation": "Transportation",
+  "hanzi": "麻烦到站告诉我一声，谢谢。",
+  "pinyin": "Máfan dào zhàn gàosu wǒ yì shēng, xièxie.",
+  "english": "Could you let me know when we get to my stop? Thanks."
+ },
+ {
+  "id": "hotel-accommodation-1",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "你好，我有预订。",
+  "pinyin": "Nǐ hǎo, wǒ yǒu yùdìng.",
+  "english": "Hello, I have a reservation."
+ },
+ {
+  "id": "hotel-accommodation-2",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "我要办理入住。",
+  "pinyin": "Wǒ yào bànlǐ rùzhù.",
+  "english": "I'd like to check in."
+ },
+ {
+  "id": "hotel-accommodation-3",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "请出示您的护照。",
+  "pinyin": "Qǐng chūshì nín de hùzhào.",
+  "english": "Please show your passport.",
+  "note": "You'll hear this from the front desk, not say it."
+ },
+ {
+  "id": "hotel-accommodation-4",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "这是我的护照。",
+  "pinyin": "Zhè shì wǒ de hùzhào.",
+  "english": "Here's my passport."
+ },
+ {
+  "id": "hotel-accommodation-5",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "有含早餐吗？",
+  "pinyin": "Yǒu hán zǎocān ma?",
+  "english": "Is breakfast included?"
+ },
+ {
+  "id": "hotel-accommodation-6",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "早餐几点开始？",
+  "pinyin": "Zǎocān jǐ diǎn kāishǐ?",
+  "english": "What time does breakfast start?"
+ },
+ {
+  "id": "hotel-accommodation-7",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "Wifi密码是多少？",
+  "pinyin": "Wifi mìmǎ shì duōshǎo?",
+  "english": "What's the wifi password?"
+ },
+ {
+  "id": "hotel-accommodation-8",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "请问几点退房？",
+  "pinyin": "Qǐngwèn jǐ diǎn tuìfáng?",
+  "english": "What time is checkout?"
+ },
+ {
+  "id": "hotel-accommodation-9",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "可以晚一点退房吗？",
+  "pinyin": "Kěyǐ wǎn yìdiǎn tuìfáng ma?",
+  "english": "Can I have a late checkout?"
+ },
+ {
+  "id": "hotel-accommodation-10",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "可以再要一条毛巾吗？",
+  "pinyin": "Kěyǐ zài yào yì tiáo máojīn ma?",
+  "english": "Could I get another towel?"
+ },
+ {
+  "id": "hotel-accommodation-11",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "可以再给我一些洗漱用品吗？",
+  "pinyin": "Kěyǐ zài gěi wǒ yìxiē xǐshù yòngpǐn ma?",
+  "english": "Could I get some more toiletries?"
+ },
+ {
+  "id": "hotel-accommodation-12",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "空调坏了。",
+  "pinyin": "Kōngtiáo huài le.",
+  "english": "The air conditioning is broken."
+ },
+ {
+  "id": "hotel-accommodation-13",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "没有热水。",
+  "pinyin": "Méiyǒu rè shuǐ.",
+  "english": "There's no hot water."
+ },
+ {
+  "id": "hotel-accommodation-14",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "隔壁太吵了。",
+  "pinyin": "Gébì tài chǎo le.",
+  "english": "It's too noisy next door."
+ },
+ {
+  "id": "hotel-accommodation-15",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "可以帮我叫醒服务吗？",
+  "pinyin": "Kěyǐ bāng wǒ jiào xǐng fúwù ma?",
+  "english": "Could you set up a wake-up call for me?"
+ },
+ {
+  "id": "hotel-accommodation-16",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "我要退房。",
+  "pinyin": "Wǒ yào tuìfáng.",
+  "english": "I'd like to check out."
+ },
+ {
+  "id": "hotel-accommodation-17",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "可以开发票吗？",
+  "pinyin": "Kěyǐ kāi fāpiào ma?",
+  "english": "Could I get a receipt (fapiao)?",
+  "note": "Fapiao are official tax receipts, useful for expense reports."
+ },
+ {
+  "id": "hotel-accommodation-18",
+  "situation": "Hotel & Accommodation",
+  "hanzi": "可以帮我叫一辆出租车吗？",
+  "pinyin": "Kěyǐ bāng wǒ jiào yí liàng chūzūchē ma?",
+  "english": "Could you call me a taxi?"
+ },
+ {
+  "id": "dining-restaurants-1",
+  "situation": "Dining & Restaurants",
+  "hanzi": "你好，几位？",
+  "pinyin": "Nǐ hǎo, jǐ wèi?",
+  "english": "Hello, how many people?",
+  "note": "You'll hear this from the host, not say it."
+ },
+ {
+  "id": "dining-restaurants-2",
+  "situation": "Dining & Restaurants",
+  "hanzi": "两位。",
+  "pinyin": "Liǎng wèi.",
+  "english": "Two people."
+ },
+ {
+  "id": "dining-restaurants-3",
+  "situation": "Dining & Restaurants",
+  "hanzi": "请给我看一下菜单。",
+  "pinyin": "Qǐng gěi wǒ kàn yíxià càidān.",
+  "english": "Could I see the menu, please?"
+ },
+ {
+  "id": "dining-restaurants-4",
+  "situation": "Dining & Restaurants",
+  "hanzi": "你们有英文菜单吗？",
+  "pinyin": "Nǐmen yǒu Yīngwén càidān ma?",
+  "english": "Do you have an English menu?"
+ },
+ {
+  "id": "dining-restaurants-5",
+  "situation": "Dining & Restaurants",
+  "hanzi": "有什么推荐的菜吗？",
+  "pinyin": "Yǒu shénme tuījiàn de cài ma?",
+  "english": "What do you recommend?"
+ },
+ {
+  "id": "dining-restaurants-6",
+  "situation": "Dining & Restaurants",
+  "hanzi": "这个辣不辣？",
+  "pinyin": "Zhège là bu là?",
+  "english": "Is this spicy?"
+ },
+ {
+  "id": "dining-restaurants-7",
+  "situation": "Dining & Restaurants",
+  "hanzi": "不要太辣。",
+  "pinyin": "Bú yào tài là.",
+  "english": "Not too spicy, please."
+ },
+ {
+  "id": "dining-restaurants-8",
+  "situation": "Dining & Restaurants",
+  "hanzi": "我要这个。",
+  "pinyin": "Wǒ yào zhège.",
+  "english": "I'll have this."
+ },
+ {
+  "id": "dining-restaurants-9",
+  "situation": "Dining & Restaurants",
+  "hanzi": "我吃素。",
+  "pinyin": "Wǒ chī sù.",
+  "english": "I'm vegetarian."
+ },
+ {
+  "id": "dining-restaurants-10",
+  "situation": "Dining & Restaurants",
+  "hanzi": "我对花生过敏。",
+  "pinyin": "Wǒ duì huāshēng guòmǐn.",
+  "english": "I'm allergic to peanuts."
+ },
+ {
+  "id": "dining-restaurants-11",
+  "situation": "Dining & Restaurants",
+  "hanzi": "不要放香菜。",
+  "pinyin": "Bú yào fàng xiāngcài.",
+  "english": "No cilantro, please."
+ },
+ {
+  "id": "dining-restaurants-12",
+  "situation": "Dining & Restaurants",
+  "hanzi": "不要放味精。",
+  "pinyin": "Bú yào fàng wèijīng.",
+  "english": "No MSG, please."
+ },
+ {
+  "id": "dining-restaurants-13",
+  "situation": "Dining & Restaurants",
+  "hanzi": "请给我一杯水。",
+  "pinyin": "Qǐng gěi wǒ yì bēi shuǐ.",
+  "english": "Could I get a glass of water?"
+ },
+ {
+  "id": "dining-restaurants-14",
+  "situation": "Dining & Restaurants",
+  "hanzi": "还需要别的吗？",
+  "pinyin": "Hái xūyào bié de ma?",
+  "english": "Would you like anything else?",
+  "note": "You'll hear this from the waiter, not say it."
+ },
+ {
+  "id": "dining-restaurants-15",
+  "situation": "Dining & Restaurants",
+  "hanzi": "不用了，谢谢。",
+  "pinyin": "Bú yòng le, xièxie.",
+  "english": "No, that's all, thanks."
+ },
+ {
+  "id": "dining-restaurants-16",
+  "situation": "Dining & Restaurants",
+  "hanzi": "服务员，买单。",
+  "pinyin": "Fúwùyuán, mǎidān.",
+  "english": "Waiter, check please."
+ },
+ {
+  "id": "dining-restaurants-17",
+  "situation": "Dining & Restaurants",
+  "hanzi": "可以用微信支付吗？",
+  "pinyin": "Kěyǐ yòng Wēixìn zhīfù ma?",
+  "english": "Can I pay with WeChat?"
+ },
+ {
+  "id": "dining-restaurants-18",
+  "situation": "Dining & Restaurants",
+  "hanzi": "可以打包吗？",
+  "pinyin": "Kěyǐ dǎbāo ma?",
+  "english": "Could I get this to go?"
+ },
+ {
+  "id": "money-mobile-payment-1",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "这里可以用微信支付吗？",
+  "pinyin": "Zhèlǐ kěyǐ yòng Wēixìn zhīfù ma?",
+  "english": "Can I pay with WeChat Pay here?"
+ },
+ {
+  "id": "money-mobile-payment-2",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "你们收支付宝吗？",
+  "pinyin": "Nǐmen shōu Zhīfùbǎo ma?",
+  "english": "Do you accept Alipay?"
+ },
+ {
+  "id": "money-mobile-payment-3",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "可以刷卡吗？",
+  "pinyin": "Kěyǐ shuākǎ ma?",
+  "english": "Can I pay by card?"
+ },
+ {
+  "id": "money-mobile-payment-4",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "你们收现金吗？",
+  "pinyin": "Nǐmen shōu xiànjīn ma?",
+  "english": "Do you accept cash?"
+ },
+ {
+  "id": "money-mobile-payment-5",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "一共多少钱？",
+  "pinyin": "Yígòng duōshǎo qián?",
+  "english": "How much is it in total?"
+ },
+ {
+  "id": "money-mobile-payment-6",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "一共三十五块。",
+  "pinyin": "Yígòng sānshíwǔ kuài.",
+  "english": "That's 35 yuan in total.",
+  "note": "You'll hear this from a cashier, not say it."
+ },
+ {
+  "id": "money-mobile-payment-7",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "请扫这个码。",
+  "pinyin": "Qǐng sǎo zhège mǎ.",
+  "english": "Please scan this code.",
+  "note": "You'll hear this — the cashier asking you to scan their QR code."
+ },
+ {
+  "id": "money-mobile-payment-8",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "我扫你还是你扫我？",
+  "pinyin": "Wǒ sǎo nǐ háishi nǐ sǎo wǒ?",
+  "english": "Should I scan you, or you scan me?"
+ },
+ {
+  "id": "money-mobile-payment-9",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "可以找我零钱吗？",
+  "pinyin": "Kěyǐ zhǎo wǒ língqián ma?",
+  "english": "Can you give me change?"
+ },
+ {
+  "id": "money-mobile-payment-10",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "我没有零钱。",
+  "pinyin": "Wǒ méiyǒu língqián.",
+  "english": "I don't have any small change."
+ },
+ {
+  "id": "money-mobile-payment-11",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "附近有ATM吗？",
+  "pinyin": "Fùjìn yǒu ATM ma?",
+  "english": "Is there an ATM nearby?"
+ },
+ {
+  "id": "money-mobile-payment-12",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "我想取点现金。",
+  "pinyin": "Wǒ xiǎng qǔ diǎn xiànjīn.",
+  "english": "I'd like to withdraw some cash."
+ },
+ {
+  "id": "money-mobile-payment-13",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "这张卡可以用吗？",
+  "pinyin": "Zhè zhāng kǎ kěyǐ yòng ma?",
+  "english": "Can I use this card?"
+ },
+ {
+  "id": "money-mobile-payment-14",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "哪里可以换钱？",
+  "pinyin": "Nǎlǐ kěyǐ huàn qián?",
+  "english": "Where can I exchange currency?"
+ },
+ {
+  "id": "money-mobile-payment-15",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "今天的汇率是多少？",
+  "pinyin": "Jīntiān de huìlǜ shì duōshǎo?",
+  "english": "What's today's exchange rate?"
+ },
+ {
+  "id": "money-mobile-payment-16",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "可以开发票吗？",
+  "pinyin": "Kěyǐ kāi fāpiào ma?",
+  "english": "Can I get a receipt?"
+ },
+ {
+  "id": "money-mobile-payment-17",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "请输入密码。",
+  "pinyin": "Qǐng shūrù mìmǎ.",
+  "english": "Please enter your PIN.",
+  "note": "You'll hear/see this at an ATM or card terminal."
+ },
+ {
+  "id": "money-mobile-payment-18",
+  "situation": "Money & Mobile Payment",
+  "hanzi": "我的手机没有信号，可以用现金吗？",
+  "pinyin": "Wǒ de shǒujī méiyǒu xìnhào, kěyǐ yòng xiànjīn ma?",
+  "english": "My phone has no signal — can I pay with cash instead?"
+ },
+ {
+  "id": "shopping-bargaining-1",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "这个多少钱？",
+  "pinyin": "Zhège duōshǎo qián?",
+  "english": "How much is this?"
+ },
+ {
+  "id": "shopping-bargaining-2",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "太贵了。",
+  "pinyin": "Tài guì le.",
+  "english": "That's too expensive."
+ },
+ {
+  "id": "shopping-bargaining-3",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "可以便宜一点吗？",
+  "pinyin": "Kěyǐ piányi yìdiǎn ma?",
+  "english": "Can you make it a bit cheaper?"
+ },
+ {
+  "id": "shopping-bargaining-4",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "能不能再便宜点？",
+  "pinyin": "Néng bu néng zài piányi diǎn?",
+  "english": "Can you lower the price a bit more?"
+ },
+ {
+  "id": "shopping-bargaining-5",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "这个已经很便宜了。",
+  "pinyin": "Zhège yǐjīng hěn piányi le.",
+  "english": "This is already very cheap.",
+  "note": "You'll hear this — a common bargaining pushback from a vendor."
+ },
+ {
+  "id": "shopping-bargaining-6",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "我再看看别家。",
+  "pinyin": "Wǒ zài kànkan bié jiā.",
+  "english": "I'll go check other shops.",
+  "note": "A common (often bluffing) bargaining tactic."
+ },
+ {
+  "id": "shopping-bargaining-7",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "如果我买两个呢？",
+  "pinyin": "Rúguǒ wǒ mǎi liǎng gè ne?",
+  "english": "What if I buy two?"
+ },
+ {
+  "id": "shopping-bargaining-8",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "最低多少钱？",
+  "pinyin": "Zuìdī duōshǎo qián?",
+  "english": "What's your lowest price?"
+ },
+ {
+  "id": "shopping-bargaining-9",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "三十块，行不行？",
+  "pinyin": "Sānshí kuài, xíng bu xíng?",
+  "english": "30 yuan, deal?"
+ },
+ {
+  "id": "shopping-bargaining-10",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "好吧，就这个价钱。",
+  "pinyin": "Hǎo ba, jiù zhège jiàqián.",
+  "english": "OK, deal at that price.",
+  "note": "You'll hear this once the vendor agrees."
+ },
+ {
+  "id": "shopping-bargaining-11",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "我可以试穿吗？",
+  "pinyin": "Wǒ kěyǐ shìchuān ma?",
+  "english": "Can I try this on?"
+ },
+ {
+  "id": "shopping-bargaining-12",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "试衣间在哪里？",
+  "pinyin": "Shìyījiān zài nǎlǐ?",
+  "english": "Where's the fitting room?"
+ },
+ {
+  "id": "shopping-bargaining-13",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "有别的颜色吗？",
+  "pinyin": "Yǒu bié de yánsè ma?",
+  "english": "Do you have other colors?"
+ },
+ {
+  "id": "shopping-bargaining-14",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "有大一点的号码吗？",
+  "pinyin": "Yǒu dà yìdiǎn de hàomǎ ma?",
+  "english": "Do you have a bigger size?"
+ },
+ {
+  "id": "shopping-bargaining-15",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "这是真的吗？",
+  "pinyin": "Zhè shì zhēnde ma?",
+  "english": "Is this genuine?"
+ },
+ {
+  "id": "shopping-bargaining-16",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "这是手工做的吗？",
+  "pinyin": "Zhè shì shǒugōng zuò de ma?",
+  "english": "Is this handmade?"
+ },
+ {
+  "id": "shopping-bargaining-17",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "我只是随便看看，谢谢。",
+  "pinyin": "Wǒ zhǐshì suíbiàn kànkan, xièxie.",
+  "english": "I'm just looking, thanks."
+ },
+ {
+  "id": "shopping-bargaining-18",
+  "situation": "Shopping & Bargaining",
+  "hanzi": "可以给我一个袋子吗？",
+  "pinyin": "Kěyǐ gěi wǒ yí gè dàizi ma?",
+  "english": "Can I get a bag?"
+ },
+ {
+  "id": "asking-for-directions-1",
+  "situation": "Asking for Directions",
+  "hanzi": "请问，去地铁站怎么走？",
+  "pinyin": "Qǐngwèn, qù dìtiězhàn zěnme zǒu?",
+  "english": "Excuse me, how do I get to the subway station?"
+ },
+ {
+  "id": "asking-for-directions-2",
+  "situation": "Asking for Directions",
+  "hanzi": "最近的洗手间在哪里？",
+  "pinyin": "Zuìjìn de xǐshǒujiān zài nǎlǐ?",
+  "english": "Where's the nearest bathroom?"
+ },
+ {
+  "id": "asking-for-directions-3",
+  "situation": "Asking for Directions",
+  "hanzi": "附近有药店吗？",
+  "pinyin": "Fùjìn yǒu yàodiàn ma?",
+  "english": "Is there a pharmacy nearby?"
+ },
+ {
+  "id": "asking-for-directions-4",
+  "situation": "Asking for Directions",
+  "hanzi": "这里离火车站远吗？",
+  "pinyin": "Zhèlǐ lí huǒchēzhàn yuǎn ma?",
+  "english": "Is it far from here to the train station?"
+ },
+ {
+  "id": "asking-for-directions-5",
+  "situation": "Asking for Directions",
+  "hanzi": "走路要多长时间？",
+  "pinyin": "Zǒulù yào duō cháng shíjiān?",
+  "english": "How long does it take to walk there?"
+ },
+ {
+  "id": "asking-for-directions-6",
+  "situation": "Asking for Directions",
+  "hanzi": "打车要多长时间？",
+  "pinyin": "Dǎchē yào duō cháng shíjiān?",
+  "english": "How long does it take by taxi?"
+ },
+ {
+  "id": "asking-for-directions-7",
+  "situation": "Asking for Directions",
+  "hanzi": "您能帮我看一下地图吗？",
+  "pinyin": "Nín néng bāng wǒ kàn yíxià dìtú ma?",
+  "english": "Could you help me look at the map?"
+ },
+ {
+  "id": "asking-for-directions-8",
+  "situation": "Asking for Directions",
+  "hanzi": "一直往前走。",
+  "pinyin": "Yìzhí wǎng qián zǒu.",
+  "english": "Go straight ahead.",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "asking-for-directions-9",
+  "situation": "Asking for Directions",
+  "hanzi": "在第二个路口往左拐。",
+  "pinyin": "Zài dì-èr gè lùkǒu wǎng zuǒ guǎi.",
+  "english": "Turn left at the second intersection.",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "asking-for-directions-10",
+  "situation": "Asking for Directions",
+  "hanzi": "往右拐就到了。",
+  "pinyin": "Wǎng yòu guǎi jiù dào le.",
+  "english": "Turn right and you're there.",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "asking-for-directions-11",
+  "situation": "Asking for Directions",
+  "hanzi": "过马路就是。",
+  "pinyin": "Guò mǎlù jiù shì.",
+  "english": "Just cross the street.",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "asking-for-directions-12",
+  "situation": "Asking for Directions",
+  "hanzi": "在三楼。",
+  "pinyin": "Zài sān lóu.",
+  "english": "It's on the third floor.",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "asking-for-directions-13",
+  "situation": "Asking for Directions",
+  "hanzi": "从这儿走大概十分钟。",
+  "pinyin": "Cóng zhèr zǒu dàgài shí fēnzhōng.",
+  "english": "It's about a 10-minute walk from here.",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "asking-for-directions-14",
+  "situation": "Asking for Directions",
+  "hanzi": "这附近有公共汽车站吗？",
+  "pinyin": "Zhè fùjìn yǒu gōnggòng qìchēzhàn ma?",
+  "english": "Is there a bus stop nearby?"
+ },
+ {
+  "id": "asking-for-directions-15",
+  "situation": "Asking for Directions",
+  "hanzi": "请问这是去机场的路吗？",
+  "pinyin": "Qǐngwèn zhè shì qù jīchǎng de lù ma?",
+  "english": "Excuse me, is this the way to the airport?"
+ },
+ {
+  "id": "asking-for-directions-16",
+  "situation": "Asking for Directions",
+  "hanzi": "我迷路了，能帮帮我吗？",
+  "pinyin": "Wǒ mílù le, néng bāngbang wǒ ma?",
+  "english": "I'm lost, can you help me?"
+ },
+ {
+  "id": "asking-for-directions-17",
+  "situation": "Asking for Directions",
+  "hanzi": "麻烦您给我指一下路。",
+  "pinyin": "Máfan nín gěi wǒ zhǐ yíxià lù.",
+  "english": "Could you please point out the way for me?"
+ },
+ {
+  "id": "asking-for-directions-18",
+  "situation": "Asking for Directions",
+  "hanzi": "谢谢您，太感谢了。",
+  "pinyin": "Xièxie nín, tài gǎnxiè le.",
+  "english": "Thank you, I really appreciate it."
+ },
+ {
+  "id": "emergencies-health-1",
+  "situation": "Emergencies & Health",
+  "hanzi": "我不舒服。",
+  "pinyin": "Wǒ bù shūfu.",
+  "english": "I don't feel well."
+ },
+ {
+  "id": "emergencies-health-2",
+  "situation": "Emergencies & Health",
+  "hanzi": "我头疼。",
+  "pinyin": "Wǒ tóuténg.",
+  "english": "I have a headache."
+ },
+ {
+  "id": "emergencies-health-3",
+  "situation": "Emergencies & Health",
+  "hanzi": "我肚子疼。",
+  "pinyin": "Wǒ dùzi téng.",
+  "english": "I have a stomachache."
+ },
+ {
+  "id": "emergencies-health-4",
+  "situation": "Emergencies & Health",
+  "hanzi": "我发烧了。",
+  "pinyin": "Wǒ fāshāo le.",
+  "english": "I have a fever."
+ },
+ {
+  "id": "emergencies-health-5",
+  "situation": "Emergencies & Health",
+  "hanzi": "附近有药店吗？",
+  "pinyin": "Fùjìn yǒu yàodiàn ma?",
+  "english": "Is there a pharmacy nearby?"
+ },
+ {
+  "id": "emergencies-health-6",
+  "situation": "Emergencies & Health",
+  "hanzi": "我需要一些感冒药。",
+  "pinyin": "Wǒ xūyào yìxiē gǎnmàoyào.",
+  "english": "I need some cold medicine."
+ },
+ {
+  "id": "emergencies-health-7",
+  "situation": "Emergencies & Health",
+  "hanzi": "有止疼药吗？",
+  "pinyin": "Yǒu zhǐténgyào ma?",
+  "english": "Do you have any pain relievers?"
+ },
+ {
+  "id": "emergencies-health-8",
+  "situation": "Emergencies & Health",
+  "hanzi": "你哪里不舒服？",
+  "pinyin": "Nǐ nǎlǐ bù shūfu?",
+  "english": "Where does it hurt?",
+  "note": "You'll hear this — a pharmacist or doctor asking"
+ },
+ {
+  "id": "emergencies-health-9",
+  "situation": "Emergencies & Health",
+  "hanzi": "我需要看医生。",
+  "pinyin": "Wǒ xūyào kàn yīshēng.",
+  "english": "I need to see a doctor."
+ },
+ {
+  "id": "emergencies-health-10",
+  "situation": "Emergencies & Health",
+  "hanzi": "最近的医院在哪儿？",
+  "pinyin": "Zuìjìn de yīyuàn zài nǎr?",
+  "english": "Where's the nearest hospital?"
+ },
+ {
+  "id": "emergencies-health-11",
+  "situation": "Emergencies & Health",
+  "hanzi": "请叫救护车！",
+  "pinyin": "Qǐng jiào jiùhùchē!",
+  "english": "Please call an ambulance!"
+ },
+ {
+  "id": "emergencies-health-12",
+  "situation": "Emergencies & Health",
+  "hanzi": "救命！",
+  "pinyin": "Jiùmìng!",
+  "english": "Help!"
+ },
+ {
+  "id": "emergencies-health-13",
+  "situation": "Emergencies & Health",
+  "hanzi": "我的护照丢了。",
+  "pinyin": "Wǒ de hùzhào diū le.",
+  "english": "I lost my passport."
+ },
+ {
+  "id": "emergencies-health-14",
+  "situation": "Emergencies & Health",
+  "hanzi": "我的钱包被偷了。",
+  "pinyin": "Wǒ de qiánbāo bèi tōu le.",
+  "english": "My wallet was stolen."
+ },
+ {
+  "id": "emergencies-health-15",
+  "situation": "Emergencies & Health",
+  "hanzi": "最近的警察局在哪儿？",
+  "pinyin": "Zuìjìn de jǐngchájú zài nǎr?",
+  "english": "Where's the nearest police station?"
+ },
+ {
+  "id": "emergencies-health-16",
+  "situation": "Emergencies & Health",
+  "hanzi": "我要报警。",
+  "pinyin": "Wǒ yào bàojǐng.",
+  "english": "I need to report this to the police."
+ },
+ {
+  "id": "emergencies-health-17",
+  "situation": "Emergencies & Health",
+  "hanzi": "我对海鲜过敏。",
+  "pinyin": "Wǒ duì hǎixiān guòmǐn.",
+  "english": "I'm allergic to seafood."
+ },
+ {
+  "id": "emergencies-health-18",
+  "situation": "Emergencies & Health",
+  "hanzi": "我需要旅行保险的信息。",
+  "pinyin": "Wǒ xūyào lǚxíng bǎoxiǎn de xìnxī.",
+  "english": "I need information about my travel insurance."
+ },
+ {
+  "id": "connectivity-1",
+  "situation": "Connectivity",
+  "hanzi": "请问在哪里可以买电话卡？",
+  "pinyin": "Qǐngwèn zài nǎlǐ kěyǐ mǎi diànhuàkǎ?",
+  "english": "Excuse me, where can I buy a SIM card?"
+ },
+ {
+  "id": "connectivity-2",
+  "situation": "Connectivity",
+  "hanzi": "我想买一张电话卡。",
+  "pinyin": "Wǒ xiǎng mǎi yì zhāng diànhuàkǎ.",
+  "english": "I'd like to buy a SIM card."
+ },
+ {
+  "id": "connectivity-3",
+  "situation": "Connectivity",
+  "hanzi": "我要一张有数据流量的卡。",
+  "pinyin": "Wǒ yào yì zhāng yǒu shùjù liúliàng de kǎ.",
+  "english": "I'd like a card with data."
+ },
+ {
+  "id": "connectivity-4",
+  "situation": "Connectivity",
+  "hanzi": "您要办理流量套餐吗？",
+  "pinyin": "Nín yào bànlǐ liúliàng tàocān ma?",
+  "english": "Would you like to set up a data plan?",
+  "note": "You'll hear this from a phone-shop clerk, not say it."
+ },
+ {
+  "id": "connectivity-5",
+  "situation": "Connectivity",
+  "hanzi": "这里有免费WiFi吗？",
+  "pinyin": "Zhèlǐ yǒu miǎnfèi WiFi ma?",
+  "english": "Is there free WiFi here?"
+ },
+ {
+  "id": "connectivity-6",
+  "situation": "Connectivity",
+  "hanzi": "WiFi密码是多少？",
+  "pinyin": "WiFi mìmǎ shì duōshǎo?",
+  "english": "What's the WiFi password?"
+ },
+ {
+  "id": "connectivity-7",
+  "situation": "Connectivity",
+  "hanzi": "可以告诉我WiFi密码吗？",
+  "pinyin": "Kěyǐ gàosu wǒ WiFi mìmǎ ma?",
+  "english": "Could you tell me the WiFi password?",
+  "note": "A more polite phrasing than the direct question."
+ },
+ {
+  "id": "connectivity-8",
+  "situation": "Connectivity",
+  "hanzi": "我的手机没有信号。",
+  "pinyin": "Wǒ de shǒujī méiyǒu xìnhào.",
+  "english": "My phone has no signal."
+ },
+ {
+  "id": "connectivity-9",
+  "situation": "Connectivity",
+  "hanzi": "网速有点儿慢。",
+  "pinyin": "Wǎngsù yǒudiǎnr màn.",
+  "english": "The internet is a bit slow."
+ },
+ {
+  "id": "connectivity-10",
+  "situation": "Connectivity",
+  "hanzi": "我上不了网。",
+  "pinyin": "Wǒ shàng bu liǎo wǎng.",
+  "english": "I can't get online."
+ },
+ {
+  "id": "connectivity-11",
+  "situation": "Connectivity",
+  "hanzi": "我需要用VPN才能上网。",
+  "pinyin": "Wǒ xūyào yòng VPN cái néng shàngwǎng.",
+  "english": "I need a VPN to get online."
+ },
+ {
+  "id": "connectivity-12",
+  "situation": "Connectivity",
+  "hanzi": "你有VPN吗？可以推荐一个吗？",
+  "pinyin": "Nǐ yǒu VPN ma? Kěyǐ tuījiàn yí ge ma?",
+  "english": "Do you have a VPN? Can you recommend one?"
+ },
+ {
+  "id": "connectivity-13",
+  "situation": "Connectivity",
+  "hanzi": "这个二维码扫不出来。",
+  "pinyin": "Zhège èrwéimǎ sǎo bu chūlái.",
+  "english": "This QR code won't scan."
+ },
+ {
+  "id": "connectivity-14",
+  "situation": "Connectivity",
+  "hanzi": "我的手机快没电了。",
+  "pinyin": "Wǒ de shǒujī kuài méi diàn le.",
+  "english": "My phone is almost out of battery."
+ },
+ {
+  "id": "connectivity-15",
+  "situation": "Connectivity",
+  "hanzi": "请问哪里可以充电？",
+  "pinyin": "Qǐngwèn nǎlǐ kěyǐ chōngdiàn?",
+  "english": "Excuse me, where can I charge my phone?"
+ },
+ {
+  "id": "connectivity-16",
+  "situation": "Connectivity",
+  "hanzi": "可以借用一下充电器吗？",
+  "pinyin": "Kěyǐ jièyòng yíxià chōngdiànqì ma?",
+  "english": "Could I borrow a charger for a moment?"
+ },
+ {
+  "id": "connectivity-17",
+  "situation": "Connectivity",
+  "hanzi": "你的电话号码是多少？",
+  "pinyin": "Nǐ de diànhuà hàomǎ shì duōshǎo?",
+  "english": "What's your phone number?"
+ },
+ {
+  "id": "connectivity-18",
+  "situation": "Connectivity",
+  "hanzi": "我的电话号码是……。",
+  "pinyin": "Wǒ de diànhuà hàomǎ shì...",
+  "english": "My phone number is..."
+ },
+ {
+  "id": "connectivity-19",
+  "situation": "Connectivity",
+  "hanzi": "我的手机丢了，可以帮我打个电话找一下吗？",
+  "pinyin": "Wǒ de shǒujī diū le, kěyǐ bāng wǒ dǎ ge diànhuà zhǎo yíxià ma?",
+  "english": "I lost my phone, could you help me call it to find it?"
+ },
+ {
+  "id": "socializing-small-talk-1",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "早上好！",
+  "pinyin": "Zǎoshang hǎo!",
+  "english": "Good morning!"
+ },
+ {
+  "id": "socializing-small-talk-2",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "下午好！",
+  "pinyin": "Xiàwǔ hǎo!",
+  "english": "Good afternoon!"
+ },
+ {
+  "id": "socializing-small-talk-3",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "晚上好！",
+  "pinyin": "Wǎnshang hǎo!",
+  "english": "Good evening!"
+ },
+ {
+  "id": "socializing-small-talk-4",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "你好吗？",
+  "pinyin": "Nǐ hǎo ma?",
+  "english": "How are you?"
+ },
+ {
+  "id": "socializing-small-talk-5",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "最近怎么样？",
+  "pinyin": "Zuìjìn zěnmeyàng?",
+  "english": "How have you been lately?"
+ },
+ {
+  "id": "socializing-small-talk-6",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "我叫……，很高兴认识你。",
+  "pinyin": "Wǒ jiào..., hěn gāoxìng rènshi nǐ.",
+  "english": "My name is..., nice to meet you."
+ },
+ {
+  "id": "socializing-small-talk-7",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "你叫什么名字？",
+  "pinyin": "Nǐ jiào shénme míngzi?",
+  "english": "What's your name?"
+ },
+ {
+  "id": "socializing-small-talk-8",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "你是哪国人？",
+  "pinyin": "Nǐ shì nǎ guó rén?",
+  "english": "Where are you from?",
+  "note": "Literally \"which country's person are you\" — you'll hear this often as a foreign traveler."
+ },
+ {
+  "id": "socializing-small-talk-9",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "我是美国人。",
+  "pinyin": "Wǒ shì Měiguórén.",
+  "english": "I'm American.",
+  "note": "Swap in your own nationality, e.g. 英国人 (British), 加拿大人 (Canadian)."
+ },
+ {
+  "id": "socializing-small-talk-10",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "我是从纽约来的。",
+  "pinyin": "Wǒ shì cóng Niǔyuē lái de.",
+  "english": "I'm from New York."
+ },
+ {
+  "id": "socializing-small-talk-11",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "你来中国多久了？",
+  "pinyin": "Nǐ lái Zhōngguó duō jiǔ le?",
+  "english": "How long have you been in China?",
+  "note": "You'll hear this often — a very common small-talk question."
+ },
+ {
+  "id": "socializing-small-talk-12",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "我来中国一个星期了。",
+  "pinyin": "Wǒ lái Zhōngguó yí ge xīngqī le.",
+  "english": "I've been in China for a week."
+ },
+ {
+  "id": "socializing-small-talk-13",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "你的中文说得真好！",
+  "pinyin": "Nǐ de Zhōngwén shuō de zhēn hǎo!",
+  "english": "Your Chinese is really good!",
+  "note": "A common compliment you'll hear often, even with basic Chinese — politeness, not always literal."
+ },
+ {
+  "id": "socializing-small-talk-14",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "哪里哪里，还差得远呢。",
+  "pinyin": "Nǎlǐ nǎlǐ, hái chà de yuǎn ne.",
+  "english": "Oh, not really, I still have a long way to go.",
+  "note": "The standard humble reply to a compliment."
+ },
+ {
+  "id": "socializing-small-talk-15",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "可以加一下你的微信吗？",
+  "pinyin": "Kěyǐ jiā yíxià nǐ de wēixìn ma?",
+  "english": "Could I add you on WeChat?"
+ },
+ {
+  "id": "socializing-small-talk-16",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "我扫你还是你扫我？",
+  "pinyin": "Wǒ sǎo nǐ háishi nǐ sǎo wǒ?",
+  "english": "Should I scan you or you scan me?",
+  "note": "What people actually say when exchanging WeChat QR codes."
+ },
+ {
+  "id": "socializing-small-talk-17",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "认识你很高兴。",
+  "pinyin": "Rènshi nǐ hěn gāoxìng.",
+  "english": "It was nice meeting you."
+ },
+ {
+  "id": "socializing-small-talk-18",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "希望还能再见面。",
+  "pinyin": "Xīwàng hái néng zàijiànmiàn.",
+  "english": "I hope we can meet again."
+ },
+ {
+  "id": "socializing-small-talk-19",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "干杯！",
+  "pinyin": "Gānbēi!",
+  "english": "Cheers!"
+ },
+ {
+  "id": "socializing-small-talk-20",
+  "situation": "Socializing & Small Talk",
+  "hanzi": "为我们的友谊干杯！",
+  "pinyin": "Wèi wǒmen de yǒuyì gānbēi!",
+  "english": "Cheers to our friendship!"
+ },
+ {
+  "id": "sightseeing-1",
+  "situation": "Sightseeing",
+  "hanzi": "请问，门票多少钱？",
+  "pinyin": "Qǐngwèn, ménpiào duōshǎo qián?",
+  "english": "Excuse me, how much is the admission ticket?"
+ },
+ {
+  "id": "sightseeing-2",
+  "situation": "Sightseeing",
+  "hanzi": "学生票多少钱？",
+  "pinyin": "Xuéshēng piào duōshǎo qián?",
+  "english": "How much is a student ticket?"
+ },
+ {
+  "id": "sightseeing-3",
+  "situation": "Sightseeing",
+  "hanzi": "有老年人优惠吗？",
+  "pinyin": "Yǒu lǎonián rén yōuhuì ma?",
+  "english": "Is there a senior discount?"
+ },
+ {
+  "id": "sightseeing-4",
+  "situation": "Sightseeing",
+  "hanzi": "请问几点开门？",
+  "pinyin": "Qǐngwèn jǐ diǎn kāimén?",
+  "english": "What time does it open?"
+ },
+ {
+  "id": "sightseeing-5",
+  "situation": "Sightseeing",
+  "hanzi": "几点关门？",
+  "pinyin": "Jǐ diǎn guānmén?",
+  "english": "What time does it close?"
+ },
+ {
+  "id": "sightseeing-6",
+  "situation": "Sightseeing",
+  "hanzi": "入口在哪儿？",
+  "pinyin": "Rùkǒu zài nǎr?",
+  "english": "Where is the entrance?"
+ },
+ {
+  "id": "sightseeing-7",
+  "situation": "Sightseeing",
+  "hanzi": "出口在哪儿？",
+  "pinyin": "Chūkǒu zài nǎr?",
+  "english": "Where is the exit?"
+ },
+ {
+  "id": "sightseeing-8",
+  "situation": "Sightseeing",
+  "hanzi": "可以帮我拍张照吗？",
+  "pinyin": "Kěyǐ bāng wǒ pāi zhāng zhào ma?",
+  "english": "Could you take a photo of me?"
+ },
+ {
+  "id": "sightseeing-9",
+  "situation": "Sightseeing",
+  "hanzi": "这儿可以拍照吗？",
+  "pinyin": "Zhèr kěyǐ pāizhào ma?",
+  "english": "Is it okay to take photos here?"
+ },
+ {
+  "id": "sightseeing-10",
+  "situation": "Sightseeing",
+  "hanzi": "有中文讲解器吗？",
+  "pinyin": "Yǒu Zhōngwén jiǎngjiěqì ma?",
+  "english": "Is there a Chinese audio guide?"
+ },
+ {
+  "id": "sightseeing-11",
+  "situation": "Sightseeing",
+  "hanzi": "有英文导游吗？",
+  "pinyin": "Yǒu Yīngwén dǎoyóu ma?",
+  "english": "Is there an English-speaking tour guide?"
+ },
+ {
+  "id": "sightseeing-12",
+  "situation": "Sightseeing",
+  "hanzi": "洗手间在哪儿？",
+  "pinyin": "Xǐshǒujiān zài nǎr?",
+  "english": "Where is the restroom?"
+ },
+ {
+  "id": "sightseeing-13",
+  "situation": "Sightseeing",
+  "hanzi": "纪念品商店在哪儿？",
+  "pinyin": "Jìniànpǐn shāngdiàn zài nǎr?",
+  "english": "Where is the gift shop?"
+ },
+ {
+  "id": "sightseeing-14",
+  "situation": "Sightseeing",
+  "hanzi": "什么时候人比较少？",
+  "pinyin": "Shénme shíhou rén bǐjiào shǎo?",
+  "english": "When is it less crowded?"
+ },
+ {
+  "id": "sightseeing-15",
+  "situation": "Sightseeing",
+  "hanzi": "这个地方值得一去吗？",
+  "pinyin": "Zhège dìfang zhídé yī qù ma?",
+  "english": "Is this place worth visiting?"
+ },
+ {
+  "id": "sightseeing-16",
+  "situation": "Sightseeing",
+  "hanzi": "从这儿到那儿远吗？",
+  "pinyin": "Cóng zhèr dào nàr yuǎn ma?",
+  "english": "Is it far from here to there?"
+ },
+ {
+  "id": "sightseeing-17",
+  "situation": "Sightseeing",
+  "hanzi": "请出示您的门票。",
+  "pinyin": "Qǐng chūshì nín de ménpiào.",
+  "english": "Please show your ticket.",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "sightseeing-18",
+  "situation": "Sightseeing",
+  "hanzi": "前方施工，暂停开放。",
+  "pinyin": "Qiánfāng shīgōng, zàntíng kāifàng.",
+  "english": "Under construction ahead, temporarily closed.",
+  "note": "You'll hear/read this (sign or announcement), not say it"
+ },
+ {
+  "id": "numbers-time-dates-1",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "现在几点？",
+  "pinyin": "Xiànzài jǐ diǎn?",
+  "english": "What time is it now?"
+ },
+ {
+  "id": "numbers-time-dates-2",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "现在是下午三点。",
+  "pinyin": "Xiànzài shì xiàwǔ sān diǎn.",
+  "english": "It's 3pm now.",
+  "note": "A typical answer you'll hear when asking the time"
+ },
+ {
+  "id": "numbers-time-dates-3",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "请问几点开始？",
+  "pinyin": "Qǐngwèn jǐ diǎn kāishǐ?",
+  "english": "What time does it start?"
+ },
+ {
+  "id": "numbers-time-dates-4",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "我们几点见面？",
+  "pinyin": "Wǒmen jǐ diǎn jiànmiàn?",
+  "english": "What time should we meet?"
+ },
+ {
+  "id": "numbers-time-dates-5",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "我们八点在门口见吧。",
+  "pinyin": "Wǒmen bā diǎn zài ménkǒu jiàn ba.",
+  "english": "Let's meet at the entrance at 8 o'clock."
+ },
+ {
+  "id": "numbers-time-dates-6",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "今天几号？",
+  "pinyin": "Jīntiān jǐ hào?",
+  "english": "What's today's date?"
+ },
+ {
+  "id": "numbers-time-dates-7",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "今天星期几？",
+  "pinyin": "Jīntiān xīngqī jǐ?",
+  "english": "What day is it today?"
+ },
+ {
+  "id": "numbers-time-dates-8",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "明天我们几点出发？",
+  "pinyin": "Míngtiān wǒmen jǐ diǎn chūfā?",
+  "english": "What time are we leaving tomorrow?"
+ },
+ {
+  "id": "numbers-time-dates-9",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "下星期我要去上海。",
+  "pinyin": "Xià xīngqī wǒ yào qù Shànghǎi.",
+  "english": "Next week I'm going to Shanghai."
+ },
+ {
+  "id": "numbers-time-dates-10",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "还要等多久？",
+  "pinyin": "Hái yào děng duōjiǔ?",
+  "english": "How much longer do we have to wait?"
+ },
+ {
+  "id": "numbers-time-dates-11",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "大概需要多长时间？",
+  "pinyin": "Dàgài xūyào duō cháng shíjiān?",
+  "english": "About how long will it take?"
+ },
+ {
+  "id": "numbers-time-dates-12",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "我要两张票。",
+  "pinyin": "Wǒ yào liǎng zhāng piào.",
+  "english": "I'd like two tickets."
+ },
+ {
+  "id": "numbers-time-dates-13",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "一共多少钱？",
+  "pinyin": "Yígòng duōshǎo qián?",
+  "english": "How much in total?"
+ },
+ {
+  "id": "numbers-time-dates-14",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "我们一共四个人。",
+  "pinyin": "Wǒmen yīgòng sì gè rén.",
+  "english": "There are four of us in total."
+ },
+ {
+  "id": "numbers-time-dates-15",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "请给我三个。",
+  "pinyin": "Qǐng gěi wǒ sān gè.",
+  "english": "Please give me three of them."
+ },
+ {
+  "id": "numbers-time-dates-16",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "大概五分钟就到。",
+  "pinyin": "Dàgài wǔ fēnzhōng jiù dào.",
+  "english": "It'll take about five minutes to get there.",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "numbers-time-dates-17",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "现在还早，再等一下。",
+  "pinyin": "Xiànzài hái zǎo, zài děng yíxià.",
+  "english": "It's still early, let's wait a bit.",
+  "note": "You'll hear this, not say it"
+ },
+ {
+  "id": "numbers-time-dates-18",
+  "situation": "Numbers, Time & Dates",
+  "hanzi": "请问几楼？",
+  "pinyin": "Qǐngwèn jǐ lóu?",
+  "english": "Which floor, please?"
+ }
+]

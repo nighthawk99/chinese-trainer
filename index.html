@@ -20,6 +20,10 @@
       <span class="mode-name">Grammar Review</span>
       <span class="mode-desc" id="home-grammar-desc">Browse grammar patterns and constructs by topic</span>
     </button>
+    <button class="mode-tile" id="start-travel-phrases">
+      <span class="mode-name">Travel Phrases</span>
+      <span class="mode-desc" id="home-phrases-desc">Useful phrases for everyday situations in China</span>
+    </button>
   </section>
 
   <!-- Grammar Review: choose a topic -->
@@ -29,7 +33,7 @@
       <div class="progress-label">Grammar Review</div>
       <div style="width: 2.5em;"></div>
     </div>
-    <div id="grammar-category-list" class="grammar-category-list">
+    <div id="grammar-category-list" class="topic-list">
       <!-- filled dynamically -->
     </div>
   </section>
@@ -41,7 +45,31 @@
       <div id="grammar-detail-title" class="progress-label"></div>
       <div style="width: 2.5em;"></div>
     </div>
-    <div id="grammar-construct-list" class="grammar-construct-list">
+    <div id="grammar-construct-list" class="topic-detail-list">
+      <!-- filled dynamically -->
+    </div>
+  </section>
+
+  <!-- Travel Phrases: choose a situation -->
+  <section id="phrases-screen" class="screen">
+    <div class="top-bar">
+      <button id="phrases-home-btn" class="icon-btn" aria-label="Home">&larr;</button>
+      <div class="progress-label">Travel Phrases</div>
+      <div style="width: 2.5em;"></div>
+    </div>
+    <div id="phrases-situation-list" class="topic-list">
+      <!-- filled dynamically -->
+    </div>
+  </section>
+
+  <!-- Travel Phrases: phrases within one situation -->
+  <section id="phrases-detail-screen" class="screen">
+    <div class="top-bar">
+      <button id="phrases-detail-back-btn" class="icon-btn" aria-label="Back">&larr;</button>
+      <div id="phrases-detail-title" class="progress-label"></div>
+      <div style="width: 2.5em;"></div>
+    </div>
+    <div id="phrases-list" class="topic-detail-list">
       <!-- filled dynamically -->
     </div>
   </section>

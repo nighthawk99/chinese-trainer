@@ -79,10 +79,15 @@ one's will be picked up.
 No backend, no build step — just static files opened via a plain HTTP
 server (needed for `fetch()` of the JSON data files; `file://` won't
 work).
-- `index.html` / `style.css` / `app.js` — single-page app, six screens
-  (home, settings, vocab trainer, vocab session-complete, grammar
-  category list, grammar category detail) toggled via a CSS `.active`
-  class.
+- `index.html` / `style.css` / `app.js` — single-page app, eight
+  screens (home, settings, vocab trainer, vocab session-complete,
+  grammar category list, grammar category detail, phrases situation
+  list, phrases situation detail) toggled via a CSS `.active` class.
+  Grammar Review and Travel Phrases share the same generic "topic
+  list → tap in → scrollable detail list" scaffolding (`.topic-list`
+  / `.topic-item` / `.topic-detail-list` CSS classes, and a shared
+  `renderTopicList()` helper in `app.js`) rather than each having its
+  own copy.
 - `data/vocab.json` / `hsk1.json` / `hsk2.json` / `hsk3.json` /
   `hsk4.json` — one file per Vocabulary Trainer word source, shape:
   ```json
@@ -106,12 +111,20 @@ work).
     ],
     "links": [{ "label": "...", "url": "..." }]  }
   ```
+- `data/phrases.json` — Travel Phrases feature's data, a flat array of
+  223 phrases grouped into 12 everyday-situation categories, shape:
+  ```json
+  { "id": "...", "situation": "...", "hanzi": "...", "pinyin": "...",
+    "english": "...", "note": "... (optional, e.g. \"you'll hear this,
+    not say it\")" }
+  ```
 - Settings (`app.js`) persist to `localStorage` under key
   `chineseTrainer.settings`: `{ pageDurationsMs: [hanziMs, englishMs,
   sentenceMs], vocabSource, speechRate }`.
 - TTS via the browser's built-in Web Speech API (`speechSynthesis`,
   zh-CN / en-US voices) — free, offline, no API key, works in Safari.
-  Vocabulary Trainer only — Grammar Review is browsed silently.
+  Vocabulary Trainer only — Grammar Review and Travel Phrases are
+  browsed silently (by design, per the user).
 
 ## Status
 - [x] Vocabulary Trainer mode: random order, 3 auto-advancing pages per
@@ -148,8 +161,15 @@ work).
       merged from a 54-lesson doc developed with the user's Chinese
       teacher. Home screen → pick a category → tap a construct to
       expand pattern/explanation/examples.
+- [x] Travel Phrases — third top-level feature, same self-paced/no-TTS
+      style as Grammar Review. 223 freshly-authored phrases (not from
+      a source doc) across 12 everyday situations a traveler in China
+      would hit (airport, transport, hotel, dining, mobile payment,
+      shopping/bargaining, directions, emergencies, connectivity,
+      socializing, sightseeing, numbers/time). Home screen → pick a
+      situation → scroll a flat list of phrase cards.
 - [ ] Additional training modes beyond Vocabulary Trainer / Grammar
-      Review (not yet specified by user)
+      Review / Travel Phrases (not yet specified by user)
 - [x] Persistent phone access — live at
       **https://nighthawk99.github.io/chinese-trainer/** via GitHub
       Pages. Reachable from anywhere (WiFi or cellular), no Mac needs
@@ -476,3 +496,48 @@ work).
   cards per construct with pattern/explanation/examples. Text
   selection is deliberately re-enabled on these screens (unlike the
   rest of the app) since it's a reference feature, not a timed drill.
+- 2026-08-09: User said to stop asking for permission before routine
+  actions (commit, push, running local test servers) on this project
+  — asked repeatedly through the Grammar Review build and it slowed
+  things down for no real benefit on a solo project with no other
+  collaborators. Saved as a standing preference in Claude's own
+  cross-session memory. Still flagging genuinely destructive/
+  irreversible ops (force-push, hard reset, deleting branches/files)
+  regardless — the new default is "just proceed," not "anything
+  goes."
+- 2026-08-09: Built **Travel Phrases**, a third top-level feature —
+  useful everyday phrases for a traveler in China (hanzi/pinyin/
+  English), unlike Grammar Review this is freshly authored content,
+  not extracted from a source document. Process: proposed 12
+  situations first (airport, transport, hotel, dining, money/mobile
+  payment, shopping/bargaining, directions, emergencies,
+  connectivity, socializing, sightseeing, numbers/time) and got
+  user sign-off before writing anything. Asked two design questions
+  up front rather than assuming: TTS was declined (text-only, like
+  Grammar Review — this is a lookup feature, not proven to need
+  audio) and depth was set to ~15-20 phrases/situation over a
+  leaner ~8-10.
+  Refactored Grammar Review's category-list/detail-list CSS+JS first
+  (renamed to generic `.topic-list`/`.topic-item`/`.topic-detail-list`
+  classes + a shared `renderTopicList()` helper) so Travel Phrases
+  could reuse the same scaffolding instead of duplicating it — a
+  worthwhile few-minutes refactor since the UX pattern ("browse
+  topics, tap in, scroll a detail list") is identical between the two
+  features.
+  Authored via 6 parallel forks (2 situations each) directly from
+  each fork's own Chinese knowledge (no source doc to extract from
+  this time), calibrated against vocab.json/hsk1.json's existing
+  pinyin conventions. Two of the six forks ran far longer than the
+  rest (~1h+ vs ~1-15 min) and still showed as "running" when the
+  user asked if they were stuck; rather than assume either way,
+  messaged them directly to check — while waiting on that, discovered
+  both had actually already finished and written valid, high-quality
+  output files, just hadn't returned their completion notification
+  yet. Worth remembering: check the actual output file on disk before
+  concluding a background task is stuck, since a "running" status
+  from the harness can lag behind real completion.
+  Final: 223 phrases across 12 situations (all within the requested
+  15-20/situation range) in `data/phrases.json`. Caught and fixed one
+  pinyin-consistency issue during merge (`duōshao` vs the house
+  convention `duōshǎo`, plus one un-sandhi'd `Yīgòng` that should be
+  `Yígòng`) before finalizing.
