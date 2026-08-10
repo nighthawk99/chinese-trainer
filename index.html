@@ -102,10 +102,11 @@
 
     <div class="settings-content">
       <div class="settings-group">
-        <div class="settings-label">Appearance</div>
-        <div id="theme-toggle" class="theme-toggle">
-          <button class="theme-option" id="theme-option-dark" data-theme-choice="dark">Dark</button>
-          <button class="theme-option" id="theme-option-light" data-theme-choice="light">Light</button>
+        <div class="theme-switch-row">
+          <span class="settings-label" id="theme-switch-label">Light mode</span>
+          <button id="theme-switch" class="switch" role="switch" aria-checked="false" aria-labelledby="theme-switch-label">
+            <span class="switch-thumb"></span>
+          </button>
         </div>
       </div>
 

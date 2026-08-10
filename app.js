@@ -359,21 +359,17 @@
     saveSettings();
   });
 
-  const themeOptionButtons = document.querySelectorAll('.theme-option');
+  const themeSwitch = document.getElementById('theme-switch');
 
   function renderThemeToggle() {
-    themeOptionButtons.forEach(btn => {
-      btn.classList.toggle('selected', btn.dataset.themeChoice === settings.theme);
-    });
+    themeSwitch.setAttribute('aria-checked', String(settings.theme === 'light'));
   }
 
-  themeOptionButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      settings.theme = btn.dataset.themeChoice;
-      saveSettings();
-      applyTheme();
-      renderThemeToggle();
-    });
+  themeSwitch.addEventListener('click', () => {
+    settings.theme = settings.theme === 'light' ? 'dark' : 'light';
+    saveSettings();
+    applyTheme();
+    renderThemeToggle();
   });
 
   // iOS Safari (especially an installed Home Screen app) only allows

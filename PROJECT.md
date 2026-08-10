@@ -641,3 +641,16 @@ work).
   settings, Grammar Review detail, Vocabulary Trainer) in both themes
   via screenshots before considering it done, including the toggle's
   own active/inactive visual state.
+- 2026-08-10: User reported the theme switch "does not work" and asked
+  for it to be a real toggle. Checked the live deployed `app.js`/
+  `index.html` bytes directly first — logic was correct and matched
+  what had already been screenshot-verified, so almost certainly the
+  same stale-cache pattern hit repeatedly before with this app, not an
+  actual bug. Rebuilt the control as a proper single iOS-style switch
+  (`.switch`/`.switch-thumb`, `role="switch"` + `aria-checked`)
+  instead of the two-button segmented picker regardless, since that
+  was the explicit ask. One CSS mistake caught before shipping:
+  first draft animated the thumb via `justify-content` flex-start/
+  flex-end on click, which doesn't transition (not an animatable
+  property) — fixed by animating `transform: translateX()` on the
+  thumb itself instead, which does.
