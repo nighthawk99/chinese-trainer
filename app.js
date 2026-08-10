@@ -2,7 +2,7 @@
   const SETTINGS_KEY = 'chineseTrainer.settings';
   // pageDurationsMs is indexed by pageIndex: [hanzi/pinyin, english, sentence].
   function defaultSettings() {
-    return { pageDurationsMs: [3000, 3000, 3000], vocabSource: 'own', speechRate: 1.0, theme: 'dark' };
+    return { pageDurationsMs: [3000, 3000, 3000], vocabSource: 'own', speechRate: 1.0 };
   }
 
   const VOCAB_SOURCES = {
@@ -39,12 +39,27 @@
     localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
   }
 
+  // Theme always follows the device's local time of day — no manual
+  // override. 7am-7pm reads as "daytime" for Light; everything else
+  // (evening/night) is Dark. Re-checked on load, whenever the app
+  // becomes visible again (e.g. resuming after the phone was locked),
+  // and periodically while open so a long-open session still crosses
+  // the day/night boundary live.
+  function isDaytime() {
+    const hour = new Date().getHours();
+    return hour >= 7 && hour < 19;
+  }
+
   function applyTheme() {
-    document.documentElement.setAttribute('data-theme', settings.theme);
+    document.documentElement.setAttribute('data-theme', isDaytime() ? 'light' : 'dark');
   }
 
   let settings = loadSettings();
   applyTheme();
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) applyTheme();
+  });
+  setInterval(applyTheme, 5 * 60 * 1000);
   let sourceCountsCache = null;
 
   const homeScreen = document.getElementById('home-screen');
@@ -359,19 +374,6 @@
     saveSettings();
   });
 
-  const themeSwitch = document.getElementById('theme-switch');
-
-  function renderThemeToggle() {
-    themeSwitch.setAttribute('aria-checked', String(settings.theme === 'light'));
-  }
-
-  themeSwitch.addEventListener('click', () => {
-    settings.theme = settings.theme === 'light' ? 'dark' : 'light';
-    saveSettings();
-    applyTheme();
-    renderThemeToggle();
-  });
-
   // iOS Safari (especially an installed Home Screen app) only allows
   // speechSynthesis.speak() unprompted for a brief window after a real user
   // gesture. startSession() is async (awaits a vocab fetch before the first
@@ -631,7 +633,6 @@
   document.getElementById('settings-btn').addEventListener('click', () => {
     renderDurationSliders();
     renderRateSlider();
-    renderThemeToggle();
     renderVocabSourceList();
     showScreen(settingsScreen);
   });
@@ -643,4 +644,13 @@
   renderDurationSliders();
   renderRateSlider();
   updateHomeDesc();
+
+  // Offline mode: precaches the app + all data files on first load so
+  // Vocabulary Trainer / Grammar Review / Travel Phrases keep working
+  // with no signal (see sw.js for the caching strategy/rationale).
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    });
+  }
 })();

@@ -123,7 +123,7 @@ work).
   ```
 - Settings (`app.js`) persist to `localStorage` under key
   `chineseTrainer.settings`: `{ pageDurationsMs: [hanziMs, englishMs,
-  sentenceMs], vocabSource, speechRate, theme }`.
+  sentenceMs], vocabSource, speechRate }`.
 - TTS via the browser's built-in Web Speech API (`speechSynthesis`,
   zh-CN / en-US voices) — free, offline, no API key, works in Safari.
   Vocabulary Trainer only — Grammar Review and Travel Phrases are
@@ -131,10 +131,25 @@ work).
 - Dark/Light theme: every color in `style.css` is a CSS custom
   property on `:root` (dark, the original look) with a full override
   block on `:root[data-theme="light"]`. `applyTheme()` in `app.js`
-  sets that `data-theme` attribute on `<html>` from
-  `settings.theme` — manually switched via a segmented control in
-  Settings ("Appearance"), not tied to `prefers-color-scheme`. Default
-  is `dark`.
+  sets that `data-theme` attribute on `<html>` — **automatically**,
+  from the device's local time of day (light 7am–7pm, dark otherwise;
+  not tied to `prefers-color-scheme` and not user-configurable — an
+  earlier manually-toggled version was explicitly replaced with this
+  per the user). Re-checked on load, on `visibilitychange`, and every
+  5 minutes so a long-open session still crosses the boundary live.
+- `sw.js` — a Service Worker providing offline support (Vocabulary
+  Trainer / Grammar Review / Travel Phrases all keep working with no
+  signal, registered from `app.js`). Deliberately **network-first**,
+  not cache-first: whenever there's a connection, the live server's
+  current version always wins; the cache is purely an offline
+  fallback. This was a deliberate reaction to this app's own history —
+  plain HTTP caching has caused several real "why does this look
+  broken/old" bugs this session, and a service-worker cache is
+  stickier than HTTP cache, so cache-first would have made that
+  category of bug worse, not better. Precaches the full app shell +
+  every data file (including the empty `hsk3.json`/`hsk4.json`
+  placeholders) on install so the app is offline-ready immediately,
+  not just for screens already visited.
 - `icon.svg` — the app logo/icon (gradient-blue rounded square, white
   中 character), used as favicon and, rasterized to `icon-180.png` /
   `icon-32.png` (no SVG-to-PNG tool available locally, so rendered via
@@ -186,9 +201,22 @@ work).
 - [x] App logo (`icon.svg`, gradient-blue square + white 中) wired up
       as favicon and Home Screen icon; app renamed in-app from
       "Chinese Trainer" to "Chinese Companion" (repo/URL unchanged)
-- [x] Dark/Light theme toggle in Settings — every color tokenized as a
-      CSS custom property, manually switched (not OS-linked), verified
-      across all screens in both themes
+- [x] Dark/Light theme — every color tokenized as a CSS custom
+      property; automatically follows the device's local time of day
+      (superseded an earlier manually-toggled version per the user),
+      verified across all screens in both themes and at both time
+      boundaries
+- [x] Offline mode (`sw.js`) — network-first Service Worker, precaches
+      the full app shell + all data files on install. Verified: no
+      syntax/runtime errors, every precached URL confirmed 200 on the
+      live server, registration doesn't throw. **Not yet verified**:
+      full install→offline→serve-from-cache lifecycle on a real
+      device — headless Chrome testing hit real limits around Service
+      Worker timing (see decisions log), and driving real Safari via
+      `safaridriver` needs a one-time manual toggle in Safari's
+      Develop menu that wasn't enabled without asking first. Ask user
+      to confirm: use the app once online, then enable Airplane Mode
+      and reopen it.
 - [ ] Additional training modes beyond Vocabulary Trainer / Grammar
       Review / Travel Phrases (not yet specified by user)
 - [x] Persistent phone access — live at
@@ -654,3 +682,41 @@ work).
   flex-end on click, which doesn't transition (not an animatable
   property) — fixed by animating `transform: translateX()` on the
   thumb itself instead, which does.
+- 2026-08-10: Added offline mode via a Service Worker (`sw.js`).
+  Verified every precache URL returns 200 on the *live* site first
+  (a single failing URL in `cache.addAll()` fails the entire install
+  silently), rather than assuming. Chose network-first over cache-
+  first/stale-while-revalidate deliberately — this app has hit
+  several real "why does this look stale/broken" bugs this session
+  from plain HTTP caching alone, and a Service Worker cache is
+  stickier, so cache-first risked making that exact problem worse.
+  Hit a real limitation trying to verify the full install→offline
+  lifecycle in headless Chrome: `--virtual-time-budget` (used
+  throughout this session for fast, deterministic screenshot tests)
+  does not reliably let Service Worker installation complete —
+  `navigator.serviceWorker.getRegistrations()` kept returning empty
+  even after bumping the injected wait to 6s of *virtual* time,
+  because virtual time governs page JS timers, not the browser's
+  underlying SW lifecycle/disk I/O. Also discovered a fresh
+  `--user-data-dir` profile reliably hangs headless Chrome on this
+  machine (matches an earlier, separate hang from viewport-testing
+  work) — avoid it; reuse the default profile instead.
+- 2026-08-10: User asked to also verify everything works in real
+  Safari specifically. Checked whether `safaridriver` (Apple's
+  built-in WebDriver server, confirmed present) could drive real
+  Safari for testing — it can, but requires manually enabling "Allow
+  Remote Automation" in Safari's Develop menu first, a real one-time
+  settings change. Deliberately did not flip that on the user's
+  behalf without asking (per the safety guidance on system-affecting
+  changes) — asked the user to verify offline mode on their actual
+  device instead. Did confirm, from direct knowledge rather than
+  guessing, that every API used across this session's features
+  (CSS custom properties, `:root[data-theme]` attribute selectors,
+  flexbox, Service Workers, the Cache API, `visibilitychange`) is
+  mainstream and has been supported in Safari for years — the
+  genuine unknowns are Safari/iOS-specific *behavior*, not API
+  support: notably, iOS Safari can evict a site's Service Worker
+  registration and cache entirely after roughly a week of the site
+  not being opened (Apple's storage eviction policy), which is worth
+  the user knowing about as a real limitation of offline mode, not a
+  bug to chase if it's ever observed.

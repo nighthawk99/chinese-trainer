@@ -102,12 +102,8 @@
 
     <div class="settings-content">
       <div class="settings-group">
-        <div class="theme-switch-row">
-          <span class="settings-label" id="theme-switch-label">Light mode</span>
-          <button id="theme-switch" class="switch" role="switch" aria-checked="false" aria-labelledby="theme-switch-label">
-            <span class="switch-thumb"></span>
-          </button>
-        </div>
+        <div class="settings-label">Appearance</div>
+        <p class="settings-note">Follows your device's local time automatically — dark in the evening/night, light during the day.</p>
       </div>
 
       <div class="settings-group">
@@ -174,5 +170,27 @@
   </section>
 
   <script src="app.js"></script>
-</body>
+<script>
+window.addEventListener("load", async () => {
+  const out = document.createElement("div");
+  out.id = "sw-status";
+  out.style.cssText = "position:fixed;top:0;left:0;background:#000;color:#0f0;font:11px monospace;padding:8px;z-index:99999;white-space:pre;";
+  document.body.appendChild(out);
+  function log(msg) { out.textContent += msg + String.fromCharCode(10); }
+  await new Promise(r => setTimeout(r, 6000));
+  const regs = await navigator.serviceWorker.getRegistrations();
+  log("registrations: " + regs.length);
+  if (regs.length) {
+    const reg = regs[0];
+    log("active: " + (reg.active ? reg.active.state : "none"));
+  }
+  const cacheNames = await caches.keys();
+  log("cache names: " + JSON.stringify(cacheNames));
+  if (cacheNames.length) {
+    const cache = await caches.open(cacheNames[0]);
+    const keys = await cache.keys();
+    log("cached entries: " + keys.length);
+  }
+});
+</script></body>
 </html>
