@@ -720,3 +720,19 @@ work).
   not being opened (Apple's storage eviction policy), which is worth
   the user knowing about as a real limitation of offline mode, not a
   bug to chase if it's ever observed.
+- 2026-08-10: User spotted a green-on-black debug panel ("registrations:
+  1 / active: activated / cache names: [...] / cached entries: 14") on
+  the live site — a leftover debug-overlay script from testing sw.js
+  registration, accidentally left in `index.html` and committed
+  together with the real offline-mode changes instead of being
+  restored first. Silver lining: the debug output itself was real and
+  confirmed the Service Worker genuinely works correctly on the user's
+  actual iPhone (1 registration, state "activated", 14/14 files
+  cached) — the exact real-device confirmation the offline-mode work
+  couldn't get from headless-Chrome testing alone. Fixed by removing
+  the injected script (one clean, isolated diff) and pushing
+  immediately. Process lesson: when a workflow involves temporarily
+  modifying a real source file (not a separate test_*.html copy) to
+  inject test/debug code, always `git diff` before committing — don't
+  trust that an earlier "restore from backup" step actually completed
+  before later, unrelated edits and a commit happen on top of it.
