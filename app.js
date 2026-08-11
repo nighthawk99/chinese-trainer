@@ -124,27 +124,6 @@
     window.speechSynthesis.onvoiceschanged = pickVoices;
   }
 
-  // TEMPORARY: on-screen speechSynthesis diagnostics for tracking down a
-  // reported "audio + timer stop working after ~4-5 words" issue. Remove
-  // once resolved — see PROJECT.md decisions log.
-  const debugLines = [];
-  let debugEl = null;
-  let utterCount = 0;
-  function debugLog(msg) {
-    const time = new Date().toISOString().slice(11, 19);
-    debugLines.push(`${time} ${msg}`);
-    while (debugLines.length > 14) debugLines.shift();
-    if (!debugEl) {
-      debugEl = document.createElement('div');
-      debugEl.id = 'speech-debug';
-      debugEl.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:99999;' +
-        'background:rgba(0,0,0,0.88);color:#0f0;font:9px/1.35 monospace;' +
-        'padding:6px;max-height:40vh;overflow-y:auto;white-space:pre-wrap;pointer-events:none;';
-      document.body.appendChild(debugEl);
-    }
-    debugEl.textContent = debugLines.join('\n');
-  }
-
   // onEnd fires once, whether speech actually finished, errored, or (if
   // speechSynthesis isn't available at all) never started. The 8s safety
   // timeout covers a real WebKit quirk we've hit before: onend/onerror
@@ -155,13 +134,10 @@
       if (onEnd) onEnd();
       return;
     }
-    utterCount += 1;
-    const n = utterCount;
     let done = false;
-    const finish = (via) => {
+    const finish = () => {
       if (done) return;
       done = true;
-      debugLog(`#${n} finish via ${via}: "${text}"`);
       if (onEnd) onEnd();
     };
     const doSpeak = () => {
@@ -169,18 +145,15 @@
       utter.lang = lang;
       if (voice) utter.voice = voice;
       utter.rate = settings.speechRate;
-      utter.onstart = () => debugLog(`#${n} onstart`);
-      utter.onend = () => finish('onend');
-      utter.onerror = (e) => finish('onerror:' + e.error);
-      debugLog(`#${n} speak() "${text}" speaking=${window.speechSynthesis.speaking} pending=${window.speechSynthesis.pending} paused=${window.speechSynthesis.paused}`);
+      utter.onend = finish;
+      utter.onerror = finish;
       window.speechSynthesis.speak(utter);
-      setTimeout(() => finish('8s-safety-timeout'), 8000);
+      setTimeout(finish, 8000);
     };
     // Safari (esp. iOS) can silently drop a speak() called in the same tick
     // right after cancel() — only cancel when something's actually playing,
     // and give it one tick to actually stop before queuing the next utterance.
     if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
-      debugLog(`#${n} cancelling prior utterance first`);
       window.speechSynthesis.cancel();
       setTimeout(doSpeak, 50);
     } else {
