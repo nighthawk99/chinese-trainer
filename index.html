@@ -102,8 +102,13 @@
 
     <div class="settings-content">
       <div class="settings-group">
-        <div class="settings-label">Appearance</div>
-        <p class="settings-note">Follows your device's local time automatically — dark in the evening/night, light during the day.</p>
+        <div class="theme-switch-row">
+          <span class="settings-label" id="theme-switch-label">Light mode</span>
+          <button id="theme-switch" class="switch" role="switch" aria-checked="false" aria-labelledby="theme-switch-label">
+            <span class="switch-thumb"></span>
+          </button>
+        </div>
+        <p class="settings-note">Normally follows your device's local time automatically (dark in the evening/night, light during the day) — switching this overrides that until you reopen the app.</p>
       </div>
 
       <div class="settings-group">

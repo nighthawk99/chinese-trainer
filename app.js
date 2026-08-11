@@ -39,19 +39,24 @@
     localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
   }
 
-  // Theme always follows the device's local time of day — no manual
-  // override. 7am-7pm reads as "daytime" for Light; everything else
-  // (evening/night) is Dark. Re-checked on load, whenever the app
-  // becomes visible again (e.g. resuming after the phone was locked),
-  // and periodically while open so a long-open session still crosses
-  // the day/night boundary live.
+  // Theme normally follows the device's local time of day — 7am-7pm
+  // reads as "daytime" for Light, everything else is Dark. The Settings
+  // switch can override that, but only in-memory (never saved to
+  // settings/localStorage) so it always reverts to automatic next time
+  // the app is opened, per the user's explicit request.
+  let themeOverride = null; // null = automatic; 'dark' | 'light' = this-session-only override
+
   function isDaytime() {
     const hour = new Date().getHours();
     return hour >= 7 && hour < 19;
   }
 
+  function currentTheme() {
+    return themeOverride || (isDaytime() ? 'light' : 'dark');
+  }
+
   function applyTheme() {
-    document.documentElement.setAttribute('data-theme', isDaytime() ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', currentTheme());
   }
 
   let settings = loadSettings();
@@ -374,6 +379,18 @@
     saveSettings();
   });
 
+  const themeSwitch = document.getElementById('theme-switch');
+
+  function renderThemeToggle() {
+    themeSwitch.setAttribute('aria-checked', String(currentTheme() === 'light'));
+  }
+
+  themeSwitch.addEventListener('click', () => {
+    themeOverride = currentTheme() === 'light' ? 'dark' : 'light';
+    applyTheme();
+    renderThemeToggle();
+  });
+
   // iOS Safari (especially an installed Home Screen app) only allows
   // speechSynthesis.speak() unprompted for a brief window after a real user
   // gesture. startSession() is async (awaits a vocab fetch before the first
@@ -633,6 +650,7 @@
   document.getElementById('settings-btn').addEventListener('click', () => {
     renderDurationSliders();
     renderRateSlider();
+    renderThemeToggle();
     renderVocabSourceList();
     showScreen(settingsScreen);
   });

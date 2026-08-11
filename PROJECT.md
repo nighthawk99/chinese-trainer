@@ -736,3 +736,13 @@ work).
   inject test/debug code, always `git diff` before committing — don't
   trust that an earlier "restore from backup" step actually completed
   before later, unrelated edits and a commit happen on top of it.
+- 2026-08-11: Brought back a manual theme switch (removed a few
+  messages ago in favor of pure-automatic), but scoped exactly as the
+  user asked: it overrides the automatic time-of-day theme for the
+  current session only, via an in-memory `themeOverride` variable
+  that's never written to `settings`/`localStorage` — a fresh page
+  load always starts back at automatic, with no migration/cleanup
+  needed since there's nothing persisted to clean up. Verified both
+  halves explicitly: mocked the clock to 3am and confirmed it's dark
+  by default, then confirmed clicking the switch forces light despite
+  the mocked nighttime clock.
