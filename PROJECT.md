@@ -100,7 +100,8 @@ work).
   - `vocab.json` — "My own vocabulary list" (678 words)
   - `hsk1.json` — HSK 1, complete (500 words)
   - `hsk2.json` — HSK 2, complete (749 entries)
-  - `hsk3.json` / `hsk4.json` — empty `[]` placeholders
+  - `hsk3.json` — HSK 3, complete (954 entries)
+  - `hsk4.json` — empty `[]` placeholder
 - `data/grammar.json` — Grammar Review feature's data, a flat array of
   59 constructs grouped into 15 topic categories, shape:
   ```json
@@ -147,9 +148,12 @@ work).
   broken/old" bugs this session, and a service-worker cache is
   stickier than HTTP cache, so cache-first would have made that
   category of bug worse, not better. Precaches the full app shell +
-  every data file (including the empty `hsk3.json`/`hsk4.json`
-  placeholders) on install so the app is offline-ready immediately,
-  not just for screens already visited.
+  every data file (`hsk3.json` included from the start, even while it
+  was still an empty placeholder — no `sw.js` changes were needed when
+  it later got real content, since network-first re-fetches and
+  re-caches it automatically on the next online visit) on install so
+  the app is offline-ready immediately, not just for screens already
+  visited.
 - `icon.svg` — the app logo/icon (gradient-blue rounded square, white
   中 character), used as favicon and, rasterized to `icon-180.png` /
   `icon-32.png` (no SVG-to-PNG tool available locally, so rendered via
@@ -183,7 +187,7 @@ work).
 - [x] HSK 1 — 500 words, complete and verified against the official
       list
 - [x] HSK 2 — 749 entries (746 unique words), complete
-- [ ] HSK 3 — 973 new words, not started (empty placeholder file)
+- [x] HSK 3 — 954 entries, complete
 - [ ] HSK 4 — 1,000 new words, not started (empty placeholder file)
 - [x] Grammar Review — second top-level feature (self-paced browsing,
       no timer, no TTS, unlike Vocabulary Trainer). 59 grammar
@@ -746,3 +750,30 @@ work).
   halves explicitly: mocked the clock to 3am and confirmed it's dark
   by default, then confirmed clicking the switch forces light despite
   the mocked nighttime clock.
+- 2026-08-12: Built HSK3 (954 entries), same process as HSK1/HSK2:
+  raw `curl` of `krmanik/HSK-3.0`'s `HSK 3.txt` (971 lines, 966 unique
+  words), diffed against `vocab.json`/`hsk1.json`/`hsk2.json`, 9
+  parallel forks for the ~900 words needing fresh authoring. One
+  refinement over the HSK2 process: the blanket "exclude if already
+  in an earlier HSK level" rule turned out to be too blunt this time —
+  two characters (背, 为) each appeared twice in HSK3's own source
+  list *and* already had one reading covered in `hsk2.json`, and a
+  first pass would have dropped the second, genuinely-new reading
+  entirely (背 bèi "back (body part); to memorize" alongside the
+  already-covered bēi "to carry on the back"; 为 wéi "to act as, to
+  become" alongside the already-covered wèi "for, for the sake of").
+  Caught by checking what reading each earlier entry actually had
+  before excluding, not just whether the hanzi string matched.
+  Resolved 6 same-hanzi-twice cases in the source total: 把 (bǎ/bà),
+  调 (diào/tiáo), 精神 (jīngshén noun / jīngshen adj) as genuine dual
+  entries; 初 and 任 merged into one entry each (real duplicates, not
+  distinct readings — 任 covers two senses of the same rèn reading
+  rather than splitting into rén/rèn, since "任 as a surname" isn't
+  realistic HSK vocabulary content). Caught and fixed 5 more
+  pinyin-capitalization inconsistencies during merge (长城/京剧/联合国/
+  世界杯/中华民族 — proper nouns capitalized; house style is lowercase
+  even for proper nouns, same class of issue as HSK2's 春节/英文).
+  `data/hsk3.json` needed no `sw.js`/app.js changes to pick up
+  offline caching or show up in the vocabulary-source list — both
+  were already wired generically from when the file was still an
+  empty placeholder.
