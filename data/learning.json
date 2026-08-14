@@ -1,7 +1,7 @@
 [
   {
     "id": "ch1-pronouns-shi",
-    "chapter": "Chapter 1: Greetings & Introductions",
+    "chapter": "Chapter 1: Greetings & Introductions — 是 Sentences, Names (姓/叫), 很 + Adjectives",
     "hskLevel": 1,
     "title": "Personal Pronouns and 是 (shì) Sentences",
     "theory": [
@@ -18,8 +18,27 @@
     ]
   },
   {
+    "id": "ch1-names-xing-jiao",
+    "chapter": "Chapter 1: Greetings & Introductions — 是 Sentences, Names (姓/叫), 很 + Adjectives",
+    "hskLevel": 1,
+    "title": "Asking and Giving Names — 姓 (xìng) and 叫 (jiào)",
+    "theory": [
+      "Chinese has two distinct verbs for names, and they are not interchangeable. 姓 (xìng) is used specifically for surnames/family names: 我姓王 (Wǒ xìng Wáng), \"My surname is Wang.\" 叫 (jiào) is used for a full name or given name: 我叫王明 (Wǒ jiào Wáng Míng), \"My name is Wang Ming\" (also usable with just a given name in casual contexts).",
+      "Asking someone's surname politely uses the fixed formula 您贵姓？ (Nín guì xìng?, literally \"your honorable surname?\") — 贵 here doesn't function as an ordinary adjective and 贵姓 shouldn't be broken apart or reused elsewhere. A neutral, everyday way to ask is simply 你姓什么？ (Nǐ xìng shénme?).",
+      "Asking for a full name uses 你叫什么名字？ (Nǐ jiào shénme míngzi?, \"What is your name?\") — literally \"you are-called what name.\" 什么 (shénme, \"what\") sits directly in the object slot of the sentence rather than moving to the front the way English \"what\" does; this word-order rule — a question word stays exactly where the answer would go — applies to every Chinese question word and is covered fully in Chapter 3.",
+      "名字 (míngzi) means \"name\" as a noun and can also be used with 是: 你的名字是什么？ is grammatical, though 你叫什么名字？ is far more common in everyday speech."
+    ],
+    "pattern": "S + 姓 + Surname。　·　S + 叫 + Full/Given Name。",
+    "examples": [
+      { "hanzi": "我姓王。", "pinyin": "Wǒ xìng Wáng.", "english": "My surname is Wang." },
+      { "hanzi": "您贵姓？", "pinyin": "Nín guì xìng?", "english": "What is your (honorable) surname?" },
+      { "hanzi": "你叫什么名字？", "pinyin": "Nǐ jiào shénme míngzi?", "english": "What is your name?" },
+      { "hanzi": "我叫李明。", "pinyin": "Wǒ jiào Lǐ Míng.", "english": "My name is Li Ming." }
+    ]
+  },
+  {
     "id": "ch1-hen-adjectives",
-    "chapter": "Chapter 1: Greetings & Introductions",
+    "chapter": "Chapter 1: Greetings & Introductions — 是 Sentences, Names (姓/叫), 很 + Adjectives",
     "hskLevel": 1,
     "title": "Adjectival Predicates with 很 (hěn)",
     "theory": [
@@ -38,13 +57,13 @@
   },
   {
     "id": "ch2-ma-questions",
-    "chapter": "Chapter 2: Asking Questions",
+    "chapter": "Chapter 2: Questions and Possession — 吗 and 的",
     "hskLevel": 1,
     "title": "Yes/No Questions with 吗 (ma)",
     "theory": [
       "The simplest way to turn any statement into a yes/no question in Mandarin is to add the particle 吗 (ma) to the very end — no change to word order, and no auxiliary \"do/does/is\" the way English requires. 你忙 (Nǐ máng, \"You are busy\") becomes 你忙吗？ (Nǐ máng ma?, \"Are you busy?\") simply by appending 吗.",
       "This works with any statement type already covered: 你是学生吗？(Nǐ shì xuéshēng ma?, \"Are you a student?\") and 他很高吗？(Tā hěn gāo ma?, \"Is he tall?\") both follow the same rule — state the sentence, then add 吗.",
-      "One important restriction: 吗 can only be added to a sentence that has no other question word already in it. A sentence using 什么 (shénme, what), 谁 (shéi, who), or similar words is already a question and cannot also take 吗 — mixing the two is a common beginner error covered in a later chapter on question words.",
+      "One important restriction: 吗 can only be added to a sentence that has no other question word already in it. A sentence using 什么 (shénme, what), 谁 (shéi, who), or similar words is already a question and cannot also take 吗 — mixing the two is a common beginner error covered in full in Chapter 3, on question words.",
       "Mandarin has no single word for a bare \"yes\" or \"no.\" To answer a 吗 question, you affirm or deny by repeating the key verb from the question: 是 or 不是 for a 是-question, 忙 or 不忙 for an adjective question. 是的 (shì de) is also commonly used as a general-purpose \"yes.\""
     ],
     "pattern": "Statement + 吗？",
@@ -57,7 +76,7 @@
   },
   {
     "id": "ch2-de-possessive",
-    "chapter": "Chapter 2: Asking Questions",
+    "chapter": "Chapter 2: Questions and Possession — 吗 and 的",
     "hskLevel": 1,
     "title": "The Possessive Particle 的 (de)",
     "theory": [
@@ -72,6 +91,482 @@
       { "hanzi": "她是我朋友。", "pinyin": "Tā shì wǒ péngyou.", "english": "She is my friend. (的 dropped — close relationship)" },
       { "hanzi": "那是老师的书。", "pinyin": "Nà shì lǎoshī de shū.", "english": "That is the teacher's book." },
       { "hanzi": "你的中文很好。", "pinyin": "Nǐ de Zhōngwén hěn hǎo.", "english": "Your Chinese is very good." }
+    ]
+  },
+  {
+    "id": "ch3-shenme-shei",
+    "chapter": "Chapter 3: Question Words — 什么, 谁, 哪, 怎么样",
+    "hskLevel": 1,
+    "title": "什么 (what) and 谁 (who)",
+    "theory": [
+      "Chinese question words don't move to the front of the sentence the way English \"what/who\" do. Instead, they sit exactly in the slot where the answer would go — this is sometimes called \"question word in situ.\" 你喝什么？ (Nǐ hē shénme?, \"What are you drinking?\") mirrors the structure of its answer, 我喝茶 (\"I drink tea\"), with 什么 simply replacing 茶.",
+      "什么 (shénme, \"what\") attaches directly before a noun to ask \"what/which kind of\" that noun — 什么书 (shénme shū, \"what book\") — or stands alone as the object of a verb: 你要什么？ (Nǐ yào shénme?, \"What do you want?\").",
+      "谁 (shéi, also read shuí in careful/formal speech) means \"who,\" and like 什么, stays in its normal sentence position: 他是谁？ (Tā shì shéi?, \"Who is he?\") mirrors 他是老师 with 谁 replacing 老师. As a subject, it simply starts the sentence because that's where the subject naturally goes, not because it's a question word: 谁是老师？ (Shéi shì lǎoshī?, \"Who is the teacher?\").",
+      "Because these are already full questions, none of them ever combine with 吗 — the rule first introduced in Chapter 2 and true for every question word in this chapter."
+    ],
+    "pattern": "S + V + 什么？　·　谁 + V...？ / S + 是 + 谁？",
+    "examples": [
+      { "hanzi": "你喝什么？", "pinyin": "Nǐ hē shénme?", "english": "What are you drinking?" },
+      { "hanzi": "这是什么？", "pinyin": "Zhè shì shénme?", "english": "What is this?" },
+      { "hanzi": "他是谁？", "pinyin": "Tā shì shéi?", "english": "Who is he?" },
+      { "hanzi": "谁是你的老师？", "pinyin": "Shéi shì nǐ de lǎoshī?", "english": "Who is your teacher?" }
+    ]
+  },
+  {
+    "id": "ch3-na-nationality",
+    "chapter": "Chapter 3: Question Words — 什么, 谁, 哪, 怎么样",
+    "hskLevel": 1,
+    "title": "哪 (which) and Asking Nationality — 哪国人",
+    "theory": [
+      "哪 (nǎ, \"which\") always attaches to a measure word or noun — it can't stand completely alone the way 什么 sometimes can: 哪个 (nǎge, \"which one,\" using the general measure word 个), 哪本书 (nǎ běn shū, \"which book\").",
+      "哪儿 (nǎr) / 哪里 (nǎli) both mean \"where,\" and are used together with 在 to ask about location: 你在哪儿？ (Nǐ zài nǎr?, \"Where are you?\").",
+      "A very common fixed pattern for asking someone's nationality combines 哪 with 国 (guó, \"country\"): 你是哪国人？ (Nǐ shì nǎ guó rén?, literally \"you are which-country person,\" meaning \"What's your nationality?\"). The answer swaps in a country name the same way: 我是美国人 (Wǒ shì Měiguó rén, \"I am American\"), following the general [Country] + 人 pattern used for nationalities.",
+      "Same in-situ rule as always: 哪 and its phrases sit exactly where the answer word would go, and never combine with 吗."
+    ],
+    "pattern": "哪 + M/N...？　·　S + 是 + 哪国人？",
+    "examples": [
+      { "hanzi": "你要哪个？", "pinyin": "Nǐ yào nǎge?", "english": "Which one do you want?" },
+      { "hanzi": "你在哪儿？", "pinyin": "Nǐ zài nǎr?", "english": "Where are you?" },
+      { "hanzi": "你是哪国人？", "pinyin": "Nǐ shì nǎ guó rén?", "english": "What's your nationality?" },
+      { "hanzi": "我是美国人。", "pinyin": "Wǒ shì Měiguó rén.", "english": "I am American." }
+    ]
+  },
+  {
+    "id": "ch3-zenmeyang",
+    "chapter": "Chapter 3: Question Words — 什么, 谁, 哪, 怎么样",
+    "hskLevel": 1,
+    "title": "怎么样 (how about / how is it) for Opinions and Suggestions",
+    "theory": [
+      "怎么样 (zěnmeyàng) asks for an opinion or evaluation of something already mentioned, roughly \"how is it?\" or \"how about...?\": 这个怎么样？ (Zhège zěnmeyàng?, \"How's this one? / What do you think of this?\"). It typically comes at the very end of the sentence.",
+      "A very common everyday use is proposing plans — placing 怎么样 after a suggestion softens it into an invitation rather than a command: 我们去看电影，怎么样？ (Wǒmen qù kàn diànyǐng, zěnmeyàng?, \"Let's go watch a movie — how about it?\").",
+      "Don't confuse 怎么样 with 怎么 (zěnme) alone, which asks \"how\" in the sense of manner or method — how something is done — not an opinion: 这个字怎么写？ (Zhège zì zěnme xiě?, \"How do you write this character?\"). 怎么样 always asks for an evaluation or reaction; 怎么 always asks for a method."
+    ],
+    "pattern": "(Suggestion,) + 怎么样？",
+    "examples": [
+      { "hanzi": "这个怎么样？", "pinyin": "Zhège zěnmeyàng?", "english": "How's this one?" },
+      { "hanzi": "你今天怎么样？", "pinyin": "Nǐ jīntiān zěnmeyàng?", "english": "How's your day going?" },
+      { "hanzi": "我们去喝咖啡，怎么样？", "pinyin": "Wǒmen qù hē kāfēi, zěnmeyàng?", "english": "Let's go get coffee — how about it?" },
+      { "hanzi": "这个字怎么写？", "pinyin": "Zhège zì zěnme xiě?", "english": "How do you write this character?" }
+    ]
+  },
+  {
+    "id": "ch4-ne-followup",
+    "chapter": "Chapter 4: Follow-Ups and Adverbs — 呢, 也, 都, 一起",
+    "hskLevel": 1,
+    "title": "The Follow-Up Question Particle 呢 (ne)",
+    "theory": [
+      "呢 (ne) lets you ask \"what about ___?\" without repeating the whole question, by attaching it directly to a noun or pronoun: 我很好，你呢？ (Wǒ hěn hǎo, nǐ ne?), \"I'm good, and you?\" It picks up whatever was just asked or stated and redirects it at a new subject.",
+      "呢 can also attach to a noun phrase on its own, without an explicit preceding question, when the context makes clear that something is being sought or is unaccounted for — this typically translates as \"where is...?\": 我的手机呢？(Wǒ de shǒujī ne?), \"Where's my phone?\"",
+      "Distinguish 呢 from 吗 (Chapter 2): 呢 does not turn an arbitrary statement into a yes/no question by itself — it needs either a preceding question to reference, or a clear \"where is X\" context. It is never added just to mean a neutral tag question like English \"..., right?\""
+    ],
+    "pattern": "[Statement], N + 呢？",
+    "examples": [
+      { "hanzi": "我是学生，你呢？", "pinyin": "Wǒ shì xuéshēng, nǐ ne?", "english": "I'm a student, and you?" },
+      { "hanzi": "我很忙，他呢？", "pinyin": "Wǒ hěn máng, tā ne?", "english": "I'm busy, what about him?" },
+      { "hanzi": "A: 你好吗？B: 我很好，谢谢，你呢？", "pinyin": "A: Nǐ hǎo ma? B: Wǒ hěn hǎo, xièxie, nǐ ne?", "english": "A: How are you? B: I'm well, thanks, and you?" },
+      { "hanzi": "我的钥匙呢？", "pinyin": "Wǒ de yàoshi ne?", "english": "Where's my key?" }
+    ]
+  },
+  {
+    "id": "ch4-ye-dou",
+    "chapter": "Chapter 4: Follow-Ups and Adverbs — 呢, 也, 都, 一起",
+    "hskLevel": 1,
+    "title": "也 (also) and 都 (all/both) — Placement Before the Verb",
+    "theory": [
+      "也 (yě, \"also/too\") and 都 (dōu, \"all/both\") are adverbs that must sit directly before the verb (or before 是 / 很+adjective) — never at the end of the sentence the way English \"too\" or \"also\" usually lands: 我也是学生 (Wǒ yě shì xuéshēng), \"I am also a student,\" not 我是学生也.",
+      "都 sums up a plural or multi-part subject that comes before it: 我们都是学生 (Wǒmen dōu shì xuéshēng), \"We are all students.\" It cannot be used with a clearly singular subject to mean \"very/completely.\"",
+      "When both appear together, the fixed order is 也都 (yě dōu), never 都也: 他们也都很忙 (Tāmen yě dōu hěn máng), \"They are also all busy.\"",
+      "Negating a 都 sentence is a classic source of ambiguity: 我们都不是学生 (dōu before 不) means \"none of us are students,\" while 我们不都是学生 (不 before dōu) means \"not all of us are students\" (i.e., some are, some aren't). The position of 不 relative to 都 changes what's actually being negated."
+    ],
+    "pattern": "S + 也/都 + V.　·　S + 也都 + V.",
+    "examples": [
+      { "hanzi": "我也是老师。", "pinyin": "Wǒ yě shì lǎoshī.", "english": "I am also a teacher." },
+      { "hanzi": "我们都很好。", "pinyin": "Wǒmen dōu hěn hǎo.", "english": "We are all well." },
+      { "hanzi": "他们也都是中国人。", "pinyin": "Tāmen yě dōu shì Zhōngguó rén.", "english": "They are also all Chinese." },
+      { "hanzi": "我们都不喜欢咖啡。", "pinyin": "Wǒmen dōu bù xǐhuan kāfēi.", "english": "None of us like coffee." }
+    ]
+  },
+  {
+    "id": "ch4-yiqi",
+    "chapter": "Chapter 4: Follow-Ups and Adverbs — 呢, 也, 都, 一起",
+    "hskLevel": 1,
+    "title": "一起 (yìqǐ) — Together",
+    "theory": [
+      "一起 (yìqǐ, \"together\") is an adverb, so — like 也 and 都 earlier in this chapter — it must go before the verb, not after, unlike English \"together,\" which usually trails the sentence: 我们一起去 (Wǒmen yìqǐ qù), \"Let's go together,\" not 我们去一起.",
+      "一起 very often pairs with 跟 (gēn, \"with\") or 和 (hé, \"and/with\") to specify who the action is done together with: 我跟你一起去 (Wǒ gēn nǐ yìqǐ qù), \"I'll go together with you.\" The 跟/和-phrase comes before 一起, both still before the verb.",
+      "A common invitation pattern combines 一起 with 吧 (ba, a suggestion particle covered in a later chapter): 我们一起吃饭吧 (Wǒmen yìqǐ chīfàn ba), \"Let's eat together.\""
+    ],
+    "pattern": "S + (跟/和 + N +) 一起 + V。",
+    "examples": [
+      { "hanzi": "我们一起去。", "pinyin": "Wǒmen yìqǐ qù.", "english": "Let's go together." },
+      { "hanzi": "我跟你一起学习。", "pinyin": "Wǒ gēn nǐ yìqǐ xuéxí.", "english": "I'll study together with you." },
+      { "hanzi": "你想跟我们一起吃饭吗？", "pinyin": "Nǐ xiǎng gēn wǒmen yìqǐ chīfàn ma?", "english": "Do you want to eat with us?" },
+      { "hanzi": "我们一起吃饭吧。", "pinyin": "Wǒmen yìqǐ chīfàn ba.", "english": "Let's eat together." }
+    ]
+  },
+  {
+    "id": "ch5-zai-location",
+    "chapter": "Chapter 5: Location and Existence — 在, 有, and Location Words",
+    "hskLevel": 1,
+    "title": "在 (zài) as \"To Be Located At\"",
+    "theory": [
+      "As a main verb, 在 (zài) means \"to be located at\" and directly links a subject to a place: 我在家 (Wǒ zài jiā), \"I am at home.\" No 是 is needed or used here — inserting 是 before 在 (我是在家) is a common but incorrect beginner habit.",
+      "Place words often need a location word attached to sound natural: 这儿/这里 (here), 那儿/那里 (there), or a suffix like 里 (inside) / 上 (on) attached to a plain noun: 书在桌子上 (Shū zài zhuōzi shang), \"The book is on the table.\" A bare noun like 桌子 alone usually cannot stand in as a location without 上/里/etc. — the full set of these location words is covered later in this chapter.",
+      "在 also functions as a preposition marking where an action takes place, positioned before the verb: 我在家吃饭 (Wǒ zài jiā chīfàn), \"I eat at home.\" Note that the location phrase (在 + place) comes before the verb, the reverse of English's \"I eat at home,\" where \"at home\" trails the verb.",
+      "Negation uses 不在: 他不在家 (Tā bú zài jiā), \"He is not at home.\""
+    ],
+    "pattern": "S + 在 + Place.　·　S + 在 + Place + V.",
+    "examples": [
+      { "hanzi": "我在家。", "pinyin": "Wǒ zài jiā.", "english": "I am at home." },
+      { "hanzi": "他在学校。", "pinyin": "Tā zài xuéxiào.", "english": "He is at school." },
+      { "hanzi": "书在桌子上。", "pinyin": "Shū zài zhuōzi shang.", "english": "The book is on the table." },
+      { "hanzi": "我在家看书。", "pinyin": "Wǒ zài jiā kàn shū.", "english": "I read books at home." }
+    ]
+  },
+  {
+    "id": "ch5-you-existence",
+    "chapter": "Chapter 5: Location and Existence — 在, 有, and Location Words",
+    "hskLevel": 1,
+    "title": "有 (yǒu) for Possession and Existence",
+    "theory": [
+      "有 (yǒu, \"to have\") links a subject to something it possesses: 我有一个手机 (Wǒ yǒu yí ge shǒujī), \"I have a phone.\" Unlike 是 and most other verbs, 有 is never negated with 不 — it uniquely takes 没 instead: 我没有手机 (Wǒ méiyǒu shǒujī), \"I don't have a phone\" (不有 is simply ungrammatical).",
+      "有 also states that something exists at a place, with the place named first: Place + 有 + N, e.g. 桌子上有一本书 (Zhuōzi shang yǒu yì běn shū), \"There is a book on the table\" (literally \"table-on has a book\"). This is the mirror image of the 在 pattern from the previous section: 在 puts the specific, already-known thing first and the place after (书在桌子上), while 有 puts the place first and the new/unspecified thing after.",
+      "A very common yes/no question form with 有 is 有没有 (\"have-not-have\"), an alternative to adding 吗: 你有没有手机？ means the same as 你有手机吗？ — both are correct and equally natural."
+    ],
+    "pattern": "S + 有/没有 + N.　·　Place + 有 + N.",
+    "examples": [
+      { "hanzi": "我有一个哥哥。", "pinyin": "Wǒ yǒu yí ge gēge.", "english": "I have an older brother." },
+      { "hanzi": "我没有钱。", "pinyin": "Wǒ méiyǒu qián.", "english": "I don't have money." },
+      { "hanzi": "桌子上有一本书。", "pinyin": "Zhuōzi shang yǒu yì běn shū.", "english": "There's a book on the table." },
+      { "hanzi": "你有没有时间？", "pinyin": "Nǐ yǒu méiyǒu shíjiān?", "english": "Do you have time?" }
+    ]
+  },
+  {
+    "id": "ch5-location-words",
+    "chapter": "Chapter 5: Location and Existence — 在, 有, and Location Words",
+    "hskLevel": 1,
+    "title": "Location Words — 上, 下, 里, 外, 前面, 后面, 旁边",
+    "theory": [
+      "As flagged earlier in this chapter, a plain noun in Chinese usually cannot serve as a location on its own — it needs a location word attached, most often as a suffix directly after the noun. The core set: 上 (shàng, on/above), 下 (xià, under/below), 里 (lǐ, inside), 外 (wài, outside), 前面 (qiánmiàn, in front), 后面 (hòumiàn, behind), and 旁边 (pángbiān, next to/beside). Note 前/后 almost always appear with 面 (miàn) attached in everyday use, while 上/下/里/外 can often stand alone as a single-syllable suffix.",
+      "These attach directly to the noun whose position they describe, forming a compound location phrase used exactly like any other place word with 在 or 有: 桌子上 (zhuōzi shang, \"on the table\"), 学校里 (xuéxiào li, \"inside the school\"), 书店旁边 (shūdiàn pángbiān, \"next to the bookstore\").",
+      "When the location is a place that's already inherently a \"place\" (like 学校 school, or 家 home) rather than a plain object, 里 is often optional or dropped in casual speech — 我在学校 is already fine on its own, and 我在学校里 is also correct and slightly more explicit. Object nouns like 桌子 (table) or 书包 (backpack) almost always need the suffix: 书在书包里 (Shū zài shūbāo li), \"The book is in the backpack,\" not 书在书包."
+    ],
+    "pattern": "N + 上/下/里/外/前面/后面/旁边",
+    "examples": [
+      { "hanzi": "猫在桌子下面。", "pinyin": "Māo zài zhuōzi xiàmiàn.", "english": "The cat is under the table." },
+      { "hanzi": "书在书包里。", "pinyin": "Shū zài shūbāo li.", "english": "The book is in the backpack." },
+      { "hanzi": "我家在学校旁边。", "pinyin": "Wǒ jiā zài xuéxiào pángbiān.", "english": "My home is next to the school." },
+      { "hanzi": "他在我前面。", "pinyin": "Tā zài wǒ qiánmiàn.", "english": "He is in front of me." }
+    ]
+  },
+  {
+    "id": "ch6-numbers",
+    "chapter": "Chapter 6: Numbers, Measure Words & Measurements — 几/多少, 岁/多大, 多 + Adj, 每",
+    "hskLevel": 1,
+    "title": "Numbers 0–100",
+    "theory": [
+      "Numbers 0–10 are single syllables: 零(0) 一(1) 二(2) 三(3) 四(4) 五(5) 六(6) 七(7) 八(8) 九(9) 十(10). Numbers 11–19 are built as 十 + digit: 十一 (11), 十五 (15). Multiples of ten are digit + 十: 二十 (20), 五十 (50). Numbers in between combine both, largest place value first: 二十三 (23) is literally \"two-ten-three.\"",
+      "一百 is 100. Between 100 and 999, a \"filler\" 零 (líng) is inserted whenever a tens digit is skipped, to signal the gap: 一百零五 (105, \"one hundred zero five\") vs. 一百五十 (150, no 零 needed since the tens digit is present).",
+      "When a number is actually counting a noun (rather than being said in isolation, like reading a phone number), a measure word must sit between the number and the noun — covered in the next section. Also note: when 二 would be the count of objects (not the abstract number \"two\" on its own, like in \"chapter two\"), it is normally replaced by 两 (liǎng): 两个人 (liǎng ge rén, \"two people\"), not 二个人."
+    ],
+    "pattern": "[tens]十[ones]　·　两 (not 二) + Measure Word + N",
+    "examples": [
+      { "hanzi": "十五", "pinyin": "shíwǔ", "english": "fifteen" },
+      { "hanzi": "二十三", "pinyin": "èrshísān", "english": "twenty-three" },
+      { "hanzi": "一百零五", "pinyin": "yìbǎi líng wǔ", "english": "one hundred and five" },
+      { "hanzi": "两个人", "pinyin": "liǎng ge rén", "english": "two people" }
+    ]
+  },
+  {
+    "id": "ch6-measure-words",
+    "chapter": "Chapter 6: Numbers, Measure Words & Measurements — 几/多少, 岁/多大, 多 + Adj, 每",
+    "hskLevel": 1,
+    "title": "Measure Words with 个, and 几 vs. 多少",
+    "theory": [
+      "Chinese requires a measure word (also called a classifier) between a number and the noun it counts — English does this only occasionally (\"two sheets of paper\"), but Chinese does it always. 个 (ge) is the default, all-purpose measure word, usable for people, most everyday objects, and abstract nouns when no more specific measure word is known: 一个人 (yí ge rén, \"one person\"), 三个苹果 (sān ge píngguǒ, \"three apples\"). Later chapters introduce noun-specific measure words, like 本 for bound books and 件 for garments.",
+      "To ask \"how many,\" Chinese uses two different words depending on the expected size of the answer. 几 (jǐ) expects a small number, roughly under ten, and is always followed directly by a measure word: 你有几个朋友？ (Nǐ yǒu jǐ ge péngyou?, \"How many friends do you have?\"). 多少 (duōshao) is neutral about size and can be followed by a measure word or, very commonly, skip it entirely: 你有多少钱？ (Nǐ yǒu duōshao qián?, \"How much money do you have?\").",
+      "Because 几 implies \"a small number,\" it's the natural choice for counting family members, hours, or a handful of items, while 多少 is the default for money, population, or anything that could plausibly be a large, open-ended number."
+    ],
+    "pattern": "几 + Measure Word + N...?　·　多少 + (Measure Word) + N...?",
+    "examples": [
+      { "hanzi": "我有一个哥哥。", "pinyin": "Wǒ yǒu yí ge gēge.", "english": "I have one older brother." },
+      { "hanzi": "你家有几个人？", "pinyin": "Nǐ jiā yǒu jǐ ge rén?", "english": "How many people are in your family?" },
+      { "hanzi": "这个学校有多少学生？", "pinyin": "Zhège xuéxiào yǒu duōshao xuésheng?", "english": "How many students does this school have?" },
+      { "hanzi": "我要三个苹果。", "pinyin": "Wǒ yào sān ge píngguǒ.", "english": "I want three apples." }
+    ]
+  },
+  {
+    "id": "ch6-age",
+    "chapter": "Chapter 6: Numbers, Measure Words & Measurements — 几/多少, 岁/多大, 多 + Adj, 每",
+    "hskLevel": 1,
+    "title": "Asking and Stating Age — 岁 and 多大",
+    "theory": [
+      "岁 (suì) is the measure word for years of age, attaching directly after a number: 我十九岁 (Wǒ shíjiǔ suì), \"I am 19 years old.\" No verb \"to be\" is used at all — 是 does NOT normally appear in a statement of age; inserting it (我是十九岁) is a common but incorrect beginner habit, parallel to the 很+adjective rule in Chapter 1.",
+      "To ask a child's or clearly young person's age, 几岁 is standard, following the \"small number\" logic from the previous section: 你几岁？ (Nǐ jǐ suì?). For an adult, or anyone whose age isn't obviously small, 多大 is used instead: 你多大？ (Nǐ duō dà?, literally \"how big are you,\" meaning \"how old are you?\").",
+      "For an elderly person, a more respectful question is used instead — 您多大年纪？ (Nín duō dà niánjì?) — pairing the polite pronoun 您 from Chapter 1 with 多大. Using 几岁 on a visibly adult stranger can sound like you assume they're a small child, so matching the question to the person's apparent age matters."
+    ],
+    "pattern": "S + Number + 岁。　·　几岁？/ 多大？",
+    "examples": [
+      { "hanzi": "我十九岁。", "pinyin": "Wǒ shíjiǔ suì.", "english": "I am 19 years old." },
+      { "hanzi": "你几岁？", "pinyin": "Nǐ jǐ suì?", "english": "How old are you? (to a child)" },
+      { "hanzi": "你多大？", "pinyin": "Nǐ duō dà?", "english": "How old are you? (to an adult)" },
+      { "hanzi": "您多大年纪？", "pinyin": "Nín duō dà niánjì?", "english": "How old are you? (polite, to an elder)" }
+    ]
+  },
+  {
+    "id": "ch6-duo-measurements",
+    "chapter": "Chapter 6: Numbers, Measure Words & Measurements — 几/多少, 岁/多大, 多 + Adj, 每",
+    "hskLevel": 1,
+    "title": "Asking Measurements and Duration with 多 (duō)",
+    "theory": [
+      "Beyond age (多大, previous section), 多 (duō) combines with a range of adjectives to ask \"how [adjective]\" for measurements — the same pattern-shape as 多大, just swapping the adjective: 多高 (duō gāo, \"how tall\"), 多长 (duō cháng, \"how long\"), 多重 (duō zhòng, \"how heavy\"), 多远 (duō yuǎn, \"how far\").",
+      "The answer states the measurement directly with a number and unit, without needing 多 again: 你多高？ (Nǐ duō gāo?, \"How tall are you?\") → 我一米七 (Wǒ yì mǐ qī, \"I'm 1.7 meters\").",
+      "多长时间 (duō cháng shíjiān, literally \"how long [a] time\") specifically asks about duration — how long an action or state lasts — distinct from asking about a point in time (几点, next chapter): 你要学多长时间？ (Nǐ yào xué duō cháng shíjiān?, \"How long do you want to study for?\")."
+    ],
+    "pattern": "多 + Adj？　·　多长时间？",
+    "examples": [
+      { "hanzi": "你多高？", "pinyin": "Nǐ duō gāo?", "english": "How tall are you?" },
+      { "hanzi": "我一米七。", "pinyin": "Wǒ yì mǐ qī.", "english": "I'm 1.7 meters (tall)." },
+      { "hanzi": "这条路多长？", "pinyin": "Zhè tiáo lù duō cháng?", "english": "How long is this road?" },
+      { "hanzi": "你要学多长时间？", "pinyin": "Nǐ yào xué duō cháng shíjiān?", "english": "How long do you want to study for?" }
+    ]
+  },
+  {
+    "id": "ch6-mei-every",
+    "chapter": "Chapter 6: Numbers, Measure Words & Measurements — 几/多少, 岁/多大, 多 + Adj, 每",
+    "hskLevel": 1,
+    "title": "每 (měi) + Measure Word — \"Every ___\"",
+    "theory": [
+      "每 (měi, \"every/each\") takes the same measure-word slot as a number: 每 + Measure Word + Noun, exactly mirroring the numbers-and-measure-words pattern from earlier in this chapter. 每天 (měi tiān, \"every day\") and 每个人 (měi ge rén, \"every person/everyone\") are the two most common combinations — note 天 (day), like 年 (year), functions as its own measure word and doesn't need 个 inserted.",
+      "Sentences with 每 very often pair with 都 (Chapter 4) directly before the verb, to emphasize that the statement holds for every single instance without exception: 我每天都学习汉语 (Wǒ měi tiān dōu xuéxí Hànyǔ), \"I study Chinese every day (without exception).\" Dropping 都 (我每天学习汉语) is grammatical but slightly less emphatic.",
+      "每 differs from a quantity word like 一点儿 in that it doesn't measure how much of something exists — it universally quantifies over a category (\"each and every one\"), always paired with a countable noun via a measure word, never with a mass/uncountable amount."
+    ],
+    "pattern": "每 + M + N (+ 都) + V。",
+    "examples": [
+      { "hanzi": "我每天都学习汉语。", "pinyin": "Wǒ měi tiān dōu xuéxí Hànyǔ.", "english": "I study Chinese every day." },
+      { "hanzi": "每个人都喜欢他。", "pinyin": "Měi ge rén dōu xǐhuan tā.", "english": "Everyone likes him." },
+      { "hanzi": "我每年都去中国。", "pinyin": "Wǒ měi nián dōu qù Zhōngguó.", "english": "I go to China every year." },
+      { "hanzi": "每个学生都有手机。", "pinyin": "Měi ge xuésheng dōu yǒu shǒujī.", "english": "Every student has a phone." }
+    ]
+  },
+  {
+    "id": "ch7-clock-time",
+    "chapter": "Chapter 7: Time Expressions — 点, Time Word Order, 从...到...",
+    "hskLevel": 1,
+    "title": "Telling Time with 点",
+    "theory": [
+      "点 (diǎn) marks the hour, directly after the number: 三点 (sān diǎn, \"3 o'clock\"). Minutes follow the hour: 三点十分 (sān diǎn shí fēn, \"3:10\" — 分 fēn means minutes, and is often dropped informally: 三点十). For 15 and 45 minutes, 刻 (kè, \"quarter\") is common: 三点一刻 (3:15), 三点三刻 (3:45), alongside the fully spelled-out 三点十五(分) / 三点四十五(分).",
+      "半 (bàn, \"half\") replaces \"thirty minutes\" for the half hour: 三点半 (sān diǎn bàn, \"3:30\") is the natural way to say it, rather than 三点三十分, though the latter is also understood.",
+      "Unlike numbers used for plain counting, \"two o'clock\" uses 两 rather than 二: 两点 (liǎng diǎn), not 二点 — the same 两-vs-二 rule from the numbers section.",
+      "Asking the time uses 几, the \"small number\" question word, since clock hours are always 1–12: 现在几点？ (Xiànzài jǐ diǎn?, \"What time is it now?\")."
+    ],
+    "pattern": "现在 + Time + 点 (+ 分/刻/半)。",
+    "examples": [
+      { "hanzi": "现在两点。", "pinyin": "Xiànzài liǎng diǎn.", "english": "It's 2 o'clock now." },
+      { "hanzi": "现在三点一刻。", "pinyin": "Xiànzài sān diǎn yí kè.", "english": "It's 3:15 now." },
+      { "hanzi": "现在八点半。", "pinyin": "Xiànzài bā diǎn bàn.", "english": "It's 8:30 now." },
+      { "hanzi": "现在几点？", "pinyin": "Xiànzài jǐ diǎn?", "english": "What time is it?" }
+    ]
+  },
+  {
+    "id": "ch7-time-words",
+    "chapter": "Chapter 7: Time Expressions — 点, Time Word Order, 从...到...",
+    "hskLevel": 1,
+    "title": "Time Words and Word Order (今天, 明天, 昨天, 星期)",
+    "theory": [
+      "Days of the week use 星期 (xīngqī) + a number: 星期一 (Monday) through 星期六 (Saturday), with Sunday as the one exception, 星期天 or 星期日. 今天 (jīntiān, today), 明天 (míngtiān, tomorrow), and 昨天 (zuótiān, yesterday) are frequent companions.",
+      "The single most important rule for all time words — clock times, days, dates, 今天/明天/昨天 — is word order: they go before the verb, typically right after the subject (or, less commonly, at the very start of the sentence), never at the end, unlike English's habit of putting \"tomorrow\" or \"at 3 o'clock\" after the verb phrase. 我明天去学校 (Wǒ míngtiān qù xuéxiào), \"I'm going to school tomorrow\" — not 我去学校明天.",
+      "Larger time units precede smaller ones, the reverse of typical American date order: year → month → day → time. E.g. 二零二六年八月十四号下午三点 (\"2026, August 14th, 3pm\") reads largest-to-smallest all the way through."
+    ],
+    "pattern": "S + [Time Word] + V.",
+    "examples": [
+      { "hanzi": "我今天很忙。", "pinyin": "Wǒ jīntiān hěn máng.", "english": "I'm busy today." },
+      { "hanzi": "他明天去北京。", "pinyin": "Tā míngtiān qù Běijīng.", "english": "He's going to Beijing tomorrow." },
+      { "hanzi": "昨天是星期五。", "pinyin": "Zuótiān shì xīngqīwǔ.", "english": "Yesterday was Friday." },
+      { "hanzi": "你星期几有时间？", "pinyin": "Nǐ xīngqī jǐ yǒu shíjiān?", "english": "Which day of the week are you free?" }
+    ]
+  },
+  {
+    "id": "ch7-cong-dao",
+    "chapter": "Chapter 7: Time Expressions — 点, Time Word Order, 从...到...",
+    "hskLevel": 1,
+    "title": "从...到... (cóng...dào...) — \"From...To...\"",
+    "theory": [
+      "从 (cóng, \"from\") marks a starting point and 到 (dào, \"to/until\") marks an ending point, together bracketing a range of time or place: 我从九点到十二点上课 (Wǒ cóng jiǔ diǎn dào shí'èr diǎn shàngkè), \"I have class from 9 to 12.\" The whole 从...到... phrase, like every time and place phrase covered so far, goes before the verb.",
+      "Either half can be used alone when only one endpoint matters: 从今天开始 (cóng jīntiān kāishǐ, \"starting from today\") uses only 从; 到星期五 (dào xīngqīwǔ, \"until/by Friday\") uses only 到.",
+      "The same 从...到... frame works for physical distance, not just time, following exactly the same word order: 从我家到学校很近 (Cóng wǒ jiā dào xuéxiào hěn jìn), \"It's very close from my house to school\" — here the whole 从...到... phrase acts as the subject of the 很近 adjectival-predicate sentence from Chapter 1."
+    ],
+    "pattern": "从 + Start + 到 + End + V。",
+    "examples": [
+      { "hanzi": "我从九点到十二点上课。", "pinyin": "Wǒ cóng jiǔ diǎn dào shí'èr diǎn shàngkè.", "english": "I have class from 9 to 12." },
+      { "hanzi": "从我家到学校很近。", "pinyin": "Cóng wǒ jiā dào xuéxiào hěn jìn.", "english": "It's very close from my house to school." },
+      { "hanzi": "我们从星期一到星期五都上班。", "pinyin": "Wǒmen cóng xīngqīyī dào xīngqīwǔ dōu shàngbān.", "english": "We work from Monday to Friday." },
+      { "hanzi": "从今天开始，我每天都学习。", "pinyin": "Cóng jīntiān kāishǐ, wǒ měi tiān dōu xuéxí.", "english": "Starting today, I'll study every day." }
+    ]
+  },
+  {
+    "id": "ch8-qu-lai-serial",
+    "chapter": "Chapter 8: Going Places and Doing Things — 去/来 + Verb",
+    "hskLevel": 1,
+    "title": "去/来 + Verb Serialization",
+    "theory": [
+      "To express going somewhere in order to do something, Chinese places two verbs back-to-back with no connecting word: 去 (qù, \"go\") or 来 (lái, \"come\") directly followed by the action verb: 我去买东西 (Wǒ qù mǎi dōngxi), literally \"I go buy things,\" meaning \"I'm going to buy things / going shopping.\" English needs \"to\" or \"and\" here (\"go to buy\" / \"go and buy\"); Chinese needs nothing.",
+      "The place, if mentioned, sits between 去/来 and the second verb: 我去商店买东西 (Wǒ qù shāngdiàn mǎi dōngxi), \"I'm going to the store to buy things.\" This mirrors the rule from Chapter 5 that a place phrase comes before the verb it modifies, not after.",
+      "来 works the same way but implies motion toward the speaker rather than away: 你来我家吃饭吧 (Nǐ lái wǒ jiā chīfàn ba), \"Come to my place to eat\" (吧 here is a gentle suggestion particle, covered fully in a later chapter).",
+      "This construction is one specific case of a broader pattern called \"serial verbs\" (stringing multiple verbs in one sentence with no connector) that recurs throughout Chinese; 去/来 + Verb is simply the most common and earliest-learned instance of it."
+    ],
+    "pattern": "S + 去/来 + (Place) + V(+O)。",
+    "examples": [
+      { "hanzi": "我去买东西。", "pinyin": "Wǒ qù mǎi dōngxi.", "english": "I'm going to buy things." },
+      { "hanzi": "我去商店买东西。", "pinyin": "Wǒ qù shāngdiàn mǎi dōngxi.", "english": "I'm going to the store to buy things." },
+      { "hanzi": "你来我家吃饭吧。", "pinyin": "Nǐ lái wǒ jiā chīfàn ba.", "english": "Come to my place to eat." },
+      { "hanzi": "他去学校学习汉语。", "pinyin": "Tā qù xuéxiào xuéxí Hànyǔ.", "english": "He goes to school to study Chinese." }
+    ]
+  },
+  {
+    "id": "ch9-xiang-yao",
+    "chapter": "Chapter 9: Modal Verbs — 想, 要, 会, 能",
+    "hskLevel": 1,
+    "title": "想 and 要 — Wanting To",
+    "theory": [
+      "Both 想 (xiǎng) and 要 (yào) can precede a verb to mean \"want to,\" but they differ in strength. 想 expresses a wish or inclination — softer, closer to \"would like to\": 我想去中国 (Wǒ xiǎng qù Zhōngguó), \"I'd like to go to China.\" 要 is more direct and can sound like a firm intention or even a demand, depending on tone: 我要去中国 (Wǒ yào qù Zhōngguó), \"I want to / am going to go to China.\"",
+      "要 (but not 想) can also work as a plain transitive verb directly in front of a noun, meaning \"want [a thing]\": 我要一杯咖啡 (Wǒ yào yì bēi kāfēi), \"I want a coffee.\" 想 needs a verb after it in this pattern — 我想要咖啡 is fine too (combining both softens 要 slightly), but a bare 我想咖啡 sounds incomplete.",
+      "Negation differs meaningfully between the two. 不想 simply means \"don't want to / don't feel like it\": 我不想去 (Wǒ bù xiǎng qù), \"I don't feel like going.\" 不要, however, is much stronger and usually functions as a prohibition or command — \"don't!\": 不要说话！(Bú yào shuōhuà!, \"Don't talk!\") — so it isn't just the neutral opposite of wanting something."
+    ],
+    "pattern": "S + 想/要 + V(+O)。",
+    "examples": [
+      { "hanzi": "我想喝水。", "pinyin": "Wǒ xiǎng hē shuǐ.", "english": "I'd like to drink water." },
+      { "hanzi": "我要一个苹果。", "pinyin": "Wǒ yào yí ge píngguǒ.", "english": "I want an apple." },
+      { "hanzi": "他不想去学校。", "pinyin": "Tā bù xiǎng qù xuéxiào.", "english": "He doesn't feel like going to school." },
+      { "hanzi": "不要走！", "pinyin": "Bú yào zǒu!", "english": "Don't go!" }
+    ]
+  },
+  {
+    "id": "ch9-hui-neng",
+    "chapter": "Chapter 9: Modal Verbs — 想, 要, 会, 能",
+    "hskLevel": 1,
+    "title": "会 and 能 — Ability, Permission, and Prediction",
+    "theory": [
+      "会 (huì) expresses ability gained through learning or practice — a skill: 我会说中文 (Wǒ huì shuō Zhōngwén), \"I can speak Chinese\" (I've learned how). It's not used for things anyone can physically do without having learned them.",
+      "能 (néng) expresses ability due to physical capability, circumstance, or permission at a given moment, rather than a learned skill. 我能游泳 (Wǒ néng yóuyǒng) can mean \"I'm physically able to swim right now (e.g. the pool is open, I'm not injured),\" which is distinct from 我会游泳, \"I know how to swim\" (as a skill). 能 is also the natural choice for asking permission: 我能进来吗？(Wǒ néng jìnlái ma?, \"May I come in?\").",
+      "The two overlap in many everyday sentences, and native speakers sometimes use them interchangeably for skills — but the core distinction (learned skill = 会, situational capability/permission = 能) is the reliable rule to lean on as a learner. Negate both with 不: 不会 (\"don't know how\"), 不能 (\"can't, due to circumstance or not allowed\").",
+      "会 has a second, seemingly unrelated use worth knowing early: it can also express a prediction or likelihood about the future, closer to English \"will\" — 明天会下雨 (Míngtiān huì xià yǔ), \"It will rain tomorrow.\" This isn't about anyone's learned skill; it's a forecast or expectation. Context almost always makes clear which sense of 会 is meant, since a sentence about weather or future events obviously isn't about a skill."
+    ],
+    "pattern": "S + 会/能 + V(+O)。",
+    "examples": [
+      { "hanzi": "我会说一点儿汉语。", "pinyin": "Wǒ huì shuō yìdiǎnr Hànyǔ.", "english": "I can speak a little Chinese." },
+      { "hanzi": "我不会开车。", "pinyin": "Wǒ bú huì kāichē.", "english": "I don't know how to drive." },
+      { "hanzi": "今天我不能去。", "pinyin": "Jīntiān wǒ bù néng qù.", "english": "I can't go today (circumstance)." },
+      { "hanzi": "我能问一个问题吗？", "pinyin": "Wǒ néng wèn yí ge wèntí ma?", "english": "May I ask a question?" },
+      { "hanzi": "明天会下雨。", "pinyin": "Míngtiān huì xià yǔ.", "english": "It will rain tomorrow (prediction)." }
+    ]
+  },
+  {
+    "id": "ch10-le-completed",
+    "chapter": "Chapter 10: 了 — Completed Actions and Change of State",
+    "hskLevel": 1,
+    "title": "了 After the Verb — Marking a Completed Action",
+    "theory": [
+      "Placed directly after a verb, 了 (le) signals that the action was completed — most often used when a specific quantity or detail of the object is mentioned: 我买了一本书 (Wǒ mǎi le yì běn shū), \"I bought a book.\" The 了 attaches to the verb 买, not to the sentence as a whole.",
+      "This is not a general past-tense marker the way English \"-ed\" is — it doesn't just mean \"sometime in the past.\" A generic past action often doesn't need 了 at all, especially when a time word already makes the timing clear, or the sentence describes a habitual or general past state. Adding an unnecessary 了 here is one of the most common overcorrections English speakers make.",
+      "Negating a completed action uses 没(有), and 了 is dropped entirely: 我没买书 (Wǒ méi mǎi shū), \"I didn't buy a book\" — never 我没买了书. This is a hard rule: 了 and 没 never co-occur on the same verb."
+    ],
+    "pattern": "S + V + 了 + (Number + M + N)。　·　S + 没(有) + V + (O)。",
+    "examples": [
+      { "hanzi": "我买了一本书。", "pinyin": "Wǒ mǎi le yì běn shū.", "english": "I bought a book." },
+      { "hanzi": "他吃了三个苹果。", "pinyin": "Tā chī le sān ge píngguǒ.", "english": "He ate three apples." },
+      { "hanzi": "我没买书。", "pinyin": "Wǒ méi mǎi shū.", "english": "I didn't buy a book." },
+      { "hanzi": "昨天我看了一个电影。", "pinyin": "Zuótiān wǒ kàn le yí ge diànyǐng.", "english": "I watched a movie yesterday." }
+    ]
+  },
+  {
+    "id": "ch10-le-change-of-state",
+    "chapter": "Chapter 10: 了 — Completed Actions and Change of State",
+    "hskLevel": 1,
+    "title": "了 At the End of a Sentence — Change of State",
+    "theory": [
+      "Placed at the very end of a sentence (after the object, if any, or after an adjective), 了 signals that a new situation has come into being — something is different now compared to before: 我是学生了 (Wǒ shì xuéshēng le), \"I'm a student now (I wasn't before).\" 冷了 (Lěng le), \"It's gotten cold (it wasn't before).\"",
+      "This use is common with adjectives to describe a change: 他高了 (Tā gāo le), \"He's gotten tall(er),\" and with 不 + verb/adjective + 了 to announce that something has stopped or is about to stop: 我不去了 (Wǒ bú qù le), \"I'm not going (after all) — a change of plan,\" which is distinct from a plain 我不去, a neutral statement with no implication that plans changed.",
+      "The two uses of 了 covered in this chapter — after-verb \"completed action\" and sentence-final \"change of state\" — can combine into a single 了 when the completed action is itself the whole point and nothing follows: 我吃了 (Wǒ chī le) standing alone means \"I've eaten (as of now),\" functioning as both at once. Context and position, not different characters, are what distinguish the two uses — it's the same 了 throughout."
+    ],
+    "pattern": "S + (V+O / Adj) + 了。",
+    "examples": [
+      { "hanzi": "现在八点了。", "pinyin": "Xiànzài bā diǎn le.", "english": "It's 8 o'clock now (as of just now)." },
+      { "hanzi": "天冷了。", "pinyin": "Tiān lěng le.", "english": "It's gotten cold." },
+      { "hanzi": "我不喝咖啡了。", "pinyin": "Wǒ bù hē kāfēi le.", "english": "I'm not drinking coffee anymore." },
+      { "hanzi": "我吃了。", "pinyin": "Wǒ chī le.", "english": "I've eaten." }
+    ]
+  },
+  {
+    "id": "ch11-tai-le",
+    "chapter": "Chapter 11: Degree and Politeness — 太...了 and 请",
+    "hskLevel": 1,
+    "title": "太...了 (tài...le) — \"Too ___\"",
+    "theory": [
+      "太...了 wraps around an adjective (or occasionally a verb phrase) to mean \"too [adjective]\" — an excessive degree, usually with a negative or surprised connotation: 太贵了 (tài guì le), \"too expensive.\" Unlike 很 (Chapter 1), which is a fairly neutral default, 太...了 always signals \"more than is desirable or expected.\"",
+      "The 了 here is essentially fixed to this pattern in everyday speech — 太贵 alone, without 了, is understood but sounds noticeably less natural/complete than 太贵了. This 了 is close in spirit to the sentence-final \"change of state\" 了 from the previous chapter, marking that this degree has now been reached or realized.",
+      "太...了 can also express strong positive reactions, not just complaints, depending on tone and context: 太好了！(Tài hǎo le!, \"That's great!\" — literally \"too good\") is one of the most common exclamations in everyday Chinese, despite 太 literally meaning \"excessively.\""
+    ],
+    "pattern": "S + 太 + Adj + 了。",
+    "examples": [
+      { "hanzi": "这个太贵了。", "pinyin": "Zhège tài guì le.", "english": "This is too expensive." },
+      { "hanzi": "太好了！", "pinyin": "Tài hǎo le!", "english": "That's great!" },
+      { "hanzi": "今天太热了。", "pinyin": "Jīntiān tài rè le.", "english": "It's too hot today." },
+      { "hanzi": "这个问题太难了。", "pinyin": "Zhège wèntí tài nán le.", "english": "This question is too difficult." }
+    ]
+  },
+  {
+    "id": "ch11-qing",
+    "chapter": "Chapter 11: Degree and Politeness — 太...了 and 请",
+    "hskLevel": 1,
+    "title": "请 (qǐng) + Verb — Polite Requests",
+    "theory": [
+      "请 (qǐng) placed directly before a verb turns a sentence into a polite request or invitation, similar to English \"please\": 请坐 (Qǐng zuò), \"Please sit,\" 请进 (Qǐng jìn), \"Please come in.\"",
+      "请 can also be used as a standalone verb meaning \"to invite\" or \"to treat (someone to something),\" most commonly in 我请你 (Wǒ qǐng nǐ, \"It's my treat / I'm inviting you [to pay for this]\"), often heard when offering to pay for a meal: 我请你吃饭 (Wǒ qǐng nǐ chīfàn), \"Let me treat you to a meal.\"",
+      "请问 (Qǐng wèn, literally \"please ask,\" meaning \"excuse me, may I ask...\") is a fixed, extremely common opener for politely getting someone's attention before a question: 请问，洗手间在哪儿？ (Qǐng wèn, xǐshǒujiān zài nǎr?, \"Excuse me, where's the restroom?\")."
+    ],
+    "pattern": "请 + V(+O)。　·　请问，...？",
+    "examples": [
+      { "hanzi": "请坐。", "pinyin": "Qǐng zuò.", "english": "Please sit." },
+      { "hanzi": "请问，你叫什么名字？", "pinyin": "Qǐng wèn, nǐ jiào shénme míngzi?", "english": "Excuse me, what's your name?" },
+      { "hanzi": "我请你吃饭。", "pinyin": "Wǒ qǐng nǐ chīfàn.", "english": "Let me treat you to a meal." },
+      { "hanzi": "请再说一次。", "pinyin": "Qǐng zài shuō yí cì.", "english": "Please say it again." }
+    ]
+  },
+  {
+    "id": "ch12-yidianr",
+    "chapter": "Chapter 12: Quantity and Connectors — 一点儿, 和, 还是",
+    "hskLevel": 1,
+    "title": "一点儿 — \"A Little / A Bit\"",
+    "theory": [
+      "一点儿 (yìdiǎnr, often shortened to 点儿 in casual speech) means \"a little/a bit\" and attaches after an adjective or verb to soften or quantify it: 便宜一点儿 (piányi yìdiǎnr), \"a little cheaper\"; 我会说一点儿汉语 (Wǒ huì shuō yìdiǎnr Hànyǔ), \"I can speak a little Chinese.\" Note it comes after the adjective/verb, the reverse of English \"a little,\" which usually comes before.",
+      "After a comparative adjective specifically, 一点儿 signals a small difference: 这个大一点儿 (Zhège dà yìdiǎnr), \"This one is a little bigger\" (implicitly compared to something just mentioned).",
+      "Don't confuse 一点儿 (a small quantity of something) with 有一点儿 (yǒu yìdiǎnr, \"somewhat/a bit,\" placed before an adjective to soften a negative-leaning description): 我有一点儿累 (Wǒ yǒu yìdiǎnr lèi), \"I'm a little tired.\" 有一点儿 tends to appear before things the speaker finds mildly undesirable (tired, expensive, difficult), while plain 一点儿 is neutral."
+    ],
+    "pattern": "Adj/V + 一点儿。　·　有一点儿 + Adj。",
+    "examples": [
+      { "hanzi": "我会说一点儿汉语。", "pinyin": "Wǒ huì shuō yìdiǎnr Hànyǔ.", "english": "I can speak a little Chinese." },
+      { "hanzi": "这个便宜一点儿。", "pinyin": "Zhège piányi yìdiǎnr.", "english": "This one is a little cheaper." },
+      { "hanzi": "我有一点儿累。", "pinyin": "Wǒ yǒu yìdiǎnr lèi.", "english": "I'm a bit tired." },
+      { "hanzi": "请给我一点儿水。", "pinyin": "Qǐng gěi wǒ yìdiǎnr shuǐ.", "english": "Please give me a little water." }
+    ]
+  },
+  {
+    "id": "ch12-he-haishi",
+    "chapter": "Chapter 12: Quantity and Connectors — 一点儿, 和, 还是",
+    "hskLevel": 1,
+    "title": "Connecting Words — 和 (and) vs. 还是 (or, in questions)",
+    "theory": [
+      "和 (hé, \"and\") connects two nouns or noun phrases, not verbs or full clauses — Chinese generally doesn't need a word for \"and\" between two verbs or sentences the way English does; they're simply placed one after another. 我和他是朋友 (Wǒ hé tā shì péngyou), \"He and I are friends.\" Using 和 to join two full sentences (\"I went home and I ate dinner\") is not natural in this basic pattern.",
+      "还是 (háishi, \"or\") is used inside a question offering a choice between two options — the sentence is already a genuine A-or-B question, so it never also takes 吗: 你要咖啡还是茶？(Nǐ yào kāfēi háishi chá?, \"Do you want coffee or tea?\"). Adding 吗 here would be ungrammatical, since the question itself already presents the choice.",
+      "或者 (huòzhě, \"or\") is the word for \"or\" in a plain statement rather than a question (\"I'll go tomorrow or the day after\"), and belongs to a later chapter — for now, remember that 还是 specifically marks an either/or question."
+    ],
+    "pattern": "N1 + 和 + N2。　·　A + 还是 + B？",
+    "examples": [
+      { "hanzi": "我和你都是学生。", "pinyin": "Wǒ hé nǐ dōu shì xuéshēng.", "english": "You and I are both students." },
+      { "hanzi": "他和我是朋友。", "pinyin": "Tā hé wǒ shì péngyou.", "english": "He and I are friends." },
+      { "hanzi": "你喝咖啡还是茶？", "pinyin": "Nǐ hē kāfēi háishi chá?", "english": "Do you want coffee or tea?" },
+      { "hanzi": "你想去北京还是上海？", "pinyin": "Nǐ xiǎng qù Běijīng háishi Shànghǎi?", "english": "Do you want to go to Beijing or Shanghai?" }
     ]
   }
 ]
