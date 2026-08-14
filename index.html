@@ -26,6 +26,14 @@
       </span>
       <span class="mode-chevron" aria-hidden="true">&rsaquo;</span>
     </button>
+    <button class="mode-tile" id="start-learning">
+      <span class="mode-icon">课</span>
+      <span class="mode-text">
+        <span class="mode-name">Learning</span>
+        <span class="mode-desc">HSK 1&ndash;2 grammar, chapter by chapter</span>
+      </span>
+      <span class="mode-chevron" aria-hidden="true">&rsaquo;</span>
+    </button>
     <button class="mode-tile" id="start-grammar-review">
       <span class="mode-icon">语</span>
       <span class="mode-text">
@@ -42,6 +50,30 @@
       </span>
       <span class="mode-chevron" aria-hidden="true">&rsaquo;</span>
     </button>
+  </section>
+
+  <!-- Learning: choose a chapter -->
+  <section id="learning-screen" class="screen">
+    <div class="top-bar">
+      <button id="learning-home-btn" class="icon-btn" aria-label="Home">&larr;</button>
+      <div class="progress-label">Learning</div>
+      <div style="width: 2.5em;"></div>
+    </div>
+    <div id="learning-chapter-list" class="topic-list">
+      <!-- filled dynamically -->
+    </div>
+  </section>
+
+  <!-- Learning: sections within one chapter -->
+  <section id="learning-detail-screen" class="screen">
+    <div class="top-bar">
+      <button id="learning-detail-back-btn" class="icon-btn" aria-label="Back">&larr;</button>
+      <div id="learning-detail-title" class="progress-label"></div>
+      <div style="width: 2.5em;"></div>
+    </div>
+    <div id="learning-section-list" class="topic-detail-list">
+      <!-- filled dynamically -->
+    </div>
   </section>
 
   <!-- Grammar Review: choose a topic -->

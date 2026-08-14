@@ -17,7 +17,7 @@
 // install; it's not required for routine content updates, since the
 // network-first fetch handler self-heals the cache on every online
 // visit regardless of version.
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const CACHE_NAME = `chinese-companion-${CACHE_VERSION}`;
 
 const PRECACHE_URLS = [
@@ -35,6 +35,7 @@ const PRECACHE_URLS = [
   'data/hsk4.json',
   'data/grammar.json',
   'data/phrases.json',
+  'data/learning.json',
 ];
 
 self.addEventListener('install', (event) => {

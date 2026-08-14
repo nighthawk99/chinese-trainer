@@ -71,6 +71,11 @@
   const settingsScreen = document.getElementById('settings-screen');
   const trainerScreen = document.getElementById('trainer-screen');
   const completeScreen = document.getElementById('complete-screen');
+  const learningScreen = document.getElementById('learning-screen');
+  const learningDetailScreen = document.getElementById('learning-detail-screen');
+  const learningChapterList = document.getElementById('learning-chapter-list');
+  const learningSectionList = document.getElementById('learning-section-list');
+  const learningDetailTitle = document.getElementById('learning-detail-title');
   const grammarScreen = document.getElementById('grammar-screen');
   const grammarDetailScreen = document.getElementById('grammar-detail-screen');
   const grammarCategoryList = document.getElementById('grammar-category-list');
@@ -113,8 +118,8 @@
   }
 
   function showScreen(el) {
-    [homeScreen, settingsScreen, trainerScreen, completeScreen, grammarScreen, grammarDetailScreen,
-     phrasesScreen, phrasesDetailScreen].forEach(s => s.classList.remove('active'));
+    [homeScreen, settingsScreen, trainerScreen, completeScreen, learningScreen, learningDetailScreen,
+     grammarScreen, grammarDetailScreen, phrasesScreen, phrasesDetailScreen].forEach(s => s.classList.remove('active'));
     el.classList.add('active');
   }
 
@@ -189,6 +194,61 @@
     const source = VOCAB_SOURCES[settings.vocabSource] || VOCAB_SOURCES.own;
     const res = await fetch(source.file);
     vocab = await res.json();
+  }
+
+  let learningData = null; // cached data/learning.json, fetched once
+
+  async function loadLearningData() {
+    if (!learningData) {
+      const res = await fetch('data/learning.json');
+      learningData = await res.json();
+    }
+    return learningData;
+  }
+
+  async function renderLearningChapterList() {
+    const data = await loadLearningData();
+    renderTopicList(learningChapterList, data, 'chapter', openLearningChapter);
+  }
+
+  // Unlike Grammar Review's collapsible <details> cards, learning sections
+  // render fully expanded — this is meant to be read top-to-bottom like a
+  // textbook chapter, not scanned as a reference.
+  function renderLearningSection(section) {
+    let html = `
+      <div class="learning-section">
+        <div class="section-header">
+          <div class="section-title">${section.title}</div>
+          <div class="hsk-badge">HSK ${section.hskLevel}</div>
+        </div>
+        <div class="theory-block">
+          ${section.theory.map(p => `<p class="theory-para">${p}</p>`).join('')}
+        </div>
+    `;
+    if (section.pattern) html += `<div class="pattern-pill">${section.pattern}</div>`;
+    html += '<div class="example-list">';
+    section.examples.forEach(ex => {
+      html += `
+        <div class="example">
+          <div class="example-hanzi">${ex.hanzi}</div>
+          <div class="example-pinyin">${ex.pinyin}</div>
+          <div class="example-english">${ex.english}</div>
+        </div>
+      `;
+    });
+    html += '</div></div>';
+    return html;
+  }
+
+  function renderLearningChapterDetail(chapterName) {
+    learningDetailTitle.textContent = chapterName;
+    const sections = learningData.filter(s => s.chapter === chapterName);
+    learningSectionList.innerHTML = sections.map(renderLearningSection).join('');
+  }
+
+  function openLearningChapter(chapterName) {
+    renderLearningChapterDetail(chapterName);
+    showScreen(learningDetailScreen);
   }
 
   let grammarData = null; // cached data/grammar.json, fetched once
@@ -610,6 +670,19 @@
   document.getElementById('start-vocab-trainer').addEventListener('click', () => {
     primeSpeechSynthesis();
     startSession();
+  });
+
+  document.getElementById('start-learning').addEventListener('click', async () => {
+    await renderLearningChapterList();
+    showScreen(learningScreen);
+  });
+
+  document.getElementById('learning-home-btn').addEventListener('click', () => {
+    showScreen(homeScreen);
+  });
+
+  document.getElementById('learning-detail-back-btn').addEventListener('click', () => {
+    showScreen(learningScreen);
   });
 
   document.getElementById('start-grammar-review').addEventListener('click', async () => {

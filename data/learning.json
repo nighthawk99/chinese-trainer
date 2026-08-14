@@ -1,0 +1,77 @@
+[
+  {
+    "id": "ch1-pronouns-shi",
+    "chapter": "Chapter 1: Greetings & Introductions",
+    "hskLevel": 1,
+    "title": "Personal Pronouns and 是 (shì) Sentences",
+    "theory": [
+      "Mandarin pronouns don't change form for subject vs. object the way English \"I/me\" or \"he/him\" do, and verbs never conjugate for person or number. The core set is 我 (wǒ, I/me), 你 (nǐ, you), 您 (nín, you — polite/formal), 他 (tā, he/him), 她 (tā, she/her), and 它 (tā, it). Note that 他, 她, and 它 are all pronounced identically — the distinction only exists in writing. Plurals are formed by simply adding 们 (men): 我们 (wǒmen, we), 你们 (nǐmen, you all), 他们 (tāmen, they).",
+      "是 (shì) is a linking verb that equates a subject with a noun, similar to \"am/is/are\" in English — but unlike English, it never changes form no matter the subject: 我是, 你是, 他是, 我们是 all use the same 是. The basic pattern is Subject + 是 + Noun: 我是学生 (Wǒ shì xuéshēng) literally \"I am student,\" meaning \"I am a student.\" Chinese has no articles (\"a,\" \"an,\" \"the\"), so none appear in the sentence.",
+      "To negate, place 不 (bù, not) directly before 是: 我不是学生 (Wǒ bú shì xuéshēng), \"I am not a student.\" (Note the tone change: 不 is normally fourth tone, but shifts to second tone — bú — before another fourth-tone syllable like 是; this is written in pinyin but not in hanzi.) A simple yes/no question can be formed by adding the particle 吗 (ma) to the end of a statement — covered in full in Chapter 2."
+    ],
+    "pattern": "S + 是 + N　·　S + 不是 + N",
+    "examples": [
+      { "hanzi": "我是学生。", "pinyin": "Wǒ shì xuéshēng.", "english": "I am a student." },
+      { "hanzi": "他是老师。", "pinyin": "Tā shì lǎoshī.", "english": "He is a teacher." },
+      { "hanzi": "她不是中国人。", "pinyin": "Tā bú shì Zhōngguó rén.", "english": "She is not Chinese." },
+      { "hanzi": "我们是朋友。", "pinyin": "Wǒmen shì péngyou.", "english": "We are friends." }
+    ]
+  },
+  {
+    "id": "ch1-hen-adjectives",
+    "chapter": "Chapter 1: Greetings & Introductions",
+    "hskLevel": 1,
+    "title": "Adjectival Predicates with 很 (hěn)",
+    "theory": [
+      "This is one of the first true traps for English speakers: Chinese adjectives act as verbs on their own and do NOT need 是 to link them to the subject. You cannot say 我是累 to mean \"I am tired\" — that is simply ungrammatical. Instead, the adjective directly follows the subject: 我累 (Wǒ lèi).",
+      "In practice, however, a bare adjective standing completely alone as the predicate (我累。) can sound clipped or implicitly contrastive — as if you mean \"I'm tired (unlike someone else).\" To avoid that unwanted implication in a plain, neutral statement, Chinese speakers insert 很 (hěn, \"very\") before the adjective: 我很累 (Wǒ hěn lèi). In this everyday use, 很 is largely grammatical glue rather than true emphasis — it does not usually translate as \"very\" unless it is spoken with stress. This pattern, S + 很 + Adj, is the default, neutral way to say \"[Subject] is [adjective].\"",
+      "Negation drops 很 entirely and uses 不 (bù) directly before the adjective: 我不忙 (Wǒ bù máng), \"I'm not busy.\" Adding 很 back into a negative sentence (不很...) is possible but shifts the meaning toward \"not very...\" rather than a flat negation.",
+      "Because the adjective already functions as the predicate, never insert 是 into this pattern — 是 is reserved for linking two nouns (Chapter 1, Section 1), not a subject to an adjective."
+    ],
+    "pattern": "S + 很 + Adj.　·　S + 不 + Adj.",
+    "examples": [
+      { "hanzi": "我很好。", "pinyin": "Wǒ hěn hǎo.", "english": "I'm good / doing well." },
+      { "hanzi": "这个苹果很大。", "pinyin": "Zhège píngguǒ hěn dà.", "english": "This apple is big." },
+      { "hanzi": "他不高。", "pinyin": "Tā bù gāo.", "english": "He is not tall." },
+      { "hanzi": "今天很冷。", "pinyin": "Jīntiān hěn lěng.", "english": "Today is (very) cold." }
+    ]
+  },
+  {
+    "id": "ch2-ma-questions",
+    "chapter": "Chapter 2: Asking Questions",
+    "hskLevel": 1,
+    "title": "Yes/No Questions with 吗 (ma)",
+    "theory": [
+      "The simplest way to turn any statement into a yes/no question in Mandarin is to add the particle 吗 (ma) to the very end — no change to word order, and no auxiliary \"do/does/is\" the way English requires. 你忙 (Nǐ máng, \"You are busy\") becomes 你忙吗？ (Nǐ máng ma?, \"Are you busy?\") simply by appending 吗.",
+      "This works with any statement type already covered: 你是学生吗？(Nǐ shì xuéshēng ma?, \"Are you a student?\") and 他很高吗？(Tā hěn gāo ma?, \"Is he tall?\") both follow the same rule — state the sentence, then add 吗.",
+      "One important restriction: 吗 can only be added to a sentence that has no other question word already in it. A sentence using 什么 (shénme, what), 谁 (shéi, who), or similar words is already a question and cannot also take 吗 — mixing the two is a common beginner error covered in a later chapter on question words.",
+      "Mandarin has no single word for a bare \"yes\" or \"no.\" To answer a 吗 question, you affirm or deny by repeating the key verb from the question: 是 or 不是 for a 是-question, 忙 or 不忙 for an adjective question. 是的 (shì de) is also commonly used as a general-purpose \"yes.\""
+    ],
+    "pattern": "Statement + 吗？",
+    "examples": [
+      { "hanzi": "你忙吗？", "pinyin": "Nǐ máng ma?", "english": "Are you busy?" },
+      { "hanzi": "他是老师吗？", "pinyin": "Tā shì lǎoshī ma?", "english": "Is he a teacher?" },
+      { "hanzi": "A: 你是学生吗？B: 是，我是学生。", "pinyin": "A: Nǐ shì xuéshēng ma? B: Shì, wǒ shì xuéshēng.", "english": "A: Are you a student? B: Yes, I am a student." },
+      { "hanzi": "这是你的书吗？", "pinyin": "Zhè shì nǐ de shū ma?", "english": "Is this your book?" }
+    ]
+  },
+  {
+    "id": "ch2-de-possessive",
+    "chapter": "Chapter 2: Asking Questions",
+    "hskLevel": 1,
+    "title": "The Possessive Particle 的 (de)",
+    "theory": [
+      "的 (de, neutral tone) marks possession, roughly matching English \"'s\" or \"of.\" The pattern is Possessor + 的 + Noun, in the opposite order from \"of\" but the same order as \"'s\": 我的书 (wǒ de shū) is literally \"I's book,\" meaning \"my book.\" 老师的手机 (lǎoshī de shǒujī) is \"the teacher's phone.\"",
+      "的 is frequently dropped for close, personal relationships — especially family members and, often, close friends — when the meaning is unambiguous without it: 我妈妈 (wǒ māma, \"my mom\") and 我朋友 (wǒ péngyou, \"my friend\") both sound natural without 的, whereas dropping it from 我的书 would sound off. There's no hard rule for exactly where the line falls; it's learned by exposure, but the general pattern is: the closer/more personal the relationship, the more natural it is to omit 的.",
+      "的 does more than mark possession — the same particle attaches almost any descriptive word or phrase to a following noun (e.g. \"red 的 apple\", \"the book that I bought 的\"), a broader pattern covered in a later chapter. For now, it's enough to recognize 的 as \"the noun that follows belongs to, or is linked to, whatever came before 的.\"",
+      "A pronunciation note for later reading: 得 and 地 are both also pronounced \"de\" in their unstressed grammatical uses, but they mark completely different constructions (verb complements and adverbial phrases, respectively) and are not interchangeable with 的 in writing, even though they can sound identical in casual speech."
+    ],
+    "pattern": "Possessor + 的 + Noun",
+    "examples": [
+      { "hanzi": "这是我的手机。", "pinyin": "Zhè shì wǒ de shǒujī.", "english": "This is my phone." },
+      { "hanzi": "她是我朋友。", "pinyin": "Tā shì wǒ péngyou.", "english": "She is my friend. (的 dropped — close relationship)" },
+      { "hanzi": "那是老师的书。", "pinyin": "Nà shì lǎoshī de shū.", "english": "That is the teacher's book." },
+      { "hanzi": "你的中文很好。", "pinyin": "Nǐ de Zhōngwén hěn hǎo.", "english": "Your Chinese is very good." }
+    ]
+  }
+]
