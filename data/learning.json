@@ -568,5 +568,889 @@
       { "hanzi": "你喝咖啡还是茶？", "pinyin": "Nǐ hē kāfēi háishi chá?", "english": "Do you want coffee or tea?" },
       { "hanzi": "你想去北京还是上海？", "pinyin": "Nǐ xiǎng qù Běijīng háishi Shànghǎi?", "english": "Do you want to go to Beijing or Shanghai?" }
     ]
+  },
+  {
+    "id": "hsk2-ch1-zai-progressive",
+    "chapter": "Chapter 1: Ongoing and Imminent Actions — 在/正在, 着, 快要/就要...了",
+    "hskLevel": 2,
+    "title": "在/正在 + Verb — Actions in Progress",
+    "theory": [
+      "Placed directly before a verb, 在 (zài) or the fuller 正在 (zhèngzài) marks an action as currently in progress, similar to English \"-ing\": 我在吃饭 (Wǒ zài chīfàn), \"I am eating.\" This is a different grammatical role from the 在 covered in HSK1 (location), which marked where something is — context (a verb following vs. a place-noun following) tells them apart, and in fact they often appear together: 我在家吃饭 combines both, \"I'm at home eating.\"",
+      "正在 is simply a more emphatic, more clearly \"right now, in the middle of\" version of bare 在: 他正在睡觉 (Tā zhèngzài shuìjiào), \"He is (right in the middle of) sleeping.\" 正 alone (without 在) can also mark progressive aspect in careful/written style, though 在 and 正在 are far more common in speech.",
+      "The sentence-final particle 呢 (from HSK1) very often reinforces a progressive-aspect sentence, either alongside 在/正在 or, in casual speech, entirely on its own: 他在睡觉呢 (Tā zài shuìjiào ne) or simply 他睡觉呢 both mean \"He's sleeping (right now).\" 呢 here signals \"this is an ongoing state,\" distinct from its follow-up-question use.",
+      "Negating a progressive action uses 没(有), not 不: 我没在吃饭 (Wǒ méi zài chīfàn), \"I'm not eating (right now)\" — following the same 没-for-completed/ongoing-actions rule that 了 followed in HSK1."
+    ],
+    "pattern": "S + 在/正在 + V(+O) (+ 呢)。",
+    "examples": [
+      { "hanzi": "我在吃饭。", "pinyin": "Wǒ zài chīfàn.", "english": "I am eating." },
+      { "hanzi": "他正在睡觉。", "pinyin": "Tā zhèngzài shuìjiào.", "english": "He is sleeping (right now)." },
+      { "hanzi": "你在做什么呢？", "pinyin": "Nǐ zài zuò shénme ne?", "english": "What are you doing (right now)?" },
+      { "hanzi": "我没在看电视。", "pinyin": "Wǒ méi zài kàn diànshì.", "english": "I'm not watching TV (right now)." }
+    ]
+  },
+  {
+    "id": "hsk2-ch1-zhe-durative",
+    "chapter": "Chapter 1: Ongoing and Imminent Actions — 在/正在, 着, 快要/就要...了",
+    "hskLevel": 2,
+    "title": "着 (zhe) — Durative/Continuous States",
+    "theory": [
+      "While 在 marks an action actively unfolding, 着 (zhe), attached directly after a verb, marks a resulting state that continues to hold — the difference between \"is doing\" and \"is in a state of having done, and that state persists\": 门开着 (Mén kāi zhe), \"The door is open\" (the state of openness persists, from the completed action of opening it) — not \"the door is [in the process of] opening.\"",
+      "着 is especially common describing the \"backdrop\" manner in which another action happens — the first verb+着 sets a continuing posture or state, and a second verb describes what's done during it: 他坐着看书 (Tā zuò zhe kàn shū), \"He sits and reads\" / \"He is reading while sitting,\" literally \"he sitting reads book.\" The 着-marked verb is the state you're in; the second verb is the actual activity.",
+      "着 can combine with 正在 for an action that is both actively ongoing and resulting in a persisting state, especially with verbs describing wearing, holding, or postures: 她正穿着一件红色的衣服 (Tā zhèng chuān zhe yí jiàn hóngsè de yīfu), \"She is wearing a red garment (right now).\" 穿 (to put on/wear) pairs naturally with 着 because wearing is inherently a continuing state, not a momentary action.",
+      "Negation uses 没 + V + 着: 门没开着 (Mén méi kāi zhe), \"The door isn't open,\" though in practice it's more common to simply state the opposite directly (门关着, \"the door is closed\")."
+    ],
+    "pattern": "S + V + 着 (+ O)。　·　S + V1 + 着 + V2。",
+    "examples": [
+      { "hanzi": "门开着。", "pinyin": "Mén kāi zhe.", "english": "The door is open." },
+      { "hanzi": "他坐着看书。", "pinyin": "Tā zuò zhe kàn shū.", "english": "He is reading while sitting." },
+      { "hanzi": "她穿着一件红色的衣服。", "pinyin": "Tā chuān zhe yí jiàn hóngsè de yīfu.", "english": "She is wearing a red garment." },
+      { "hanzi": "墙上挂着一张照片。", "pinyin": "Qiáng shang guà zhe yì zhāng zhàopiàn.", "english": "A photo is hanging on the wall." }
+    ]
+  },
+  {
+    "id": "hsk2-ch1-kuaiyao-jiuyao",
+    "chapter": "Chapter 1: Ongoing and Imminent Actions — 在/正在, 着, 快要/就要...了",
+    "hskLevel": 2,
+    "title": "快要/就要...了 — About To / On the Verge Of",
+    "theory": [
+      "快要...了 and 就要...了 both frame an event as imminent — about to happen very soon — bracketing the verb phrase with 快要 or 就要 at the front and the sentence-final 了 (the same \"change of state\" 了 from HSK1) at the end: 我快要到了 (Wǒ kuàiyào dào le), \"I'm about to arrive.\" The 了 here isn't optional — it's a fixed part of the construction, marking that the imminent event is now close enough to announce.",
+      "快 alone (without 要) can also be used the same way in casual speech: 快到了 (Kuài dào le) means the same as 快要到了. 就要 tends to pair more naturally with a specific time word placed before it, emphasizing exactly when the event will happen: 我们下个月就要搬家了 (Wǒmen xià ge yuè jiù yào bānjiā le), \"We're moving next month\" (the timing is definite and close).",
+      "快要 leans toward \"any moment now,\" a purely imminent sense without needing a stated time, while 就要 more comfortably takes a specific near-future time word — but in everyday speech the two overlap heavily and either is often acceptable."
+    ],
+    "pattern": "S + 快(要)/就要 + V(+O) + 了。",
+    "examples": [
+      { "hanzi": "我快要到了。", "pinyin": "Wǒ kuàiyào dào le.", "english": "I'm about to arrive." },
+      { "hanzi": "电影就要开始了。", "pinyin": "Diànyǐng jiù yào kāishǐ le.", "english": "The movie is about to start." },
+      { "hanzi": "我们下个月就要搬家了。", "pinyin": "Wǒmen xià ge yuè jiù yào bānjiā le.", "english": "We're moving next month." },
+      { "hanzi": "快下雨了。", "pinyin": "Kuài xià yǔ le.", "english": "It's about to rain." }
+    ]
+  },
+  {
+    "id": "hsk2-ch2-a-not-a",
+    "chapter": "Chapter 2: A-not-A Questions — 你去不去, 好不好, 是不是",
+    "hskLevel": 2,
+    "title": "The A-not-A Question Pattern",
+    "theory": [
+      "Beyond adding 吗 (HSK1), Chinese has a second, equally common way to form a yes/no question: state the verb or adjective, then immediately repeat it in its negative form, with no 吗 needed at all — this is called the \"A-not-A\" pattern. 你去不去？(Nǐ qù bu qù?, \"Are you going or not?\") uses 去 followed by 不去; 好不好？(Hǎo bu hǎo?, \"Is that okay?\") uses 好 followed by 不好.",
+      "The two forms are functionally equivalent to a 吗-question and are largely interchangeable — 你是学生吗？ and 你是不是学生？ both ask \"Are you a student?\" — but A-not-A can feel slightly more neutral/genuinely open, while 吗 can sometimes carry a faint expectation toward \"yes.\"",
+      "For a two-syllable verb or adjective, the first syllable is often dropped in the negative half to keep the question compact: 喜欢 (xǐhuan, \"to like\") becomes 喜不喜欢 (xǐ bu xǐhuan), not the longer 喜欢不喜欢 (though the full form is also acceptable and unambiguous).",
+      "Just as with 吗, A-not-A cannot be combined with an actual question word (什么/谁/哪/etc.) or with 吗 itself — a sentence is asked one way or the other, never both. 你有没有时间？ from HSK1 is in fact this exact pattern applied to 有: 有 + 没有."
+    ],
+    "pattern": "V/Adj + 不 + V/Adj (+ O)？",
+    "examples": [
+      { "hanzi": "你去不去？", "pinyin": "Nǐ qù bu qù?", "english": "Are you going or not?" },
+      { "hanzi": "这个好不好？", "pinyin": "Zhège hǎo bu hǎo?", "english": "Is this good?" },
+      { "hanzi": "你是不是老师？", "pinyin": "Nǐ shì bu shì lǎoshī?", "english": "Are you a teacher?" },
+      { "hanzi": "你喜不喜欢喝茶？", "pinyin": "Nǐ xǐ bu xǐhuan hē chá?", "english": "Do you like drinking tea?" }
+    ]
+  },
+  {
+    "id": "hsk2-ch3-deshihou",
+    "chapter": "Chapter 3: Time Clauses — 的时候, 以前, 以后",
+    "hskLevel": 2,
+    "title": "的时候 — \"When...\"",
+    "theory": [
+      "的时候 (de shíhou, literally \"the time of...\") attaches to the end of a clause (a verb phrase, adjective, or even just a noun) to mean \"when [that clause happens/happened]\": 吃饭的时候 (chīfàn de shíhou), \"when eating.\" The whole clause-plus-的时候 phrase then functions as a time word and goes before the main verb, following the same word-order rule as all other time expressions from HSK1: 我吃饭的时候看电视 (Wǒ chīfàn de shíhou kàn diànshì), \"I watch TV while eating.\"",
+      "的时候 works just as naturally with an adjective or a noun-based description of a life stage as with a verb: 我小的时候 (wǒ xiǎo de shíhou), \"when I was young\" (小 = young/small, functioning as the \"clause\"); 学生的时候 (xuésheng de shíhou), \"when [I was] a student.\"",
+      "Unlike English \"when,\" 的时候 does not need any tense marking of its own — whether the described time is past, present, or future is understood from context or from other words in the sentence (like 昨天 or 以后), not from 的时候 itself."
+    ],
+    "pattern": "[Clause] + 的时候，...。",
+    "examples": [
+      { "hanzi": "我吃饭的时候看电视。", "pinyin": "Wǒ chīfàn de shíhou kàn diànshì.", "english": "I watch TV while eating." },
+      { "hanzi": "我小的时候很喜欢画画儿。", "pinyin": "Wǒ xiǎo de shíhou hěn xǐhuan huà huàr.", "english": "When I was young, I loved drawing." },
+      { "hanzi": "下雨的时候，我们在家看书。", "pinyin": "Xià yǔ de shíhou, wǒmen zài jiā kàn shū.", "english": "When it rains, we read at home." },
+      { "hanzi": "你来的时候请带一本书。", "pinyin": "Nǐ lái de shíhou qǐng dài yì běn shū.", "english": "When you come, please bring a book." }
+    ]
+  },
+  {
+    "id": "hsk2-ch3-yiqian-yihou",
+    "chapter": "Chapter 3: Time Clauses — 的时候, 以前, 以后",
+    "hskLevel": 2,
+    "title": "以前 and 以后 — \"Before...\" and \"After...\"",
+    "theory": [
+      "以前 (yǐqián, \"before\") and 以后 (yǐhòu, \"after\") attach to the end of a time word, a duration, or a full verb phrase to establish a before/after relationship: 三点以前 (sān diǎn yǐqián), \"before 3 o'clock\"; 下课以后 (xiàkè yǐhòu), \"after class.\" As with 的时候, the whole phrase functions as a time word and precedes the main verb: 我下课以后去买东西 (Wǒ xiàkè yǐhòu qù mǎi dōngxi), \"I'll go shopping after class.\"",
+      "On their own, without an attached clause, 以前 and 以后 mean simply \"before/in the past\" and \"after this/from now on,\" referring to the present moment as the implicit reference point: 以前我不会说中文 (Yǐqián wǒ bú huì shuō Zhōngwén), \"Before, I couldn't speak Chinese.\"",
+      "A verb phrase before 以前 describes something that has NOT yet happened relative to the reference point, which can feel counterintuitive: 睡觉以前 (shuìjiào yǐqián), \"before sleeping,\" describes an action taken prior to an event that hasn't been marked as complete — no 了 is used on the verb before 以前: 睡觉以前，我看书 (Shuìjiào yǐqián, wǒ kàn shū), \"Before sleeping, I read.\"",
+      "后来 (hòulái, \"afterward/later on\") is related but distinct: unlike 以后, which attaches to a specific clause or time word, 后来 stands alone at the start of a sentence narrating what happened next in a story, purely about sequence in the past: 后来我们成了好朋友 (Hòulái wǒmen chéng le hǎo péngyou), \"Afterward, we became good friends.\""
+    ],
+    "pattern": "[Clause/Time] + 以前/以后，...。",
+    "examples": [
+      { "hanzi": "下课以后我去买东西。", "pinyin": "Xiàkè yǐhòu wǒ qù mǎi dōngxi.", "english": "I'll go shopping after class." },
+      { "hanzi": "睡觉以前，我看书。", "pinyin": "Shuìjiào yǐqián, wǒ kàn shū.", "english": "Before sleeping, I read." },
+      { "hanzi": "以前我不会说中文。", "pinyin": "Yǐqián wǒ bú huì shuō Zhōngwén.", "english": "Before, I couldn't speak Chinese." },
+      { "hanzi": "后来我们成了好朋友。", "pinyin": "Hòulái wǒmen chéng le hǎo péngyou.", "english": "Afterward, we became good friends." }
+    ]
+  },
+  {
+    "id": "hsk2-ch4-guo-experience",
+    "chapter": "Chapter 4: Talking About Experience — 过 (guo)",
+    "hskLevel": 2,
+    "title": "过 — \"Have Ever Done\" (Experiential Aspect)",
+    "theory": [
+      "Attached directly after a verb, 过 (guo, neutral tone) marks that an action has been experienced at least once at some unspecified point in the past — the emphasis is on the experience itself having happened, not on when or how many times: 我去过中国 (Wǒ qùguo Zhōngguó), \"I've been to China (at some point in my life).\"",
+      "This is meaningfully different from the completed-action 了 covered in HSK1: 我去了中国 reports a specific, often recent trip as a completed event, while 我去过中国 simply states that the experience of going is part of your history, with no implication about when. The two can combine — 我去过中国三次了 (Wǒ qùguo Zhōngguó sān cì le), \"I've been to China three times [so far]\" — using 过 for the experience and a trailing 了 to mark this as the current, still-relevant count.",
+      "Negation uses 没(有), and 过 stays attached to the verb (unlike completed-action 了, which drops entirely under negation): 我没去过中国 (Wǒ méi qùguo Zhōngguó), \"I've never been to China.\" This is worth contrasting directly with HSK1's 了 rule: 了 disappears when negated, 过 does not.",
+      "The question form follows the regular patterns already known: 你去过中国吗？ or the A-not-A form 你去没去过中国？ both ask \"Have you ever been to China?\""
+    ],
+    "pattern": "S + V + 过 + (O)。　·　S + 没(有) + V + 过 + (O)。",
+    "examples": [
+      { "hanzi": "我去过中国。", "pinyin": "Wǒ qùguo Zhōngguó.", "english": "I've been to China (before)." },
+      { "hanzi": "我没去过中国。", "pinyin": "Wǒ méi qùguo Zhōngguó.", "english": "I've never been to China." },
+      { "hanzi": "你吃过中国菜吗？", "pinyin": "Nǐ chīguo Zhōngguó cài ma?", "english": "Have you ever eaten Chinese food?" },
+      { "hanzi": "我看过这个电影三次了。", "pinyin": "Wǒ kànguo zhège diànyǐng sān cì le.", "english": "I've watched this movie three times so far." }
+    ]
+  },
+  {
+    "id": "hsk2-ch5-lihe-verbs",
+    "chapter": "Chapter 5: Separable Verbs (离合词) — 见面, 帮忙, 结婚, 毕业, 生气",
+    "hskLevel": 2,
+    "title": "Separable Verbs — 见面, 帮忙, 结婚, 毕业, 生气, and More",
+    "theory": [
+      "A number of common two-syllable \"verbs\" in Chinese are actually verb+object compounds fused into a single dictionary word — called 离合词 (líhécí, \"separable words\"). 见面 (jiànmiàn, \"to meet\") breaks down as 见 (see) + 面 (face); 帮忙 (bāngmáng, \"to help\") as 帮 (help) + 忙 (a favor); 结婚 (jiéhūn, \"to marry\") as 结 (tie/form) + 婚 (marriage); similarly 毕业 (graduate), 生气 (get angry), 睡觉 (sleep), 游泳 (swim), 唱歌 (sing).",
+      "Because the second half is grammatically an object, these verbs cannot take a second, separate object directly after them the way an ordinary transitive verb can. You cannot say 见面他 to mean \"meet him\" — instead, the person must be introduced earlier with 跟 (gēn, \"with,\" from HSK1): 我跟他见面 (Wǒ gēn tā jiànmiàn), \"I meet with him.\" The same applies to 帮忙: not 帮忙我, but 帮我的忙 (bāng wǒ de máng) or simply the plain transitive verb 帮 alone: 帮我 (help me).",
+      "Aspect particles — 了, 过, 着 — insert directly between the two halves rather than attaching to the end of the whole compound: 见过面 (jiànguo miàn, \"have met [before]\"), not 见面过; 见了面 (jiàn le miàn, \"met\"), not 见面了. This mid-word insertion is the clearest sign that these are really verb+object pairs, not single indivisible verbs.",
+      "Quantity/frequency expressions also insert in the middle rather than following the whole word: 见过两次面 (jiànguo liǎng cì miàn), \"have met twice,\" not 见面过两次."
+    ],
+    "pattern": "V + (了/过/着) + O(second half)　·　跟 + Person + V(compound)",
+    "examples": [
+      { "hanzi": "我跟他见过面。", "pinyin": "Wǒ gēn tā jiànguo miàn.", "english": "I've met him before." },
+      { "hanzi": "你能帮我的忙吗？", "pinyin": "Nǐ néng bāng wǒ de máng ma?", "english": "Can you help me (out)?" },
+      { "hanzi": "他们结婚了。", "pinyin": "Tāmen jiéhūn le.", "english": "They got married." },
+      { "hanzi": "我明年毕业。", "pinyin": "Wǒ míngnián bìyè.", "english": "I graduate next year." }
+    ]
+  },
+  {
+    "id": "hsk2-ch6-result-wan-dong-dao-jian",
+    "chapter": "Chapter 6: Result Complements — 完, 懂, 到, 见, 错, 好",
+    "hskLevel": 2,
+    "title": "Common Result Complements — 完, 懂, 到, 见",
+    "theory": [
+      "A result complement is a second syllable attached directly after a verb that specifies the outcome the action reached — not just that the action happened, but that it succeeded in a particular way. 完 (wán, \"finish\") attaches to show an action was carried through to completion: 我吃完了 (Wǒ chī wán le), \"I've finished eating\" — a more specific claim than plain 我吃了 (Wǒ chī le), \"I ate,\" which says nothing about whether the food was finished.",
+      "懂 (dǒng, \"understand\") attaches after verbs of perception to confirm the perception succeeded in yielding comprehension: 听懂 (tīngdǒng, \"listen and understand\"), 看懂 (kàndǒng, \"read/watch and understand\"). 我听懂了 (Wǒ tīngdǒng le), \"I understood [what I heard],\" is different from just 我听了 (Wǒ tīng le), \"I listened\" — which says nothing about comprehension.",
+      "到 (dào, \"arrive/reach\") attaches to mark that an action successfully reached its target or goal: 找到 (zhǎodào, \"find\" — literally \"search and reach\"), 买到 (mǎidào, \"successfully buy/obtain\"), 听到/看到 (hear/see — perceiving something, distinct from 听懂/看懂's \"and understood it\"). 我找到钥匙了 (Wǒ zhǎodào yàoshi le), \"I found the keys.\"",
+      "见 (jiàn, \"perceive\") attaches similarly to verbs of perception, marking that a sensory perception simply registered, with no implication of understanding: 听见 (tīngjiàn, \"hear,\" a sound registering) vs. 听懂 (understood the content) — 我听见了，但没听懂 (Wǒ tīngjiàn le, dàn méi tīngdǒng), \"I heard it, but I didn't understand it,\" captures the exact contrast."
+    ],
+    "pattern": "V + 完/懂/到/见 (+ 了)。",
+    "examples": [
+      { "hanzi": "我吃完了。", "pinyin": "Wǒ chī wán le.", "english": "I've finished eating." },
+      { "hanzi": "你听懂了吗？", "pinyin": "Nǐ tīngdǒng le ma?", "english": "Did you understand (what you heard)?" },
+      { "hanzi": "我找到钥匙了。", "pinyin": "Wǒ zhǎodào yàoshi le.", "english": "I found the keys." },
+      { "hanzi": "我听见了，但没听懂。", "pinyin": "Wǒ tīngjiàn le, dàn méi tīngdǒng.", "english": "I heard it, but I didn't understand it." }
+    ]
+  },
+  {
+    "id": "hsk2-ch6-result-cuo-hao-negation",
+    "chapter": "Chapter 6: Result Complements — 完, 懂, 到, 见, 错, 好",
+    "hskLevel": 2,
+    "title": "More Result Complements and Negation — 错, 好, and Negating with 没",
+    "theory": [
+      "错 (cuò, \"wrong/mistaken\") attaches after a verb to show the action was carried out, but incorrectly: 写错 (xiěcuò, \"write incorrectly\"), 说错 (shuōcuò, \"misspeak\"), 听错 (tīngcuò, \"mishear\"). 我写错了 (Wǒ xiěcuò le), \"I wrote it wrong,\" focuses on the mistaken action itself.",
+      "好 (hǎo) as a result complement (distinct from its ordinary adjective use, \"good\") marks that an action was completed satisfactorily/properly, ready for use: 准备好 (zhǔnbèi hǎo, \"get fully ready\"), 做好 (zuòhǎo, \"get [it] done properly\"), 说好 (shuōhǎo, \"settle/agree on [something]\"). 我准备好了 (Wǒ zhǔnbèi hǎo le), \"I'm all ready.\"",
+      "All result complements — this section's and the previous one's — are negated with 没(有), exactly like completed-action 了 from HSK1, and the complement stays attached while the (usually optional after negation) 了 is dropped: 我没吃完 (Wǒ méi chī wán), \"I haven't finished eating\" (not 我没吃完了). This mirrors the 了/没 rule you already know — negation removes 了, not the complement.",
+      "Because a result complement already builds in an outcome, using 不 instead of 没 shifts the meaning to a general capability/willingness statement rather than a report about a specific event — this overlaps with the Potential Complement pattern (Chapter 8), where 不 is inserted between the verb and result to mean \"cannot achieve this result\": 我吃不完 (Wǒ chī bu wán), \"I can't finish eating [it, there's too much],\" is a different sentence from the simple negation 我没吃完 (haven't finished yet)."
+    ],
+    "pattern": "V + 错/好 (+ 了)。　·　S + 没 + V + Complement。",
+    "examples": [
+      { "hanzi": "我写错了一个字。", "pinyin": "Wǒ xiěcuò le yí ge zì.", "english": "I wrote one character wrong." },
+      { "hanzi": "我准备好了。", "pinyin": "Wǒ zhǔnbèi hǎo le.", "english": "I'm all ready." },
+      { "hanzi": "我没吃完。", "pinyin": "Wǒ méi chī wán.", "english": "I haven't finished eating." },
+      { "hanzi": "你说错了。", "pinyin": "Nǐ shuōcuò le.", "english": "You said it wrong / You're mistaken." }
+    ]
+  },
+  {
+    "id": "hsk2-ch7-direction-simple",
+    "chapter": "Chapter 7: Directional Complements — 来/去 and 上/下/进/出/回/过 + 来/去",
+    "hskLevel": 2,
+    "title": "Simple Directional Complements — 来 and 去",
+    "theory": [
+      "Attached directly after a motion verb, 来 (lái, \"come,\" toward the speaker) and 去 (qù, \"go,\" away from the speaker) specify the direction of the motion relative to the speaker's position — the same directional meaning they have as standalone verbs (HSK1), just now riding on another verb: 进来 (jìnlái, \"come in\"), 出去 (chūqù, \"go out\").",
+      "If a place is mentioned, it's inserted between the main verb and 来/去, not after: 回家来 (huí jiā lái), \"come back home,\" with 家 (home) sitting between 回 (return) and 来 (toward the speaker). This mirrors the general rule that place phrases sit close to the verb they modify rather than trailing at the very end.",
+      "Whether to use 来 or 去 depends entirely on the speaker's (or, in narration, the reference point's) position, not on the action itself: someone calling from inside a house says 进来 (come in) to a person outside, while that same person outside, describing their own action, would say 我要进去 (Wǒ yào jìnqù), \"I'm going to go in\" — same action, opposite direction word, because the vantage point differs."
+    ],
+    "pattern": "V + 来/去。　·　V + Place + 来/去。",
+    "examples": [
+      { "hanzi": "请进来。", "pinyin": "Qǐng jìnlái.", "english": "Please come in." },
+      { "hanzi": "我要出去一下。", "pinyin": "Wǒ yào chūqù yíxià.", "english": "I'm going to step out for a bit." },
+      { "hanzi": "他回家来了。", "pinyin": "Tā huí jiā lái le.", "english": "He came back home." },
+      { "hanzi": "你上来吧。", "pinyin": "Nǐ shànglái ba.", "english": "Come on up." }
+    ]
+  },
+  {
+    "id": "hsk2-ch7-direction-compound",
+    "chapter": "Chapter 7: Directional Complements — 来/去 and 上/下/进/出/回/过 + 来/去",
+    "hskLevel": 2,
+    "title": "Compound Directional Complements — 上/下/进/出/回/过 + 来/去",
+    "theory": [
+      "The simple directional verbs from HSK1 — 上 (up), 下 (down), 进 (in), 出 (out), 回 (back), 过 (across/over) — can each combine with 来/去 to form a compound directional complement, attached after a main verb, giving a precise two-part picture: which direction relative to the ground/starting point, and which direction relative to the speaker. 拿上来 (ná shànglái), \"bring it up (here)\"; 走进去 (zǒu jìnqù), \"walk in (there).\"",
+      "This compound complement attaches after a main verb of motion or manner: 走 (walk), 拿 (carry), 跑 (run), 爬 (climb) are all common hosts: 他跑出去了 (Tā pǎo chūqù le), \"He ran out.\" The compound as a whole — 出去 — behaves just like the simple 来/去 from the previous section, just adding the extra layer of 上/下/进/出/回/过.",
+      "As with simple directional complements, an object referring to a place is inserted before 来/去 (after the 上/下/进/出/回/过 part): 他走进教室来了 (Tā zǒu jìn jiàoshì lái le), \"He walked into the classroom (toward here),\" with 教室 (classroom) sitting between 进 and 来.",
+      "Many of these compounds have taken on extended, non-literal meanings beyond pure physical direction: 想出来 (xiǎng chūlái, literally \"think out\"), meaning \"figure out/come up with [an idea],\" no longer describes physical motion at all."
+    ],
+    "pattern": "V + 上/下/进/出/回/过 + 来/去 + (Place before 来/去)。",
+    "examples": [
+      { "hanzi": "他跑出去了。", "pinyin": "Tā pǎo chūqù le.", "english": "He ran out." },
+      { "hanzi": "请把书拿上来。", "pinyin": "Qǐng bǎ shū ná shànglái.", "english": "Please bring the book up here." },
+      { "hanzi": "他走进教室来了。", "pinyin": "Tā zǒu jìn jiàoshì lái le.", "english": "He walked into the classroom." },
+      { "hanzi": "我想出来一个办法。", "pinyin": "Wǒ xiǎng chūlái yí ge bànfǎ.", "english": "I've thought of a solution." }
+    ]
+  },
+  {
+    "id": "hsk2-ch8-de-attributive",
+    "chapter": "Chapter 8: The Three \"De\" Particles — 的, 得, 地, and Potential Complements",
+    "hskLevel": 2,
+    "title": "的 as a General Attributive Marker (Beyond Possession)",
+    "theory": [
+      "HSK1 introduced 的 for possession (我的书, \"my book\"). The same particle has a much broader job: attaching almost any descriptive word or phrase to a noun that follows, not just a possessor. A simple adjective: 红色的苹果 (hóngsè de píngguǒ), \"the red apple.\" A phrase describing what something is characterized by: 学中文的学生 (xué Zhōngwén de xuésheng), \"students who study Chinese.\"",
+      "Most strikingly, an entire clause can sit in front of 的 to modify a noun, functioning much like an English relative clause (\"the book that I bought\") but with the structure reversed — the description comes first, then 的, then the noun, with no separate word for \"that/which\": 我昨天买的书 (wǒ zuótiān mǎi de shū), literally \"I yesterday bought 的 book,\" meaning \"the book I bought yesterday.\" This is simply the same possessive-style 的 pattern (X + 的 + Noun) from HSK1, just with X now being a full clause instead of a single possessor noun.",
+      "Single-syllable adjectives usually attach directly to the noun without 的 when they form a fixed, tightly-bound description (红花, \"red flower\"), while a two-syllable or more elaborate description almost always keeps 的: 漂亮的花 (piàoliang de huā), \"a beautiful flower.\" This distinction is a matter of degree rather than a hard rule, and native intuition develops with exposure."
+    ],
+    "pattern": "[Descriptive Word/Phrase/Clause] + 的 + Noun",
+    "examples": [
+      { "hanzi": "红色的苹果很好吃。", "pinyin": "Hóngsè de píngguǒ hěn hǎochī.", "english": "The red apple is delicious." },
+      { "hanzi": "我昨天买的书很有意思。", "pinyin": "Wǒ zuótiān mǎi de shū hěn yǒu yìsi.", "english": "The book I bought yesterday is interesting." },
+      { "hanzi": "那个穿红衣服的人是我朋友。", "pinyin": "Nàge chuān hóng yīfu de rén shì wǒ péngyou.", "english": "That person wearing red is my friend." },
+      { "hanzi": "学中文的学生越来越多。", "pinyin": "Xué Zhōngwén de xuésheng yuè lái yuè duō.", "english": "There are more and more students studying Chinese." }
+    ]
+  },
+  {
+    "id": "hsk2-ch8-de-degree-complement",
+    "chapter": "Chapter 8: The Three \"De\" Particles — 的, 得, 地, and Potential Complements",
+    "hskLevel": 2,
+    "title": "The Degree Complement 得 (de) — V/Adj + 得 + Description",
+    "theory": [
+      "得 (de, neutral tone — a completely different word from 的, despite sounding identical) attaches directly after a verb or adjective to introduce a description of the degree or manner of that verb/adjective, most often translated with \"so...that\" or a simple adverb: 他跑得很快 (Tā pǎo de hěn kuài), \"He runs fast\" (literally \"he runs 得 very fast\"). 忙得没有时间吃饭 (máng de méiyǒu shíjiān chīfàn), \"so busy that there's no time to eat,\" shows how far the description after 得 can extend, sometimes into a full clause.",
+      "Unlike an ordinary adverb placed before the verb, 得 requires the description to come after the verb — this is the structural signal for \"this is a degree/manner complement,\" distinct from every adverb-before-verb pattern seen so far (很, 都, 也, 一起, all from HSK1).",
+      "If the verb already has an object, the verb must be repeated before 得 introduces the complement, since 得 always attaches directly to the verb: 他说中文说得很好 (Tā shuō Zhōngwén shuō de hěn hǎo), \"He speaks Chinese well\" — 说 (speak) appears twice: once with its object 中文, and again immediately before 得. Dropping the object entirely (他说得很好) is also fine when it's already clear from context.",
+      "Negation happens inside the complement, after 得, not on the main verb: 他跑得不快 (Tā pǎo de bú kuài), \"He doesn't run fast\" — not 他不跑得快."
+    ],
+    "pattern": "V(+O+V) + 得 + (不) + Description。",
+    "examples": [
+      { "hanzi": "他跑得很快。", "pinyin": "Tā pǎo de hěn kuài.", "english": "He runs fast." },
+      { "hanzi": "他说中文说得很好。", "pinyin": "Tā shuō Zhōngwén shuō de hěn hǎo.", "english": "He speaks Chinese well." },
+      { "hanzi": "我忙得没有时间吃饭。", "pinyin": "Wǒ máng de méiyǒu shíjiān chīfàn.", "english": "I'm so busy I don't have time to eat." },
+      { "hanzi": "他跑得不快。", "pinyin": "Tā pǎo de bú kuài.", "english": "He doesn't run fast." }
+    ]
+  },
+  {
+    "id": "hsk2-ch8-potential-complement",
+    "chapter": "Chapter 8: The Three \"De\" Particles — 的, 得, 地, and Potential Complements",
+    "hskLevel": 2,
+    "title": "Potential Complements — V + 得/不 + Result/Direction",
+    "theory": [
+      "Inserting 得 (de) or 不 (bù) between a verb and a result complement (Chapter 6) or directional complement (Chapter 7) creates a potential complement, stating whether the action is capable of reaching that result — \"can/can't [verb] to the point of [result].\" 听得懂 (tīng de dǒng), \"can understand by listening\"; 听不懂 (tīng bu dǒng), \"can't understand by listening\" — built directly from 听懂 with 得/不 spliced into the middle.",
+      "This is structurally distinct from, but easy to confuse with, the plain negation of a result complement (没 + V + Result, e.g. 没听懂, \"didn't [end up] understanding\"). 没听懂 reports a specific past event's outcome; 听不懂 states a general capability — 我说中文，但是他听不懂 (Wǒ shuō Zhōngwén, dànshì tā tīng bu dǒng), \"I speak Chinese, but he can't understand it,\" describes an ongoing inability, not a one-time failure.",
+      "The same 得/不 insertion works with directional complements: 上得去 (shàng de qù, \"can go up\") and 上不去 (shàng bu qù, \"can't go up\") — e.g. 箱子太重，我拿不上去 (Xiāngzi tài zhòng, wǒ ná bu shàngqù), \"The box is too heavy, I can't carry it up.\"",
+      "A small number of potential complements are frozen, very common expressions worth learning as set phrases: 来得及 (lái de jí, \"there's still time / can make it in time\") and 来不及 (lái bu jí, \"there's no time left / too late\") are best learned directly as a pair rather than derived from an independently common result complement."
+    ],
+    "pattern": "V + 得/不 + Result/Direction。",
+    "examples": [
+      { "hanzi": "你听得懂吗？", "pinyin": "Nǐ tīng de dǒng ma?", "english": "Can you understand (by listening)?" },
+      { "hanzi": "我说中文，但是他听不懂。", "pinyin": "Wǒ shuō Zhōngwén, dànshì tā tīng bu dǒng.", "english": "I speak Chinese, but he can't understand it." },
+      { "hanzi": "箱子太重，我拿不上去。", "pinyin": "Xiāngzi tài zhòng, wǒ ná bu shàngqù.", "english": "The box is too heavy, I can't carry it up." },
+      { "hanzi": "快点儿，来得及。", "pinyin": "Kuài diǎnr, lái de jí.", "english": "Hurry up, there's still time." }
+    ]
+  },
+  {
+    "id": "hsk2-ch8-de-adverbial",
+    "chapter": "Chapter 8: The Three \"De\" Particles — 的, 得, 地, and Potential Complements",
+    "hskLevel": 2,
+    "title": "地 — Marking Adverbials Before a Verb (的 vs 得 vs 地 Recap)",
+    "theory": [
+      "地 (de, neutral tone — the third identically-pronounced \"de,\" after 的 and 得) attaches after a descriptive word — almost always a two-syllable adjective or a phrase — to turn it into an adverbial modifying the verb that follows: 高兴地说 (gāoxìng de shuō), \"said happily,\" 认真地学习 (rènzhēn de xuéxí), \"study seriously.\" Unlike 得's degree complement, which describes the verb from after it, 地 always sits before the verb it modifies.",
+      "Only descriptive words substantial enough to carry real manner-meaning typically take 地 — most single-syllable adjectives skip it and simply sit before the verb bare, the same way 很 + adjective sentences work as predicates (HSK1): 快走 (kuài zǒu, \"walk quickly\") rather than 快地走. Two-syllable and more elaborate descriptions almost always keep 地: 慢慢地走 (mànmàn de zǒu), \"walk slowly.\"",
+      "With all three \"de\" particles now introduced, here's the full contrast in one place: 的 attaches a description to a following NOUN (漂亮的花, \"a beautiful flower\"); 地 attaches a description to a following VERB, describing how the action is done (慢慢地走, \"walk slowly\"); 得 attaches after a verb/adjective to describe the resulting degree or manner (走得很慢, \"walks so slowly,\" describing the walking after the fact). All three are unstressed and pronounced identically as \"de\" in speech — only the character written, and its position relative to the verb, distinguishes them."
+    ],
+    "pattern": "Adv/Adj + 地 + V。",
+    "examples": [
+      { "hanzi": "他高兴地说。", "pinyin": "Tā gāoxìng de shuō.", "english": "He said (it) happily." },
+      { "hanzi": "请慢慢地走。", "pinyin": "Qǐng mànmàn de zǒu.", "english": "Please walk slowly." },
+      { "hanzi": "她认真地学习中文。", "pinyin": "Tā rènzhēn de xuéxí Zhōngwén.", "english": "She studies Chinese seriously." },
+      { "hanzi": "孩子们高兴地跑出去玩儿。", "pinyin": "Háizimen gāoxìng de pǎo chūqù wánr.", "english": "The children ran out happily to play." }
+    ]
+  },
+  {
+    "id": "hsk2-ch9-ba",
+    "chapter": "Chapter 9: The 把 and 被 Constructions",
+    "hskLevel": 2,
+    "title": "把 (bǎ) — Disposal/Handling Construction",
+    "theory": [
+      "In an ordinary sentence, the object follows the verb (我吃了苹果, \"I ate the apple\"). The 把 construction moves the object in front of the verb instead, introduced by 把: 我把苹果吃了 (Wǒ bǎ píngguǒ chī le), same core meaning, but shifting emphasis onto what specifically happened to that object.",
+      "A bare 把 sentence with nothing after the verb is not grammatical — the verb almost always needs a complement of some kind following it: a result complement (把苹果吃完, \"eat the apple all the way\"), a directional complement (把书拿过来, \"bring the book over\"), 了 (把苹果吃了), or a location (把书放在桌子上, \"put the book on the table\"). This — something must follow the verb — is the single most important rule of the 把 construction.",
+      "把 is used specifically when the object is something specific and already known/identifiable to the listener (definite), never a brand-new, unspecified thing being introduced for the first time — you'd say 我买了一本书 (I bought a book — new information) but never 我把一本书买了 with an indefinite \"a book.\" 把 practically requires \"the,\" not \"a,\" in the English translation.",
+      "Negation and modal verbs go before 把, not between 把 and the object: 我没把作业做完 (Wǒ méi bǎ zuòyè zuò wán), \"I didn't finish the homework,\" 我要把这个问题解决 (Wǒ yào bǎ zhège wèntí jiějué), \"I want to resolve this problem.\""
+    ],
+    "pattern": "S + 把 + O + V + Complement。",
+    "examples": [
+      { "hanzi": "我把苹果吃了。", "pinyin": "Wǒ bǎ píngguǒ chī le.", "english": "I ate the apple (up)." },
+      { "hanzi": "请把书放在桌子上。", "pinyin": "Qǐng bǎ shū fàng zài zhuōzi shang.", "english": "Please put the book on the table." },
+      { "hanzi": "我把作业做完了。", "pinyin": "Wǒ bǎ zuòyè zuò wán le.", "english": "I finished the homework." },
+      { "hanzi": "我没把作业做完。", "pinyin": "Wǒ méi bǎ zuòyè zuò wán.", "english": "I didn't finish the homework." }
+    ]
+  },
+  {
+    "id": "hsk2-ch9-bei",
+    "chapter": "Chapter 9: The 把 and 被 Constructions",
+    "hskLevel": 2,
+    "title": "被 (bèi) — The Passive Construction",
+    "theory": [
+      "被 (bèi) marks a passive sentence, where the subject is the one something happened TO, rather than the one doing the action — the doer (if mentioned) follows 被: 杯子被他打破了 (Bēizi bèi tā dǎpò le), \"The cup was broken by him.\" The doer can be omitted when unknown or unimportant: 杯子被打破了 (Bēizi bèi dǎpò le), \"The cup got broken.\"",
+      "Just like 把 sentences, a 被 sentence's verb almost always needs something following it — a result complement, 了, or similar — a bare verb with nothing after it sounds incomplete: 杯子被打破了 works because 破 (broken) is a result complement on 打 (hit/strike); a bare 杯子被打 sounds unfinished.",
+      "被 sentences are used far less often than passive voice in English — Chinese generally prefers describing events with an active subject whenever the doer is known, and reserves 被 specifically for situations with a genuinely negative or unfortunate outcome for the subject: 杯子被打破了 (something bad happened to the cup) is natural, while a neutral, positive, or engineered-sounding passive would usually be rephrased with an active subject instead of forced into 被.",
+      "让 (ràng) and 叫 (jiào) can substitute for 被 in casual speech with a similar passive-ish \"make/let X happen to someone\" sense, though they're better understood as separate causative verbs that happen to overlap with 被's territory rather than true synonyms — worth noting for recognition, without needing to master the distinction in depth yet."
+    ],
+    "pattern": "S + 被 + (Agent) + V + Complement。",
+    "examples": [
+      { "hanzi": "杯子被他打破了。", "pinyin": "Bēizi bèi tā dǎpò le.", "english": "The cup was broken by him." },
+      { "hanzi": "我的手机被偷了。", "pinyin": "Wǒ de shǒujī bèi tōu le.", "english": "My phone was stolen." },
+      { "hanzi": "这本书被借走了。", "pinyin": "Zhè běn shū bèi jiè zǒu le.", "english": "This book has been borrowed (taken out)." },
+      { "hanzi": "蛋糕被他吃了。", "pinyin": "Dàngāo bèi tā chī le.", "english": "The cake was eaten by him." }
+    ]
+  },
+  {
+    "id": "hsk2-ch10-gei-dui",
+    "chapter": "Chapter 10: Coverbs — 给 and 对",
+    "hskLevel": 2,
+    "title": "给 (gěi) and 对 (duì) — Marking the Beneficiary and Target of an Action",
+    "theory": [
+      "给 (gěi) as a coverb (a word that acts like a preposition, placed before the verb) marks who an action is done for or directed to — the beneficiary or recipient: 我给你打电话 (Wǒ gěi nǐ dǎ diànhuà), \"I'll call you\" (literally \"for/to you make-call\"). This is distinct from 给's plain verb use, \"to give\" (我给你一本书, \"I give you a book,\" where 给 itself is the main verb).",
+      "Many everyday actions naturally take a 给-phrase to specify who benefits: 给我买 (gěi wǒ mǎi, \"buy [it] for me\"), 给他写信 (gěi tā xiě xìn, \"write him a letter\"), 给妈妈打电话 (gěi māma dǎ diànhuà, \"call mom\"). The 给-phrase, like every coverb phrase, goes before the main verb, following the same word-order rule established for 在 and 从...到... in HSK1.",
+      "对 (duì) as a coverb marks the target or direction of an attitude, statement, or effect — roughly \"toward/regarding\": 对我说 (duì wǒ shuō, \"say to me\"), 他对中国历史很感兴趣 (Tā duì Zhōngguó lìshǐ hěn gǎn xìngqù), \"He's very interested in Chinese history.\" 对 also appears in the common evaluative pattern 对身体好/不好 (duì shēntǐ hǎo/bù hǎo), \"good/bad for one's health.\"",
+      "The core difference: 给 marks who receives the benefit or result of an action (a person actively affected, often the indirect object of a verb like give/call/write/buy), while 对 marks the target of an attitude, feeling, statement, or effect (often not directly \"receiving\" anything, just being the topic something is oriented toward)."
+    ],
+    "pattern": "S + 给/对 + Person/Topic + V(+O)。",
+    "examples": [
+      { "hanzi": "我给你打电话。", "pinyin": "Wǒ gěi nǐ dǎ diànhuà.", "english": "I'll call you." },
+      { "hanzi": "请给我们介绍一下。", "pinyin": "Qǐng gěi wǒmen jièshào yíxià.", "english": "Please give us an introduction." },
+      { "hanzi": "他对中国历史很感兴趣。", "pinyin": "Tā duì Zhōngguó lìshǐ hěn gǎn xìngqù.", "english": "He's very interested in Chinese history." },
+      { "hanzi": "运动对身体很好。", "pinyin": "Yùndòng duì shēntǐ hěn hǎo.", "english": "Exercise is good for your health." }
+    ]
+  },
+  {
+    "id": "hsk2-ch11-bi-comparison",
+    "chapter": "Chapter 11: Comparisons and Degree — 比, 没有, 一样, 越来越, 极了",
+    "hskLevel": 2,
+    "title": "Basic 比 Comparisons (including 更/还)",
+    "theory": [
+      "比 (bǐ) compares two things directly, with the structure A + 比 + B + Adjective, meaning \"A is more [adjective] than B\": 他比我高 (Tā bǐ wǒ gāo), \"He is taller than me.\" 很 is dropped in a 比 sentence — a bare adjective is enough, since 比 itself already establishes the comparison; adding 很 back in (他比我很高) is a common but incorrect beginner habit.",
+      "To specify by how much, a quantity follows the adjective: 他比我高五公分 (Tā bǐ wǒ gāo wǔ gōngfēn), \"He is 5 centimeters taller than me.\" 一点儿 (HSK1) and 得多 work here to mean \"a little more\" and \"a lot more\": 他比我高一点儿 (a little taller), 他比我高得多 (much taller).",
+      "更 (gèng) or 还 (hái) can be inserted directly before the adjective to mean \"even more\" — useful when comparing within an already-established comparison: 他很高，但是他哥哥更高 (Tā hěn gāo, dànshì tā gēge gèng gāo), \"He's tall, but his older brother is even taller.\" Unlike plain 比 sentences, 更/还 here doesn't require an explicit 比-phrase.",
+      "Negating a 比 sentence uses 不比, but be careful: 他不比我高 does NOT simply mean \"he's shorter than me\" — it means \"he's not [necessarily] taller than me,\" a weaker claim that leaves open whether they're the same height. To directly state \"less than,\" Chinese generally prefers the 没有 pattern from the next section."
+    ],
+    "pattern": "A + 比 + B + Adj (+ Amount)。　·　A + 更/还 + Adj。",
+    "examples": [
+      { "hanzi": "他比我高。", "pinyin": "Tā bǐ wǒ gāo.", "english": "He is taller than me." },
+      { "hanzi": "他比我高五公分。", "pinyin": "Tā bǐ wǒ gāo wǔ gōngfēn.", "english": "He is 5 cm taller than me." },
+      { "hanzi": "他很高，但是他哥哥更高。", "pinyin": "Tā hěn gāo, dànshì tā gēge gèng gāo.", "english": "He's tall, but his older brother is even taller." },
+      { "hanzi": "今天比昨天冷一点儿。", "pinyin": "Jīntiān bǐ zuótiān lěng yìdiǎnr.", "english": "Today is a little colder than yesterday." }
+    ]
+  },
+  {
+    "id": "hsk2-ch11-meiyou-yiyang",
+    "chapter": "Chapter 11: Comparisons and Degree — 比, 没有, 一样, 越来越, 极了",
+    "hskLevel": 2,
+    "title": "没有 and 一样 — \"Not As...As\" and \"The Same As\"",
+    "theory": [
+      "没有 (méiyǒu) used between two things being compared, followed by an adjective, means \"A doesn't reach/measure up to B in [adjective]-ness\" — the natural way to say \"A is not as [adjective] as B,\" and the most common way to express the logical opposite of a 比 sentence: 我没有他高 (Wǒ méiyǒu tā gāo), \"I'm not as tall as he is.\" This is the same 没有 word from HSK1 (possession/existence) doing a new job here.",
+      "跟...一样 (gēn...yíyàng) states that two things are equal/the same in some respect: 我跟他一样高 (Wǒ gēn tā yíyàng gāo), \"I'm the same height as him.\" 一样 alone, without a following adjective, simply asserts sameness in general: 这两个一样 (Zhè liǎng ge yíyàng), \"These two are the same.\"",
+      "Negating 一样 with 不一样 states a plain difference without specifying direction: 我跟他不一样高 (Wǒ gēn tā bù yíyàng gāo), \"I'm not the same height as him\" (could be taller or shorter — unlike 没有, which specifically claims \"less than\").",
+      "Between these three tools — 比 (X is more than Y), 没有 (X is not as much as Y), 跟...一样 (X equals Y) — a learner now has a complete toolkit for any comparison."
+    ],
+    "pattern": "A + 没有 + B + Adj。　·　A + 跟 + B + (不)一样 (+ Adj)。",
+    "examples": [
+      { "hanzi": "我没有他高。", "pinyin": "Wǒ méiyǒu tā gāo.", "english": "I'm not as tall as he is." },
+      { "hanzi": "今天没有昨天热。", "pinyin": "Jīntiān méiyǒu zuótiān rè.", "english": "Today isn't as hot as yesterday." },
+      { "hanzi": "我跟他一样高。", "pinyin": "Wǒ gēn tā yíyàng gāo.", "english": "I'm the same height as him." },
+      { "hanzi": "这两件衣服不一样。", "pinyin": "Zhè liǎng jiàn yīfu bù yíyàng.", "english": "These two garments aren't the same." }
+    ]
+  },
+  {
+    "id": "hsk2-ch11-yuelaiyue",
+    "chapter": "Chapter 11: Comparisons and Degree — 比, 没有, 一样, 越来越, 极了",
+    "hskLevel": 2,
+    "title": "越来越 and 越...越... — \"More and More\" / \"The More...The More...\"",
+    "theory": [
+      "越来越 (yuè lái yuè) placed directly before an adjective or verb describes a quality that keeps intensifying over time, \"more and more ___\": 天气越来越冷 (Tiānqì yuè lái yuè lěng), \"The weather is getting colder and colder.\" The whole four-character sequence functions as a single fixed expression meaning \"increasingly.\"",
+      "The more general pattern 越 A 越 B links two clauses so that increasing A causes or accompanies increasing B, \"the more..., the more...\": 越吃越想吃 (yuè chī yuè xiǎng chī), \"the more you eat, the more you want to eat\"; 你越解释，我越不懂 (Nǐ yuè jiěshì, wǒ yuè bù dǒng), \"The more you explain, the less I understand\" — 越 can pair with a negative just as naturally as a positive.",
+      "越来越 is really a special case of this same 越...越... pattern, where the first half is fixed as 来 (roughly, \"as time comes/goes on\") rather than a specific described action — that's why 越来越 always describes something changing over time, while 越A越B can link any two related actions or qualities."
+    ],
+    "pattern": "S + 越来越 + Adj/V。　·　越 + A + 越 + B。",
+    "examples": [
+      { "hanzi": "天气越来越冷。", "pinyin": "Tiānqì yuè lái yuè lěng.", "english": "The weather is getting colder and colder." },
+      { "hanzi": "他的中文越来越好。", "pinyin": "Tā de Zhōngwén yuè lái yuè hǎo.", "english": "His Chinese is getting better and better." },
+      { "hanzi": "越吃越想吃。", "pinyin": "Yuè chī yuè xiǎng chī.", "english": "The more you eat, the more you want to eat." },
+      { "hanzi": "你越解释，我越不懂。", "pinyin": "Nǐ yuè jiěshì, wǒ yuè bù dǒng.", "english": "The more you explain, the less I understand." }
+    ]
+  },
+  {
+    "id": "hsk2-ch11-jile",
+    "chapter": "Chapter 11: Comparisons and Degree — 比, 没有, 一样, 越来越, 极了",
+    "hskLevel": 2,
+    "title": "极了 — \"Extremely ___\"",
+    "theory": [
+      "极了 (jíle) attaches directly after an adjective to intensify it to an extreme degree, \"extremely/incredibly ___\": 好极了 (hǎo jíle), \"great!/extremely good.\" This closely parallels 太...了 from HSK1 — both wrap an adjective with a fixed 了 at the end — but 极了 attaches only at the end and generally carries a more purely enthusiastic/exclamatory feel, without 太's frequent undertone of \"more than desirable.\"",
+      "极了 is used almost exclusively with positive or emphatic exclamations in everyday speech — 好极了！(great!), 漂亮极了 (gorgeous), 高兴极了 (thrilled) — and doesn't combine naturally with mundane, low-key adjectives the way 很 does.",
+      "A closely related, more casual/colloquial intensifier is 死了 (sǐle, literally \"died\"), attached the same way after an adjective, often for a complaint rather than a compliment: 累死了 (lèi sǐle), \"dead tired,\" 热死了 (rè sǐle), \"unbearably hot.\" Despite the dramatic literal meaning, this is purely a figure of speech."
+    ],
+    "pattern": "Adj + 极了/死了。",
+    "examples": [
+      { "hanzi": "好极了！", "pinyin": "Hǎo jíle!", "english": "Great! / Extremely good!" },
+      { "hanzi": "这个地方漂亮极了。", "pinyin": "Zhège dìfang piàoliang jíle.", "english": "This place is gorgeous." },
+      { "hanzi": "听到这个消息，我高兴极了。", "pinyin": "Tīngdào zhège xiāoxi, wǒ gāoxìng jíle.", "english": "I was thrilled to hear this news." },
+      { "hanzi": "今天热死了。", "pinyin": "Jīntiān rè sǐle.", "english": "It's unbearably hot today." }
+    ]
+  },
+  {
+    "id": "hsk2-ch12-suiran-danshi",
+    "chapter": "Chapter 12: Complex Sentences and Connectors — 虽然...但是, 因为...所以, 如果...就, 不但...而且, 一边...一边, 除了...以外, 一...就...",
+    "hskLevel": 2,
+    "title": "虽然...但是 — Although...But",
+    "theory": [
+      "虽然 (suīrán, \"although\") opens the first clause and 但是 (dànshì, \"but\") opens the second, together framing a contrast between an expected implication and what actually happens: 虽然天气很冷，但是我们还是出去了 (Suīrán tiānqì hěn lěng, dànshì wǒmen háishi chūqù le), \"Although the weather was cold, we still went out.\" Unlike English, where using both \"although\" and \"but\" is considered redundant, Chinese requires both halves — dropping 但是 and using only 虽然 sounds incomplete.",
+      "可是 (kěshì) can substitute for 但是 with essentially the same meaning and function, a matter of style rather than grammar — 可是 tends to feel very slightly more conversational.",
+      "虽然 can move to the very start of the sentence or sit right after its own subject, whichever subject it belongs to: 他虽然很忙，但是每天都运动 (Tā suīrán hěn máng, dànshì měitiān dōu yùndòng), \"Although he's busy, he exercises every day\" — 虽然 here follows 他 because 他 is specifically the subject of the 虽然-clause."
+    ],
+    "pattern": "虽然 + A，但是/可是 + B。",
+    "examples": [
+      { "hanzi": "虽然天气很冷，但是我们还是出去了。", "pinyin": "Suīrán tiānqì hěn lěng, dànshì wǒmen háishi chūqù le.", "english": "Although the weather was cold, we still went out." },
+      { "hanzi": "他虽然很忙，但是每天都运动。", "pinyin": "Tā suīrán hěn máng, dànshì měitiān dōu yùndòng.", "english": "Although he's busy, he exercises every day." },
+      { "hanzi": "这个东西虽然贵，但是很好用。", "pinyin": "Zhège dōngxi suīrán guì, dànshì hěn hǎoyòng.", "english": "Although this thing is expensive, it's very useful." },
+      { "hanzi": "虽然我不会说中文，可是我听得懂。", "pinyin": "Suīrán wǒ bú huì shuō Zhōngwén, kěshì wǒ tīng de dǒng.", "english": "Although I can't speak Chinese, I can understand it." }
+    ]
+  },
+  {
+    "id": "hsk2-ch12-yinwei-suoyi",
+    "chapter": "Chapter 12: Complex Sentences and Connectors — 虽然...但是, 因为...所以, 如果...就, 不但...而且, 一边...一边, 除了...以外, 一...就...",
+    "hskLevel": 2,
+    "title": "因为...所以 — Because...So",
+    "theory": [
+      "因为 (yīnwèi, \"because\") introduces the reason, and 所以 (suǒyǐ, \"so/therefore\") introduces the result — again, unlike English, Chinese comfortably uses both together in one sentence: 因为下雨，所以我们没去公园 (Yīnwèi xià yǔ, suǒyǐ wǒmen méi qù gōngyuán), \"Because it rained, we didn't go to the park.\"",
+      "Either half can be dropped when the sentence structure or context already makes the logic clear. In casual speech, 因为 alone frequently answers a \"why\" question on its own, with 所以 simply unnecessary: A: 你为什么不去？B: 因为我很忙 (Yīnwèi wǒ hěn máng), \"Because I'm busy.\"",
+      "Word order is flexible in one specific way: the 因为-clause doesn't have to come first. 我们没去公园，因为下雨 (result first, reason second) is equally natural — but if both halves appear, 所以 must still directly precede the result clause."
+    ],
+    "pattern": "因为 + Reason，所以 + Result。",
+    "examples": [
+      { "hanzi": "因为下雨，所以我们没去公园。", "pinyin": "Yīnwèi xià yǔ, suǒyǐ wǒmen méi qù gōngyuán.", "english": "Because it rained, we didn't go to the park." },
+      { "hanzi": "我很累，因为昨天没睡好。", "pinyin": "Wǒ hěn lèi, yīnwèi zuótiān méi shuì hǎo.", "english": "I'm tired because I didn't sleep well last night." },
+      { "hanzi": "A: 你为什么不去？B: 因为我很忙。", "pinyin": "A: Nǐ wèishénme bú qù? B: Yīnwèi wǒ hěn máng.", "english": "A: Why aren't you going? B: Because I'm busy." },
+      { "hanzi": "因为他会说中文，所以公司请他去中国工作。", "pinyin": "Yīnwèi tā huì shuō Zhōngwén, suǒyǐ gōngsī qǐng tā qù Zhōngguó gōngzuò.", "english": "Because he can speak Chinese, the company sent him to work in China." }
+    ]
+  },
+  {
+    "id": "hsk2-ch12-ruguo-jiu",
+    "chapter": "Chapter 12: Complex Sentences and Connectors — 虽然...但是, 因为...所以, 如果...就, 不但...而且, 一边...一边, 除了...以外, 一...就...",
+    "hskLevel": 2,
+    "title": "如果...就 — If...Then",
+    "theory": [
+      "如果 (rúguǒ, \"if\") introduces a condition, and 就 (jiù, \"then\") introduces what follows from it: 如果明天下雨，我们就不去了 (Rúguǒ míngtiān xià yǔ, wǒmen jiù bú qù le), \"If it rains tomorrow, then we won't go.\" 就 sits directly before the verb of the second clause, after its own subject — the same position adverbs like 也/都 (HSK1) occupy.",
+      "如果 can be dropped in casual speech when context makes clear a condition is being stated, leaving just the 就-clause to carry the \"then\" meaning, though keeping 如果 is always safe and unambiguous, especially in writing.",
+      "的话 (dehuà) can optionally follow the condition clause for extra clarity/emphasis, especially useful when 如果 itself is dropped: 明天下雨的话，我们就不去了 (Míngtiān xià yǔ dehuà, wǒmen jiù bú qù le), same meaning. 如果 and 的话 can also be used together: 如果明天下雨的话，..."
+    ],
+    "pattern": "如果 + Condition (的话)，就 + Result。",
+    "examples": [
+      { "hanzi": "如果明天下雨，我们就不去了。", "pinyin": "Rúguǒ míngtiān xià yǔ, wǒmen jiù bú qù le.", "english": "If it rains tomorrow, we won't go." },
+      { "hanzi": "如果你有时间，就来我家玩儿吧。", "pinyin": "Rúguǒ nǐ yǒu shíjiān, jiù lái wǒ jiā wánr ba.", "english": "If you have time, come over to my place." },
+      { "hanzi": "你不喜欢的话，就不要买。", "pinyin": "Nǐ bù xǐhuan dehuà, jiù búyào mǎi.", "english": "If you don't like it, don't buy it." },
+      { "hanzi": "如果没有问题的话，我们就开始吧。", "pinyin": "Rúguǒ méiyǒu wèntí dehuà, wǒmen jiù kāishǐ ba.", "english": "If there are no questions, let's begin." }
+    ]
+  },
+  {
+    "id": "hsk2-ch12-budan-erqie",
+    "chapter": "Chapter 12: Complex Sentences and Connectors — 虽然...但是, 因为...所以, 如果...就, 不但...而且, 一边...一边, 除了...以外, 一...就...",
+    "hskLevel": 2,
+    "title": "不但...而且 — Not Only...But Also",
+    "theory": [
+      "不但 (búdàn, \"not only\") introduces the first, lesser point, and 而且 (érqiě, \"but also/moreover\") introduces a second, often stronger point about the same subject: 他不但会说中文，而且说得很好 (Tā búdàn huì shuō Zhōngwén, érqiě shuō de hěn hǎo), \"He can not only speak Chinese, but also speaks it well.\" Both halves build toward a stronger overall statement, unlike 虽然...但是, which sets up a contrast.",
+      "也 or 都 (HSK1) very often appears in the 而且 clause to reinforce the additive sense: 这个饭馆不但便宜，而且也很好吃 (Zhège fànguǎn búdàn piányi, érqiě yě hěn hǎochī), \"This restaurant is not only cheap, but also delicious.\" Adding 也/都 isn't required, but it's extremely common.",
+      "When the subject is the same across both clauses, 不但 typically comes after the subject. If the two clauses have different subjects, 不但 moves to the very front of the sentence instead: 不但他喜欢，我也喜欢 (Búdàn tā xǐhuan, wǒ yě xǐhuan), \"Not only does he like it, I do too.\""
+    ],
+    "pattern": "不但 + A，而且(也/都) + B。",
+    "examples": [
+      { "hanzi": "他不但会说中文，而且说得很好。", "pinyin": "Tā búdàn huì shuō Zhōngwén, érqiě shuō de hěn hǎo.", "english": "He can not only speak Chinese, but speaks it well." },
+      { "hanzi": "这个饭馆不但便宜，而且很好吃。", "pinyin": "Zhège fànguǎn búdàn piányi, érqiě hěn hǎochī.", "english": "This restaurant is not only cheap, but delicious." },
+      { "hanzi": "不但他喜欢，我也喜欢。", "pinyin": "Búdàn tā xǐhuan, wǒ yě xǐhuan.", "english": "Not only does he like it, I do too." },
+      { "hanzi": "她不但漂亮，而且很聪明。", "pinyin": "Tā búdàn piàoliang, érqiě hěn cōngming.", "english": "She's not only pretty, but also very smart." }
+    ]
+  },
+  {
+    "id": "hsk2-ch12-yibian-xianranhou",
+    "chapter": "Chapter 12: Complex Sentences and Connectors — 虽然...但是, 因为...所以, 如果...就, 不但...而且, 一边...一边, 除了...以外, 一...就...",
+    "hskLevel": 2,
+    "title": "一边...一边... and 先...然后... — Simultaneous and Sequential Actions",
+    "theory": [
+      "一边 A 一边 B (yìbiān A yìbiān B), with a verb phrase in each slot, describes two actions happening at the same time, done by the same person: 他一边吃饭一边看电视 (Tā yìbiān chīfàn yìbiān kàn diànshì), \"He eats while watching TV.\" Both 一边's are required — using only one sounds incomplete.",
+      "先 A 然后 B (xiān A rán hòu B) describes two actions in sequence — first one, then the other: 我们先吃饭，然后去看电影 (Wǒmen xiān chīfàn, ránhòu qù kàn diànyǐng), \"We'll eat first, then go watch a movie.\" 然后 can also link more than two steps in a longer sequence.",
+      "The key distinction: 一边...一边... requires true simultaneity by a single subject, while 先...然后... is strictly sequential — one action clearly finishes (or at least starts) before the next begins."
+    ],
+    "pattern": "一边 + V1，一边 + V2。　·　先 + V1，然后 + V2。",
+    "examples": [
+      { "hanzi": "他一边吃饭一边看电视。", "pinyin": "Tā yìbiān chīfàn yìbiān kàn diànshì.", "english": "He eats while watching TV." },
+      { "hanzi": "我们一边走一边聊天。", "pinyin": "Wǒmen yìbiān zǒu yìbiān liáotiān.", "english": "We chatted while walking." },
+      { "hanzi": "我们先吃饭，然后去看电影。", "pinyin": "Wǒmen xiān chīfàn, ránhòu qù kàn diànyǐng.", "english": "We'll eat first, then go watch a movie." },
+      { "hanzi": "先做作业，然后才能玩儿。", "pinyin": "Xiān zuò zuòyè, ránhòu cái néng wánr.", "english": "Do your homework first, then you can play." }
+    ]
+  },
+  {
+    "id": "hsk2-ch12-chule-yiwai",
+    "chapter": "Chapter 12: Complex Sentences and Connectors — 虽然...但是, 因为...所以, 如果...就, 不但...而且, 一边...一边, 除了...以外, 一...就...",
+    "hskLevel": 2,
+    "title": "除了...以外 — Besides/Except",
+    "theory": [
+      "除了 A 以外 (chúle A yǐwài) has two distinct meanings depending on what follows in the second clause. When the second clause continues with 还 (hái) or 也 (yě), the meaning is additive, \"besides A, also...\": 除了英语以外，他还会说法语 (Chúle Yīngyǔ yǐwài, tā hái huì shuō Fǎyǔ), \"Besides English, he can also speak French\" (he speaks both).",
+      "When the second clause instead uses 都 (dōu), the meaning flips to exclusive, \"except for A, all...\": 除了他以外，我们都去了 (Chúle tā yǐwài, wǒmen dōu qù le), \"Except for him, we all went\" (everyone but him went). Getting 还/也 vs. 都 right is what determines whether A is included in or excluded from the group being discussed.",
+      "以外 is frequently dropped in casual speech, leaving bare 除了, with the meaning unaffected: 除了他，我们都去了 works the same as the fuller version above."
+    ],
+    "pattern": "除了 + A + 以外，还/也 + B。(additive)　·　除了 + A + 以外，都 + B。(exclusive)",
+    "examples": [
+      { "hanzi": "除了英语以外，他还会说法语。", "pinyin": "Chúle Yīngyǔ yǐwài, tā hái huì shuō Fǎyǔ.", "english": "Besides English, he can also speak French." },
+      { "hanzi": "除了他以外，我们都去了。", "pinyin": "Chúle tā yǐwài, wǒmen dōu qù le.", "english": "Except for him, we all went." },
+      { "hanzi": "除了苹果，我什么水果都喜欢吃。", "pinyin": "Chúle píngguǒ, wǒ shénme shuǐguǒ dōu xǐhuan chī.", "english": "Except for apples, I like eating any fruit." },
+      { "hanzi": "除了周末以外，他每天都上班。", "pinyin": "Chúle zhōumò yǐwài, tā měitiān dōu shàngbān.", "english": "Except on weekends, he works every day." }
+    ]
+  },
+  {
+    "id": "hsk2-ch12-yi-jiu",
+    "chapter": "Chapter 12: Complex Sentences and Connectors — 虽然...但是, 因为...所以, 如果...就, 不但...而且, 一边...一边, 除了...以外, 一...就...",
+    "hskLevel": 2,
+    "title": "一...就... — As Soon As...Then...",
+    "theory": [
+      "一 A 就 B links two actions so that B follows immediately, automatically, upon A happening: 我一到家就打电话给你 (Wǒ yí dào jiā jiù dǎ diànhuà gěi nǐ), \"As soon as I get home, I'll call you.\" This pattern reuses 就 in essentially the same \"right away, promptly\" sense it carries elsewhere.",
+      "Because B follows so tightly and automatically from A, this pattern is often used for habits or near-automatic reactions, not just one-off plans: 他一喝咖啡就睡不着 (Tā yì hē kāfēi jiù shuì bu zháo), \"Whenever he drinks coffee, he can't fall asleep\" — describing a reliable pattern, not a single incident.",
+      "The subject of both clauses is usually the same person, and appears only once, before 一: 我一到家就打电话 (not 我一到家，我就打电话). When the two clauses have different subjects, each subject appears in its own clause: 老师一进教室，学生就安静了 (Lǎoshī yí jìn jiàoshì, xuésheng jiù ānjìng le), \"As soon as the teacher entered the classroom, the students quieted down.\""
+    ],
+    "pattern": "一 + A，就 + B。",
+    "examples": [
+      { "hanzi": "我一到家就打电话给你。", "pinyin": "Wǒ yí dào jiā jiù dǎ diànhuà gěi nǐ.", "english": "As soon as I get home, I'll call you." },
+      { "hanzi": "他一喝咖啡就睡不着。", "pinyin": "Tā yì hē kāfēi jiù shuì bu zháo.", "english": "Whenever he drinks coffee, he can't fall asleep." },
+      { "hanzi": "老师一进教室，学生就安静了。", "pinyin": "Lǎoshī yí jìn jiàoshì, xuésheng jiù ānjìng le.", "english": "As soon as the teacher entered, the students quieted down." },
+      { "hanzi": "我一看就懂了。", "pinyin": "Wǒ yí kàn jiù dǒng le.", "english": "I understood as soon as I looked at it." }
+    ]
+  },
+  {
+    "id": "hsk2-ch13-shi-de",
+    "chapter": "Chapter 13: 是...的 — Emphasizing Time, Place, or Manner",
+    "hskLevel": 2,
+    "title": "是...的 Construction",
+    "theory": [
+      "When talking about a specific past action that both speaker and listener already know happened, 是...的 shifts the focus from whether it happened (already assumed) to a specific detail about it — usually when, where, how, or with whom: 我是昨天来的 (Wǒ shì zuótiān lái de), \"It was yesterday that I came\" (as opposed to plain 我昨天来了, which simply reports that I came yesterday, without special emphasis).",
+      "是 sits before the detail being emphasized, and 的 caps off the end of the sentence: 我是坐飞机来的 (Wǒ shì zuò fēijī lái de), \"I came by plane\" (emphasizing the means); 我是在北京出生的 (Wǒ shì zài Běijīng chūshēng de), \"I was born in Beijing\" (emphasizing the place). 是 is frequently dropped in casual speech while 的 always stays: 我昨天来的 works just as well.",
+      "This construction is reserved for actions already completed and already established as fact, and is incompatible with 了 in the same clause. Compare with the completed-action 了 from HSK1: 我去了北京 simply reports a trip happened; 我是去年去北京的 (Wǒ shì qùnián qù Běijīng de) reports the same trip, but with \"last year\" as the specific piece of information being highlighted, presupposing the listener already knows the trip happened.",
+      "Negation places 不是 at the front, and 的 stays at the end: 我不是坐飞机来的，是坐火车来的 (Wǒ bú shì zuò fēijī lái de, shì zuò huǒchē lái de), \"I didn't come by plane, I came by train.\""
+    ],
+    "pattern": "S + 是 + [Time/Place/Manner] + V + 的。",
+    "examples": [
+      { "hanzi": "我是昨天来的。", "pinyin": "Wǒ shì zuótiān lái de.", "english": "It was yesterday that I came." },
+      { "hanzi": "我是坐飞机来的。", "pinyin": "Wǒ shì zuò fēijī lái de.", "english": "I came by plane." },
+      { "hanzi": "我是在北京出生的。", "pinyin": "Wǒ shì zài Běijīng chūshēng de.", "english": "I was born in Beijing." },
+      { "hanzi": "我不是坐飞机来的，是坐火车来的。", "pinyin": "Wǒ bú shì zuò fēijī lái de, shì zuò huǒchē lái de.", "english": "I didn't come by plane, I came by train." }
+    ]
+  },
+  {
+    "id": "hsk2-ch14-ci-bian",
+    "chapter": "Chapter 14: Frequency, Duration, and Timing Words — 次/遍, Verb+Duration, 又/再, 才/就, 还",
+    "hskLevel": 2,
+    "title": "次 and 遍 — Measure Words for Actions",
+    "theory": [
+      "Just as nouns need a measure word when counted (HSK1), actions need one too when counting how many times they occur. 次 (cì) is the general, all-purpose measure word for occurrences of an action: 我去过两次中国 (Wǒ qùguo liǎng cì Zhōngguó), \"I've been to China twice.\" It attaches after the verb (and after any experiential/completed aspect marker like 过 or 了).",
+      "遍 (biàn) is a more specific measure word meaning \"one complete pass/repetition from start to finish,\" used especially for reading, watching, or listening to something in its entirety: 我看了三遍这本书 (Wǒ kàn le sān biàn zhè běn shū), \"I've read this book three times [cover to cover].\" 次 could also be used here more generally, but 遍 specifically emphasizes each pass was complete.",
+      "When the object is a pronoun, the frequency phrase goes between the verb and the object: 我见过他两次 (Wǒ jiànguo tā liǎng cì), \"I've met him twice.\" When the object is a longer/more specific noun phrase, the frequency phrase more naturally comes right after the verb, before the object.",
+      "Recall from Chapter 5 that with a separable verb (离合词), the frequency phrase inserts into the middle of the compound rather than trailing the whole word: 见过两次面 (jiànguo liǎng cì miàn), not 见面过两次."
+    ],
+    "pattern": "V (+过/了) + Number + 次/遍 (+ O)。",
+    "examples": [
+      { "hanzi": "我去过两次中国。", "pinyin": "Wǒ qùguo liǎng cì Zhōngguó.", "english": "I've been to China twice." },
+      { "hanzi": "我看了三遍这本书。", "pinyin": "Wǒ kàn le sān biàn zhè běn shū.", "english": "I've read this book three times." },
+      { "hanzi": "我见过他两次。", "pinyin": "Wǒ jiànguo tā liǎng cì.", "english": "I've met him twice." },
+      { "hanzi": "请再说一遍。", "pinyin": "Qǐng zài shuō yí biàn.", "english": "Please say it again (once more, in full)." }
+    ]
+  },
+  {
+    "id": "hsk2-ch14-duration",
+    "chapter": "Chapter 14: Frequency, Duration, and Timing Words — 次/遍, Verb+Duration, 又/再, 才/就, 还",
+    "hskLevel": 2,
+    "title": "Verb + Duration — Stating How Long",
+    "theory": [
+      "To state how long an action lasted, a duration phrase (a length of time — 三年, 两个小时, 半天, etc.) follows directly after the verb, in the same slot occupied by 次/遍 in the previous section: 我学了三年中文 (Wǒ xué le sān nián Zhōngwén), \"I studied Chinese for three years.\" If there's a specific noun object, the duration typically comes right after the verb and before the object, though repeating the verb (我学中文学了三年) is equally natural and sometimes clearer.",
+      "A completed, closed-off duration uses 了 only after the verb, as above. To describe a duration that started in the past and is STILL continuing right now, a second 了 is added at the very end of the sentence: 我学中文学了三年了 (Wǒ xué Zhōngwén xué le sān nián le), \"I've been studying Chinese for three years [and I still am].\" The trailing 了 here is the same sentence-final \"still relevant now\" 了 from HSK1.",
+      "For a duration referring to a gap since something last happened, the duration phrase moves to before the verb instead, often paired with 没: 我三年没去中国了 (Wǒ sān nián méi qù Zhōngguó le), \"I haven't been to China in three years\" — the duration here measures the gap since the last occurrence, not how long the going-to-China itself lasted."
+    ],
+    "pattern": "V + 了 + Duration + (了)。　·　Duration + 没 + V + 了。",
+    "examples": [
+      { "hanzi": "我学了三年中文。", "pinyin": "Wǒ xué le sān nián Zhōngwén.", "english": "I studied Chinese for three years." },
+      { "hanzi": "我学中文学了三年了。", "pinyin": "Wǒ xué Zhōngwén xué le sān nián le.", "english": "I've been studying Chinese for three years (and counting)." },
+      { "hanzi": "我三年没去中国了。", "pinyin": "Wǒ sān nián méi qù Zhōngguó le.", "english": "I haven't been to China in three years." },
+      { "hanzi": "他睡了八个小时。", "pinyin": "Tā shuì le bā ge xiǎoshí.", "english": "He slept for eight hours." }
+    ]
+  },
+  {
+    "id": "hsk2-ch14-you-zai",
+    "chapter": "Chapter 14: Frequency, Duration, and Timing Words — 次/遍, Verb+Duration, 又/再, 才/就, 还",
+    "hskLevel": 2,
+    "title": "又 vs. 再 — Repetition: Already Happened vs. Will Happen",
+    "theory": [
+      "Both 又 (yòu) and 再 (zài) mean \"again,\" but they split cleanly along one line: 又 is for a repetition that has already happened, and 再 is for a repetition that is still to come: 他昨天来了，今天又来了 (Tā zuótiān lái le, jīntiān yòu lái le), \"He came yesterday, and came again today\" [already happened] vs. 他今天没来，希望他明天再来 (Tā jīntiān méi lái, xīwàng tā míngtiān zài lái), \"He didn't come today, I hope he comes again tomorrow\" [not yet happened].",
+      "再 is the natural choice in requests, invitations, and anything not yet realized: 请再说一遍 (Qǐng zài shuō yí biàn), \"Please say it again\" (the repetition hasn't happened yet). 又 would sound wrong here, since nothing has actually recurred yet.",
+      "A useful shortcut: 又 pairs naturally with 了 (since it reports something that already came to pass — 又...了), while 再 essentially never takes 了 in the same clause, since by definition it refers to something that hasn't happened yet."
+    ],
+    "pattern": "[Already happened] + 又 + V + 了。　·　[Not yet happened] + 再 + V。",
+    "examples": [
+      { "hanzi": "他昨天来了，今天又来了。", "pinyin": "Tā zuótiān lái le, jīntiān yòu lái le.", "english": "He came yesterday, and came again today." },
+      { "hanzi": "请再说一遍。", "pinyin": "Qǐng zài shuō yí biàn.", "english": "Please say it again." },
+      { "hanzi": "我明天再来找你。", "pinyin": "Wǒ míngtiān zài lái zhǎo nǐ.", "english": "I'll come find you again tomorrow." },
+      { "hanzi": "对不起，我又迟到了。", "pinyin": "Duìbuqǐ, wǒ yòu chídào le.", "english": "Sorry, I'm late again." }
+    ]
+  },
+  {
+    "id": "hsk2-ch14-cai-jiu",
+    "chapter": "Chapter 14: Frequency, Duration, and Timing Words — 次/遍, Verb+Duration, 又/再, 才/就, 还",
+    "hskLevel": 2,
+    "title": "才 vs. 就 — Later Than Expected vs. Sooner Than Expected",
+    "theory": [
+      "才 (cái) and 就 (jiù), both placed directly before the verb, mark whether an event happened later than expected (才) or sooner/more readily than expected (就) — the speaker's sense of \"that's late\" or \"that's fast,\" relative to some expectation, not an objective fact about the clock. 他九点才来 (Tā jiǔ diǎn cái lái), \"He didn't come until 9\" (implying that's later than he should have). 他八点就来了 (Tā bā diǎn jiù lái le), \"He came at 8 already\" (implying that's early/prompt).",
+      "This is the same 就 introduced in this level's 就要...了 (Chapter 1) and 一...就... (Chapter 12) — all three uses share the underlying sense of \"right away, promptly, sooner than you'd think.\" 才, by contrast, specifically signals delay or a higher-than-expected bar being met later than hoped.",
+      "A subtle but important rule: a sentence ending in 才 + Verb generally does NOT take a sentence-final 了, even though the event is completed — 他九点才来 is complete as is, not 他九点才来了. 就, on the other hand, very naturally takes 了: 他八点就来了. This asymmetry is a fixed feature of the two words worth memorizing directly."
+    ],
+    "pattern": "[Later than expected] + 才 + V。　·　[Sooner than expected] + 就 + V (+ 了)。",
+    "examples": [
+      { "hanzi": "他九点才来。", "pinyin": "Tā jiǔ diǎn cái lái.", "english": "He didn't come until 9 (later than expected)." },
+      { "hanzi": "他八点就来了。", "pinyin": "Tā bā diǎn jiù lái le.", "english": "He already came at 8 (earlier than expected)." },
+      { "hanzi": "我昨天很晚才睡觉。", "pinyin": "Wǒ zuótiān hěn wǎn cái shuìjiào.", "english": "I didn't go to sleep until very late yesterday." },
+      { "hanzi": "他学了一年就会说中文了。", "pinyin": "Tā xué le yì nián jiù huì shuō Zhōngwén le.", "english": "After only a year of studying, he could already speak Chinese." }
+    ]
+  },
+  {
+    "id": "hsk2-ch14-hai",
+    "chapter": "Chapter 14: Frequency, Duration, and Timing Words — 次/遍, Verb+Duration, 又/再, 才/就, 还",
+    "hskLevel": 2,
+    "title": "还 (hái) — Still, Also, and 还没",
+    "theory": [
+      "还 (hái), placed before the verb like other adverbs already covered, most commonly means \"still\" — a state or action that continues to hold, unchanged from before: 他还在睡觉 (Tā hái zài shuìjiào), \"He's still sleeping.\" Combined with 没 specifically, 还没 means \"still haven't/not yet,\" pointedly noting that something expected hasn't happened yet, distinct from a plain, neutral 没: 我还没吃饭 (Wǒ hái méi chīfàn), \"I haven't eaten yet,\" implies eating is expected/coming.",
+      "还 also means \"also/in addition,\" layering on an extra item, distinct from 也 (HSK1) in one key way: 也 says \"this applies too, the same as something else already mentioned,\" while 还 introduces something additional/extra: 我要一杯咖啡，还要一个面包 (Wǒ yào yì bēi kāfēi, hái yào yí ge miànbāo), \"I'd like a coffee, and I'd also like a piece of bread.\"",
+      "还 shows up as part of a few constructions already introduced — 不但...而且还... and the \"even more\" sense of 还 alongside 更 — all sharing this same core \"additionally/beyond what's already true\" flavor."
+    ],
+    "pattern": "S + 还 + (没) + V。",
+    "examples": [
+      { "hanzi": "他还在睡觉。", "pinyin": "Tā hái zài shuìjiào.", "english": "He's still sleeping." },
+      { "hanzi": "我还没吃饭。", "pinyin": "Wǒ hái méi chīfàn.", "english": "I haven't eaten yet." },
+      { "hanzi": "我要一杯咖啡，还要一个面包。", "pinyin": "Wǒ yào yì bēi kāfēi, hái yào yí ge miànbāo.", "english": "I'd like a coffee, and also a piece of bread." },
+      { "hanzi": "你还没做完作业吗？", "pinyin": "Nǐ hái méi zuò wán zuòyè ma?", "english": "You still haven't finished your homework?" }
+    ]
+  },
+  {
+    "id": "hsk2-ch14-measure-words",
+    "chapter": "Chapter 14: Frequency, Duration, and Timing Words — 次/遍, Verb+Duration, 又/再, 才/就, 还",
+    "hskLevel": 2,
+    "title": "Common Noun Measure Words Beyond 个",
+    "theory": [
+      "HSK1 introduced 个 as the universal, default measure word. HSK2 rounds out the set with several more specific measure words, each tied to properties of the noun it counts: 本 (běn) for bound, page-based items — 一本书 (a book); 张 (zhāng) for flat objects — 一张纸 (a sheet of paper), 一张照片 (a photo); 件 (jiàn) for garments and matters/affairs — 一件衣服 (a piece of clothing), 一件事 (a matter).",
+      "条 (tiáo) is for long, narrow, often flexible objects — 一条路 (a road), 一条鱼 (a fish), 一条裤子 (a pair of pants); 双 (shuāng) is specifically for natural pairs — 一双鞋 (a pair of shoes), 一双筷子 (a pair of chopsticks) — used for the pair as a whole, distinct from 两只 for two individual items.",
+      "只 (zhī, a different, homophone-only word from the adverb 只 \"only\") is used for animals and some paired body parts individually — 一只猫 (a cat), 一只手 (a hand); 辆 (liàng) is for wheeled vehicles — 一辆车 (a car), 一辆自行车 (a bicycle).",
+      "As with 个, all of these slot into the same Number + Measure Word + Noun structure taught in HSK1 — nothing about the underlying grammar rule changes, only which measure word correctly matches which category of noun. When in doubt, 个 is usually understood even if not perfectly \"correct,\" making it a safe fallback."
+    ],
+    "pattern": "Number + 本/张/件/条/双/只/辆 + N",
+    "examples": [
+      { "hanzi": "我买了一本书。", "pinyin": "Wǒ mǎi le yì běn shū.", "english": "I bought a book." },
+      { "hanzi": "这是一张照片。", "pinyin": "Zhè shì yì zhāng zhàopiàn.", "english": "This is a photo." },
+      { "hanzi": "我有一件红色的衣服。", "pinyin": "Wǒ yǒu yí jiàn hóngsè de yīfu.", "english": "I have a red garment." },
+      { "hanzi": "他买了一辆新车。", "pinyin": "Tā mǎi le yí liàng xīn chē.", "english": "He bought a new car." }
+    ]
+  },
+  {
+    "id": "hsk2-ch15-yixia-reduplication",
+    "chapter": "Chapter 15: Brief and Tentative Actions — 一下 and Verb Reduplication",
+    "hskLevel": 2,
+    "title": "一下 and Verb Reduplication (AA / A一A)",
+    "theory": [
+      "一下 (yíxià), placed directly after a verb, softens the action into something brief, casual, or tentative — \"just a bit,\" \"for a moment,\" roughly like adding \"just\" or \"a sec\" in English: 我看一下 (Wǒ kàn yíxià), \"Let me take a quick look.\" It doesn't literally mean the action takes exactly one instance/unit of time — it's a politeness/casualness softener more than a literal quantity.",
+      "Verb reduplication — repeating a one-syllable verb twice in a row, either as AA (看看, kànkan) or with 一 inserted, A一A (看一看, kàn yi kàn) — achieves a very similar softening effect to 一下: 你看看 and 你看一下 both mean roughly \"take a look,\" interchangeably in most everyday contexts. Reduplicated forms are typically read with the second syllable in a light, neutral tone.",
+      "Two-syllable verbs reduplicate as ABAB, not AABB: 介绍介绍 (jièshào jièshào, \"give a bit of an introduction\") repeats the whole two-syllable unit, rather than splitting and doubling each syllable separately.",
+      "Both 一下 and verb reduplication are especially common in polite requests and suggestions, softening what would otherwise sound like a blunt command: 请等一下 (Qǐng děng yíxià), \"Please wait a moment,\" and 我们商量商量 (Wǒmen shāngliang shāngliang), \"Let's discuss it a bit,\" both feel gentler than their bare-verb equivalents."
+    ],
+    "pattern": "V + 一下。　·　V(A)V(A) / V一V。",
+    "examples": [
+      { "hanzi": "我看一下。", "pinyin": "Wǒ kàn yíxià.", "english": "Let me take a quick look." },
+      { "hanzi": "你尝尝这个菜。", "pinyin": "Nǐ chángchang zhège cài.", "english": "Try this dish." },
+      { "hanzi": "请等一下。", "pinyin": "Qǐng děng yíxià.", "english": "Please wait a moment." },
+      { "hanzi": "我们商量商量吧。", "pinyin": "Wǒmen shāngliang shāngliang ba.", "english": "Let's discuss it a bit." }
+    ]
+  },
+  {
+    "id": "hsk2-ch16-bie",
+    "chapter": "Chapter 16: More Modal Verbs and Prohibition — 别, 应该, 可能, 得 (děi)",
+    "hskLevel": 2,
+    "title": "别 (bié) — \"Don't\"",
+    "theory": [
+      "别 (bié), placed directly before a verb, is the most common everyday way to tell someone not to do something — a direct imperative negation: 别说话 (Bié shuōhuà), \"Don't talk.\" It's functionally very close to HSK1's 不要, and the two are largely interchangeable in commands, though 别 is generally the more frequent, casual, default choice in speech.",
+      "别 very often pairs with 了 at the end of the sentence when telling someone to stop an action already in progress, rather than preventing one that hasn't started: 别哭了 (Bié kū le), \"Stop crying\" (you're already crying) — this trailing 了 is the same change-of-state 了 from HSK1, marking the requested new state (not-crying) as the point of the command.",
+      "A softened, more suggestion-like version prefaces the whole phrase with 你 to sound like personal advice rather than a bare command: 你别担心 (Nǐ bié dānxīn), \"Don't worry\" (advice/reassurance) reads gentler than a bare 别担心 issued to a stranger."
+    ],
+    "pattern": "别 + V(+O) (+ 了)。",
+    "examples": [
+      { "hanzi": "别说话。", "pinyin": "Bié shuōhuà.", "english": "Don't talk." },
+      { "hanzi": "别哭了。", "pinyin": "Bié kū le.", "english": "Stop crying." },
+      { "hanzi": "你别担心。", "pinyin": "Nǐ bié dānxīn.", "english": "Don't worry." },
+      { "hanzi": "别忘了带钱包。", "pinyin": "Bié wàng le dài qiánbāo.", "english": "Don't forget to bring your wallet." }
+    ]
+  },
+  {
+    "id": "hsk2-ch16-yinggai",
+    "chapter": "Chapter 16: More Modal Verbs and Prohibition — 别, 应该, 可能, 得 (děi)",
+    "hskLevel": 2,
+    "title": "应该 — Should/Ought To",
+    "theory": [
+      "应该 (yīnggāi), placed before a verb, expresses obligation or advisability — what one should or ought to do, based on reason, morality, or good sense: 你应该多运动 (Nǐ yīnggāi duō yùndòng), \"You should exercise more.\" It sits in the same modal-verb slot as HSK1's 想/要/会/能.",
+      "应该 also extends to expressing a confident expectation about how things probably are, closer to \"should be [true]\" as a guess rather than an obligation: 他应该到了 (Tā yīnggāi dào le), \"He should have arrived by now\" (a reasoned expectation, not a command directed at him).",
+      "Negation with 不应该 states that something ought NOT to be done: 你不应该这么说 (Nǐ bù yīnggāi zhème shuō), \"You shouldn't say that.\" This differs meaningfully from 别/不要 (a direct command not to do something right now) — 不应该 is a judgment about what's right or wise in general, not necessarily an in-the-moment instruction."
+    ],
+    "pattern": "S + (不)应该 + V(+O)。",
+    "examples": [
+      { "hanzi": "你应该多运动。", "pinyin": "Nǐ yīnggāi duō yùndòng.", "english": "You should exercise more." },
+      { "hanzi": "他应该到了。", "pinyin": "Tā yīnggāi dào le.", "english": "He should have arrived by now." },
+      { "hanzi": "你不应该这么说。", "pinyin": "Nǐ bù yīnggāi zhème shuō.", "english": "You shouldn't say that." },
+      { "hanzi": "我们应该帮助他。", "pinyin": "Wǒmen yīnggāi bāngzhù tā.", "english": "We should help him." }
+    ]
+  },
+  {
+    "id": "hsk2-ch16-keneng-dei",
+    "chapter": "Chapter 16: More Modal Verbs and Prohibition — 别, 应该, 可能, 得 (děi)",
+    "hskLevel": 2,
+    "title": "可能 and 得 (děi) — Possibility and Necessity",
+    "theory": [
+      "可能 (kěnéng) expresses possibility — \"maybe/might,\" a guess with less confidence than 应该's expectation: 他可能不知道 (Tā kěnéng bù zhīdào), \"He might not know.\" 可能 can be used as an adverb before the verb, exactly as shown, or as a standalone comment: 可能吧 (Kěnéng ba), \"Maybe.\"",
+      "得 — here read děi, second tone, a completely different reading from the neutral-tone 得 (de) complement particle covered in Chapter 8 (context and tone are the only way to tell them apart in speech) — expresses a strong, often circumstance-driven necessity, \"must/have to\": 我得走了 (Wǒ děi zǒu le), \"I have to go [now].\" 得 (děi) tends to feel more urgent/immediate than 应该, and more casual/spoken than the more formal 必须.",
+      "得 (děi) is not negated with 不得 — negating necessity instead switches to 不用 (búyòng, \"don't need to\"), since \"don't have to\" is a different logical statement (absence of necessity) from \"must not\" (prohibition, which uses 不能 or 不可以): 你不用来 (Nǐ búyòng lái), \"You don't have to come\" — not 你不得来."
+    ],
+    "pattern": "S + 可能 + V/Adj。　·　S + 得(děi) + V(+O)。",
+    "examples": [
+      { "hanzi": "他可能不知道。", "pinyin": "Tā kěnéng bù zhīdào.", "english": "He might not know." },
+      { "hanzi": "明天可能会下雨。", "pinyin": "Míngtiān kěnéng huì xià yǔ.", "english": "It might rain tomorrow." },
+      { "hanzi": "我得走了。", "pinyin": "Wǒ děi zǒu le.", "english": "I have to go." },
+      { "hanzi": "你不用来。", "pinyin": "Nǐ búyòng lái.", "english": "You don't have to come." }
+    ]
+  },
+  {
+    "id": "hsk2-ch17-juede-renwei",
+    "chapter": "Chapter 17: Opinions and Plans — 觉得, 认为, 打算, 准备",
+    "hskLevel": 2,
+    "title": "觉得 and 认为 — Expressing Opinions",
+    "theory": [
+      "觉得 (juéde) introduces a personal feeling, impression, or opinion, taking a full clause as its object: 我觉得这个电影很好看 (Wǒ juéde zhège diànyǐng hěn hǎokàn), \"I think this movie is good\" (literally \"I feel [that] this movie is very good-looking\"). It's the everyday, casual default for \"I think...\" in conversation.",
+      "认为 (rènwéi) also means \"to think/believe,\" but leans more formal and more reasoned/analytical than 觉得 — closer to \"I believe/hold the view that...\" — common in more considered statements, debates, or writing: 我认为这个决定是对的 (Wǒ rènwéi zhège juédìng shì duì de), \"I believe this decision is correct.\" In casual daily speech, 觉得 is far more frequent overall.",
+      "Both verbs take their opinion as a following clause with no special connecting word needed. Negating the opinion itself (rather than the fact of holding it) happens inside that following clause: 我觉得这个不好 (Wǒ juéde zhège bù hǎo), \"I don't think this is good\" (not 我不觉得这个好, which is also grammatical but subtly different — \"I don't [really] think this is good,\" doubting the claim itself)."
+    ],
+    "pattern": "S + 觉得/认为 + [Clause]。",
+    "examples": [
+      { "hanzi": "我觉得这个电影很好看。", "pinyin": "Wǒ juéde zhège diànyǐng hěn hǎokàn.", "english": "I think this movie is good." },
+      { "hanzi": "我觉得这个不好。", "pinyin": "Wǒ juéde zhège bù hǎo.", "english": "I don't think this is good." },
+      { "hanzi": "我认为这个决定是对的。", "pinyin": "Wǒ rènwéi zhège juédìng shì duì de.", "english": "I believe this decision is correct." },
+      { "hanzi": "你觉得怎么样？", "pinyin": "Nǐ juéde zěnmeyàng?", "english": "What do you think?" }
+    ]
+  },
+  {
+    "id": "hsk2-ch17-dasuan-zhunbei",
+    "chapter": "Chapter 17: Opinions and Plans — 觉得, 认为, 打算, 准备",
+    "hskLevel": 2,
+    "title": "打算 and 准备 — Making Plans",
+    "theory": [
+      "打算 (dǎsuàn), placed before a verb, means \"to plan to,\" stating an intention that's been thought through, more concrete than the simple desire expressed by HSK1's 想: 我打算明年去中国 (Wǒ dǎsuàn míngnián qù Zhōngguó), \"I'm planning to go to China next year.\" 打算 can also be used as a noun meaning \"plan(s)\": 你有什么打算？ (Nǐ yǒu shénme dǎsuàn?), \"What are your plans?\"",
+      "准备 (zhǔnbèi), placed before a verb, means \"to prepare to / be about to,\" often carrying a stronger sense of imminent readiness than 打算's more general future intention: 我准备走了 (Wǒ zhǔnbèi zǒu le), \"I'm getting ready to go.\" As a standalone verb, 准备 also simply means \"to prepare [something]\": 准备晚饭 (zhǔnbèi wǎnfàn), \"prepare dinner.\"",
+      "In practice the two overlap heavily in casual speech, but a useful rule of thumb: 打算 sits further out in time and is more about a considered intention, while 准备 sits closer to the present and is more about active readiness — closely related in spirit to Chapter 1's 快要/就要...了, though 准备 itself is the modal verb rather than the aspect marker."
+    ],
+    "pattern": "S + 打算/准备 + V(+O)。",
+    "examples": [
+      { "hanzi": "我打算明年去中国。", "pinyin": "Wǒ dǎsuàn míngnián qù Zhōngguó.", "english": "I'm planning to go to China next year." },
+      { "hanzi": "你有什么打算？", "pinyin": "Nǐ yǒu shénme dǎsuàn?", "english": "What are your plans?" },
+      { "hanzi": "我准备走了。", "pinyin": "Wǒ zhǔnbèi zǒu le.", "english": "I'm about to go." },
+      { "hanzi": "她正在准备晚饭。", "pinyin": "Tā zhèngzài zhǔnbèi wǎnfàn.", "english": "She's preparing dinner right now." }
+    ]
+  },
+  {
+    "id": "hsk2-ch18-huozhe",
+    "chapter": "Chapter 18: Remaining Connectors and Adverbs — 或者, 多/少 + Verb, 一直, 用, 只",
+    "hskLevel": 2,
+    "title": "或者 — \"Or\" in Statements",
+    "theory": [
+      "或者 (huòzhě) means \"or,\" used in plain statements rather than questions — the statement-form counterpart to HSK1's 还是, which is reserved specifically for either/or questions: 你可以喝茶或者咖啡 (Nǐ kěyǐ hē chá huòzhě kāfēi), \"You can drink tea or coffee\" (a statement offering a choice, not a question).",
+      "Using 还是 in a plain statement, or 或者 in a genuine either/or question, is a common and noticeable mistake — the two are not interchangeable despite both meaning \"or\": 你喝茶还是咖啡？ (question, correct) vs. 你喝茶或者咖啡 (statement, correct).",
+      "或者...或者... can also repeat to link more than two options within a statement: 或者你来，或者我去，都可以 (Huòzhě nǐ lái, huòzhě wǒ qù, dōu kěyǐ), \"Either you come, or I go — either is fine.\""
+    ],
+    "pattern": "[Statement] + A + 或者 + B。",
+    "examples": [
+      { "hanzi": "你可以喝茶或者咖啡。", "pinyin": "Nǐ kěyǐ hē chá huòzhě kāfēi.", "english": "You can drink tea or coffee." },
+      { "hanzi": "我们可以坐公共汽车或者坐地铁。", "pinyin": "Wǒmen kěyǐ zuò gōnggòng qìchē huòzhě zuò dìtiě.", "english": "We can take the bus or the subway." },
+      { "hanzi": "或者你来，或者我去，都可以。", "pinyin": "Huòzhě nǐ lái, huòzhě wǒ qù, dōu kěyǐ.", "english": "Either you come, or I go — either is fine." },
+      { "hanzi": "你可以写信或者打电话告诉我。", "pinyin": "Nǐ kěyǐ xiě xìn huòzhě dǎ diànhuà gàosu wǒ.", "english": "You can write a letter or call to tell me." }
+    ]
+  },
+  {
+    "id": "hsk2-ch18-duo-shao-verb",
+    "chapter": "Chapter 18: Remaining Connectors and Adverbs — 或者, 多/少 + Verb, 一直, 用, 只",
+    "hskLevel": 2,
+    "title": "多/少 + Verb — Doing More/Less of Something",
+    "theory": [
+      "多 (duō, \"more\") and 少 (shǎo, \"less\") can sit directly before a verb, telling someone to do more or less of that action: 多喝水 (duō hē shuǐ), \"drink more water\"; 少吃糖 (shǎo chī táng), \"eat less sugar.\" This is distinct from 多 as a question word for measurements (HSK1, 多高/多长) — here it's a plain adverbial quantity-adjective, not part of a question.",
+      "This pattern is extremely common in advice and gentle commands: 多穿点儿衣服 (duō chuān diǎnr yīfu), \"put on more clothes\"; 多休息 (duō xiūxi), \"get more rest.\" 一点儿 (HSK1) often tags along after the object for a softer, more casual feel.",
+      "Negating this pattern is unusual — instead of 不多喝水, the natural way to discourage an action uses 别 or 不要 elsewhere. 少 + Verb already inherently means \"do less of X,\" making 多/少 a matched positive/negative pair rather than one needing separate negation."
+    ],
+    "pattern": "多/少 + V (+ O)。",
+    "examples": [
+      { "hanzi": "多喝水。", "pinyin": "Duō hē shuǐ.", "english": "Drink more water." },
+      { "hanzi": "少吃糖。", "pinyin": "Shǎo chī táng.", "english": "Eat less sugar." },
+      { "hanzi": "天冷了，多穿点儿衣服。", "pinyin": "Tiān lěng le, duō chuān diǎnr yīfu.", "english": "It's cold, put on more clothes." },
+      { "hanzi": "你应该多休息。", "pinyin": "Nǐ yīnggāi duō xiūxi.", "english": "You should get more rest." }
+    ]
+  },
+  {
+    "id": "hsk2-ch18-yizhi",
+    "chapter": "Chapter 18: Remaining Connectors and Adverbs — 或者, 多/少 + Verb, 一直, 用, 只",
+    "hskLevel": 2,
+    "title": "一直 — Continuously/All Along",
+    "theory": [
+      "一直 (yìzhí), placed before a verb, describes an action or state as continuing without interruption, either \"continuously\" over a stretch of time or \"all along/the whole time\" from a given starting point: 我一直在等你 (Wǒ yìzhí zài děng nǐ), \"I've been waiting for you the whole time\" (often paired naturally with the progressive 在/正在, since continuous waiting is itself an ongoing action).",
+      "一直 also works for describing an unchanging state or habitual fact stretching back over time: 他一直很忙 (Tā yìzhí hěn máng), \"He's always/consistently been busy,\" 我一直不知道这件事 (Wǒ yìzhí bù zhīdào zhè jiàn shì), \"I never knew about this.\"",
+      "一直 differs from 还 in emphasis: 还 focuses on the fact that a state persists as of NOW, right up to the present moment (\"still\"), while 一直 emphasizes the unbroken continuity of the whole stretch of time — the two often overlap in a single sentence, and can even combine: 他一直还没回来 (Tā yìzhí hái méi huílái), \"He still hasn't come back this whole time.\""
+    ],
+    "pattern": "S + 一直 + (在) + V/Adj。",
+    "examples": [
+      { "hanzi": "我一直在等你。", "pinyin": "Wǒ yìzhí zài děng nǐ.", "english": "I've been waiting for you the whole time." },
+      { "hanzi": "他一直很忙。", "pinyin": "Tā yìzhí hěn máng.", "english": "He's always been busy." },
+      { "hanzi": "我一直不知道这件事。", "pinyin": "Wǒ yìzhí bù zhīdào zhè jiàn shì.", "english": "I never knew about this." },
+      { "hanzi": "他一直还没回来。", "pinyin": "Tā yìzhí hái méi huílái.", "english": "He still hasn't come back this whole time." }
+    ]
+  },
+  {
+    "id": "hsk2-ch18-yong",
+    "chapter": "Chapter 18: Remaining Connectors and Adverbs — 或者, 多/少 + Verb, 一直, 用, 只",
+    "hskLevel": 2,
+    "title": "用 (yòng) — Means and Instruments",
+    "theory": [
+      "用 (yòng) as a coverb, placed before a verb, marks the tool, method, or means used to carry out an action, \"using/with\": 用筷子吃饭 (yòng kuàizi chīfàn), \"eat with chopsticks\"; 用中文说 (yòng Zhōngwén shuō), \"say [it] in Chinese.\" Like every coverb phrase covered so far (给/对, 从...到...), the 用-phrase goes before the main verb it modifies.",
+      "用 also functions as an ordinary standalone verb meaning simply \"to use\": 我可以用一下你的手机吗？ (Wǒ kěyǐ yòng yíxià nǐ de shǒujī ma?, using 一下 from Chapter 15 to soften the request), \"Can I use your phone for a moment?\" — here 用 is the main verb of the sentence, not a coverb introducing another verb.",
+      "A common everyday pattern combines 用 with a language name to specify what language something is done in — 用英语怎么说？ (Yòng Yīngyǔ zěnme shuō?), \"How do you say it in English?\" — reusing 怎么 from HSK1's question-word chapter."
+    ],
+    "pattern": "S + 用 + Tool/Means + V(+O)。",
+    "examples": [
+      { "hanzi": "中国人用筷子吃饭。", "pinyin": "Zhōngguórén yòng kuàizi chīfàn.", "english": "Chinese people eat with chopsticks." },
+      { "hanzi": "请用中文回答。", "pinyin": "Qǐng yòng Zhōngwén huídá.", "english": "Please answer in Chinese." },
+      { "hanzi": "我可以用一下你的手机吗？", "pinyin": "Wǒ kěyǐ yòng yíxià nǐ de shǒujī ma?", "english": "Can I use your phone for a moment?" },
+      { "hanzi": "这个字用英语怎么说？", "pinyin": "Zhège zì yòng Yīngyǔ zěnme shuō?", "english": "How do you say this word in English?" }
+    ]
+  },
+  {
+    "id": "hsk2-ch18-zhi",
+    "chapter": "Chapter 18: Remaining Connectors and Adverbs — 或者, 多/少 + Verb, 一直, 用, 只",
+    "hskLevel": 2,
+    "title": "只 (zhǐ) — Only",
+    "theory": [
+      "只 (zhǐ), placed before a verb or a quantity, restricts a statement to exactly the item(s) mentioned and nothing more, \"only\": 我只有一个哥哥 (Wǒ zhǐ yǒu yí ge gēge), \"I only have one older brother.\" It sits in the same adverb-before-verb slot as 也/都/一起/还/一直.",
+      "只 very often pairs with 有 (as above) or directly before a number/quantity to sharply limit it: 只要五分钟 (zhǐ yào wǔ fēnzhōng), \"it only takes/needs five minutes\" — reusing 要 in its \"need/require\" sense.",
+      "只是 (zhǐshì) — 只 plus 是 — forms a related but distinct fixed phrase meaning \"merely/it's just that,\" often used to downplay or clarify a point rather than strictly counting a quantity: 我只是想问一下 (Wǒ zhǐshì xiǎng wèn yíxià), \"I just wanted to ask [something, no big deal].\""
+    ],
+    "pattern": "S + 只 + V/有 + N。",
+    "examples": [
+      { "hanzi": "我只有一个哥哥。", "pinyin": "Wǒ zhǐ yǒu yí ge gēge.", "english": "I only have one older brother." },
+      { "hanzi": "这件事只要五分钟。", "pinyin": "Zhè jiàn shì zhǐ yào wǔ fēnzhōng.", "english": "This only takes five minutes." },
+      { "hanzi": "我只是想问一下。", "pinyin": "Wǒ zhǐshì xiǎng wèn yíxià.", "english": "I just wanted to ask (something)." },
+      { "hanzi": "他只会说一点儿英语。", "pinyin": "Tā zhǐ huì shuō yìdiǎnr Yīngyǔ.", "english": "He can only speak a little English." }
+    ]
   }
 ]
