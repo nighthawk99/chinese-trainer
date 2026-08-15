@@ -31,6 +31,8 @@
   --mode-amber-dim: #3a2c14;
   --accent-glow: rgba(77, 163, 255, 0.12);
   --violet-glow: rgba(164, 138, 255, 0.08);
+  --teal-glow: rgba(79, 209, 197, 0.09);
+  --amber-glow: rgba(255, 180, 84, 0.08);
   --shadow-highlight: rgba(255, 255, 255, 0.04);
   --shadow-ambient: rgba(0, 0, 0, 0.45);
   --shadow-contact: rgba(0, 0, 0, 0.35);
@@ -38,6 +40,11 @@
   --radius-sm: 10px;
   --radius-md: 16px;
   --radius-lg: 22px;
+  /* Single shared elevation used on every card type (topic items, construct
+     cards, phrase cards, settings groups, vocab-source items) so depth reads
+     consistently across the app instead of some cards looking flatter than
+     others. */
+  --shadow-card: 0 1px 0 var(--shadow-highlight) inset, 0 8px 20px -12px var(--shadow-ambient), 0 2px 5px -3px var(--shadow-contact);
 }
 
 :root[data-theme="light"] {
@@ -63,6 +70,8 @@
   --mode-amber-dim: #fceada;
   --accent-glow: rgba(37, 105, 201, 0.07);
   --violet-glow: rgba(124, 92, 255, 0.05);
+  --teal-glow: rgba(15, 148, 136, 0.06);
+  --amber-glow: rgba(201, 106, 18, 0.06);
   --shadow-highlight: rgba(255, 255, 255, 0.8);
   --shadow-ambient: rgba(15, 23, 42, 0.08);
   --shadow-contact: rgba(15, 23, 42, 0.1);
@@ -181,7 +190,7 @@ html, body {
   align-items: center;
   gap: 16px;
   font: inherit;
-  box-shadow: 0 1px 0 var(--shadow-highlight) inset, 0 10px 24px -14px var(--shadow-ambient);
+  box-shadow: var(--shadow-card);
   transition: border-color 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
   animation: tile-enter 0.4s cubic-bezier(0.2, 0.7, 0.3, 1) backwards;
 }
@@ -247,9 +256,34 @@ html, body {
 
 .mode-chevron {
   flex-shrink: 0;
-  font-size: 1.5rem;
+  display: flex;
   color: var(--text-faint);
-  line-height: 1;
+}
+
+.mode-chevron svg { width: 20px; height: 20px; }
+
+/* Every non-home screen gets the same soft radial-glow treatment as the
+   home screen, tinted with that section's own identity color (matching its
+   home-tile) — keeps the "depth" language consistent throughout instead of
+   home being the only screen with any atmosphere. */
+#trainer-screen, #complete-screen {
+  background: radial-gradient(ellipse 680px 560px at 50% 38%, var(--accent-glow), transparent 62%), var(--bg);
+}
+
+#settings-screen {
+  background: radial-gradient(ellipse 640px 420px at 50% -6%, var(--accent-glow), transparent 60%), var(--bg);
+}
+
+#hsk-grammar-level-screen, #hsk-grammar-chapter-screen, #hsk-grammar-detail-screen {
+  background: radial-gradient(ellipse 640px 420px at 50% -6%, var(--violet-glow), transparent 60%), var(--bg);
+}
+
+#grammar-screen, #grammar-detail-screen {
+  background: radial-gradient(ellipse 640px 420px at 50% -6%, var(--teal-glow), transparent 60%), var(--bg);
+}
+
+#phrases-screen, #phrases-detail-screen {
+  background: radial-gradient(ellipse 640px 420px at 50% -6%, var(--amber-glow), transparent 60%), var(--bg);
 }
 
 /* Trainer screen */
@@ -279,15 +313,24 @@ html, body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.15s ease, color 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.1s ease;
 }
 
-.icon-btn:active { color: var(--text); background: var(--bg-alt); }
+.icon-btn svg { width: 21px; height: 21px; }
+
+.icon-btn:active { color: var(--text); background: var(--bg-alt); transform: scale(0.92); }
 
 .progress-label {
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-dim);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  line-height: 1.3;
 }
 
 .page-dots {
@@ -341,17 +384,21 @@ html, body {
    longest unbroken word's width and blocks normal wrapping — without
    this, a long English translation or example sentence overflows past
    both screen edges instead of wrapping, no matter how app.js's
-   shrink-to-fit scale is set. */
+   shrink-to-fit scale is set. overflow-wrap stays "normal" (never
+   break-word): fitContentToContainer()'s shrink loop already handles
+   long words by shrinking the font until they fit, so breaking mid-word
+   (e.g. "purchase" / "d" on its own line) was never actually necessary —
+   it just looked broken. overflow-x:auto on .tap-zone is still the
+   last-resort net for the one real edge case this can't solve (a single
+   word wider than the screen even at minimum scale). */
 .page-content > * {
   min-width: 0;
   max-width: 100%;
-  overflow-wrap: break-word;
-}
-
-/* app.js toggles this while measuring for fitContentToContainer() — see
-   the comment there for why mid-word breaking has to be off mid-measurement. */
-.page-content.measuring > * {
   overflow-wrap: normal;
+  /* WebKit-only: lets closing punctuation (e.g. a sentence's trailing 。)
+     hang slightly past the line-box edge instead of wrapping onto its own
+     orphan line — a no-op where unsupported. */
+  hanging-punctuation: allow-end;
 }
 
 /* Sizes use vmin as an upper bound so the Chinese stays large and
@@ -421,6 +468,44 @@ html, body {
   text-align: center;
 }
 
+.complete-badge {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  background: var(--accent-dim);
+  box-shadow: 0 0 0 8px var(--accent-glow);
+  margin-bottom: 6px;
+  animation: badge-pop 0.5s cubic-bezier(0.2, 0.8, 0.3, 1.15) backwards;
+}
+
+.complete-badge svg { width: 40px; height: 40px; }
+
+@keyframes badge-pop {
+  from { opacity: 0; transform: scale(0.6); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .complete-badge { animation: none; }
+}
+
+.complete-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.complete-summary {
+  color: var(--text-dim);
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+
 .primary-btn, .secondary-btn {
   width: 100%;
   max-width: 320px;
@@ -429,12 +514,15 @@ html, body {
   font-size: 1.1rem;
   font-weight: 600;
   border: none;
+  transition: transform 0.1s ease, opacity 0.15s ease;
 }
+
+.primary-btn:active, .secondary-btn:active { transform: scale(0.98); }
 
 .primary-btn {
   background: var(--accent);
   color: var(--btn-text-on-accent);
-  box-shadow: 0 10px 24px -12px var(--shadow-ambient);
+  box-shadow: 0 12px 26px -12px var(--shadow-ambient), 0 0 0 1px var(--shadow-highlight) inset;
 }
 .secondary-btn { background: none; color: var(--text-dim); }
 
@@ -459,6 +547,7 @@ html, body {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 16px 18px;
+  box-shadow: var(--shadow-card);
 }
 
 .settings-label {
@@ -489,13 +578,55 @@ html, body {
 
 .settings-sublabel span { color: var(--accent); font-weight: 700; }
 
+/* Custom-styled range input (appearance:none) rather than the browser
+   default — iOS Safari's native slider looked generic next to the rest of
+   this app's custom controls. The filled portion of the track is painted
+   via an inline background-image gradient that app.js recomputes on
+   input/init (see updateSliderFill()), since appearance:none forfeits the
+   automatic accent-color track fill Chrome/Firefox otherwise provide. */
 .settings-slider {
+  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   height: 6px;
   border-radius: 4px;
   background: var(--border);
-  accent-color: var(--accent);
+  outline: none;
+  margin: 10px 0;
 }
+
+.settings-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg-alt);
+  box-shadow: 0 2px 8px -1px var(--shadow-ambient);
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+
+.settings-slider::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg-alt);
+  box-shadow: 0 2px 8px -1px var(--shadow-ambient);
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+
+.settings-slider::-moz-range-track {
+  height: 6px;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.settings-slider:active::-webkit-slider-thumb { transform: scale(1.18); }
+.settings-slider:active::-moz-range-thumb { transform: scale(1.18); }
 
 .settings-note {
   font-size: 0.85rem;
@@ -557,7 +688,8 @@ html, body {
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 12px 14px;
-  transition: border-color 0.15s ease, background-color 0.15s ease;
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .vocab-source-item.selected {
@@ -624,13 +756,24 @@ html, body {
   color: var(--text);
   text-align: left;
   font: inherit;
-  box-shadow: 0 1px 0 var(--shadow-highlight) inset;
-  transition: transform 0.1s ease, border-color 0.15s ease;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.1s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-.topic-item:active { transform: scale(0.98); }
+.topic-item:active {
+  transform: scale(0.98);
+  box-shadow: 0 1px 0 var(--shadow-highlight) inset, 0 3px 8px -6px var(--shadow-ambient);
+}
 
 .topic-item-name { font-size: 0.98rem; font-weight: 600; }
+
+.topic-item-right {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .topic-item-count {
   font-size: 0.76rem;
   font-weight: 600;
@@ -640,6 +783,13 @@ html, body {
   border-radius: 999px;
   padding: 3px 9px;
 }
+
+.topic-item-chevron {
+  display: flex;
+  color: var(--text-faint);
+}
+
+.topic-item-chevron svg { width: 16px; height: 16px; }
 
 /* Each "topic list / detail" screen picks up its home-tile's identity
    color as a left accent on its cards, so context stays legible while
@@ -666,7 +816,7 @@ html, body {
   border-left: 3px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 4px 16px;
-  box-shadow: 0 1px 0 var(--shadow-highlight) inset;
+  box-shadow: var(--shadow-card);
 }
 
 .construct-card > summary {
@@ -769,7 +919,7 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  box-shadow: 0 1px 0 var(--shadow-highlight) inset, 0 8px 20px -16px var(--shadow-ambient);
+  box-shadow: var(--shadow-card);
 }
 
 .section-header {
@@ -820,7 +970,7 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  box-shadow: 0 1px 0 var(--shadow-highlight) inset;
+  box-shadow: var(--shadow-card);
 }
 
 .phrase-note {

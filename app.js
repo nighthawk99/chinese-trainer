@@ -94,6 +94,9 @@
   const phrasesSituationList = document.getElementById('phrases-situation-list');
   const phrasesList = document.getElementById('phrases-list');
   const phrasesDetailTitle = document.getElementById('phrases-detail-title');
+  const PAUSE_ICON_SVG = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="6.5" y="5" width="4" height="14" rx="1.3"/><rect x="13.5" y="5" width="4" height="14" rx="1.3"/></svg>';
+  const PLAY_ICON_SVG = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M8 5.2v13.6l11-6.8-11-6.8z"/></svg>';
+  const CHEVRON_ICON_SVG = '<span class="topic-item-chevron" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></span>';
   const pageContent = document.getElementById('page-content');
   const progressLabel = document.getElementById('progress-label');
   const pauseBtn = document.getElementById('pause-btn');
@@ -315,7 +318,10 @@
       btn.className = 'topic-item';
       btn.innerHTML = `
         <span class="topic-item-name">HSK ${level}</span>
-        <span class="topic-item-count">${chapterCount} chapters &middot; ${sections.length} sections</span>
+        <span class="topic-item-right">
+          <span class="topic-item-count">${chapterCount} chapters &middot; ${sections.length} sections</span>
+          ${CHEVRON_ICON_SVG}
+        </span>
       `;
       btn.addEventListener('click', () => openHskLevel(level));
       hskGrammarLevelList.appendChild(btn);
@@ -366,8 +372,16 @@
     return html;
   }
 
+  // Chapter names carry a long " — subtopic list" suffix that reads fine as
+  // a full-width list card but crushes the top bar into 3 cramped lines —
+  // the short "Chapter N: Title" prefix is enough context up there; the
+  // full name (with subtopics) still appears on the chapter-list card itself.
+  function shortenChapterTitle(chapterName) {
+    return chapterName.split(' — ')[0];
+  }
+
   function renderHskGrammarChapterDetail(chapterName) {
-    hskGrammarDetailTitle.textContent = chapterName;
+    hskGrammarDetailTitle.textContent = shortenChapterTitle(chapterName);
     const sections = hskGrammarData.filter(s => s.hskLevel === selectedHskLevel && s.chapter === chapterName);
     hskGrammarSectionList.innerHTML = sections.map(renderHskGrammarSection).join('');
   }
@@ -406,7 +420,10 @@
       btn.className = 'topic-item';
       btn.innerHTML = `
         <span class="topic-item-name">${name}</span>
-        <span class="topic-item-count">${count}</span>
+        <span class="topic-item-right">
+          <span class="topic-item-count">${count}</span>
+          ${CHEVRON_ICON_SVG}
+        </span>
       `;
       btn.addEventListener('click', () => onSelect(name));
       container.appendChild(btn);
@@ -579,11 +596,23 @@
     });
   }
 
+  // Custom range inputs (appearance:none, see style.css) lose the browser's
+  // automatic accent-color track fill, so the filled portion left of the
+  // thumb is painted by hand here as a background-image gradient recomputed
+  // on every value change.
+  function updateSliderFill(slider) {
+    const min = parseFloat(slider.min);
+    const max = parseFloat(slider.max);
+    const pct = ((parseFloat(slider.value) - min) / (max - min)) * 100;
+    slider.style.background = `linear-gradient(to right, var(--accent) ${pct}%, var(--border) ${pct}%)`;
+  }
+
   function renderDurationSliders() {
     settings.pageDurationsMs.forEach((ms, i) => {
       const seconds = ms / 1000;
       durationSliders[i].value = String(seconds);
       durationValues[i].textContent = seconds.toFixed(1) + 's';
+      updateSliderFill(durationSliders[i]);
     });
   }
 
@@ -593,12 +622,14 @@
       durationValues[i].textContent = seconds.toFixed(1) + 's';
       settings.pageDurationsMs[i] = Math.round(seconds * 1000);
       saveSettings();
+      updateSliderFill(slider);
     });
   });
 
   function renderRateSlider() {
     rateSlider.value = String(settings.speechRate);
     rateValue.textContent = settings.speechRate.toFixed(1) + '×';
+    updateSliderFill(rateSlider);
   }
 
   rateSlider.addEventListener('input', () => {
@@ -606,6 +637,7 @@
     rateValue.textContent = rate.toFixed(1) + '×';
     settings.speechRate = rate;
     saveSettings();
+    updateSliderFill(rateSlider);
   });
 
   const themeSwitch = document.getElementById('theme-switch');
@@ -650,7 +682,7 @@
     wordIndex = 0;
     pageIndex = 0;
     paused = false;
-    pauseBtn.textContent = '❙❙';
+    pauseBtn.innerHTML = PAUSE_ICON_SVG;
     showScreen(trainerScreen);
     renderPage();
   }
@@ -719,13 +751,6 @@
     const fits = () =>
       pageContent.scrollHeight <= maxHeight &&
       pageContent.scrollWidth <= maxWidth;
-    // While measuring, suspend the CSS mid-word break (see .measuring in
-    // style.css) so a too-long word registers as real overflow and drives
-    // the scale down — otherwise overflow-wrap:break-word quietly absorbs
-    // it by breaking the word instead, and the loop below never shrinks
-    // the font at all, leaving something like "occurren-ces" at full size
-    // instead of a smaller, unbroken "occurrences".
-    pageContent.classList.add('measuring');
     // A handful of vocab.json entries are grammar-pattern strings rather
     // than real single words (e.g. "S + 比 + S + 大/小 + number + 岁"),
     // long enough to need a much smaller floor than any real word does
@@ -735,10 +760,6 @@
       scale = Math.round((scale - 0.05) * 100) / 100;
       pageContent.style.setProperty('--fit-scale', String(scale));
     }
-    // Re-enable the mid-word break for actual rendering — it's now only
-    // a safety net for the rare case where even the smallest scale isn't
-    // enough to avoid overflow.
-    pageContent.classList.remove('measuring');
   }
 
   function scheduleAutoAdvance() {
@@ -797,7 +818,8 @@
 
   function togglePause() {
     paused = !paused;
-    pauseBtn.textContent = paused ? '▶' : '❙❙';
+    pauseBtn.innerHTML = paused ? PLAY_ICON_SVG : PAUSE_ICON_SVG;
+    pauseBtn.setAttribute('aria-label', paused ? 'Play' : 'Pause');
     if (paused) {
       clearTimer();
     } else {

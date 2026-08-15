@@ -866,3 +866,68 @@ work).
   the user to check that section on their actual phone before treating
   this as a real platform ceiling vs. a filtering bug on this app's
   side.
+- 2026-08-15: User asked for a critical design review across every screen
+  and to push the whole app toward "professional/modern, million-dollar
+  app" polish. Did the review against real screenshots (headless Chrome
+  via a scratchpad puppeteer-core script driving the actual live app
+  through every screen/theme, not just reading the CSS), which surfaced
+  one genuine bug plus several consistency gaps the earlier 2026-08-15
+  redesign pass hadn't reached:
+  1. **Real bug**: Vocabulary Trainer's English/sentence pages could
+     mid-word-wrap (e.g. "newly purchase" / "d" as an orphan line) because
+     `.page-content > *` fell back to `overflow-wrap: break-word` once
+     `fitContentToContainer()`'s shrink loop hit its floor. Fixed by
+     removing break-word entirely (kept as `normal`) — the shrink loop
+     already handles long words by shrinking the font, so mid-word
+     breaking was never actually needed, just cosmetically wrong. Also
+     let the `.measuring` class toggle in app.js be deleted as dead
+     code once break-word was gone. Verified the fix against the two
+     real words that showed the bug (`newly purchased`, `classifier for
+     occurrences`) via a scripted fetch-interception test forcing them
+     to the front of a session.
+  2. **Broken header**: HSK Grammar chapter-detail titles (e.g. "Chapter
+     1: Greetings & Introductions — 是 Sentences, Names (姓/叫), 很 +
+     Adjectives") wrapped 3 lines and crushed the top bar. Fixed by
+     showing only the text before " — " in the top bar (`
+     shortenChapterTitle()` in app.js) — the full name still appears on
+     the chapter-list card itself — plus a `-webkit-line-clamp: 2`
+     safety net added to `.progress-label` generally.
+  3. **Icon inconsistency**: the settings gear got a hand-drawn SVG in
+     the earlier redesign pass specifically because a unicode glyph
+     "looked inconsistent," but every back button, the pause/play
+     button, and every chevron elsewhere in the app were still raw
+     unicode (`&larr;`, `❙❙`/`▶`, `&rsaquo;`). Replaced all of them with
+     matching inline SVGs (same stroke-width/line-cap language as the
+     existing mode icons) in index.html and via new `PAUSE_ICON_SVG`/
+     `PLAY_ICON_SVG` constants in app.js. Also added a chevron to every
+     dynamically-rendered `.topic-item` card (HSK level list, and the
+     shared `renderTopicList()` used by Grammar Review/Travel Phrases)
+     for affordance parity with the home screen's mode tiles.
+  4. **Inconsistent elevation**: topic-item/construct-card/phrase-card
+     had a much weaker shadow than the home screen's mode-tiles (some
+     had no ambient shadow at all), making everything past Home read as
+     a visual downgrade. Unified under one `--shadow-card` token (in
+     `:root`, referencing the existing highlight/ambient/contact shadow
+     variables so it stays theme-correct automatically) and applied it
+     to every card type including settings-group and vocab-source-item.
+  5. **Generic form controls**: range sliders used bare browser-default
+     styling. Rebuilt with `appearance: none` + custom
+     webkit/moz thumb and a hand-painted `linear-gradient` track fill
+     (`updateSliderFill()` in app.js, recomputed on input/init) since
+     appearance:none forfeits the native accent-color fill.
+  6. **Flat trainer/settings backgrounds**: only the home screen had any
+     depth (radial gradient blobs); every other screen was flat
+     `var(--bg)`. Extended the same treatment everywhere, tinted per
+     section's existing identity color so the "this section is violet/
+     teal/amber" language established by the left-accent bars carries
+     into the background too — added `--teal-glow`/`--amber-glow`
+     tokens alongside the existing `--accent-glow`/`--violet-glow`.
+  7. **Bare complete screen**: was just a heading + paragraph + two
+     buttons on flat black. Added a checkmark badge (accent-colored
+     circle, `badge-pop` entrance animation, respects
+     prefers-reduced-motion) and gave the screen the same background
+     glow as the trainer.
+  Verified all of the above across dark + light themes and portrait +
+  landscape via the same screenshot script before considering it done —
+  particularly re-confirmed the two previously-buggy long-text words
+  now wrap cleanly at word boundaries instead of mid-word.
