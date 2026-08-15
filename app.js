@@ -139,6 +139,12 @@
   // timeout covers a real WebKit quirk we've hit before: onend/onerror
   // occasionally never fires at all — without it the trainer would just
   // get stuck on that page forever.
+  // Tracks the pending doSpeak() below so stopSpeech() can cancel it —
+  // without this, leaving mid-transition (cancel() called while this timer
+  // is still pending) let the delayed doSpeak() fire anyway afterward and
+  // start new audio on a screen the user had already left.
+  let speakDelayTimerId = null;
+
   function speak(text, lang, voice, onEnd) {
     if (!('speechSynthesis' in window)) {
       if (onEnd) onEnd();
@@ -151,6 +157,7 @@
       if (onEnd) onEnd();
     };
     const doSpeak = () => {
+      speakDelayTimerId = null;
       const utter = new SpeechSynthesisUtterance(text);
       utter.lang = lang;
       if (voice) utter.voice = voice;
@@ -160,15 +167,30 @@
       window.speechSynthesis.speak(utter);
       setTimeout(finish, 8000);
     };
+    if (speakDelayTimerId) {
+      clearTimeout(speakDelayTimerId);
+      speakDelayTimerId = null;
+    }
     // Safari (esp. iOS) can silently drop a speak() called in the same tick
     // right after cancel() — only cancel when something's actually playing,
     // and give it one tick to actually stop before queuing the next utterance.
     if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
       window.speechSynthesis.cancel();
-      setTimeout(doSpeak, 50);
+      speakDelayTimerId = setTimeout(doSpeak, 50);
     } else {
       doSpeak();
     }
+  }
+
+  // Fully stops audio, including a doSpeak() that speak() may have
+  // scheduled but not yet fired — plain speechSynthesis.cancel() alone
+  // doesn't prevent that pending call from starting new audio afterward.
+  function stopSpeech() {
+    if (speakDelayTimerId) {
+      clearTimeout(speakDelayTimerId);
+      speakDelayTimerId = null;
+    }
+    window.speechSynthesis && window.speechSynthesis.cancel();
   }
 
   async function fetchWordCount(file) {
@@ -596,7 +618,7 @@
   }
 
   function endSession() {
-    window.speechSynthesis && window.speechSynthesis.cancel();
+    stopSpeech();
     document.getElementById('complete-summary').textContent =
       `You reviewed all ${sessionWords.length} words.`;
     showScreen(completeScreen);
@@ -663,7 +685,7 @@
   document.getElementById('home-btn').addEventListener('click', (e) => {
     e.stopPropagation();
     clearTimer();
-    window.speechSynthesis && window.speechSynthesis.cancel();
+    stopSpeech();
     showScreen(homeScreen);
   });
 
