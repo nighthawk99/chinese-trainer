@@ -202,6 +202,14 @@ work).
       shopping/bargaining, directions, emergencies, connectivity,
       socializing, sightseeing, numbers/time). Home screen → pick a
       situation → scroll a flat list of phrase cards.
+- [x] HSK Grammar — fourth top-level feature (renamed from "Learning"),
+      self-paced textbook-style reading, no TTS — distinct from
+      Grammar Review: covers the *complete* HSK1+HSK2 grammar
+      syllabus in curriculum order, not the user's own topical lesson
+      notes. Home screen → pick HSK 1 or HSK 2 → that level's chapters
+      → tap a chapter to read its sections (theory paragraphs +
+      pattern + hanzi/pinyin/english examples). 12 chapters / 31
+      sections for HSK1, 18 chapters / 48 sections for HSK2.
 - [x] App logo (`icon.svg`, gradient-blue square + white 中) wired up
       as favicon and Home Screen icon; app renamed in-app from
       "Chinese Trainer" to "Chinese Companion" (repo/URL unchanged)
@@ -800,3 +808,61 @@ work).
   highlighted) added to the Vocabulary Trainer's top bar. Both dark
   and light theme palettes got the same treatment in parallel — see
   the `--mode-*` custom properties in style.css.
+- 2026-08-15: Follow-up polish on the home screen after the redesign
+  above, per user feedback (the settings icon "looks so cheap", and
+  comparing the home screen to "truly professional" apps): staggered
+  fade+slide-in entrance on the four mode tiles, keyed to each tile's
+  `mode-tile--*` color class rather than DOM position (`:nth-of-type`
+  would have miscounted — the settings-gear button is an earlier
+  same-tag `<button>` sibling); replaced the single-hanzi-character
+  mode icons (词/课/语/旅) and the unicode gear glyph (⚙, which
+  rendered via the system emoji font and looked inconsistent next to
+  everything else) with hand-drawn inline SVG line icons — flashcard,
+  open book, speech bubble, compass, and an 8-spoke settings icon —
+  each in its mode's identity color. Stays fully offline, no icon
+  font/CDN dependency. A "Continue" hero card (resuming last activity)
+  was scoped out and explicitly deferred at the user's request.
+  Also fixed a real bug the user hit live on their phone during this
+  same pass: a long English translation ("classifier for occurrences")
+  rendered as one unwrapped line, cut off past both screen edges.
+  Two compounding causes: flex items default to `min-width: auto`,
+  which floors them at their longest word's width and blocks
+  wrapping (fixed with `min-width: 0` on `.page-content`'s children);
+  and `fitContentToContainer()`'s shrink-to-fit check only ever
+  measured `.hanzi-large`'s width, so overflow on the English/pinyin/
+  sentence pages was invisible to it (generalized to check
+  `pageContent.scrollWidth` instead, catching every page kind).
+  Also added `overflow-wrap: break-word` as a last-resort safety net,
+  but toggled off via a `.measuring` class while
+  `fitContentToContainer()` is actually measuring — otherwise it
+  silently absorbs overflow by splitting a word mid-way (e.g.
+  "occurren-ces") instead of shrinking the font, defeating the point
+  of the shrink loop.
+- 2026-08-15: Investigated the TTS voice sounding "very mechanical"
+  per the user. `pickVoices()` previously just grabbed whichever
+  zh-CN/en-US voice `speechSynthesis.getVoices()` listed first — not
+  necessarily the best-quality one available. Added a quality
+  heuristic (prefers a voice whose `.name` contains "Premium" or
+  "Enhanced" — the tier iOS appends to a downloaded system voice's
+  name) plus a Settings voice picker (same radio-list style as the
+  vocabulary-source picker) so the actual choice is visible and
+  directly overridable, persisted as `zhVoiceName`/`enVoiceName` in
+  settings and winning over the automatic pick on future loads. Along
+  the way, hit and fixed a real bug live on the user's phone: iOS
+  Safari was listing each voice twice ("Meijia"/"Tingting" each
+  appeared twice in Settings) — added `getAvailableVoices()`, a
+  shared name+lang dedup wrapper now used everywhere `getVoices()` is
+  read. Open question, not yet resolved: the user's
+  Accessibility-installed "Han (Premium)" Mandarin voice (confirmed
+  installed and selected under iOS Settings → Accessibility → Spoken
+  Content → Voices → Chinese) never appeared in the app's voice list
+  at all — only Tingting/Meijia did. Suspected but **unconfirmed**
+  cause: iOS Safari's `speechSynthesis` API may not expose
+  Spoken-Content-only Premium voices to web pages regardless of what's
+  installed system-wide. Rather than accept that as fact on a guess,
+  added an unfiltered "All voices on this device" debug dump to
+  Settings (every voice `getVoices()` returns, any language, with
+  name/lang/default/network flags) to get real evidence — waiting on
+  the user to check that section on their actual phone before treating
+  this as a real platform ceiling vs. a filtering bug on this app's
+  side.
