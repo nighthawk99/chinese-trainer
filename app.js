@@ -2,7 +2,12 @@
   const SETTINGS_KEY = 'chineseTrainer.settings';
   // pageDurationsMs is indexed by pageIndex: [hanzi/pinyin, english, sentence].
   function defaultSettings() {
-    return { pageDurationsMs: [3000, 3000, 3000], vocabSource: 'own', speechRate: 1.0 };
+    return {
+      pageDurationsMs: [3000, 3000, 3000], vocabSource: 'own', speechRate: 1.0,
+      // Explicit voice.name the user picked in Settings, if any — null
+      // means "pick automatically" (see pickVoices()).
+      zhVoiceName: null, enVoiceName: null,
+    };
   }
 
   const VOCAB_SOURCES = {
@@ -100,6 +105,8 @@
   const rateSlider = document.getElementById('rate-slider');
   const rateValue = document.getElementById('rate-value');
   const vocabSourceList = document.getElementById('vocab-source-list');
+  const zhVoiceList = document.getElementById('zh-voice-list');
+  const enVoiceList = document.getElementById('en-voice-list');
 
   let vocab = [];
   let sessionWords = [];
@@ -130,15 +137,47 @@
     el.classList.add('active');
   }
 
+  // iOS (and some other platforms) ships multiple quality tiers of the
+  // same voice — a default "Compact" one plus an optional "Enhanced" or
+  // "Premium" download — and surfaces the tier right in the voice's name
+  // (e.g. "Han (Premium)"). Prefer those over a same-language voice with
+  // no such tag, since they sound dramatically less robotic.
+  function voiceQualityScore(voice) {
+    if (/premium/i.test(voice.name)) return 2;
+    if (/enhanced/i.test(voice.name)) return 1;
+    return 0;
+  }
+
+  // savedName (from Settings) wins outright if it's still installed;
+  // otherwise prefer preferredLang (e.g. zh-CN over zh-TW) and the
+  // highest quality tier within whichever pool that leaves.
+  function pickVoiceFor(voices, langPrefix, preferredLang, savedName) {
+    const candidates = voices.filter(v => v.lang && v.lang.startsWith(langPrefix));
+    if (savedName) {
+      const saved = candidates.find(v => v.name === savedName);
+      if (saved) return saved;
+    }
+    const preferred = candidates.filter(v => v.lang === preferredLang);
+    const pool = preferred.length ? preferred : candidates;
+    if (!pool.length) return null;
+    return pool.slice().sort((a, b) => voiceQualityScore(b) - voiceQualityScore(a))[0];
+  }
+
   function pickVoices() {
     const voices = window.speechSynthesis.getVoices();
-    zhVoice = voices.find(v => v.lang === 'zh-CN') || voices.find(v => v.lang && v.lang.startsWith('zh')) || null;
-    enVoice = voices.find(v => v.lang === 'en-US') || voices.find(v => v.lang && v.lang.startsWith('en')) || null;
+    zhVoice = pickVoiceFor(voices, 'zh', 'zh-CN', settings.zhVoiceName);
+    enVoice = pickVoiceFor(voices, 'en', 'en-US', settings.enVoiceName);
   }
 
   if ('speechSynthesis' in window) {
     pickVoices();
-    window.speechSynthesis.onvoiceschanged = pickVoices;
+    window.speechSynthesis.onvoiceschanged = () => {
+      pickVoices();
+      // Some browsers report an empty voice list until this event fires —
+      // if Settings is already open when that happens, its voice pickers
+      // would otherwise be stuck showing "no voices found" forever.
+      if (settingsScreen.classList.contains('active')) renderVoiceLists();
+    };
   }
 
   // onEnd fires once, whether speech actually finished, errored, or (if
@@ -431,6 +470,44 @@
     const source = VOCAB_SOURCES[settings.vocabSource] || VOCAB_SOURCES.own;
     const count = await getSourceCount(settings.vocabSource);
     homeModeDesc.textContent = `${source.label} — ${count} word${count === 1 ? '' : 's'}, random order`;
+  }
+
+  // Shared by the Chinese- and English-voice pickers in Settings — lets
+  // the user see and override pickVoices()'s automatic choice directly,
+  // which matters since not every platform tags voice quality in a way
+  // the automatic heuristic can detect.
+  function renderVoiceList(container, langPrefix, settingsKey) {
+    const voices = window.speechSynthesis.getVoices().filter(v => v.lang && v.lang.startsWith(langPrefix));
+    container.innerHTML = '';
+    if (!voices.length) {
+      container.innerHTML = '<p class="settings-note">No voices found for this language on this device.</p>';
+      return;
+    }
+    const activeVoice = langPrefix === 'zh' ? zhVoice : enVoice;
+    voices.forEach(voice => {
+      const selected = !!activeVoice && voice.name === activeVoice.name;
+      const item = document.createElement('label');
+      item.className = 'vocab-source-item' + (selected ? ' selected' : '');
+      item.innerHTML = `
+        <input type="radio" name="${settingsKey}" value="${voice.name}" ${selected ? 'checked' : ''}>
+        <div class="vocab-source-text">
+          <div class="vocab-source-name">${voice.name}</div>
+          <div class="vocab-source-count">${voice.lang}</div>
+        </div>
+      `;
+      item.querySelector('input').addEventListener('change', () => {
+        settings[settingsKey] = voice.name;
+        saveSettings();
+        pickVoices();
+        renderVoiceList(container, langPrefix, settingsKey);
+      });
+      container.appendChild(item);
+    });
+  }
+
+  function renderVoiceLists() {
+    renderVoiceList(zhVoiceList, 'zh', 'zhVoiceName');
+    renderVoiceList(enVoiceList, 'en', 'enVoiceName');
   }
 
   async function renderVocabSourceList() {
@@ -817,6 +894,7 @@
     renderDurationSliders();
     renderRateSlider();
     renderThemeToggle();
+    renderVoiceLists();
     renderVocabSourceList();
     showScreen(settingsScreen);
   });
