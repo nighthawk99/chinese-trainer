@@ -777,3 +777,26 @@ work).
   offline caching or show up in the vocabulary-source list — both
   were already wired generically from when the file was still an
   empty placeholder.
+- 2026-08-15: Renamed the "Learning" feature to **HSK Grammar** (home
+  tile id `start-hsk-grammar`; internal JS/CSS still uses `learning-*`
+  data/class names in a few places — only user-facing labels and
+  screen/element ids changed). Added a level-selection screen in front
+  of the existing chapter list: HSK Grammar now goes Home → pick HSK 1
+  or HSK 2 → that level's chapters only → chapter detail, instead of
+  one flat 30-chapter list mixing both levels (which had two different
+  "Chapter 1"s back to back with nothing distinguishing them). New
+  screen ids: `hsk-grammar-level-screen` → `hsk-grammar-chapter-screen`
+  → `hsk-grammar-detail-screen`; a module-level `selectedHskLevel` in
+  app.js tracks which level's chapters are showing so the back button
+  from chapter detail returns to the right level's list.
+  Also did a full visual redesign across every screen at the user's
+  request ("take inspiration from the best layouts... make it look
+  super nice"), scoped to CSS/layout only, no functional changes:
+  each home-tile mode got its own identity color (blue/violet/teal/
+  amber for Vocab/HSK Grammar/Grammar Review/Travel Phrases) carried
+  through as a left-accent bar on that section's cards and its badge
+  tints, refined shadows/radii/spacing throughout, a subtle fade-in on
+  screen transitions, and a page-dot indicator (3 dots, current page
+  highlighted) added to the Vocabulary Trainer's top bar. Both dark
+  and light theme palettes got the same treatment in parallel — see
+  the `--mode-*` custom properties in style.css.

@@ -18,7 +18,7 @@
     <img class="app-logo" src="icon.svg" alt="" width="64" height="64">
     <div class="app-eyebrow">中文 &middot; Mandarin Chinese</div>
     <h1 class="app-title">Chinese Companion</h1>
-    <button class="mode-tile" id="start-vocab-trainer">
+    <button class="mode-tile mode-tile--blue" id="start-vocab-trainer">
       <span class="mode-icon">词</span>
       <span class="mode-text">
         <span class="mode-name">Vocabulary Trainer</span>
@@ -26,15 +26,15 @@
       </span>
       <span class="mode-chevron" aria-hidden="true">&rsaquo;</span>
     </button>
-    <button class="mode-tile" id="start-learning">
+    <button class="mode-tile mode-tile--violet" id="start-hsk-grammar">
       <span class="mode-icon">课</span>
       <span class="mode-text">
-        <span class="mode-name">Learning</span>
+        <span class="mode-name">HSK Grammar</span>
         <span class="mode-desc">HSK 1&ndash;2 grammar, chapter by chapter</span>
       </span>
       <span class="mode-chevron" aria-hidden="true">&rsaquo;</span>
     </button>
-    <button class="mode-tile" id="start-grammar-review">
+    <button class="mode-tile mode-tile--teal" id="start-grammar-review">
       <span class="mode-icon">语</span>
       <span class="mode-text">
         <span class="mode-name">Grammar Review</span>
@@ -42,7 +42,7 @@
       </span>
       <span class="mode-chevron" aria-hidden="true">&rsaquo;</span>
     </button>
-    <button class="mode-tile" id="start-travel-phrases">
+    <button class="mode-tile mode-tile--amber" id="start-travel-phrases">
       <span class="mode-icon">旅</span>
       <span class="mode-text">
         <span class="mode-name">Travel Phrases</span>
@@ -52,26 +52,38 @@
     </button>
   </section>
 
-  <!-- Learning: choose a chapter -->
-  <section id="learning-screen" class="screen">
+  <!-- HSK Grammar: choose a level -->
+  <section id="hsk-grammar-level-screen" class="screen">
     <div class="top-bar">
-      <button id="learning-home-btn" class="icon-btn" aria-label="Home">&larr;</button>
-      <div class="progress-label">Learning</div>
+      <button id="hsk-grammar-level-home-btn" class="icon-btn" aria-label="Home">&larr;</button>
+      <div class="progress-label">HSK Grammar</div>
       <div class="top-bar-spacer"></div>
     </div>
-    <div id="learning-chapter-list" class="topic-list">
+    <div id="hsk-grammar-level-list" class="topic-list">
       <!-- filled dynamically -->
     </div>
   </section>
 
-  <!-- Learning: sections within one chapter -->
-  <section id="learning-detail-screen" class="screen">
+  <!-- HSK Grammar: choose a chapter within a level -->
+  <section id="hsk-grammar-chapter-screen" class="screen">
     <div class="top-bar">
-      <button id="learning-detail-back-btn" class="icon-btn" aria-label="Back">&larr;</button>
-      <div id="learning-detail-title" class="progress-label"></div>
+      <button id="hsk-grammar-chapter-back-btn" class="icon-btn" aria-label="Back">&larr;</button>
+      <div id="hsk-grammar-chapter-title" class="progress-label"></div>
       <div class="top-bar-spacer"></div>
     </div>
-    <div id="learning-section-list" class="topic-detail-list">
+    <div id="hsk-grammar-chapter-list" class="topic-list">
+      <!-- filled dynamically -->
+    </div>
+  </section>
+
+  <!-- HSK Grammar: sections within one chapter -->
+  <section id="hsk-grammar-detail-screen" class="screen">
+    <div class="top-bar">
+      <button id="hsk-grammar-detail-back-btn" class="icon-btn" aria-label="Back">&larr;</button>
+      <div id="hsk-grammar-detail-title" class="progress-label"></div>
+      <div class="top-bar-spacer"></div>
+    </div>
+    <div id="hsk-grammar-section-list" class="topic-detail-list">
       <!-- filled dynamically -->
     </div>
   </section>
@@ -189,6 +201,11 @@
       <button id="home-btn" class="icon-btn" aria-label="Home">&larr;</button>
       <div id="progress-label" class="progress-label"></div>
       <button id="pause-btn" class="icon-btn" aria-label="Pause">&#10073;&#10073;</button>
+    </div>
+    <div id="page-dots" class="page-dots" aria-hidden="true">
+      <span class="page-dot"></span>
+      <span class="page-dot"></span>
+      <span class="page-dot"></span>
     </div>
 
     <div id="tap-zone" class="tap-zone">

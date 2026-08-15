@@ -71,11 +71,14 @@
   const settingsScreen = document.getElementById('settings-screen');
   const trainerScreen = document.getElementById('trainer-screen');
   const completeScreen = document.getElementById('complete-screen');
-  const learningScreen = document.getElementById('learning-screen');
-  const learningDetailScreen = document.getElementById('learning-detail-screen');
-  const learningChapterList = document.getElementById('learning-chapter-list');
-  const learningSectionList = document.getElementById('learning-section-list');
-  const learningDetailTitle = document.getElementById('learning-detail-title');
+  const hskGrammarLevelScreen = document.getElementById('hsk-grammar-level-screen');
+  const hskGrammarLevelList = document.getElementById('hsk-grammar-level-list');
+  const hskGrammarChapterScreen = document.getElementById('hsk-grammar-chapter-screen');
+  const hskGrammarChapterList = document.getElementById('hsk-grammar-chapter-list');
+  const hskGrammarChapterTitle = document.getElementById('hsk-grammar-chapter-title');
+  const hskGrammarDetailScreen = document.getElementById('hsk-grammar-detail-screen');
+  const hskGrammarSectionList = document.getElementById('hsk-grammar-section-list');
+  const hskGrammarDetailTitle = document.getElementById('hsk-grammar-detail-title');
   const grammarScreen = document.getElementById('grammar-screen');
   const grammarDetailScreen = document.getElementById('grammar-detail-screen');
   const grammarCategoryList = document.getElementById('grammar-category-list');
@@ -89,6 +92,7 @@
   const pageContent = document.getElementById('page-content');
   const progressLabel = document.getElementById('progress-label');
   const pauseBtn = document.getElementById('pause-btn');
+  const pageDots = Array.from(document.querySelectorAll('#page-dots .page-dot'));
   const tapZone = document.getElementById('tap-zone');
   const homeModeDesc = document.getElementById('home-mode-desc');
   const durationSliders = [0, 1, 2].map(i => document.getElementById(`duration-slider-${i}`));
@@ -120,7 +124,8 @@
 
   function showScreen(el) {
     navGen += 1;
-    [homeScreen, settingsScreen, trainerScreen, completeScreen, learningScreen, learningDetailScreen,
+    [homeScreen, settingsScreen, trainerScreen, completeScreen,
+     hskGrammarLevelScreen, hskGrammarChapterScreen, hskGrammarDetailScreen,
      grammarScreen, grammarDetailScreen, phrasesScreen, phrasesDetailScreen].forEach(s => s.classList.remove('active'));
     el.classList.add('active');
   }
@@ -231,25 +236,46 @@
     vocab = await res.json();
   }
 
-  let learningData = null; // cached data/learning.json, fetched once
+  let hskGrammarData = null; // cached data/learning.json, fetched once
+  let selectedHskLevel = null; // 1 or 2 — which level's chapters are currently shown
 
-  async function loadLearningData() {
-    if (!learningData) {
+  async function loadHskGrammarData() {
+    if (!hskGrammarData) {
       const res = await fetch('data/learning.json');
-      learningData = await res.json();
+      hskGrammarData = await res.json();
     }
-    return learningData;
+    return hskGrammarData;
   }
 
-  async function renderLearningChapterList() {
-    const data = await loadLearningData();
-    renderTopicList(learningChapterList, data, 'chapter', openLearningChapter);
+  // Top of the HSK Grammar flow: pick a level before picking a chapter,
+  // so HSK1 and HSK2 chapters (which restart numbering at "Chapter 1")
+  // never appear mixed together in one list.
+  async function renderHskLevelList() {
+    const data = await loadHskGrammarData();
+    hskGrammarLevelList.innerHTML = '';
+    [1, 2].forEach(level => {
+      const sections = data.filter(s => s.hskLevel === level);
+      const chapterCount = new Set(sections.map(s => s.chapter)).size;
+      const btn = document.createElement('button');
+      btn.className = 'topic-item';
+      btn.innerHTML = `
+        <span class="topic-item-name">HSK ${level}</span>
+        <span class="topic-item-count">${chapterCount} chapters &middot; ${sections.length} sections</span>
+      `;
+      btn.addEventListener('click', () => openHskLevel(level));
+      hskGrammarLevelList.appendChild(btn);
+    });
   }
 
-  // Unlike Grammar Review's collapsible <details> cards, learning sections
-  // render fully expanded — this is meant to be read top-to-bottom like a
-  // textbook chapter, not scanned as a reference.
-  // Shared by Learning, Grammar Review, and Travel Phrases — all three
+  async function openHskLevel(level) {
+    selectedHskLevel = level;
+    const data = await loadHskGrammarData();
+    hskGrammarChapterTitle.textContent = `HSK ${level}`;
+    renderTopicList(hskGrammarChapterList, data.filter(s => s.hskLevel === level), 'chapter', openHskGrammarChapter);
+    showScreen(hskGrammarChapterScreen);
+  }
+
+  // Shared by HSK Grammar, Grammar Review, and Travel Phrases — all three
   // render a hanzi/pinyin/english example, just inside different wrappers.
   function renderExampleFields(ex) {
     return `
@@ -265,7 +291,10 @@
       '</div>';
   }
 
-  function renderLearningSection(section) {
+  // Unlike Grammar Review's collapsible <details> cards, HSK Grammar
+  // sections render fully expanded — this is meant to be read top-to-bottom
+  // like a textbook chapter, not scanned as a reference.
+  function renderHskGrammarSection(section) {
     let html = `
       <div class="learning-section">
         <div class="section-header">
@@ -282,15 +311,15 @@
     return html;
   }
 
-  function renderLearningChapterDetail(chapterName) {
-    learningDetailTitle.textContent = chapterName;
-    const sections = learningData.filter(s => s.chapter === chapterName);
-    learningSectionList.innerHTML = sections.map(renderLearningSection).join('');
+  function renderHskGrammarChapterDetail(chapterName) {
+    hskGrammarDetailTitle.textContent = chapterName;
+    const sections = hskGrammarData.filter(s => s.hskLevel === selectedHskLevel && s.chapter === chapterName);
+    hskGrammarSectionList.innerHTML = sections.map(renderHskGrammarSection).join('');
   }
 
-  function openLearningChapter(chapterName) {
-    renderLearningChapterDetail(chapterName);
-    showScreen(learningDetailScreen);
+  function openHskGrammarChapter(chapterName) {
+    renderHskGrammarChapterDetail(chapterName);
+    showScreen(hskGrammarDetailScreen);
   }
 
   let grammarData = null; // cached data/grammar.json, fetched once
@@ -518,6 +547,7 @@
 
   function updateProgress() {
     progressLabel.textContent = `Word ${wordIndex + 1} / ${sessionWords.length}`;
+    pageDots.forEach((dot, i) => dot.classList.toggle('active', i === pageIndex));
   }
 
   function renderPage() {
@@ -714,19 +744,23 @@
     startSession();
   });
 
-  document.getElementById('start-learning').addEventListener('click', async () => {
+  document.getElementById('start-hsk-grammar').addEventListener('click', async () => {
     const myNav = navGen;
-    await renderLearningChapterList();
+    await renderHskLevelList();
     if (navGen !== myNav) return; // user navigated elsewhere while this loaded
-    showScreen(learningScreen);
+    showScreen(hskGrammarLevelScreen);
   });
 
-  document.getElementById('learning-home-btn').addEventListener('click', () => {
+  document.getElementById('hsk-grammar-level-home-btn').addEventListener('click', () => {
     showScreen(homeScreen);
   });
 
-  document.getElementById('learning-detail-back-btn').addEventListener('click', () => {
-    showScreen(learningScreen);
+  document.getElementById('hsk-grammar-chapter-back-btn').addEventListener('click', () => {
+    showScreen(hskGrammarLevelScreen);
+  });
+
+  document.getElementById('hsk-grammar-detail-back-btn').addEventListener('click', () => {
+    showScreen(hskGrammarChapterScreen);
   });
 
   document.getElementById('start-grammar-review').addEventListener('click', async () => {

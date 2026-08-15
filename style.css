@@ -3,39 +3,73 @@
    mode. Switched manually via Settings — see applyTheme() in app.js. */
 :root {
   color-scheme: dark;
-  --bg: #0f1115;
-  --bg-alt: #171a21;
-  --text: #f2f3f5;
-  --text-dim: #9aa0ab;
+  --bg: #0b0d12;
+  --bg-alt: #161922;
+  --bg-elevated: #1d212c;
+  --text: #f5f6f8;
+  --text-dim: #9aa1ae;
+  --text-faint: #6b7280;
   --accent: #4da3ff;
-  --accent-dim: #2a3b52;
-  --border: #2a2f3a;
+  --accent-dim: #24344c;
+  --border: #262b36;
   /* Reserved for grammar-pattern notation (e.g. "A + 比 + B + adj") — a
      distinct color used only for these formula-like strings, so they
      read as "this is a slot pattern" at a glance, separate from --accent. */
   --pattern: #f2c14e;
-  --pattern-bg: #332a12;
-  --accent-glow: rgba(77, 163, 255, 0.10);
-  --shadow-highlight: rgba(255, 255, 255, 0.03);
-  --shadow-drop: rgba(0, 0, 0, 0.6);
+  --pattern-bg: #34291a;
+  /* Per-section identity colors — each home-screen mode gets its own hue,
+     reused on its icon badge and carried through into that section's
+     cards (a left accent bar, badge tints) so context stays legible
+     without needing labels. */
+  --mode-blue: #4da3ff;
+  --mode-blue-dim: #24344c;
+  --mode-violet: #a48aff;
+  --mode-violet-dim: #2c2754;
+  --mode-teal: #4fd1c5;
+  --mode-teal-dim: #163632;
+  --mode-amber: #ffb454;
+  --mode-amber-dim: #3a2c14;
+  --accent-glow: rgba(77, 163, 255, 0.12);
+  --violet-glow: rgba(164, 138, 255, 0.08);
+  --shadow-highlight: rgba(255, 255, 255, 0.04);
+  --shadow-ambient: rgba(0, 0, 0, 0.45);
+  --shadow-contact: rgba(0, 0, 0, 0.35);
   --btn-text-on-accent: #05121f;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
 }
 
 :root[data-theme="light"] {
   color-scheme: light;
-  --bg: #f5f6f8;
+  --bg: #f6f7f9;
   --bg-alt: #ffffff;
+  --bg-elevated: #ffffff;
   --text: #1a1d24;
   --text-dim: #5b6270;
+  --text-faint: #9096a1;
   --accent: #2569c9;
   --accent-dim: #dce8fb;
-  --border: #dfe1e6;
+  --border: #e7e9ed;
   --pattern: #a5750a;
-  --pattern-bg: #f5ecd8;
-  --accent-glow: rgba(37, 105, 201, 0.06);
-  --shadow-highlight: rgba(255, 255, 255, 0.7);
-  --shadow-drop: rgba(15, 23, 42, 0.10);
+  --pattern-bg: #faf1de;
+  --mode-blue: #2569c9;
+  --mode-blue-dim: #dce8fb;
+  --mode-violet: #7c5cff;
+  --mode-violet-dim: #ece7ff;
+  --mode-teal: #0f9488;
+  --mode-teal-dim: #dcf3f0;
+  --mode-amber: #c96a12;
+  --mode-amber-dim: #fceada;
+  --accent-glow: rgba(37, 105, 201, 0.07);
+  --violet-glow: rgba(124, 92, 255, 0.05);
+  --shadow-highlight: rgba(255, 255, 255, 0.8);
+  --shadow-ambient: rgba(15, 23, 42, 0.08);
+  --shadow-contact: rgba(15, 23, 42, 0.1);
   --btn-text-on-accent: #ffffff;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
@@ -64,19 +98,34 @@ html, body {
   padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 
-.screen.active { display: flex; }
+.screen.active {
+  display: flex;
+  /* Purely cosmetic fade-in on the display:none → flex transition — safe
+     because it doesn't touch layout/stacking, just how the switch looks. */
+  animation: screen-fade-in 0.22s ease;
+}
+
+@keyframes screen-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .screen.active { animation: none; }
+}
 
 /* Home screen */
 #home-screen {
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 14px;
   padding: 24px;
   position: relative;
-  /* Subtle depth behind the flat dark background — still reads as
-     black, just not a completely flat slab. */
+  /* Two soft color blobs (accent + violet) instead of one flat glow —
+     still reads as a near-black backdrop, just with more depth. */
   background:
-    radial-gradient(ellipse 600px 420px at 50% -8%, var(--accent-glow), transparent 65%),
+    radial-gradient(ellipse 620px 440px at 18% -10%, var(--accent-glow), transparent 60%),
+    radial-gradient(ellipse 560px 400px at 100% 10%, var(--violet-glow), transparent 55%),
     var(--bg);
 }
 
@@ -88,27 +137,27 @@ html, body {
 }
 
 .app-logo {
-  width: 64px;
-  height: 64px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px -10px rgba(0, 0, 0, 0.5);
+  width: 68px;
+  height: 68px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px -10px var(--shadow-ambient), 0 2px 6px -2px var(--shadow-contact);
 }
 
 .app-eyebrow {
   font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-top: 14px;
+  margin-top: 16px;
   margin-bottom: 2px;
 }
 
 .app-title {
-  font-size: 2.1rem;
+  font-size: 2.2rem;
   font-weight: 800;
-  letter-spacing: -0.01em;
-  margin-bottom: 22px;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
 }
 
 .mode-tile {
@@ -120,37 +169,44 @@ html, body {
   min-width: 0;
   background: var(--bg-alt);
   border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 18px 20px;
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
   color: var(--text);
   text-align: left;
   display: flex;
   align-items: center;
   gap: 16px;
   font: inherit;
-  box-shadow: 0 1px 0 var(--shadow-highlight) inset, 0 8px 20px -12px var(--shadow-drop);
-  transition: border-color 0.15s ease, transform 0.1s ease;
+  box-shadow: 0 1px 0 var(--shadow-highlight) inset, 0 10px 24px -14px var(--shadow-ambient);
+  transition: border-color 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
 }
 
 .mode-tile:active {
-  background: var(--accent-dim);
-  border-color: var(--accent);
-  transform: scale(0.99);
+  transform: scale(0.98);
+  box-shadow: 0 1px 0 var(--shadow-highlight) inset, 0 4px 10px -6px var(--shadow-ambient);
 }
+
+.mode-tile--blue:active { border-color: var(--mode-blue); }
+.mode-tile--violet:active { border-color: var(--mode-violet); }
+.mode-tile--teal:active { border-color: var(--mode-teal); }
+.mode-tile--amber:active { border-color: var(--mode-amber); }
 
 .mode-icon {
   flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: var(--accent-dim);
-  color: var(--accent);
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
+
+.mode-tile--blue .mode-icon { background: var(--mode-blue-dim); color: var(--mode-blue); }
+.mode-tile--violet .mode-icon { background: var(--mode-violet-dim); color: var(--mode-violet); }
+.mode-tile--teal .mode-icon { background: var(--mode-teal-dim); color: var(--mode-teal); }
+.mode-tile--amber .mode-icon { background: var(--mode-amber-dim); color: var(--mode-amber); }
 
 .mode-text {
   flex: 1;
@@ -160,13 +216,13 @@ html, body {
   gap: 4px;
 }
 
-.mode-name { font-size: 1.15rem; font-weight: 600; }
-.mode-desc { font-size: 0.88rem; color: var(--text-dim); }
+.mode-name { font-size: 1.12rem; font-weight: 650; letter-spacing: -0.005em; }
+.mode-desc { font-size: 0.86rem; color: var(--text-dim); line-height: 1.35; }
 
 .mode-chevron {
   flex-shrink: 0;
-  font-size: 1.6rem;
-  color: var(--text-dim);
+  font-size: 1.5rem;
+  color: var(--text-faint);
   line-height: 1;
 }
 
@@ -175,7 +231,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 16px;
+  padding: 8px 12px;
   flex-shrink: 0;
 }
 
@@ -189,15 +245,44 @@ html, body {
   border: none;
   color: var(--text-dim);
   font-size: 1.4rem;
-  padding: 8px 12px;
+  width: 2.5em;
+  height: 2.5em;
+  padding: 0;
   line-height: 1;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-.icon-btn:active { color: var(--text); }
+.icon-btn:active { color: var(--text); background: var(--bg-alt); }
 
 .progress-label {
   font-size: 0.85rem;
+  font-weight: 500;
   color: var(--text-dim);
+}
+
+.page-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding-bottom: 6px;
+  flex-shrink: 0;
+}
+
+.page-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--border);
+  transition: background-color 0.2s ease, width 0.2s ease;
+}
+
+.page-dot.active {
+  background: var(--accent);
+  width: 18px;
 }
 
 .tap-zone {
@@ -277,9 +362,10 @@ html, body {
 
 /* Landscape: reclaim vertical space from chrome so the word itself gets the room */
 @media (orientation: landscape) {
-  .top-bar { padding: 2px 16px; }
-  .icon-btn { padding: 4px 12px; font-size: 1.2rem; }
+  .top-bar { padding: 2px 12px; }
+  .icon-btn { font-size: 1.2rem; width: 2.2em; height: 2.2em; }
   .progress-label { font-size: 0.75rem; }
+  .page-dots { padding-bottom: 2px; }
   .page-content { padding: 4px 20px; gap: 1.5vmin; }
 }
 
@@ -296,23 +382,27 @@ html, body {
   width: 100%;
   max-width: 320px;
   padding: 16px;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   font-size: 1.1rem;
   font-weight: 600;
   border: none;
 }
 
-.primary-btn { background: var(--accent); color: var(--btn-text-on-accent); }
+.primary-btn {
+  background: var(--accent);
+  color: var(--btn-text-on-accent);
+  box-shadow: 0 10px 24px -12px var(--shadow-ambient);
+}
 .secondary-btn { background: none; color: var(--text-dim); }
 
 /* Settings screen */
 .settings-content {
   flex: 1;
   overflow-y: auto;
-  padding: 16px 32px 32px;
+  padding: 16px 20px 32px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 16px;
   max-width: 640px;
   width: 100%;
   margin: 0 auto;
@@ -321,7 +411,11 @@ html, body {
 .settings-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
 }
 
 .settings-label {
@@ -354,17 +448,17 @@ html, body {
 
 .settings-slider {
   width: 100%;
-  height: 8px;
+  height: 6px;
   border-radius: 4px;
-  background: var(--bg-alt);
+  background: var(--border);
   accent-color: var(--accent);
 }
 
 .settings-note {
   font-size: 0.85rem;
-  color: var(--text-dim);
+  color: var(--text-faint);
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .theme-switch-row {
@@ -416,10 +510,11 @@ html, body {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: var(--bg-alt);
+  background: var(--bg-elevated);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
 .vocab-source-item.selected {
@@ -445,20 +540,21 @@ html, body {
 }
 
 .vocab-source-name { font-size: 0.95rem; font-weight: 600; }
-.vocab-source-count { font-size: 0.8rem; color: var(--text-dim); }
+.vocab-source-count { font-size: 0.8rem; color: var(--text-faint); }
 
 @media (orientation: landscape) {
-  .settings-content { padding: 10px 32px 20px; gap: 16px; }
+  .settings-content { padding: 10px 20px 20px; gap: 10px; }
+  .settings-group { padding: 12px 16px; }
 }
 
 /* Shared scaffolding for "browse a topic list, tap into one for a
-   scrollable detail list" screens — used by Grammar Review and Travel
-   Phrases alike. */
+   scrollable detail list" screens — used by HSK Grammar, Grammar Review,
+   and Travel Phrases alike. */
 .topic-list,
 .topic-detail-list {
   flex: 1;
   overflow-y: auto;
-  padding: 16px 20px 32px;
+  padding: 12px 20px 32px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -479,23 +575,55 @@ html, body {
   gap: 12px;
   background: var(--bg-alt);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-left: 3px solid var(--border);
+  border-radius: var(--radius-sm);
   padding: 14px 16px;
   color: var(--text);
   text-align: left;
   font: inherit;
+  box-shadow: 0 1px 0 var(--shadow-highlight) inset;
+  transition: transform 0.1s ease, border-color 0.15s ease;
 }
 
-.topic-item:active { background: var(--accent-dim); }
+.topic-item:active { transform: scale(0.98); }
 
 .topic-item-name { font-size: 0.98rem; font-weight: 600; }
-.topic-item-count { font-size: 0.8rem; color: var(--text-dim); white-space: nowrap; }
+.topic-item-count {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  white-space: nowrap;
+  background: var(--bg-elevated);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
+
+/* Each "topic list / detail" screen picks up its home-tile's identity
+   color as a left accent on its cards, so context stays legible while
+   scrolling without needing a repeated label. */
+#hsk-grammar-level-screen .topic-item,
+#hsk-grammar-chapter-screen .topic-item,
+#hsk-grammar-detail-screen .learning-section {
+  border-left-color: var(--mode-violet);
+}
+
+#grammar-screen .topic-item,
+#grammar-detail-screen .construct-card {
+  border-left-color: var(--mode-teal);
+}
+
+#phrases-screen .topic-item,
+#phrases-detail-screen .phrase-card {
+  border-left-color: var(--mode-amber);
+}
 
 .construct-card {
   background: var(--bg-alt);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-left: 3px solid var(--border);
+  border-radius: var(--radius-sm);
   padding: 4px 16px;
+  box-shadow: 0 1px 0 var(--shadow-highlight) inset;
 }
 
 .construct-card > summary {
@@ -507,19 +635,23 @@ html, body {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  cursor: pointer;
 }
 
 .construct-card > summary::-webkit-details-marker { display: none; }
 
 .construct-card > summary::after {
-  content: '+';
-  color: var(--text-dim);
-  font-size: 1.2rem;
-  font-weight: 400;
+  content: '';
   flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--text-faint);
+  border-bottom: 2px solid var(--text-faint);
+  transform: rotate(-45deg);
+  transition: transform 0.18s ease;
 }
 
-.construct-card[open] > summary::after { content: '\2212'; }
+.construct-card[open] > summary::after { transform: rotate(45deg); }
 
 .construct-body {
   padding-bottom: 16px;
@@ -546,8 +678,8 @@ html, body {
   font-size: 0.85rem;
   color: var(--pattern);
   background: var(--pattern-bg);
-  border-radius: 6px;
-  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
   line-height: 1.4;
   width: fit-content;
 }
@@ -584,15 +716,17 @@ html, body {
   font-size: 0.85rem;
 }
 
-/* Learning (HSK grammar textbook) */
+/* HSK Grammar (textbook-style chapter reading) */
 .learning-section {
   background: var(--bg-alt);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 18px 16px;
+  border-left: 3px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px 18px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
+  box-shadow: 0 1px 0 var(--shadow-highlight) inset, 0 8px 20px -16px var(--shadow-ambient);
 }
 
 .section-header {
@@ -603,7 +737,7 @@ html, body {
 }
 
 .section-title {
-  font-size: 1.02rem;
+  font-size: 1.05rem;
   font-weight: 700;
   line-height: 1.35;
 }
@@ -613,22 +747,22 @@ html, body {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.02em;
-  color: var(--accent);
-  background: var(--accent-dim);
+  color: var(--mode-violet);
+  background: var(--mode-violet-dim);
   border-radius: 999px;
-  padding: 3px 9px;
+  padding: 4px 10px;
   white-space: nowrap;
 }
 
 .theory-block {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .theory-para {
-  font-size: 0.92rem;
-  line-height: 1.65;
+  font-size: 0.94rem;
+  line-height: 1.7;
   color: var(--text);
   margin: 0;
 }
@@ -637,16 +771,18 @@ html, body {
 .phrase-card {
   background: var(--bg-alt);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-left: 3px solid var(--border);
+  border-radius: var(--radius-sm);
   padding: 14px 16px;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  box-shadow: 0 1px 0 var(--shadow-highlight) inset;
 }
 
 .phrase-note {
   margin-top: 6px;
   font-size: 0.78rem;
-  color: var(--text-dim);
+  color: var(--text-faint);
   font-style: italic;
 }
