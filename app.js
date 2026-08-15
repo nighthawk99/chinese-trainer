@@ -163,8 +163,23 @@
     return pool.slice().sort((a, b) => voiceQualityScore(b) - voiceQualityScore(a))[0];
   }
 
+  // iOS Safari has been observed returning the same voice twice in
+  // getVoices() (seen live: "Meijia"/"Tingting" each listed twice) —
+  // collapse anything sharing a name+lang pair before using the list
+  // anywhere, so both the auto-pick and the Settings pickers see each
+  // voice once.
+  function getAvailableVoices() {
+    const seen = new Set();
+    return window.speechSynthesis.getVoices().filter((v) => {
+      const key = v.name + '|' + v.lang;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
   function pickVoices() {
-    const voices = window.speechSynthesis.getVoices();
+    const voices = getAvailableVoices();
     zhVoice = pickVoiceFor(voices, 'zh', 'zh-CN', settings.zhVoiceName);
     enVoice = pickVoiceFor(voices, 'en', 'en-US', settings.enVoiceName);
   }
@@ -477,7 +492,7 @@
   // which matters since not every platform tags voice quality in a way
   // the automatic heuristic can detect.
   function renderVoiceList(container, langPrefix, settingsKey) {
-    const voices = window.speechSynthesis.getVoices().filter(v => v.lang && v.lang.startsWith(langPrefix));
+    const voices = getAvailableVoices().filter(v => v.lang && v.lang.startsWith(langPrefix));
     container.innerHTML = '';
     if (!voices.length) {
       container.innerHTML = '<p class="settings-note">No voices found for this language on this device.</p>';
