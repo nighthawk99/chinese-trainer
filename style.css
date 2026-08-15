@@ -179,6 +179,11 @@ html, body {
   flex-shrink: 0;
 }
 
+/* Balances the back button on detail-screen top bars so the title stays centered. */
+.top-bar-spacer {
+  width: 2.5em;
+}
+
 .icon-btn {
   background: none;
   border: none;
@@ -276,15 +281,6 @@ html, body {
   .icon-btn { padding: 4px 12px; font-size: 1.2rem; }
   .progress-label { font-size: 0.75rem; }
   .page-content { padding: 4px 20px; gap: 1.5vmin; }
-}
-
-.page-kind-label {
-  position: absolute;
-  top: 70px;
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-dim);
 }
 
 /* Complete screen */
@@ -635,13 +631,6 @@ html, body {
   line-height: 1.65;
   color: var(--text);
   margin: 0;
-}
-
-.grammar-empty {
-  color: var(--text-dim);
-  font-size: 0.9rem;
-  text-align: center;
-  padding: 32px 16px;
 }
 
 /* Travel Phrases */

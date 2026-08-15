@@ -65,7 +65,7 @@
     if (!document.hidden) applyTheme();
   });
   setInterval(applyTheme, 5 * 60 * 1000);
-  let sourceCountsCache = null;
+  let sourceCountsCache = {}; // keyed by VOCAB_SOURCES key, filled in lazily per source
 
   const homeScreen = document.getElementById('home-screen');
   const settingsScreen = document.getElementById('settings-screen');
@@ -107,6 +107,7 @@
   let enVoice = null;
   let speechEnded = false; // gates scheduleAutoAdvance until the page's speak() call has finished
   let renderGen = 0; // discards a stale speak() onEnd callback from a page the user has since left
+  let navGen = 0; // bumped by every showScreen() — lets an async nav handler detect it's been superseded
 
   function shuffle(arr) {
     const a = arr.slice();
@@ -118,6 +119,7 @@
   }
 
   function showScreen(el) {
+    navGen += 1;
     [homeScreen, settingsScreen, trainerScreen, completeScreen, learningScreen, learningDetailScreen,
      grammarScreen, grammarDetailScreen, phrasesScreen, phrasesDetailScreen].forEach(s => s.classList.remove('active'));
     el.classList.add('active');
@@ -203,13 +205,24 @@
     }
   }
 
+  // Cached per source key, not all-or-nothing — the home screen only ever
+  // needs the currently-selected source's count, so it shouldn't have to
+  // download and parse every other source's full JSON file just to get
+  // that one number. Settings still fetches (and caches) the rest, but
+  // only once the vocab-source picker is actually opened.
+  async function getSourceCount(key) {
+    if (sourceCountsCache[key] === undefined) {
+      const src = VOCAB_SOURCES[key];
+      sourceCountsCache[key] = src ? await fetchWordCount(src.file) : 0;
+    }
+    return sourceCountsCache[key];
+  }
+
   async function getSourceCounts() {
-    if (sourceCountsCache) return sourceCountsCache;
     const entries = await Promise.all(
-      Object.entries(VOCAB_SOURCES).map(async ([key, src]) => [key, await fetchWordCount(src.file)])
+      Object.keys(VOCAB_SOURCES).map(async (key) => [key, await getSourceCount(key)])
     );
-    sourceCountsCache = Object.fromEntries(entries);
-    return sourceCountsCache;
+    return Object.fromEntries(entries);
   }
 
   async function loadVocab() {
@@ -236,6 +249,22 @@
   // Unlike Grammar Review's collapsible <details> cards, learning sections
   // render fully expanded — this is meant to be read top-to-bottom like a
   // textbook chapter, not scanned as a reference.
+  // Shared by Learning, Grammar Review, and Travel Phrases — all three
+  // render a hanzi/pinyin/english example, just inside different wrappers.
+  function renderExampleFields(ex) {
+    return `
+      <div class="example-hanzi">${ex.hanzi}</div>
+      <div class="example-pinyin">${ex.pinyin}</div>
+      <div class="example-english">${ex.english}</div>
+    `;
+  }
+
+  function renderExampleList(examples) {
+    return '<div class="example-list">' +
+      examples.map(ex => `<div class="example">${renderExampleFields(ex)}</div>`).join('') +
+      '</div>';
+  }
+
   function renderLearningSection(section) {
     let html = `
       <div class="learning-section">
@@ -248,17 +277,8 @@
         </div>
     `;
     if (section.pattern) html += `<div class="pattern-pill">${section.pattern}</div>`;
-    html += '<div class="example-list">';
-    section.examples.forEach(ex => {
-      html += `
-        <div class="example">
-          <div class="example-hanzi">${ex.hanzi}</div>
-          <div class="example-pinyin">${ex.pinyin}</div>
-          <div class="example-english">${ex.english}</div>
-        </div>
-      `;
-    });
-    html += '</div></div>';
+    html += renderExampleList(section.examples);
+    html += '</div>';
     return html;
   }
 
@@ -319,17 +339,8 @@
     if (sp.label) html += `<div class="sub-pattern-label">${sp.label}</div>`;
     if (sp.pattern) html += `<div class="pattern-pill">${sp.pattern}</div>`;
     if (sp.explanation) html += `<div class="sub-pattern-explanation">${sp.explanation}</div>`;
-    html += '<div class="example-list">';
-    sp.examples.forEach(ex => {
-      html += `
-        <div class="example">
-          <div class="example-hanzi">${ex.hanzi}</div>
-          <div class="example-pinyin">${ex.pinyin}</div>
-          <div class="example-english">${ex.english}</div>
-        </div>
-      `;
-    });
-    html += '</div></div>';
+    html += renderExampleList(sp.examples);
+    html += '</div>';
     return html;
   }
 
@@ -376,9 +387,7 @@
     const phrases = phrasesData.filter(p => p.situation === situationName);
     phrasesList.innerHTML = phrases.map(p => `
       <div class="phrase-card">
-        <div class="example-hanzi">${p.hanzi}</div>
-        <div class="example-pinyin">${p.pinyin}</div>
-        <div class="example-english">${p.english}</div>
+        ${renderExampleFields(p)}
         ${p.note ? `<div class="phrase-note">${p.note}</div>` : ''}
       </div>
     `).join('');
@@ -390,9 +399,8 @@
   }
 
   async function updateHomeDesc() {
-    const counts = await getSourceCounts();
     const source = VOCAB_SOURCES[settings.vocabSource] || VOCAB_SOURCES.own;
-    const count = counts[settings.vocabSource] || 0;
+    const count = await getSourceCount(settings.vocabSource);
     homeModeDesc.textContent = `${source.label} — ${count} word${count === 1 ? '' : 's'}, random order`;
   }
 
@@ -489,6 +497,16 @@
 
   async function startSession() {
     await loadVocab();
+    if (!vocab.length) {
+      // Guards against a stored vocabSource pointing at a source that's
+      // since become empty (e.g. an in-progress HSK level) — the same
+      // fallback renderVocabSourceList applies, but that only runs when
+      // Settings is opened, not when jumping straight into a session.
+      settings.vocabSource = 'own';
+      saveSettings();
+      updateHomeDesc(); // keep the home tile's subtitle in sync with the corrected source
+      await loadVocab();
+    }
     sessionWords = shuffle(vocab);
     wordIndex = 0;
     pageIndex = 0;
@@ -587,8 +605,10 @@
     }
   }
 
+  // Neither branch below needs its own clearTimer() — renderPage() and
+  // endSession() (the only two things either function can lead to) each
+  // clear it themselves, so every path is covered at its actual endpoint.
   function advance() {
-    clearTimer();
     if (pageIndex < 2) {
       pageIndex += 1;
       renderPage();
@@ -604,7 +624,6 @@
   }
 
   function goBack() {
-    clearTimer();
     if (pageIndex > 0) {
       pageIndex -= 1;
       renderPage();
@@ -618,6 +637,7 @@
   }
 
   function endSession() {
+    clearTimer();
     stopSpeech();
     document.getElementById('complete-summary').textContent =
       `You reviewed all ${sessionWords.length} words.`;
@@ -658,7 +678,7 @@
     if (!holdActive) return;
     holdActive = false;
     const duration = Date.now() - holdStartTime;
-    const moved = Math.abs((e.clientX || holdStartX) - holdStartX);
+    const moved = Math.abs((e.clientX ?? holdStartX) - holdStartX);
     if (duration < TAP_MAX_DURATION_MS && moved < TAP_MAX_MOVEMENT_PX) {
       const width = window.innerWidth;
       if (holdStartX < width * 0.3) {
@@ -695,7 +715,9 @@
   });
 
   document.getElementById('start-learning').addEventListener('click', async () => {
+    const myNav = navGen;
     await renderLearningChapterList();
+    if (navGen !== myNav) return; // user navigated elsewhere while this loaded
     showScreen(learningScreen);
   });
 
@@ -708,7 +730,9 @@
   });
 
   document.getElementById('start-grammar-review').addEventListener('click', async () => {
+    const myNav = navGen;
     await renderGrammarCategoryList();
+    if (navGen !== myNav) return; // user navigated elsewhere while this loaded
     showScreen(grammarScreen);
   });
 
@@ -721,7 +745,9 @@
   });
 
   document.getElementById('start-travel-phrases').addEventListener('click', async () => {
+    const myNav = navGen;
     await renderPhrasesSituationList();
+    if (navGen !== myNav) return; // user navigated elsewhere while this loaded
     showScreen(phrasesScreen);
   });
 

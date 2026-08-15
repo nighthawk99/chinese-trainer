@@ -61,7 +61,12 @@ self.addEventListener('fetch', (event) => {
     fetch(event.request)
       .then((response) => {
         const copy = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+        // waitUntil extends the event's lifetime for this write, without
+        // delaying the response — without it the browser could recycle
+        // the worker before the cache actually gets refreshed.
+        event.waitUntil(
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy))
+        );
         return response;
       })
       .catch(async () => {
