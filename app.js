@@ -107,6 +107,7 @@
   const vocabSourceList = document.getElementById('vocab-source-list');
   const zhVoiceList = document.getElementById('zh-voice-list');
   const enVoiceList = document.getElementById('en-voice-list');
+  const allVoiceList = document.getElementById('all-voice-list');
 
   let vocab = [];
   let sessionWords = [];
@@ -523,6 +524,23 @@
   function renderVoiceLists() {
     renderVoiceList(zhVoiceList, 'zh', 'zhVoiceName');
     renderVoiceList(enVoiceList, 'en', 'enVoiceName');
+    renderAllVoicesDebug();
+  }
+
+  // Unfiltered dump of every voice the browser reports, regardless of
+  // language — a troubleshooting aid for exactly this kind of question
+  // ("why doesn't my installed Premium voice show up above?"): confirms
+  // whether it's truly absent from what the browser exposes, or just
+  // filed under a language code the zh/en pickers above don't match.
+  function renderAllVoicesDebug() {
+    const voices = getAvailableVoices();
+    if (!voices.length) {
+      allVoiceList.innerHTML = '<p class="settings-note">No voices reported by this browser yet.</p>';
+      return;
+    }
+    allVoiceList.innerHTML = voices
+      .map(v => `<div class="sub-pattern-explanation">${v.name} — ${v.lang}${v.default ? ' · default' : ''}${v.localService === false ? ' · network' : ''}</div>`)
+      .join('');
   }
 
   async function renderVocabSourceList() {
