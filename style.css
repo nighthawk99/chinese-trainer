@@ -179,6 +179,25 @@ html, body {
   font: inherit;
   box-shadow: 0 1px 0 var(--shadow-highlight) inset, 0 10px 24px -14px var(--shadow-ambient);
   transition: border-color 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
+  animation: tile-enter 0.4s cubic-bezier(0.2, 0.7, 0.3, 1) backwards;
+}
+
+/* Staggered per-tile entrance, keyed to each tile's identity class rather
+   than DOM position — nth-of-type would count the settings-gear button
+   (also a <button>, earlier in the markup) as part of the same series
+   and throw the order off by one. */
+.mode-tile--blue { animation-delay: 0.03s; }
+.mode-tile--violet { animation-delay: 0.08s; }
+.mode-tile--teal { animation-delay: 0.13s; }
+.mode-tile--amber { animation-delay: 0.18s; }
+
+@keyframes tile-enter {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mode-tile { animation: none; }
 }
 
 .mode-tile:active {
@@ -199,8 +218,11 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  font-weight: 600;
+}
+
+.mode-icon svg {
+  width: 25px;
+  height: 25px;
 }
 
 .mode-tile--blue .mode-icon { background: var(--mode-blue-dim); color: var(--mode-blue); }
@@ -309,6 +331,23 @@ html, body {
   justify-content: center;
   gap: 2vmin;
   text-align: center;
+}
+
+/* Flex items default to min-width:auto, which floors them at their
+   longest unbroken word's width and blocks normal wrapping — without
+   this, a long English translation or example sentence overflows past
+   both screen edges instead of wrapping, no matter how app.js's
+   shrink-to-fit scale is set. */
+.page-content > * {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+/* app.js toggles this while measuring for fitContentToContainer() — see
+   the comment there for why mid-word breaking has to be off mid-measurement. */
+.page-content.measuring > * {
+  overflow-wrap: normal;
 }
 
 /* Sizes use vmin as an upper bound so the Chinese stays large and

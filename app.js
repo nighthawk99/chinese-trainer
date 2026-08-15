@@ -594,21 +594,28 @@
 
   // Pure CSS (vmin/clamp) sizes text off viewport dimensions alone, which
   // can't account for how many characters are in a given word or sentence
-  // — a long word on a narrow phone can overflow. Shrink --fit-scale (a
-  // multiplier on every font-size in page-content) only as much as needed
-  // so the whole page always fits, starting from full size each time.
-  // The hanzi word (page 0) has `white-space: nowrap` in CSS so it can
-  // never wrap onto a second line — its width is checked here too, so
-  // it shrinks as needed to stay on one row instead of overflowing.
+  // — a long word/phrase on a narrow phone can overflow. Shrink --fit-scale
+  // (a multiplier on every font-size in page-content) only as much as
+  // needed so the whole page always fits, starting from full size each
+  // time. Checking pageContent's own scrollWidth (rather than only the
+  // hanzi word specifically) catches overflow on every page kind — the
+  // English translation and example-sentence pages can run just as wide
+  // as the hanzi one, not just the nowrap hanzi word.
   function fitContentToContainer() {
     pageContent.style.setProperty('--fit-scale', '1');
     let scale = 1;
     const maxHeight = tapZone.clientHeight;
     const maxWidth = tapZone.clientWidth;
-    const hanziEl = pageContent.querySelector('.hanzi-large');
     const fits = () =>
       pageContent.scrollHeight <= maxHeight &&
-      (!hanziEl || hanziEl.scrollWidth <= maxWidth);
+      pageContent.scrollWidth <= maxWidth;
+    // While measuring, suspend the CSS mid-word break (see .measuring in
+    // style.css) so a too-long word registers as real overflow and drives
+    // the scale down — otherwise overflow-wrap:break-word quietly absorbs
+    // it by breaking the word instead, and the loop below never shrinks
+    // the font at all, leaving something like "occurren-ces" at full size
+    // instead of a smaller, unbroken "occurrences".
+    pageContent.classList.add('measuring');
     // A handful of vocab.json entries are grammar-pattern strings rather
     // than real single words (e.g. "S + 比 + S + 大/小 + number + 岁"),
     // long enough to need a much smaller floor than any real word does
@@ -618,6 +625,10 @@
       scale = Math.round((scale - 0.05) * 100) / 100;
       pageContent.style.setProperty('--fit-scale', String(scale));
     }
+    // Re-enable the mid-word break for actual rendering — it's now only
+    // a safety net for the rare case where even the smallest scale isn't
+    // enough to avoid overflow.
+    pageContent.classList.remove('measuring');
   }
 
   function scheduleAutoAdvance() {
