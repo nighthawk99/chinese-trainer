@@ -82,15 +82,20 @@ one's will be picked up.
 No backend, no build step — just static files opened via a plain HTTP
 server (needed for `fetch()` of the JSON data files; `file://` won't
 work).
-- `index.html` / `style.css` / `app.js` — single-page app, eight
-  screens (home, settings, vocab trainer, vocab session-complete,
-  grammar category list, grammar category detail, phrases situation
-  list, phrases situation detail) toggled via a CSS `.active` class.
-  Grammar Review and Travel Phrases share the same generic "topic
-  list → tap in → scrollable detail list" scaffolding (`.topic-list`
-  / `.topic-item` / `.topic-detail-list` CSS classes, and a shared
-  `renderTopicList()` helper in `app.js`) rather than each having its
-  own copy.
+- `index.html` / `style.css` / `app.js` — single-page app, eleven
+  screens (home, settings, vocab trainer, vocab session-complete, HSK
+  Grammar level list, HSK Grammar chapter list, HSK Grammar chapter
+  detail, grammar-review category list, grammar-review category
+  detail, phrases situation list, phrases situation detail) toggled
+  via a CSS `.active` class. Grammar Review and Travel Phrases share
+  the same generic "topic list → tap in → scrollable detail list"
+  scaffolding (`.topic-list` / `.topic-item` / `.topic-detail-list`
+  CSS classes, and a shared `renderTopicList()` helper in `app.js`)
+  rather than each having its own copy. Grammar Review (labeled "My
+  Grammar Review" in the UI) has no home-screen tile of its own — it's
+  reached as a third option on the HSK Grammar level-list screen,
+  alongside HSK 1 / HSK 2, since the home screen only has 3 top-level
+  tiles (Vocabulary Trainer, HSK Grammar, Travel Phrases).
 - `data/vocab.json` / `hsk1.json` / `hsk2.json` / `hsk3.json` /
   `hsk4.json` — one file per Vocabulary Trainer word source, shape:
   ```json
@@ -189,12 +194,15 @@ work).
 - [x] HSK 2 — 749 entries (746 unique words), complete
 - [x] HSK 3 — 954 entries, complete
 - [ ] HSK 4 — 1,000 new words, not started (empty placeholder file)
-- [x] Grammar Review — second top-level feature (self-paced browsing,
-      no timer, no TTS, unlike Vocabulary Trainer). 59 grammar
-      constructs grouped into 15 topic categories, extracted and
-      merged from a 54-lesson doc developed with the user's Chinese
-      teacher. Home screen → pick a category → tap a construct to
-      expand pattern/explanation/examples.
+- [x] Grammar Review, labeled **"My Grammar Review"** in the UI —
+      self-paced browsing, no timer, no TTS, unlike Vocabulary Trainer.
+      59 grammar constructs grouped into 15 topic categories, extracted
+      and merged from a 54-lesson doc developed with the user's Chinese
+      teacher. Nested under HSK Grammar (Home → HSK Grammar → "My
+      Grammar Review" as a third option alongside HSK 1/HSK 2) rather
+      than its own home-screen tile — see the 2026-08-15 decisions-log
+      entry below. Tap a category → tap a construct to expand pattern/
+      explanation/examples.
 - [x] Travel Phrases — third top-level feature, same self-paced/no-TTS
       style as Grammar Review. 223 freshly-authored phrases (not from
       a source doc) across 12 everyday situations a traveler in China
@@ -931,3 +939,28 @@ work).
   landscape via the same screenshot script before considering it done —
   particularly re-confirmed the two previously-buggy long-text words
   now wrap cleanly at word boundaries instead of mid-word.
+- 2026-08-15: User asked to move Grammar Review "under HSK Grammar" and
+  relabel it "My Grammar Review." Since it was already the very next
+  home-screen tile below HSK Grammar, the request was ambiguous between
+  a relabel-only change and an actual information-architecture change
+  (nesting it inside HSK Grammar, off the home screen entirely) — asked
+  the user directly rather than guessing given the rework cost of
+  picking wrong; they chose nesting. Implementation: removed the
+  `start-grammar-review` home-screen tile (and its now-dead
+  `.mode-tile--teal` CSS, since nothing uses that identity color for a
+  home tile anymore — `--mode-teal`/`--teal-glow` themselves are still
+  used by the nested screens' own accent), rebalanced the remaining 3
+  tiles' stagger-entrance `animation-delay`s. `renderHskLevelList()`
+  now appends a third `topic-item` ("My Grammar Review", topic/construct
+  counts pulled from `data/grammar.json` the same way HSK 1/2 show
+  chapter/section counts) alongside HSK 1 and HSK 2, wired to a new
+  `openGrammarReview()`. `grammar-home-btn` (the grammar-category-list
+  screen's top-left button) now returns to the HSK Grammar level-list
+  screen instead of straight home, matching its new parent; its
+  `aria-label` changed from "Home" to "Back" to match. Grammar Review's
+  own screens keep their teal accent color rather than inheriting HSK
+  Grammar's violet — still useful for the user to visually tell "my own
+  notes" apart from "official HSK curriculum" even one level deeper.
+  Verified the full nested flow (3-tile home → HSK Grammar → My Grammar
+  Review → category detail → back → back) via screenshots before
+  considering it done.

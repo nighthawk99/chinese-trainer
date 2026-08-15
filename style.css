@@ -201,8 +201,7 @@ html, body {
    and throw the order off by one. */
 .mode-tile--blue { animation-delay: 0.03s; }
 .mode-tile--violet { animation-delay: 0.08s; }
-.mode-tile--teal { animation-delay: 0.13s; }
-.mode-tile--amber { animation-delay: 0.18s; }
+.mode-tile--amber { animation-delay: 0.13s; }
 
 @keyframes tile-enter {
   from { opacity: 0; transform: translateY(10px); }
@@ -220,7 +219,6 @@ html, body {
 
 .mode-tile--blue:active { border-color: var(--mode-blue); }
 .mode-tile--violet:active { border-color: var(--mode-violet); }
-.mode-tile--teal:active { border-color: var(--mode-teal); }
 .mode-tile--amber:active { border-color: var(--mode-amber); }
 
 .mode-icon {
@@ -240,7 +238,6 @@ html, body {
 
 .mode-tile--blue .mode-icon { background: var(--mode-blue-dim); color: var(--mode-blue); }
 .mode-tile--violet .mode-icon { background: var(--mode-violet-dim); color: var(--mode-violet); }
-.mode-tile--teal .mode-icon { background: var(--mode-teal-dim); color: var(--mode-teal); }
 .mode-tile--amber .mode-icon { background: var(--mode-amber-dim); color: var(--mode-amber); }
 
 .mode-text {

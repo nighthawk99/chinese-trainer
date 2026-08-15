@@ -326,6 +326,32 @@
       btn.addEventListener('click', () => openHskLevel(level));
       hskGrammarLevelList.appendChild(btn);
     });
+
+    // "My Grammar Review" lives here as a third peer alongside HSK 1/2 —
+    // it's the user's own topical notes (from their Chinese teacher),
+    // distinct from the official HSK curriculum above, but grouped under
+    // the same "Grammar" home-screen entry point rather than getting its
+    // own top-level tile.
+    const gData = await loadGrammarData();
+    const categoryCount = new Set(gData.map(c => c.category)).size;
+    const reviewBtn = document.createElement('button');
+    reviewBtn.className = 'topic-item';
+    reviewBtn.innerHTML = `
+      <span class="topic-item-name">My Grammar Review</span>
+      <span class="topic-item-right">
+        <span class="topic-item-count">${categoryCount} topics &middot; ${gData.length} constructs</span>
+        ${CHEVRON_ICON_SVG}
+      </span>
+    `;
+    reviewBtn.addEventListener('click', openGrammarReview);
+    hskGrammarLevelList.appendChild(reviewBtn);
+  }
+
+  async function openGrammarReview() {
+    const myNav = navGen;
+    await renderGrammarCategoryList();
+    if (navGen !== myNav) return; // user navigated elsewhere while this loaded
+    showScreen(grammarScreen);
   }
 
   async function openHskLevel(level) {
@@ -906,15 +932,8 @@
     showScreen(hskGrammarChapterScreen);
   });
 
-  document.getElementById('start-grammar-review').addEventListener('click', async () => {
-    const myNav = navGen;
-    await renderGrammarCategoryList();
-    if (navGen !== myNav) return; // user navigated elsewhere while this loaded
-    showScreen(grammarScreen);
-  });
-
   document.getElementById('grammar-home-btn').addEventListener('click', () => {
-    showScreen(homeScreen);
+    showScreen(hskGrammarLevelScreen);
   });
 
   document.getElementById('grammar-detail-back-btn').addEventListener('click', () => {
